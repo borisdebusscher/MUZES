@@ -73,7 +73,7 @@ div#banner h1 {
     padding: 160px 0px;
 }
 
-div#banner p {
+#banner p {
     display: block;
     color: #FFFFFF;
     font-family: bariol;
@@ -87,14 +87,14 @@ div#banner p {
     right: 0;
 }
 
-article#content section {
+main section {
     display: block;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-section#wie div h1 {
+section#wie h1 {
     display: block;
     color: #92CDCF;
     border-top: 1px solid #92CDCF;
@@ -105,7 +105,7 @@ section#wie div h1 {
     padding: 15px 0px;
 }
 
-section#wat div h1 {
+section#wat h1 {
     display: block;
     color: #92CDCF;
     border-top: 1px solid #92CDCF;
@@ -116,7 +116,7 @@ section#wat div h1 {
     padding: 15px 0px;
 }
 
-section div {
+section {
     display: block;
     margin: 0 auto;
     width: 650px;
@@ -124,7 +124,7 @@ section div {
     text-align: justify;
 }
 
-section#wat div p {
+section#wat p {
     display: block;
     margin: 0 auto;
     width: 400px;
@@ -133,15 +133,11 @@ section#wat div p {
     padding: 30px 0px;
 }
 
-section#wie div {
-    
-}
-
-section#wie div nav ul li {
+section#wie nav ul li {
     list-style: none;
 }
 
-section#wie div nav ul li a {
+section#wie nav ul li a {
     display: block;
     text-decoration: none;
     padding: 15px 0px;
@@ -155,17 +151,17 @@ section#wie div nav ul li a {
 
 
 
-section#wie div nav ul li a:hover {
+section#wie nav ul li a:hover {
     color: #92CDCF;
 }
 
-section#wie div nav {
+section#wie nav {
     display: block;
     width: 160px;
     background-color: #F0F0F1;
 }
 
-section#inschrijven div h1 {
+section#inschrijven h1 {
     display: block;
     color: #92CDCF;
     border-top: 1px solid #92CDCF;
@@ -176,44 +172,53 @@ section#inschrijven div h1 {
     padding: 15px 0px;
 }
 
-section#inschrijven div div h1 {
+section#inschrijven h2 {
     display: block;
     width: 325px;
     text-transform: uppercase;
     background-color: #FFFFFF;
     border-top: 0px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 25px;
+    font-weight: 400;
+    color: #61626f;
+    padding-top: 20px;
 }
 
-section#inschrijven div div p {
+section#inschrijven h3 {
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 300;
+    color: #61626f;
+    padding-bottom: 15px;
+}
+
+section#inschrijven p {
     display: block;
     width: 280px;
     margin: 0 auto;
     font-family: bariol;
     color: #4F5461;
+    margin: 0;
 }
 
-section#inschrijven div div#school {
-    display: block;
-    width: 325px;
-    float: right;
+section#inschrijven #school {
+    display: inline-block;
+    width: 50%;
 }
 
-section#inschrijven div div#ind {
-    display: block;
-    width: 325px;
-    float: left;
+section#inschrijven #ind {
+    display: inline-block;
+    width: 50%;
 }
 
-section#inschrijven div {
+section#inschrijven {
     padding-bottom: 30px;
     margin-bottom: 50px;
 }
 
-section#inschrijven div div h2 {
-    text-align: center;
-    font-family: bariol;
-    font-size: .8em;
-    color: #669092;
+footer {
+    background-color: #add8dc;
 }
-
-

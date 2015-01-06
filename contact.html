@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MUZES</title>
+    <title>Muzes - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="index.css">
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <h1 id="logo">MUZES</h1>
@@ -40,52 +41,46 @@
         </div>
     </header>
 
-    <main>
+    <article id="content">
         <section id="wat">
+            <div>
                 <h1>Wat ?</h1>
                 <p>Muzes is een online community voor leraren, studenten, kunstenaars en kunstliefhebbers, waar ideeën en lesmateriaal gedeeld kunnen worden. Daarnaast is er ook toegang tot een online databank van boeken, video’s, lesmateriaal en leerplannen.
                     <br>
                     <br>Onze missie is degelijke kunsteducatie aan te bieden aan alle kinderen in Vlaanderen, onbepaald het onderwijsniveau.</p>
+            </div>
         </section>
-        <section id="wie">
-                <h1>Voor Wie ?</h1>
-                <nav>
+        <section id="contact">
+            <div>
+                <h1>Contact</h1>
+                <p>Nog vragen? Stel ze hier!</p>
+                <form>
+                    <label for="gegevens">Uw gegevens:</label>
+                    <input type="text" id="contact-voornaam" placeholder="Voornaam">
+                    <input type="text" id="contact-naam" placeholder="Naam">
+                    <input type="text" id="contact-mail" placeholder="E-mailadres">
+
+                    <label for="gegevens">Boodschap:</label>
+                    <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
+                    <textarea id="contact-boodschap" rows="5"></textarea>
+
+                    <input type="submit">
+                </form>
+                <div>
+                    <h1>Heeft u nog vragen?</h1>
+                    <p>Indien u ons persoonlijk wenst te bereiken, twijfel dan niet ons te contacteren via mail of telefoon.</p>
                     <ul>
-                        <li><a>Leerkrachten</a>
-                        </li>
-                        <li><a>Studenten</a>
-                        </li>
-                        <li><a>Kunstenaars</a>
-                        </li>
-                        <li><a>Kunstliefhebbers</a>
-                        </li>
+                        <li>+32 153 466 58</li>
+                        <li>info@muzes.be</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Google Plus</li>
                     </ul>
-                </nav>
-        </section>
-        <section id="inschrijven">
-                <h1>Inschrijven</h1>
-                <div id="ind">
-                    <h2>Individuen</h2>
-                    <h3>€30 / jaar, 1 account</h3><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet, tortor vel tempor posuere, leo sapien condimentum lectus, vitae maximus ex libero vulputate sapien. Aenean luctus neque nec augue feugiat consectetur. Nunc urna ligula, blandit sed ultricies vitae, tempus a dolor.</p>
                 </div>
-                <div id="school">
-                    <h2>Scholen</h2>
-                    <h3>€180 / jaar, 20 accounts</h3><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet, tortor vel tempor posuere, leo sapien condimentum lectus, vitae maximus ex libero vulputate sapien. Aenean luctus neque nec augue feugiat consectetur. Nunc urna ligula, blandit sed ultricies vitae, tempus a dolor.</p>
-                </div>
+            </div>
         </section>
-    </main>
-    
-    <footer>
-        <p>Met de steun van:</p>
-        <ul>
-            <li>Cera</li>
-            <li>Bozar</li>
-            <li>Piano's Maene</li>
-        </ul>
-        <p>Muzes vzw, p/a Klankendaal<br>Tervuursesteenweg 84<br>2800 Mechelen</p>
-    </footer>
+    </article>
 
 
 </body>
