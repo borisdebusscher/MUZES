@@ -15,7 +15,9 @@ body {
     background-color: #F3F4F4;
 }
 
-h1#logo {
+/* HEADER */
+
+#logo {
     display: inline-block;
     width: 100px;
     padding-left: 30px;
@@ -32,193 +34,202 @@ header nav {
 
 header nav ul {
     float: right;
-    margin-right: 30px;
-    margin-top: 3px;
+    margin: 3px 30px 0 0;
 }
 
 header nav ul li {
     display: inline;
-    text-decoration: none;
     margin: 0px 10px;
 }
 
 header nav ul li a {
-    font-family: bariol;
+    font-family: Bariol, Calibri, Arial, sans-serif;
     text-decoration: none;
     color: #4F5461;
 }
 
-li#login {
+#login {
     display: inline-block;
     background-color: #92CDCF;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: .2em;
-    box-shadow:0px 0px 30px -19px black inset;
+    box-shadow: 0px 0px 30px -19px black inset;
 }
 
-a#a-login {
+header nav ul li#login a {
     color: #FFFFFF;
 }
 
-div#banner h1 {
+/* BANNER */
+
+#banner {
     display: block;
-    text-indent: -9999px;
+    position: relative;
     width: 100%;
-    text-align: center;
-    background-image: url(img/banner_IMPACT.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 350px;
+    background: url(img/banner_IMPACT.png) no-repeat center;
     background-size: cover;
-    padding: 160px 0px;
 }
 
 #banner p {
     display: block;
+    position: absolute;
     color: #FFFFFF;
-    font-family: bariol;
+    font-family: Bariol, Calibri, Arial, sans-serif;
     text-align: center;
     width: 120px;
     padding: 20px 20px;
     border-top-left-radius: .5em;
     background-color: rgba(250, 250, 250, .7);
-    position: absolute;
-    top: 363px;
     right: 0;
+    bottom: 0;
 }
 
-main section {
-    display: block;
+/* MAIN */
+
+main {
     width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-section#wie h1 {
-    display: block;
-    color: #92CDCF;
-    border-top: 1px solid #92CDCF;
-    background-color: #E7E9EA;
-    width: 650px;
-    text-align: center;
-    font-family: bariol;
-    padding: 15px 0px;
-}
-
-section#wat h1 {
-    display: block;
-    color: #92CDCF;
-    border-top: 1px solid #92CDCF;
-    background-color: #E7E9EA;
-    width: 650px;
-    text-align: center;
-    font-family: bariol;
-    padding: 15px 0px;
 }
 
 section {
     display: block;
-    margin: 0 auto;
-    width: 650px;
+    width: 70%;
+    margin: 50px auto;
     background-color: #FFFFFF;
     text-align: justify;
 }
 
-section#wat p {
+section h1 {
     display: block;
-    margin: 0 auto;
-    width: 400px;
-    font-family: bariol;
+    color: #92CDCF;
+    border-top: 1px solid #92CDCF;
+    background-color: #E7E9EA;
+    width: 100%;
+    text-align: center;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    padding: 15px 0px;
+}
+
+section p {
+    font-family: Bariol, Calibri, Arial, sans-serif;
     color: #4F5461;
+}
+
+/* WAT? */
+
+#wat p {
+    margin: 0 auto;
+    width: 80%;
     padding: 30px 0px;
 }
 
-section#wie nav ul li {
-    list-style: none;
+/* VOOR WIE? */
+
+#wie nav ul li {
+    list-style-type: none;
 }
 
-section#wie nav ul li a {
+#wie nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 15px 0px;
-    padding-left: 15px;
-    font-family: bariol;
+    padding: 15px 0px 15px 15px;
+    font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 1.1em;
     border-bottom: 1px dashed #E0E1E2;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
 
-
-
-section#wie nav ul li a:hover {
+#wie nav ul li a:hover {
     color: #92CDCF;
 }
 
-section#wie nav {
+#wie nav {
     display: block;
     width: 160px;
     background-color: #F0F0F1;
 }
 
-section#inschrijven h1 {
-    display: block;
-    color: #92CDCF;
-    border-top: 1px solid #92CDCF;
-    background-color: #E7E9EA;
-    width: 650px;
-    text-align: center;
-    font-family: bariol;
-    padding: 15px 0px;
+/* INSCHRIJVINGEN */
+
+#inschrijven {
+    padding-bottom: 30px;
 }
 
-section#inschrijven h2 {
-    display: block;
-    width: 325px;
-    text-transform: uppercase;
-    background-color: #FFFFFF;
-    border-top: 0px;
+#inschrijven #school, #inschrijven #ind {
+    display: inline-block;
+    width: calc(50% - 2px);
+}
+
+#inschrijven h2, #inschrijven h3 {
     text-align: center;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    color: #61626f;
+}
+
+#inschrijven h2 {
+    text-transform: uppercase;
     font-size: 25px;
     font-weight: 400;
-    color: #61626f;
     padding-top: 20px;
 }
 
-section#inschrijven h3 {
-    text-align: center;
-    font-family: "Source Sans Pro";
+#inschrijven h3 {
     font-size: 20px;
     font-weight: 300;
-    color: #61626f;
     padding-bottom: 15px;
 }
 
-section#inschrijven p {
-    display: block;
-    width: 280px;
+#inschrijven p {
+    width: 80%;
     margin: 0 auto;
     font-family: bariol;
     color: #4F5461;
-    margin: 0;
 }
 
-section#inschrijven #school {
-    display: inline-block;
-    width: 50%;
-}
-
-section#inschrijven #ind {
-    display: inline-block;
-    width: 50%;
-}
-
-section#inschrijven {
-    padding-bottom: 30px;
-    margin-bottom: 50px;
-}
+/* FOOTER */
 
 footer {
     background-color: #add8dc;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 50px 0;
+}
+
+#sponsers, #adres{
+    display: inline;
+}
+
+#sponsers {
+    
+}
+
+footer p {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: white;
+}
+
+footer ul li {
+    text-indent: -9999px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+#adres {
+    right: 10px;
+}
+
+footer ul li:nth-child(1) {
+    background: url(img/Cera.svg) no-repeat;
+}
+
+footer ul li:nth-child(2) {
+    background: url(img/Bozar.svg) no-repeat;
+}
+
+footer ul li:nth-child(3) {
+    background: url(img/Piano's%20Maene.svg) no-repeat;
 }
