@@ -25,7 +25,6 @@ body {
     text-indent: -9999px;
     position: absolute;
     top: 50%;
-    
 }
 
 header nav {
@@ -46,13 +45,17 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0px 10px;
 }
 
 header nav ul li a {
+    margin: 0px 10px;
     font-family: Bariol, Calibri, Arial, sans-serif;
     text-decoration: none;
     color: #4F5461;
+}
+
+header nav ul li a:hover:not(#login) {
+    color: #92CDCF;
 }
 
 #login {
@@ -61,10 +64,6 @@ header nav ul li a {
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: .2em;
-}
-
-header nav ul li#login a {
-    color: #FFFFFF;
 }
 
 /* BANNER */
@@ -106,7 +105,7 @@ section {
     text-align: justify;
 }
 
-section h1 {
+section header h1 {
     display: block;
     color: #92CDCF;
     border-top: 1px solid #92CDCF;
@@ -127,7 +126,14 @@ section p {
 #wat p {
     margin: 0 auto;
     width: 80%;
-    padding: 30px 0px;
+}
+
+#wat p:first-of-type {
+    padding: 30px 0 10px 0;
+}
+
+#wat p:last-of-type {
+    padding: 10px 0 30px 0;
 }
 
 /* VOOR WIE? */
@@ -210,7 +216,7 @@ div#logForm {
     transition: all .3s ease-out;
 }
 
-div#logForm form input{
+div#logForm form input {
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -223,22 +229,21 @@ div#logForm form input{
     outline: none;
 }
 
-div#logForm form input#submit{
+div#logForm input[type=submit]{
     display: block;
-    width: 60px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: .5em;
-    padding: 7px 10px;
+    padding: 7px 3px;
     background-color: #92CDCF;
     color: #FFFFFF;
-    font-family: bariol;
-    font-size: .5em;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    line-height: 14px;
+    width: 80px;
 }
 
-div#logForm form h1{
+div#logForm h1{
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -281,6 +286,26 @@ div#layer {
     transition: all .2s;
 }
 
+::-webkit-input-placeholder {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 15px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 15px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder {  
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 15px;
+}
+
 /* jquery*/ 
 
 .translate {
@@ -308,21 +333,35 @@ div#layer {
 
 footer {
     background-color: #add8dc;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 200px;
 }
 
-#sponsers, #adres{
-    display: inline-block;
-    height: 100px;
-    padding: 50px 0;
+#sponsers {
+    position: absolute;
+    margin: -60px 0 0 0;
+    top: 50%;
+    left: 5%;
+    height: 120px;
+}
+
+#adres {
+    position: absolute;
+    margin: -30px 0 0 0;
+    top: 50%;
+    height: 60px;
+    right: 5%;
+    background: url(img/Klankendaal.svg) no-repeat left;
+    padding-left: 80px;
+    font-size: 19px;
 }
 
 footer p {
     font-family: Bariol, Calibri, Arial, sans-serif;
-    color: white;
+    color: #7d7e7e;
     padding-bottom: 15px;
+    font-size: 20px;
 }
 
 footer ul li:nth-child(1) {
@@ -343,8 +382,4 @@ footer ul li {
     width: 100px;
     display: inline-block;
     background-position: center;
-}
-
-#adres {
-    right: 10px;
 }
