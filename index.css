@@ -56,6 +56,8 @@ header nav ul li a {
     font-family: Bariol, Calibri, Arial, sans-serif;
     text-decoration: none;
     color: #4F5461;
+    -webkit-transition: .2s all;
+    transition: .2s all;
 }
 
 header nav ul li a:hover:not(#login) {
