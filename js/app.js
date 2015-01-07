@@ -3,23 +3,47 @@ $(document).ready(function() {
     
      console.log( "ready!" );
 
-$("#list").on("click", function(){
-    console.log("click");
-        if($("ul").css('display') == "none"){
-            console.log("show");
-            $(this).addClass("rotate");
-            $("#list").addClass("bg");
-            $("nav").addClass("padding");
-            $("ul").addClass("show");
-        }else{
-            $(this).removeClass("rotate");
-            $("ul").removeClass("show");
-            $("nav").removeClass("padding");
-            $("#list").removeClass("bg");
-        }
-        
+$("#login").on("click", function(){
+        $("#logForm").removeClass("translate");
+        $("#layer").removeClass("hide");
+        $("body").addClass("overflow");
     }); 
     
+$("#submit").on("click", function(){
+        $("#layer").addClass("hide");
+        $("#logForm").addClass("translate");
+        $("body").removeClass("overflow");
+        $("#user").val("");
+        $("#pass").val("");
+    }); 
+    
+$(".close").on("click", function(){
+        $("#layer").addClass("hide");
+        $("#logForm").addClass("translate");
+        $("body").removeClass("overflow");
+        $("#user").val("");
+        $("#pass").val("");
+    }); 
+    
+$("#layer").on("click", function(){
+        $(this).addClass("hide");
+        $("#logForm").addClass("translate");
+        $("body").removeClass("overflow");
+        $("#user").val("");
+        $("#pass").val("");
+    }); 
+    
+    
+$(".close").mouseover(function() {
+            $(this).addClass("rotate");
+            $(this).addClass("bg");
+        });
+      
+$(".close").mouseout(function() {
+            $(this).removeClass("rotate");
+            $(this).removeClass("bg");
+        });
+      
 
     
     
@@ -35,28 +59,6 @@ $("#list").on("click", function(){
              }
          }
      });
-
-
-
-
-
-
-    
-    
-    console.log( "ready!" );
-    
-    $(window).scroll(function(event){
-        var scroll = $(window).scrollTop();
-        console.log(scroll);
-        
-        if(scroll>20){
-            $("#intro img").addClass("translate");
-            $("#intro p").addClass("opa");
-        }
-        
-    });
-    
-
 
 
 }); 
