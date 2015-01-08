@@ -40,9 +40,9 @@ nav {
     background-image: url(img/camera.png);
     background-repeat: no-repeat;
     background-position:  center;
-    background-size: 25px;
-    -webkit-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+    background-size: 10px;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
     opacity: 0;
     
 }
@@ -63,7 +63,7 @@ nav {
 #sideBar div h1 {
     display: block;
     margin-bottom: 3px;
-    font-family: bariol;
+    font-family: "bariol bold";
     font-size: 1.4em;
     text-align: center;
     color: #4E4F58;
@@ -200,8 +200,7 @@ nav {
     background-image: url(img/dashed_line.png);
     background-repeat: repeat-y;
     background-size: 2px;
-    background-position: 65%;
-    background-attachment: fixed;
+    background-position: 50%;
 }
 
 #myStream ul li {
@@ -223,4 +222,11 @@ nav {
 
 .opacity {
     opacity: 1 !important;
+}
+
+.bgScale {
+    background-image: url(img/camera.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: 20px !important;
 }

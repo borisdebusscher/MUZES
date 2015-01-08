@@ -67,10 +67,12 @@ $(".closeChange").mouseout(function() {
     
 $("#file").mouseover(function() {
             $("#sideBar span").addClass("opacity");
+            $("#sideBar span").addClass("bgScale");
         });
       
 $("#file").mouseout(function() {
             $("#sideBar span").removeClass("opacity");
+            $("#sideBar span").removeClass("bgScale");
         });
     
     
