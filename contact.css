@@ -1,0 +1,86 @@
+#contact {
+    margin-top: 75px;
+}
+
+label {
+    color: #636363;
+    font-size: 18px;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+}
+
+input, textarea {
+    outline: none;
+    resize: vertical;
+    overflow: auto;
+}
+
+label, input, textarea {
+    float: left;
+    clear: both;
+}
+
+input {
+    height: 35px;
+}
+
+input, textarea {
+    text-shadow: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    resize: none;
+    background-color: #f4f5f5;
+}
+
+input[type="submit"] {
+    overflow: hidden;
+}
+
+#contact-naam, #contact-mail, #contact-onderwerp, #contact-boodschap {
+    clear: none;
+}
+
+#contact-voornaam, #contact-mail, #contact-onderwerp, #contact-boodschap {
+    margin-left: 20%;
+}
+
+#contact-voornaam, #contact-naam {
+    width: 200px;
+}
+
+#contact-naam {
+    margin-left: 15px;
+}
+
+#contact-mail {
+    width: 430px;
+    margin-top: 15px;
+}
+
+::-webkit-input-placeholder {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 17px;
+    color: #a5a5a5;
+    padding-left: 10px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 17px;
+    color: #a5a5a5;
+    padding-left: 10px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 17px;
+    color: #a5a5a5;
+    padding-left: 10px;
+}
+
+:-ms-input-placeholder {  
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 17px;
+    color: #a5a5a5;
+    padding-left: 10px;
+}

@@ -6,7 +6,8 @@
     <title>Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -40,34 +41,36 @@
     </header>
     <main>
         <section id="contact">
-            <div>
+            <header>
                 <h1>Contact</h1>
-                <p>Nog vragen? Stel ze hier!</p>
-                <form>
-                    <label for="gegevens">Uw gegevens:</label>
-                    <input type="text" id="contact-voornaam" placeholder="Voornaam">
-                    <input type="text" id="contact-naam" placeholder="Naam">
-                    <input type="text" id="contact-mail" placeholder="E-mailadres">
+            </header>
+            <p>Nog vragen? Stel ze hier!</p>
+            <form>
+                <label for="gegevens">Uw gegevens:</label>
+                <input type="text" id="contact-voornaam" placeholder="Voornaam">
+                <input type="text" id="contact-naam" placeholder="Naam">
+                <input type="text" id="contact-mail" placeholder="E-mailadres">
 
-                    <label for="gegevens">Boodschap:</label>
-                    <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
-                    <textarea id="contact-boodschap" rows="5"></textarea>
+                <label for="gegevens">Boodschap:</label>
+                <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
+                <textarea id="contact-boodschap" rows="5"></textarea>
 
-                    <input type="submit">
-                </form>
-                <div>
-                    <h1>Heeft u nog vragen?</h1>
-                    <p>Indien u ons persoonlijk wenst te bereiken, twijfel dan niet ons te contacteren via mail of telefoon.</p>
-                    <ul>
-                        <li>+32 153 466 58</li>
-                        <li>info@muzes.be</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>LinkedIn</li>
-                        <li>Google Plus</li>
-                    </ul>
-                </div>
-            </div>
+                <input type="submit" class="button">
+            </form>
+        </section>
+        <section id="vragen">
+            <header>
+                <h1>Heeft u nog vragen?</h1>
+            </header>
+            <p>Indien u ons persoonlijk wenst te bereiken, twijfel dan niet ons te contacteren via mail of telefoon.</p>
+            <ul>
+                <li>+32 153 466 58</li>
+                <li>info@muzes.be</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+                <li>Google Plus</li>
+            </ul>
         </section>
     </main>
     <footer>
