@@ -1,0 +1,23 @@
+#titel {
+    color: #92CDCF;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    padding-top: 1em;
+    text-align: center;
+    background-color: transparent;
+    font-size: 2em;
+}
+
+section p{
+    font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+    margin: 1em auto;
+    width: 80%;
+    
+}
+
+#projectpics {
+    width: 100%;
+}
+
+section {
+    width: 60%;
+}
