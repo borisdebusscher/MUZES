@@ -23,7 +23,8 @@ $(".close").on("click", function(){
         $("body").removeClass("overflow");
         $("#user").val("");
         $("#pass").val("");
-    }); 
+    });
+    
     
 $("#layer").on("click", function(){
         $(this).addClass("hide");
@@ -43,8 +44,34 @@ $(".close").mouseout(function() {
             $(this).removeClass("rotate");
             $(this).removeClass("bg");
         });
+    
+$("#change").on("click", function(){
+        $("#changeForm").removeClass("trans");
+        $("body").addClass("overflow");
+}); 
       
-
+$(".closeChange").on("click", function(){
+        $("#changeForm").addClass("trans");
+        $("body").removeClass("overflow");
+    }); 
+    
+$(".closeChange").mouseover(function() {
+            $(this).addClass("rotate");
+            $(this).addClass("arrow");
+        });
+      
+$(".closeChange").mouseout(function() {
+            $(this).removeClass("rotate");
+            $(this).removeClass("arrow");
+        });
+    
+$("#sideBar span").mouseover(function() {
+            $(this).addClass("opacity");
+        });
+      
+$("#sideBar span").mouseout(function() {
+            $(this).removeClass("opacity");
+        });
     
     
      $('a[href*=#]:not([href=#])').click(function() {
