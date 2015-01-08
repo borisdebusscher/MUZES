@@ -15,7 +15,7 @@ $(function(){
 
 	function login (e) {
 
-		e.preventDefault();
+		//e.preventDefault();
 
 		console.log("in login");
         var correct=false;
@@ -35,6 +35,8 @@ $(function(){
         if(!correct){
             alert("The username or password you have used are incorrect");
         }
+
+        return false;
 	}
 
 
