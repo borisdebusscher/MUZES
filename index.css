@@ -1,15 +1,26 @@
-*{
+body, html {
     margin: 0;
     padding: 0;
 }
 
 @font-face {
     font-family: "Bariol";
-    src: url("fonts/bariol_regular-webfont.eot?#iefix") format("eot"),
+    src: url("fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/bariol_regular-webfont.woff") format("woff"),
     url("fonts/bariol_regular-webfont.ttf") format("truetype"),
     url("fonts/bariol_regular-webfont.svg") format("svg");
 }
+
+.clearfix:before, .clearfix:after {
+	content: “ “;
+	display: table; 
+}
+.clearfix:after {
+	clear: both;
+}
+
+/* For IE < 8 */ 
+.clearfix { *zoom : 1; }
 
 body {
     background-color: #F3F4F4;
@@ -35,8 +46,12 @@ header nav {
     width: 100%;
     background-color: #FFFFFF;
     height: 50px;
-    padding: 12px 0px;
+    padding: 12px 0;
     position: relative;
+    position: fixed;
+    z-index: 9997;
+    top: 0;
+    border-bottom: 1px solid #92CDCF;
 }
 
 header nav ul {
@@ -52,10 +67,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-    margin: 0px 10px;
+    margin: 0 10px;
     font-family: Bariol, Calibri, Arial, sans-serif;
     text-decoration: none;
     color: #4F5461;
+    -moz-transition: .2s all;
     -webkit-transition: .2s all;
     transition: .2s all;
 }
@@ -64,12 +80,8 @@ header nav ul li a:hover:not(#login) {
     color: #92CDCF;
 }
 
-#login {
-    display: inline-block;
-    background-color: #92CDCF;
-    color: #FFFFFF;
-    padding: 5px 10px;
-    border-radius: .2em;
+.login {
+    color: #FFFFFF !important;
 }
 
 /* BANNER */
@@ -81,6 +93,7 @@ header nav ul li a:hover:not(#login) {
     height: 350px;
     background: url(img/home/banner_IMPACT.png) no-repeat center;
     background-size: cover;
+    margin-top: 75px;
 }
 
 #banner p {
@@ -95,20 +108,30 @@ header nav ul li a:hover:not(#login) {
     background-color: rgba(250, 250, 250, .7);
     right: 0;
     bottom: 0;
+    margin: 0;
 }
 
 /* MAIN */
 
 main {
     width: 100%;
+    text-align: center;
 }
 
 section {
-    display: block;
+    display: inline-block;
     width: 80%;
-    margin: 50px auto;
+    margin: 20px;
     background-color: #FFFFFF;
     text-align: justify;
+}
+
+section:first-of-type {
+    margin-top: 40px
+}
+
+section:last-of-type {
+    margin-bottom: 40px
 }
 
 section header h1 {
@@ -120,11 +143,23 @@ section header h1 {
     text-align: center;
     font-family: Bariol, Calibri, Arial, sans-serif;
     padding: 15px 0px;
+    margin: 0;
 }
 
 section p {
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #4F5461;
+}
+
+.button {
+    display: inline-block;
+    background-color: #92CDCF;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: .2em;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none
 }
 
 /* WAT? */
@@ -155,6 +190,8 @@ section p {
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 1.1em;
     border-bottom: 1px dashed #E0E1E2;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -172,7 +209,7 @@ section p {
 /* NIEUWS */
 
 #nieuws {
-    padding-bottom: 10px;
+    padding-bottom: 100px;
 }
 
 #nieuws article {
@@ -188,19 +225,21 @@ section p {
     vertical-align: middle;
     padding: 0 15px;
     box-sizing: border-box;
-    height: 130px;
+    height: 140px;
 }
 
-#nieuws h1 {
+.article-content h1 {
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
     font-weight: 600;
     font-size: 19px;
+    margin: 0;
 }
 
-#nieuws h2 {
+.article-content h2 {
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
     font-weight: 100;
     font-size: 17px;
+    margin: 2px 0 15px 0;
 }
 
 #nieuws p {
@@ -212,7 +251,7 @@ section p {
 
 #nieuws img {
     float: left;
-    height: 130px;
+    height: 140px;
     width: 195px;
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
@@ -221,7 +260,7 @@ section p {
 /* INSCHRIJVINGEN */
 
 #inschrijven {
-    padding-bottom: 30px;
+    
 }
 
 #inschrijven #school, #inschrijven #ind {
@@ -239,13 +278,15 @@ section p {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 400;
-    padding-top: 20px;
+    padding: 0;
+    margin: 30px 0 0 0;
 }
 
 #inschrijven h3 {
     font-size: 20px;
     font-weight: 300;
-    padding-bottom: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 #inschrijven p {
@@ -255,22 +296,15 @@ section p {
     color: #4F5461;
 }
 
-.inschrijven-knop {
-    display: block;
-    background-color: #92CDCF;
-    color: #FFFFFF;
-    border-radius: 7px;
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    text-decoration: none;
-    width: 70px;
-    margin: 20px auto;
+#inschrijven .button {
+    text-align: center;
     padding: 7px 15px;
-    
+    margin: 20px 0;
 }
 
 /* form */
 
-div#logForm {
+#logForm {
     display: block;
     padding: 50px 0px;
     width: 350px;
@@ -284,7 +318,7 @@ div#logForm {
     transition: all .3s ease-out;
 }
 
-div#logForm form input {
+#logForm form input {
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -292,12 +326,12 @@ div#logForm form input {
     padding: 10px;
     width: 150px;
     border-radius: .3em;
-    border: 0px;
+    border: 0;
     background-color: #F3F4F4;
     outline: none;
 }
 
-div#logForm input[type=submit]{
+#logForm input[type=submit]{
     display: block;
     margin-top: 20px;
     border-radius: .5em;
@@ -311,7 +345,7 @@ div#logForm input[type=submit]{
     width: 80px;
 }
 
-div#logForm h1{
+#logForm h1{
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -325,7 +359,7 @@ div#logForm h1{
     background-position: center;
 }
 
-div#logForm span.close{
+#logForm span.close{
     display: block;
     position: absolute;
     background-image: url(img/plus.png);
@@ -342,7 +376,7 @@ div#logForm span.close{
 }
 
 
-div#layer {
+#layer {
     display: block;
     position: absolute;
     z-index: 9998;
@@ -350,6 +384,8 @@ div#layer {
     height: 100%;
     top: 0;
     background-color: rgba(0, 0, 0, .4);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -374,13 +410,16 @@ div#layer {
     font-size: 15px;
 }
 
-/* jquery*/ 
+/* jquery */ 
 
 .translate {
     top: -150% !important;
 }
 
 .rotate {
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
@@ -430,6 +469,11 @@ footer p {
     color: #7d7e7e;
     padding-bottom: 15px;
     font-size: 20px;
+    margin: 0;
+}
+
+footer ul {
+    margin: 0;
 }
 
 footer ul li:nth-child(1) {
@@ -450,4 +494,12 @@ footer ul li {
     width: 100px;
     display: inline-block;
     background-position: center;
+}
+
+@media only screen and (min-width: 1100px) {
+    #wat, #nieuws {
+        width: 40%;
+        height: 500px;
+        margin: 20px;
+    }
 }

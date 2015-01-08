@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MUZES</title>
+    <title>Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="index.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <li><a href="projecten.html">projecten</a></li>
                 <li><a href="kalender.html">kalender</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li><a id="login" href="#">login</a></li>
+                <li><a class="login button" href="#">login</a></li>
             </ul>
         </nav>
         <div id="banner">
@@ -49,6 +49,35 @@
             <p>Muzes is een online community voor leraren, studenten, kunstenaars en kunstliefhebbers, waar ideeën en lesmateriaal gedeeld kunnen worden. Daarnaast is er ook toegang tot een online databank van boeken, video’s, lesmateriaal en leerplannen.</p>
             <p>Onze missie is degelijke kunsteducatie aan te bieden aan alle kinderen in Vlaanderen, onbepaald het onderwijsniveau.</p>
         </section>
+        <section id="nieuws">
+            <header>
+                <h1>Gelezen op Muzes.be</h1>
+            </header>
+            <article>
+                <a href=""><img src="img/home/kersthits.jpg" alt="Kersthits"></a>
+                <div class="article-content">
+                    <h1>Kersthits voor zenuwpezen, rockers en feestkonijnen.</h1>
+                    <h2>Deze songs krijgen <i>iedereen</i> in kerststemming!</h2>
+                    <a class="button" href="">Alle nummers kan je hier beluisteren.</a>
+                </div>
+            </article>
+            <article>
+                <a href=""><img src="img/home/thank you.jpg" alt="Thank you!"></a>
+                <div class="article-content">
+                    <h1>8 leraren die levens kunnen veranderen.</h1>
+                    <h2>Hartverwarmend!</h2>
+                    <a class="button" href="">Lees hier het volledige artikel.</a>
+                </div>
+            </article>
+            <article>
+                <a href=""><img src="img/home/degeneres.jpg" alt="Ellen Degeneres"></a>
+                <div class="article-content">
+                    <h1>Stromae was overal dit jaar...</h1>
+                    <h2>Maar waar was hij niet?</h2>
+                    <a class="button" href="">Doe hier de quiz!</a>
+                </div>
+            </article>
+        </section>
         <section id="wie">
             <header>
                 <h1>Voor wie ?</h1>
@@ -62,35 +91,6 @@
                 </ul>
             </nav>
         </section>
-        <section id="nieuws">
-            <header>
-                <h1>Gelezen op Muzes.be</h1>
-            </header>
-            <article>
-                <a href=""><img src="img/home/kersthits.jpg"></a>
-                <div class="article-content">
-                    <h1>Kersthits voor zenuwpezen, rockers en feestkonijnen.</h1>
-                    <h2>Deze songs krijgen <i>iedereen</i> in kerststemming!</h2>
-                    <p>Alle nummers kan je <a href="">hier</a> beluisteren.</p>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="img/home/thank you.jpg"></a>
-                <div class="article-content">
-                    <h1>8 leraren die levens kunnen veranderen.</h1>
-                    <h2>Hartverwarmend!</h2>
-                    <p>Lees <a href="">hier</a> het volledige artikel.</p>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="img/home/degeneres.jpg"></a>
-                <div class="article-content">
-                    <h1>Stromae was overal dit jaar...</h1>
-                    <h2>Maar waar was hij niet?</h2>
-                    <p>Doe <a href="">hier</a> de quiz!</p>
-                </div>
-            </article>
-        </section>
         <section id="inschrijven">
             <header>
                 <h1>Geïnteresseerd?</h1>
@@ -99,13 +99,13 @@
                 <h2>Individuen</h2>
                 <h3>€30 / jaar, 1 account</h3><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet, tortor vel tempor posuere, leo sapien condimentum lectus, vitae maximus ex libero vulputate sapien. Aenean luctus neque nec augue feugiat consectetur. Nunc urna ligula, blandit sed ultricies vitae, tempus a dolor.</p>
-                <a href="" class="inschrijven-knop">inschrijven</a>
+                <a href="" class="button">inschrijven</a>
             </div>
             <div id="school">
                 <h2>Scholen</h2>
                 <h3>€180 / jaar, 20 accounts</h3><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet, tortor vel tempor posuere, leo sapien condimentum lectus, vitae maximus ex libero vulputate sapien. Aenean luctus neque nec augue feugiat consectetur. Nunc urna ligula, blandit sed ultricies vitae, tempus a dolor.</p>
-                <a href="" class="inschrijven-knop">inschrijven</a>
+                <a href="" class="button">inschrijven</a>
             </div>
         </section>
     </main>
