@@ -82,7 +82,7 @@ nav {
 #sideBar div ul {
     display: block;
     width: 215px;
-    margin-left: 25px;
+    margin-left: 0px;
     margin-top: 40px;
     list-style-type: none;
     font-family: bariol;
@@ -203,8 +203,214 @@ nav {
     background-position: 50%;
 }
 
-#myStream ul li {
+#myStream article {
+    display: block;
+    width: 50%;
+    margin-top: 110px;
 }
+
+#myStream article:nth-child(even) {
+    float: right;
+}
+
+#myStream article div {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 140px;
+    background-color: #FFFFFF;
+}
+
+#myStream article:nth-child(2) div {
+    height: 220px;
+}
+
+.postDiv {
+    background-color: #E7E8E9 !important;
+}
+
+#myStream article span {
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #90CACC;
+    padding: px 0px;
+}
+
+.floatL {
+    float: left;
+}
+
+.floatR {
+    float: right;
+}
+
+
+#myStream article div textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 0px;
+    outline: none;
+    font-family: bariol;
+    font-size: 1em;
+}
+
+.boxsizingBorder {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#myStream article div textarea:nth-child(1) {
+    height: 30px;
+    float: left;
+}
+
+#myStream article div textarea:nth-child(2) {
+    border-top: 1px dashed #D3D4D6; 
+    height: 60px;
+    float: left;
+}
+
+#myStream article div input {
+    display: block;
+    border: 0;
+    background-color: #C2D8DA;
+    color: #FFFFFF;
+    font-family: bariol;
+    font-size: .9em;
+    border-radius: .3em;
+    margin: 11px 15px;
+    padding: 5px 15px;
+    float: right;
+    outline: none;
+}
+
+#myStream article div ul {
+    display: block;
+    list-style: none;
+    width: auto; !important;
+    margin: 0px;
+    float: left;
+    margin-left: 10px;
+    padding: 15px 0px;
+}
+
+#myStream article div #ulPost li {
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 7px 16px;
+    border-radius: 50%;
+    background-color: #C2D8DA;
+}
+
+#myStream article div #ulPost li:nth-child(1) {
+    display: inline;
+    background-image: url(img/attachment.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    
+}
+
+#myStream article div #ulPost li:nth-child(2) {
+    display: inline;
+    background-image: url(img/camera.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center;
+    
+}
+
+#myStream article div #ulPost li:nth-child(3) {
+    display: inline;
+    background-image: url(img/play.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    
+}
+
+#myStream article div p {
+    display: block;
+    margin: 0 auto;
+    text-align: justify;
+    width: 90%;
+    font-family: bariol;
+    color: #505562;
+}
+
+#myStream article div a {
+    display: block;
+    margin: 0 auto;
+    background-color: #E7E8E9;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: bariol;
+    color: #505562;
+}
+
+#myStream article div h1 {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: bariol;
+    color: #91CBCD;
+}
+
+#myStream article div h2 {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: bariol;
+    font-size: .8em;
+    color: #D3D4D6;
+}
+
+#myStream article div ul li {
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #D4EAEC;
+}
+
+#myStream article div ul li:nth-child(1) {
+    background-image: url(img/thumbsup.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+}
+
+#myStream article div ul li:nth-child(2) {
+    background: none;
+    border-radius: 0%;
+    margin: 0px;
+    padding: 16px;
+    font-family: bariol;
+    color: #91CBCD;
+}
+
+#myStream article div ul li:nth-child(3) {
+    background-image: url(img/bubble.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+}
+
+#myStream article div ul li:nth-child(4) {
+    background: none;
+    border-radius: 0%;
+    margin: 0px;
+    padding: 0px;
+    font-family: bariol;
+    color: #91CBCD;
+}
+
 
 
 /* jquery */
@@ -229,4 +435,35 @@ nav {
     background-repeat: no-repeat;
     background-position:  center;
     background-size: 20px !important;
+}
+
+/* icomoon */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?1c3t6n');
+	src:url('fonts/icomoon.eot?#iefix1c3t6n') format('embedded-opentype'),
+		url('fonts/icomoon.woff?1c3t6n') format('woff'),
+		url('fonts/icomoon.ttf?1c3t6n') format('truetype'),
+		url('fonts/icomoon.svg?1c3t6n#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock:before {
+	content: "\e601";
 }
