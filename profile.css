@@ -46,6 +46,19 @@ nav {
     
 }
 
+#file {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50% !important;
+    background-color: black;
+    position: absolute;
+    top: 121px;
+    left: 50%;
+    margin-left: -55px;
+    opacity: 0 !important;
+}
+
 #sideBar div h1 {
     display: block;
     margin-bottom: 3px;
@@ -179,6 +192,11 @@ nav {
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
     padding-bottom: 1000px;
+    background-image: url(img/dashed_line.png);
+    background-repeat: repeat-y;
+    background-size: 2px;
+    background-position: 65%;
+    background-attachment: fixed;
 }
 
 #myStream ul li {

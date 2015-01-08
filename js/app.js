@@ -65,12 +65,12 @@ $(".closeChange").mouseout(function() {
             $(this).removeClass("arrow");
         });
     
-$("#sideBar span").mouseover(function() {
-            $(this).addClass("opacity");
+$("#file").mouseover(function() {
+            $("#sideBar span").addClass("opacity");
         });
       
-$("#sideBar span").mouseout(function() {
-            $(this).removeClass("opacity");
+$("#file").mouseout(function() {
+            $("#sideBar span").removeClass("opacity");
         });
     
     
