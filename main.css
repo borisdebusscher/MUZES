@@ -11,6 +11,14 @@ body, html {
     url("fonts/bariol_regular-webfont.svg") format("svg");
 }
 
+@font-face {
+    font-family: "Bariol Bold";
+    src: url("fonts/bariol_bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/bariol_bold-webfont.woff") format("woff"),
+    url("fonts/bariol_bold-webfont.ttf") format("truetype"),
+    url("fonts/bariol_bold-webfont.svg") format("svg");
+}
+
 .clearfix:before, .clearfix:after {
 	content: “ “;
 	display: table; 
