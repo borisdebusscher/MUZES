@@ -6,3 +6,46 @@
     background-color: transparent;
     font-size: 2em;
 }
+
+#navli, #architectuur {
+    color: #4F5461;
+    list-style-type: none;
+    font-family: Source Sans Pro, Calibri, Arial, sans-serif;
+    text-decoration: none;
+    padding-right: 2em;
+}
+
+#navli {
+    text-align: center;
+}
+
+#navli li {
+    display: inline;
+}
+
+#navli li a{
+    font-family: font-family: Bariol, Calibri, Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: #4F5461;
+    -moz-transition: .2s all;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+    margin: 0 10px;
+}
+
+#navli li a:hover:not(#login) {
+    color: #92CDCF;
+}
+
+#architectuur ul {
+    list-style-type: none;
+}
+
+#architectuur ul li {
+    padding: .25em 0;
+}
+
+h2 {
+    text-align: center;
+}
