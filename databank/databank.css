@@ -436,6 +436,7 @@ table a:hover, table a:focus{
     padding: 1em 2em;
     text-decoration: none;
     color: #000;
+    text-align: left;
 }
 .datacontent a:hover, .datacontent a:focus{
     background: #92CDCF;
@@ -443,7 +444,14 @@ table a:hover, table a:focus{
 .datacontent li:last-of-type{
     padding-bottom: 2em;
 }
-
+.column{
+    width: 49.9%;
+    float: left;
+    background: #fff;
+}
+.column:last-of-type{
+    border-left: 1px dashed #E0E1E2;
+}
 
 /* form */
 
