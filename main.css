@@ -166,6 +166,93 @@ section p {
     background-color: #81AAAA;
 }
 
+/* BOX SECTION */
+
+section.box {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f4f5f5;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+section.box header {
+    float: left;
+    border: none;
+    margin: 0;
+    padding: 15px;
+    background: none;
+    height: 100px;
+    width: 30%;
+    min-width: 280px;
+    text-align: left;
+    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+section.box div {
+    float: left;
+    width: 70%;
+    height: 100px;
+    box-sizing: border-box;
+    -moz-column-count: 3;
+   -webkit-column-count: 3;
+}
+
+section.box li {
+    font-family: "Source Sans Pro Light", Calibri, Arial, sans-serif;
+    font-size: 24px;
+    color: #7d7e7e;
+    list-style-type: none;
+    height: 35px;
+    width: 300px;
+    padding-left: 50px;
+}
+
+#icon-telephone {
+    background: url(img/icons/telephone.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-mail {
+    background: url(img/icons/mail.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-facebook {
+    background: url(img/icons/facebook.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-twitter {
+    background: url(img/icons/twitter.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-linkedin {
+    background: url(img/icons/linkedin.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-googleplus {
+    background: url(img/icons/googleplus.svg) no-repeat left;
+    background-size: 35px;
+}
+
+section.box header h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section.box header p {
+    font-family: "Source Sans Pro Light", Calibri, Arial, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -244,9 +331,7 @@ footer ul li {
 
 #logForm form input {
     display: block;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px auto 25px auto;
     padding: 10px;
     width: 150px;
     border-radius: .3em;
@@ -259,7 +344,7 @@ footer ul li {
     display: block;
     margin-top: 20px;
     border-radius: .5em;
-    padding: 7px 3px;
+    padding: 9px 3px;
     background-color: #92CDCF;
     color: #FFFFFF;
     font-family: Bariol, Calibri, Arial, sans-serif;
