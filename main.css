@@ -41,22 +41,19 @@ body {
 
 /* HEADER */
 
-#logo {
+header nav > h1 {
     width: 90px;
-    height: 35px;
-    margin: -17.5px 0 0 30px;
+    height: 75px;
     background: url(img/MuzesLogo.svg) no-repeat center;
     text-indent: -9999px;
-    position: absolute;
-    top: 50%;
+    margin: 0 0 0 20px;
+    display: block;
 }
 
 header nav {
     width: 100%;
     background-color: #FFFFFF;
-    height: 50px;
-    padding: 12px 0;
-    position: relative;
+    height: 75px;
     position: fixed;
     z-index: 9997;
     top: 0;
@@ -90,20 +87,15 @@ header nav ul li a:hover:not(#login) {
 }
 
 .login {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
 /* MAIN */
 
-main {
-    width: 100%;
-    text-align: center;
-}
-
 section {
-    display: inline-block;
+    display: block;
     width: 80%;
-    margin: 20px;
+    margin: 20px auto;
     background-color: #FFFFFF;
     text-align: justify;
 }
@@ -116,19 +108,12 @@ section > h2 {
     margin: 0;
 }
 
-section:last-of-type {
-    margin-bottom: 40px
-}
-
 section header {
-    display: block;
     border-top: 1px solid #92CDCF;
     background-color: #E7E9EA;
-    width: 100%;
     text-align: center;
     font-family: Bariol, Calibri, Arial, sans-serif;
     padding: 15px 0;
-    margin-bottom: 20px
 }
 
 section header h1 {
@@ -146,6 +131,8 @@ section header h2 {
 section p {
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #4F5461;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .button {
@@ -229,7 +216,6 @@ footer ul li {
 /* LOGIN FORM */
 
 #logForm {
-    display: block;
     padding: 50px 0px;
     width: 350px;
     background-color: #FFFFFF;
@@ -251,10 +237,11 @@ footer ul li {
     border: 0;
     background-color: #F3F4F4;
     outline: none;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 15px;
 }
 
 #logForm input[type=submit]{
-    display: block;
     margin-top: 20px;
     border-radius: .5em;
     padding: 9px 3px;
@@ -267,27 +254,19 @@ footer ul li {
     width: 80px;
 }
 
-#logForm h1{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+#logForm h1 {
+    margin: 0 auto 20px auto;
     width: 50px;
     height: 50px;
     text-indent: -9999px;
-    text-align: center;
-    background-image: url(img/login-icon.png);
-    background-repeat: no-repeat;
+    background: url(img/login-icon.png) no-repeat center;
     background-size: 40px;
-    background-position: center;
 }
 
 #logForm span.close{
-    display: block;
     position: absolute;
-    background-image: url(img/plus.png);
-    background-repeat: no-repeat;
+    background: url(img/plus.png) no-repeat center;
     background-size: 13px;
-    background-position: center;
     left: 90%;
     top: 1%;
     width: 30px;
@@ -298,7 +277,6 @@ footer ul li {
 }
 
 #layer {
-    display: block;
     position: absolute;
     z-index: 9998;
     width: 100%;
@@ -331,11 +309,6 @@ footer ul li {
     font-size: 15px;
 }
 
-#logForm input {
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    font-size: 15px;
-}
-
 /* JQUERY */ 
 
 .translate {
@@ -351,10 +324,8 @@ footer ul li {
 }
 
 .bg {
-    background-image: url(img/arrow-up.png) !important;
-    background-repeat: no-repeat;
+    background-image: url(img/arrow-up.png) no-repeat center !important;
     background-size: 15px !important;
-    background-position: center;
 }
 
 .hide {
