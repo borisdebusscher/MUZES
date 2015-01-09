@@ -27,3 +27,7 @@ section {
     display: block;
     margin: 1.5em auto;
 }
+
+section header {
+    margin-bottom: 0;
+}
