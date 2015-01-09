@@ -38,6 +38,10 @@
     color: #92CDCF;
 }
 
+#architectuur, #beeld, #dans, #media, #muziek, #woord {
+    padding-top: 4.5em;
+}
+
 #architectuur ul {
     list-style-type: none;
 }
