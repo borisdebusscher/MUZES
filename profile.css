@@ -10,6 +10,7 @@ nav {
     margin: 0 !important;
     height: 100%;
     width: 30%;
+    max-width: 340px;
     z-index: 9996;
     position: fixed;
     background-color: #EDEEEE;
@@ -222,7 +223,7 @@ nav {
 }
 
 #myStream article:nth-child(2) div {
-    height: 220px;
+    height: auto;
 }
 
 .postDiv {
@@ -292,9 +293,12 @@ nav {
     list-style: none;
     width: auto; !important;
     margin: 0px;
-    float: left;
     margin-left: 10px;
     padding: 15px 0px;
+}
+
+#ulPost {
+    float: left;
 }
 
 #myStream article div #ulPost li {
@@ -388,31 +392,21 @@ nav {
 }
 
 #myStream article div ul li:nth-child(2) {
-    background: none;
-    border-radius: 0%;
-    margin: 0px;
-    padding: 16px;
-    font-family: bariol;
-    color: #91CBCD;
-}
-
-#myStream article div ul li:nth-child(3) {
     background-image: url(img/bubble.png);
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
 }
 
-#myStream article div ul li:nth-child(4) {
-    background: none;
-    border-radius: 0%;
-    margin: 0px;
-    padding: 0px;
-    font-family: bariol;
-    color: #91CBCD;
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
-
+.clearfix:after {
+    clear: both;
+}
 
 /* jquery */
 
