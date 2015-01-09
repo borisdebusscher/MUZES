@@ -2,6 +2,8 @@
     margin-top: 105px;
 }
 
+/* FORM */
+
 #contact form > div {
     clear: both;
     margin: 15px 0;
@@ -41,8 +43,10 @@
     resize: none;
     overflow: auto;
     float: left;
-    
     border: none;
+}
+
+#contact input[type="text"], input[type="email"], textarea {
     border-radius: 5px;
     padding: 0 0 0 10px;
     box-sizing: border-box;
@@ -112,4 +116,113 @@
 
 #contact :-ms-input-placeholder {  
     font-size: 17px;
+}
+
+/* BOX SECTION */
+
+section.box {
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 30px auto;
+    background-color: #f4f5f5;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+section.box header {
+    float: left;
+    border: none;
+    margin: 0;
+    padding: 15px;
+    background: none;
+    height: 100px;
+    width: 30%;
+    min-width: 280px;
+    text-align: left;
+    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+section.box div {
+    float: left;
+    width: 70%;
+    height: 78px;
+    box-sizing: border-box;
+    -moz-column-count: 3;
+   -webkit-column-count: 3;
+    margin: 11px 0
+}
+
+section.box ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.box li {
+    list-style-type: none;
+}
+
+section.box a {
+    display: block;
+    font-family: "Source Sans Pro Light", Calibri, Arial, sans-serif;
+    font-size: 24px;
+    color: #7d7e7e;
+    text-decoration: none;
+    height: 35px;
+    line-height: 35px;
+    width: 200px;
+    padding-left: 50px;
+}
+
+section.box a:hover:not(#icon-telephone) {
+    -webkit-transition: .2s all;
+    transition: .2s all;
+    margin-left: 4px;
+}
+
+section.box li:nth-of-type(odd) {
+    margin-bottom: 8px;
+}
+
+#icon-telephone {
+    background: url(img/icons/telephone.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-mail {
+    background: url(img/icons/mail.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-facebook {
+    background: url(img/icons/facebook.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-twitter {
+    background: url(img/icons/twitter.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-linkedin {
+    background: url(img/icons/linkedin.svg) no-repeat left;
+    background-size: 35px;
+}
+
+#icon-googleplus {
+    background: url(img/icons/googleplus.svg) no-repeat left;
+    background-size: 35px;
+}
+
+section.box header h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section.box header p {
+    font-family: "Source Sans Pro Light", Calibri, Arial, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
 }
