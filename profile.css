@@ -338,6 +338,7 @@ nav {
     text-align: justify;
     width: 90%;
     font-family: bariol;
+    font-size: .9em;
     color: #505562;
 }
 
@@ -367,7 +368,7 @@ nav {
     margin-bottom: 10px;
     margin-top: 5px;
     font-family: bariol;
-    font-size: .8em;
+    font-size: .7em;
     color: #D3D4D6;
 }
 
@@ -450,7 +451,7 @@ nav {
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before, [class*=" icon-"]:before {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
