@@ -60,37 +60,57 @@ trunk/html5.js"></script>
         </section>
         
         <main>
-            <section id="navlistklein">
-                <header>
-                    <h1>Eindtermen en uitgangspunten</h1>
-                </header>
-                <nav>
-                    <ul>
-                        <a href=""><li>Artistieke Opvoeding A-stroom</li></a>
-                        <a href=""><li>Artistieke Opvoeding B-stroom</li></a>
-                    </ul>
-                </nav>
-            </section>
+            <div id="eindtermenenuitgangspunten">
+                <section class="kolom navlistklein">
+                    <header>
+                        <h1>Eindtermen</h1>
+                    </header>
+                    <nav>
+                        <ul>
+                            <a href=""><li>Artistieke Opvoeding A-stroom</li></a>
+                            <a href=""><li>Artistieke Opvoeding B-stroom</li></a>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="kolom navlistklein">
+                    <header>
+                        <h1>Uitgangspunten</h1>
+                    </header>
+                    <nav>
+                        <ul>
+                            <a href=""><li>Artistieke Opvoeding A-stroom</li></a>
+                            <a href=""><li>Artistieke Opvoeding B-stroom</li></a>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
             
-            <section id="blok">
+            <section id="blok" class="">
                 <header>
                     <h1>Leerplannen</h1>
                 </header>
                 <p>Voor het provinciaal onderwijs gebruikt men in Oost-Vlaanderen de leerplannen van het GO!. In de andere provincies baseert men zich op de leerplannen van OVSG.</p>
-                
+                <nav class="leerplannav">
+                    <ul>
+                        <a href="eindtermen-en-leerplannen.html#1egraad"><li>Eerste Graad</li></a>
+                        <a href="eindtermen-en-leerplannen.html#2egraad"><li>Tweede Graad</li></a>
+                        <a href="eindtermen-en-leerplannen.html#3egraad"><li>Derde Graad</li></a>
+                    </ul>
+                </nav>
 
                 
-                <h2>Leerplannen Eerste Graad</h2>             
+                <h2 id="1egraad">Leerplannen Eerste Graad</h2>             
                 <table>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td>GO!</td>
-                            <td>OVSG</td>
-                            <td>VVKSO</td>
+                            <th></th>
+                            <th>GO!</th>
+                            <th>OVSG</th>
+                            <th>VVKSO</th>
                         </tr>
                         <tr>
-                            <td>A-stroom</td>
+                            <th>A-stroom</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154445215/GO-Plastische-Opvoeding-1ste-Graad-ASO" target="_blank">Plastische Opvoeding</a></li>
@@ -120,7 +140,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>B-stroom</td>
+                            <th>B-stroom</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154446845/GO-Muzikale-Opvoeding-1ste-Graad-B-Stroom" target="_blank">Muzikale Opvoeding</a></li>
@@ -146,18 +166,22 @@ trunk/html5.js"></script>
                         </tr>
                     </tbody>
                 </table>
-
-                <h2>Leerplannen Tweede Graad</h2>
+                
+                <nav class="terugtop">
+                    <a href="eindtermen-en-leerplannen.html#bannerlesmateriaal">Terug naar top</a>
+                </nav>
+                
+                <h2 id="2egraad">Leerplannen Tweede Graad</h2>
                 <table>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td>GO!</td>
-                            <td>OVSG</td>
-                            <td>VVKSO</td>
+                            <th></th>
+                            <th>GO!</th>
+                            <th>OVSG</th>
+                            <th>VVKSO</th>
                         </tr>
                         <tr>
-                            <td>ASO</td>
+                            <th>ASO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154449464/GO-Cultuurwetenschappen-2de-Graad-ASO" target="_blank">Cultuurwetenschappen</a></li>
@@ -173,7 +197,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>TSO</td>
+                            <th>TSO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154449579/GO-Fotografie-2de-Graad-TSO" target="_blank">Fotografie</a></li>
@@ -196,7 +220,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>KSO</td>
+                            <th>KSO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154450223/GO-Beeldende-Vorming-2de-Graad-KSO" target="_blank">Beeldende Vorming</a></li>
@@ -230,7 +254,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>BSO</td>
+                            <th>BSO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154452108/GO-Plastische-Opvoeding-2de-Graad-BSO">Plastische Opvoeding</a></li>
@@ -255,18 +279,22 @@ trunk/html5.js"></script>
                         </tr>
                     </tbody>
                 </table>
-
-                <h2>Leerplannen Derde Graad</h2>
+                
+                <nav class="terugtop">
+                    <a href="eindtermen-en-leerplannen.html#bannerlesmateriaal">Terug naar top</a>
+                </nav>
+                
+                <h2 id="3egraad">Leerplannen Derde Graad</h2>
                 <table>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td>GO!</td>
-                            <td>OVSG</td>
-                            <td>VVKSO</td>
+                            <th></th>
+                            <th>GO!</th>
+                            <th>OVSG</th>
+                            <th>VVKSO</th>
                         </tr>
                         <tr>
-                            <td>ASO</td>
+                            <th>ASO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154465834/GO-Cultuurwetenschappen-3de-Graad-ASO" target="_blank">Cultuurwetenschappen</a></li>
@@ -281,7 +309,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>TSO</td>
+                            <th>TSO</th>
                             <td></td>
                             <td>
                                 <ul>
@@ -302,7 +330,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>KSO</td>
+                            <th>KSO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154466190/GO-Algemene-Muziekleer-3de-Graad-KSO" target="_blank">Algemene Muziekleer</a></li>
@@ -348,7 +376,7 @@ trunk/html5.js"></script>
                             </td>
                         </tr>
                         <tr>
-                            <td>BSO</td>
+                            <th>BSO</th>
                             <td>
                                 <ul>
                                     <li><a href="http://www.scribd.com/doc/154469621/GO-Plastische-Opvoeding-3de-Graad-BSO" target="_blank">Plastische Opvoeding</a></li>
@@ -374,6 +402,10 @@ trunk/html5.js"></script>
                         </tr>
                     </tbody>
                 </table>
+                
+                <nav class="terugtop clearfix">
+                    <a href="eindtermen-en-leerplannen.html#bannerlesmateriaal">Terug naar top</a>
+                </nav>
                 
             </section>
         </main>
