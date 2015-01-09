@@ -6,28 +6,22 @@
     background-color: transparent;
     font-size: 2em;
 }
-
-section p{
+section p {
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
     margin: 1em auto;
     width: 80%;
-    
 }
-
 #projectpics {
     width: 100%;
 }
-
 section {
     width: 50%;
 }
-
 #community {
     width: 7.8em;
     display: block;
     margin: 1.5em auto;
 }
-
 section header {
     margin-bottom: 0;
 }
