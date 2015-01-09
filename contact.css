@@ -2,9 +2,18 @@
     margin-top: 75px;
 }
 
+form > div {
+    clear: both;
+    margin: 15px 0;
+}
+
+form > div > div {
+    
+}
+
 label {
     color: #636363;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Bariol, Calibri, Arial, sans-serif;
     float: left;
     margin-left: 5%;
@@ -20,6 +29,7 @@ input, textarea {
     box-shadow: none;
     resize: none;
     background-color: #f4f5f5;
+    padding: 0;
 }
 
 input, label {
@@ -50,12 +60,19 @@ input[type="submit"] {
     margin-right: 7.5px;
 }
 
-#contact-mail, #contact-onderwerp, #contact-boodschap {
+#contact-mail {
     width: 415px;
-    margin-top: 15px;
 }
 
-#contact-mail ~ label {
+#contact-onderwerp, #contact-boodschap {
+    width: 700px;
+}
+
+#contact-boodschap {
+    heigth: 300px;
+}
+
+#contact-mail, #contact-boodschap {
     margin-top: 15px;
 }
 
@@ -72,7 +89,7 @@ input[type="submit"] {
     color: #a5a5a5;
     padding-left: 10px;
 }
-
+²
 ::-moz-placeholder {  /* Firefox 19+ */
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 17px;
@@ -85,8 +102,4 @@ input[type="submit"] {
     font-size: 17px;
     color: #a5a5a5;
     padding-left: 10px;
-}
-
-form div {
-    clear: both;
 }

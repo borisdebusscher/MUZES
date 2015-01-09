@@ -47,16 +47,24 @@
             </header>
             
             <form>
-                <div id="form-gegevens">
-                    <label for="gegevens">Uw gegevens:</label>
-                    <input type="text" id="contact-voornaam" placeholder="Voornaam">
-                    <input type="text" id="contact-naam" placeholder="Naam">
-                    <input type="text" id="contact-mail" placeholder="E-mailadres">
+                <div id="form-gegevens" class="clearfix">
+                    <div class="clearfix">
+                        <label for="gegevens">Uw gegevens:</label>
+                    </div>
+                    <div class="clearfix">
+                        <input type="text" id="contact-voornaam" placeholder="Voornaam">
+                        <input type="text" id="contact-naam" placeholder="Naam">
+                        <input type="text" id="contact-mail" placeholder="E-mailadres">
+                    </div>
                 </div>
-                <div id="form-boodschap">
-                    <label for="gegevens">Boodschap:</label>
-                    <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
-                    <textarea id="contact-boodschap" rows="5"></textarea>
+                <div id="form-boodschap" class="clearfix">
+                    <div>
+                        <label for="gegevens">Boodschap:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
+                        <textarea id="contact-boodschap" rows="5"></textarea>
+                    </div>
                 </div>
                 <input type="submit" class="button">
             </form>

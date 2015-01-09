@@ -19,23 +19,24 @@ body, html {
     url("fonts/bariol_bold-webfont.svg") format("svg");
 }
 
-.clearfix:before, .clearfix:after {
-	content: “ “;
-	display: table; 
-}
-.clearfix:after {
-	clear: both;
-}
-
-/* For IE < 8 */ 
-.clearfix { *zoom : 1; }
-
 body {
     background-color: #F3F4F4;
 }
 
 .overflow {
     overflow: hidden;
+}
+
+/* CLEARFIX */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 /* HEADER */
@@ -155,7 +156,14 @@ section p {
     border-radius: .2em;
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 16px;
-    text-decoration: none
+    text-decoration: none;
+    -moz-transition: .3s all;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.button:hover {
+    background-color: #81AAAA;
 }
 
 /* FOOTER */
