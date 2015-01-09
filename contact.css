@@ -86,3 +86,7 @@ input[type="submit"] {
     color: #a5a5a5;
     padding-left: 10px;
 }
+
+form div {
+    clear: both;
+}

@@ -47,15 +47,17 @@
             </header>
             
             <form>
-                <label for="gegevens">Uw gegevens:</label>
-                <input type="text" id="contact-voornaam" placeholder="Voornaam">
-                <input type="text" id="contact-naam" placeholder="Naam">
-                <input type="text" id="contact-mail" placeholder="E-mailadres">
-
-                <label for="gegevens">Boodschap:</label>
-                <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
-                <textarea id="contact-boodschap" rows="5"></textarea>
-
+                <div id="form-gegevens">
+                    <label for="gegevens">Uw gegevens:</label>
+                    <input type="text" id="contact-voornaam" placeholder="Voornaam">
+                    <input type="text" id="contact-naam" placeholder="Naam">
+                    <input type="text" id="contact-mail" placeholder="E-mailadres">
+                </div>
+                <div id="form-boodschap">
+                    <label for="gegevens">Boodschap:</label>
+                    <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
+                    <textarea id="contact-boodschap" rows="5"></textarea>
+                </div>
                 <input type="submit" class="button">
             </form>
         </section>
@@ -72,7 +74,6 @@
                 <li>LinkedIn</li>
                 <li>Google Plus</li>
             </ul>
-            <h2>Test</h2>
         </section>
     </main>
     <footer>
