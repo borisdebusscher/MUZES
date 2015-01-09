@@ -19,11 +19,11 @@ section p{
 }
 
 section {
-    width: 60%;
+    width: 50%;
 }
 
 #community {
     width: 7.8em;
     display: block;
-    margin: 1em auto;
+    margin: 1.5em auto;
 }
