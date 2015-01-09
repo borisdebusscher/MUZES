@@ -194,10 +194,10 @@ nav {
     float: right;
     margin: 0;
     background-color: #F3F4F4;
+    background-color:yellw;
     z-index: 9994;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
-    padding-bottom: 1000px;
     background-image: url(img/dashed_line.png);
     background-repeat: repeat-y;
     background-size: 2px;
@@ -206,46 +206,59 @@ nav {
 
 #myStream article {
     display: block;
-    width: 50%;
-    margin-top: 110px;
+    margin: 0 auto;
+    width: 90%;
 }
 
-#myStream article:nth-child(even) {
-    float: right;
+.marg-top {
+    margin-top: 110px !important;
+}
+
+.marg-bot {
+    margin-bottom: 50px !important;
+}
+
+.counter {
+    display: block;
+    background: none;
+    padding: 0px !important;
 }
 
 #myStream article div {
     display: block;
-    margin: 0 auto;
-    width: 80%;
+    width: 45%;
     height: 140px;
     background-color: #FFFFFF;
 }
 
-#myStream article:nth-child(2) div {
-    height: auto;
+.auto {
+    height: auto !important;
 }
 
-.postDiv {
+.fullWidth {
+    width: 100% !important;
     background-color: #E7E8E9 !important;
 }
 
-#myStream article span {
+.boxLine {
     display: block;
-    width: 90%;
+    width: 50%;
     height: 1px;
     background-color: #90CACC;
-    padding: px 0px;
 }
 
-.floatL {
+.left {
     float: left;
 }
 
-.floatR {
+.right {
     float: right;
 }
 
+textarea::-webkit-input-placeholder {
+    display: block;
+    padding: 5px;
+}
 
 #myStream article div textarea {
     display: block;
@@ -396,16 +409,6 @@ nav {
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
 }
 
 /* jquery */
