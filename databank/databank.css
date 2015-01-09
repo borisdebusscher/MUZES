@@ -142,6 +142,10 @@ header nav ul li a:hover:not(#login) {
 main {
     width: 100%;
 }
+.databankwrapper{
+    max-width: 50%;
+    margin: auto;
+}
 
 section {
     display: block;
@@ -370,6 +374,75 @@ table a:hover, table a:focus{
     opacity: 1;
 }
 
+/* page layout sidenav and datacontent*/
+.bgcolor{
+    background: #92CDCF;
+}
+.sidenav{
+    width: 200px;
+    float: left;
+    background-color: #92CDCF;
+}
+.sidenav header h2{
+    display: block;
+    color: #fff;
+    border-top: 1px solid #92CDCF;
+    background-color: #6C9899;
+    width: 100%;
+    text-align: center;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    padding: 15px 0px;
+}
+.sidenav ul{
+    list-style-type: none;
+}
+.sidenav a{
+    background: rgba(0,0,0,0);
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px dashed #E0E1E2;
+}
+.sidenav a:hover, .sidenav a:focus{
+    background: #fff;
+    color: #000;
+}
+.sidenav a.current{
+    background: #E7E9EA;
+    color: #000;
+}
+.sidenav a.current:hover, .sidenav a.current:focus{
+    color: #92CDCF;
+}
+.datacontent{
+    margin-left: 200px;
+    background: #fff;
+}
+.datacontent ul{
+    list-style-type: none;
+}
+.datacontent li{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.datacontent a{
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #000;
+}
+.datacontent a:hover, .datacontent a:focus{
+    background: #92CDCF;
+}
+.datacontent li:last-of-type{
+    padding-bottom: 2em;
+}
 
 
 /* form */

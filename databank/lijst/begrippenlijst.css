@@ -1,3 +1,7 @@
+section {
+    width: 60%;
+}
+
 #titel {
     color: #92CDCF;
     font-family: Bariol, Calibri, Arial, sans-serif;
@@ -7,7 +11,7 @@
     font-size: 2em;
 }
 
-#navli, #architectuur {
+#navli, #architectuur, #beeld, #dans, #media, #muziek, #woord {
     color: #4F5461;
     list-style-type: none;
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
@@ -38,11 +42,55 @@
     color: #92CDCF;
 }
 
+#architectuur, #beeld, #dans, #media, #muziek, #woord {
+    padding-top: 4.5em;
+}
+
 #architectuur ul {
     list-style-type: none;
 }
 
 #architectuur ul li {
+    padding: .25em 0;
+}
+
+#beeld ul {
+    list-style-type: none;
+}
+
+#beeld ul li {
+    padding: .25em 0;
+}
+
+#dans ul {
+    list-style-type: none;
+}
+
+#dans ul li {
+    padding: .25em 0;
+}
+
+#media ul {
+    list-style-type: none;
+}
+
+#media ul li {
+    padding: .25em 0;
+}
+
+#muziek ul {
+    list-style-type: none;
+}
+
+#muziek ul li {
+    padding: .25em 0;
+}
+
+#woord ul {
+    list-style-type: none;
+}
+
+#woord ul li {
     padding: .25em 0;
 }
 
