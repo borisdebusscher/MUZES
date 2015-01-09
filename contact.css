@@ -6,24 +6,14 @@ label {
     color: #636363;
     font-size: 18px;
     font-family: Bariol, Calibri, Arial, sans-serif;
+    float: left;
+    margin-left: 5%;
 }
 
 input, textarea {
     outline: none;
-    resize: vertical;
     overflow: auto;
-}
-
-label, input, textarea {
-    float: left;
-    clear: both;
-}
-
-input {
-    height: 35px;
-}
-
-input, textarea {
+    float: right;
     text-shadow: none;
     border: none;
     border-radius: 5px;
@@ -32,28 +22,40 @@ input, textarea {
     background-color: #f4f5f5;
 }
 
+input, label {
+    height: 35px;
+    line-height: 35px;
+}
+
 input[type="submit"] {
     overflow: hidden;
+    float: left;
 }
 
-#contact-naam, #contact-mail, #contact-onderwerp, #contact-boodschap {
-    clear: none;
+#contact-mail, #contact-onderwerp, #contact-boodschap, #contact-voornaam {
+    margin-right: 6vw;
 }
 
-#contact-voornaam, #contact-mail, #contact-onderwerp, #contact-boodschap {
-    margin-left: 20%;
+#contact-voornaam, #contact-mail, #contact-onderwerp, #contact-boodschap, input[type="submit"] {
+    clear: right;
 }
 
-#contact-voornaam, #contact-naam {
+#contact-voornaam {
     width: 200px;
+    margin-left: 7.5px;
 }
 
 #contact-naam {
-    margin-left: 15px;
+    width: 200px;
+    margin-right: 7.5px;
 }
 
-#contact-mail {
-    width: 430px;
+#contact-mail, #contact-onderwerp, #contact-boodschap {
+    width: 415px;
+    margin-top: 15px;
+}
+
+#contact-mail ~ label {
     margin-top: 15px;
 }
 

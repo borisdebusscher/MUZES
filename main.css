@@ -88,7 +88,7 @@ header nav ul li a:hover:not(#login) {
     color: #92CDCF;
 }
 
-.login, .login a {
+.login {
     color: #FFFFFF !important;
 }
 
@@ -107,19 +107,37 @@ section {
     text-align: justify;
 }
 
+section > h2 {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #a4a4a4;
+    padding: 10px 0;
+    margin: 0;
+}
+
 section:last-of-type {
     margin-bottom: 40px
 }
 
-section header h1 {
+section header {
     display: block;
-    color: #92CDCF;
     border-top: 1px solid #92CDCF;
     background-color: #E7E9EA;
     width: 100%;
     text-align: center;
     font-family: Bariol, Calibri, Arial, sans-serif;
-    padding: 15px 0px;
+    padding: 15px 0;
+}
+
+section header h1 {
+    color: #92CDCF;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+section header h2 {
+    color: #7e7e7e;
+    font-size: 1em;
     margin: 0;
 }
 
