@@ -21,3 +21,9 @@ section p{
 section {
     width: 60%;
 }
+
+#community {
+    width: 7.8em;
+    display: block;
+    margin: 1em auto;
+}
