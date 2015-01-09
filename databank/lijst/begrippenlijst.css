@@ -11,7 +11,7 @@ section {
     font-size: 2em;
 }
 
-#navli, #architectuur {
+#navli, #architectuur, #beeld, #dans, #media, #muziek, #woord {
     color: #4F5461;
     list-style-type: none;
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
