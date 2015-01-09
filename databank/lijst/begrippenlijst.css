@@ -1,3 +1,7 @@
+section {
+    width: 60%;
+}
+
 #titel {
     color: #92CDCF;
     font-family: Bariol, Calibri, Arial, sans-serif;
@@ -47,6 +51,46 @@
 }
 
 #architectuur ul li {
+    padding: .25em 0;
+}
+
+#beeld ul {
+    list-style-type: none;
+}
+
+#beeld ul li {
+    padding: .25em 0;
+}
+
+#dans ul {
+    list-style-type: none;
+}
+
+#dans ul li {
+    padding: .25em 0;
+}
+
+#media ul {
+    list-style-type: none;
+}
+
+#media ul li {
+    padding: .25em 0;
+}
+
+#muziek ul {
+    list-style-type: none;
+}
+
+#muziek ul li {
+    padding: .25em 0;
+}
+
+#woord ul {
+    list-style-type: none;
+}
+
+#woord ul li {
     padding: .25em 0;
 }
 
