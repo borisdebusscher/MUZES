@@ -105,6 +105,7 @@ section p:last-of-type {
     display: inline-block;
     line-height: 2.5em;
     width: 30%;
+    max-width: 250px;
     margin: 5px;
     text-align: center;
     
@@ -272,6 +273,21 @@ table a:hover, table a:focus{
 .datacontent li:last-of-type{
     padding-bottom: 2em;
     min-height: 4.28em;
+}
+.datacontent li img{
+    float: left;
+    width: 15%;
+    max-width: 80px;
+    min-width: 65px;
+    margin: .75em;
+}
+.datacontent li h3{
+    margin: 2em 5em 1em;
+    padding: 0;
+}
+.datacontent li p{
+    width: 75%;
+    margin: 0 0 0 7em;
 }
 .column{
     width: 49.9%;
