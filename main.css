@@ -55,7 +55,7 @@ header nav {
     border-bottom: 1px solid #92CDCF;
 }
 
-header > nav > a[href="index.html"] {
+header > nav > a:not(.menu) {
     float: left;
     width: 90px;
     height: 75px;
