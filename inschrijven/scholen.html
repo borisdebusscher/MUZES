@@ -6,8 +6,8 @@
     <title>Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="inschrijven.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -32,7 +32,7 @@
         </form>
     </div>
     
-    <header>
+<header>
         <div class="hide menuLayer"></div>
         <nav>
             <div class="hide menuLayer"></div>
@@ -58,6 +58,89 @@
     </header>
     
     <main>
+        <section class="clearfix">
+            <header>
+                <h1>Schoollidmaatschappen</h1>
+                <h2>Word lid van Muzes in enkele stappen!</h2>
+            </header>
+            <form class="clearfix">
+                <div class="clearfix">
+                    <label for="inschrijven-schoolnaam">Naam van de school:</label>
+                    <input type="text" id="inschrijven-schoolnaam" required>
+                </div>
+                <div class="clearfix">
+                    <label for="inschrijven-contactpersoon">Contactpersoon:</label>
+                    <div class="clearfix gegevens nomargin">
+                        <div>
+                            <input type="text" id="gegevens-voornaam" placeholder="Voornaam" required>
+                            <input type="text" id="gegevens-naam" placeholder="Naam" required>
+                            <input type="tel" id="gegevens-tel" placeholder="Telefoonnummer" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label for="inschrijven-opmerkingen">Opmerkingen:</label>
+                    <textarea></textarea>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <label for="inschrijven-lkrgegevens">Gegevens van de leerkrachten:</label>
+                        <p>Voer hier de gegevens in van de leerkrachten die toegang tot Muzes.be zullen krijgen.</p>
+                    </div>
+                    <div id="gegevens-wrapper">
+                        <div class="clearfix gegevens">
+                            <p>1</p>
+                            <div>
+                                <input type="text" id="gegevens-voornaam" placeholder="Voornaam" required>
+                                <input type="text" id="gegevens-naam" placeholder="Naam" required>
+                                <input type="email" id="gegevens-mail" placeholder="E-mailadres" required>
+                            </div>
+                        </div>
+                        <div class="clearfix gegevens">
+                            <p>2</p>
+                            <div>
+                                <input type="text" id="gegevens-voornaam" placeholder="Voornaam" required>
+                                <input type="text" id="gegevens-naam" placeholder="Naam" required>
+                                <input type="email" id="gegevens-mail" placeholder="E-mailadres" required>
+                            </div>
+                        </div>
+                        <div class="clearfix gegevens">
+                            <p>3</p>
+                            <div>
+                                <input type="text" id="gegevens-voornaam" placeholder="Voornaam" required>
+                                <input type="text" id="gegevens-naam" placeholder="Naam" required>
+                                <input type="email" id="gegevens-mail" placeholder="E-mailadres" required>
+                            </div>
+                        </div>
+                        <a href=# class="button">Meer invoervelden</a>
+                    </div>
+                </div>
+                <div class="clearfix checkbox">
+                        <label><input type="checkbox" value="lidgeld" name="lidgeld" required>Ik zal het lidgeld (€180) storten op het eerder vermelde bankrekeningnummer.</label>
+                </div>
+                <input type="submit" value="Registreren" class="button">
+            </form>
+            
+            <section class="box">
+                <header>
+                    <h1>Belangrijk</h1>
+                    <p>Schrijf het lidgeld (€ 180) over op onderstaande gegevens. Vermeld hierbij zeker de naam van uw school in de mededeling, zo vinden we uw gegevens gemakkelijk terug.</p>
+                    <p>Van zodra wij uw betaling ontvangen, krijgen desbetreffende leerkrachten hun persoonlijke inlogcodes toegestuurd per mail.</p>
+                </header>
+                <div class="clearfix">
+                    <div>
+                        <p>BE09 4145 1885 5157</p>
+                        <p>KREDBEBB</p>
+                    </div>
+                    <div>
+                        <p>Muzes vzw</p>
+                        <p>Tervuursesteenweg 84</p>
+                        <p>2800 Mechelen</p>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
     </main>
     
     <div id="footer-wrapper">

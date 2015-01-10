@@ -8,7 +8,7 @@ form {
     margin: 2%;
 }
 
-form > div > label, form > div > input, form > div > div, form > div > select {
+form > div > label, form > div > input, form > div > div, form > div > select, form > div > textarea {
     float: left;
     width: 50%;
 }
@@ -36,7 +36,7 @@ label[for="inschrijven-mail"], label[for="inschrijven-vakcollegas"] {
     margin-bottom: 0;
 }
 
-input, select {
+input, select, textarea {
     outline: none;
     resize: none;
     overflow: auto;
@@ -44,7 +44,7 @@ input, select {
     display: block;
 }
 
-input[type="text"], input[type="email"], select {
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     border-radius: 5px;
     padding: 0 0 0 10px;
     box-sizing: border-box;
@@ -68,6 +68,10 @@ input[type="submit"] {
     min-width: 120px;
     width: 10vw;
     float: left;
+}
+
+textarea {
+    height: 140px;
 }
 
 ::-webkit-input-placeholder {
@@ -137,17 +141,17 @@ section.box > div > div p {
     box-sizing: border-box;
 }
 
-/* VAKCOLLEGA'S */
+/* GEGEVENS MEERDERE PERSONEN */
 
-.vakcollega {
+.gegevens:not(.nomargin) {
     margin-bottom: 40px;
 }
 
-.vakcollega p, .vakcollega div, .vakcollega div input {
+.gegevens p, .gegevens div, .gegevens div input {
     float: left;
 }
 
-.vakcollega p {
+.gegevens p {
     width: 10%;
     height: 35px;
     line-height: 35px;
@@ -158,31 +162,36 @@ section.box > div > div p {
     box-sizing: border-box;
 }
 
-.vakcollega div {
+.gegevens div {
     width: 90%;
 }
 
-#vakcollega-voornaam {
+.nomargin div {
+    width: 100%;
+}
+
+#gegevens-voornaam {
     margin: 0 2% 2% 0;
 }
 
-#vakcollega-naam {
+#gegevens-naam {
     clear: right;
     margin: 0 0 2% 2%;
 }
 
-#vakcollega-mail {
+#gegevens-mail, #gegevens-tel {
     width: 100%;
     margin: 2% 0 0 0;
 }
 
-#vakcollega-voornaam, #vakcollega-naam {
+#gegevens-voornaam, #gegevens-naam {
     width: 48%;
 }
 
-#vakcollega-wrapper a.button{
+#gegevens-wrapper a.button{
     width: 100%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* CHECKBOXES */
