@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>MUZES</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="community.css">
@@ -14,33 +14,25 @@
 </head>
 
 <body>
-
-    <div class="hide" id="layer"></div>
-    <div class="translate" id="logForm">
-        <span class="close"></span>
-        <form>
-            <h1>login</h1>
-            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
-            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-            <input type="submit" id="submit" value="inloggen" name="submit">
-        </form>
-    </div>
-
     <header>
+        <div class="hide menuLayer"></div>
         <nav>
+            <div class="hide menuLayer"></div>
+            <a class="menu"></a>
             <h1 id="logo">MUZES</h1>
-            <ul>
-                <li><a href="index.html">home</a>
+            <ul class="translateLeft">
+                <li><a class="closeMenu"></a></li>
+                <li class="top"><a href="index.html">home</a>
                 </li>
-                <li><a>community</a>
+                <li><a href="community.html">community</a>
                 </li>
-                <li><a>databank</a>
+                <li><a href="databank/databank.html">databank</a>
                 </li>
-                <li><a>projecten</a>
+                <li><a href="projecten.html">projecten</a>
                 </li>
-                <li><a>kalender</a>
+                <li><a href="kalender.html">kalender</a>
                 </li>
-                <li><a>contact</a>
+                <li><a href="contact.html">contact</a>
                 </li>
                 <li><a id="login" href="#">login</a>
                 </li>
@@ -55,8 +47,8 @@
                 <span class="boxLine right-resp"></span>
                 <span class="clearfix"></span>
                 <div class="right-resp">
-                    <textarea class="boxsizingBorder" placeholder="Titel"></textarea>
-                    <textarea class="boxsizingBorder" placeholder="Waar denk je aan ?"></textarea>
+                    <textarea spellcheck="false" class="boxsizingBorder" placeholder="Titel"></textarea>
+                    <textarea spellcheck="false" class="boxsizingBorder" placeholder="Waar denk je aan ?"></textarea>
                     <div class="fullWidth">
                         <ul id="ulPost">
                             <li></li>
@@ -147,8 +139,8 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix marg-bot">
-                <a href="#"><img class="absolute resp border border-green scale" src="img/teacher3.png" width="45px"></a>
+            <article class="clearfix bot-resp">
+                <a href="#"><img class="absolute resp border border-green scale" src="img/teacher5.png" width="45px"></a>
                 <span class="boxLine right-resp"></span>
                 <span class="clearfix"></span>
                 <div class="auto right-resp">
@@ -156,6 +148,22 @@
                     <h1>Gooi die mp3 maar in de vuilnisbak</h1>
                     <h2 class="icon-clock"> 10 u</h2>
                     <p>Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
+                    </p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="clearfix marg-bot">
+                <a href="#"><img class="absolute resp border border-yellow scale" src="img/teacher4.png" width="45px"></a>
+                <span class="boxLine right"></span>
+                <span class="clearfix"></span>
+                <div class="auto right">
+                    <a href="#">Boris Debusscher</a>
+                    <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
+                    <h2 class="icon-clock"> 46 min</h2>
+                    <p>Qui sed enim magna dolor, veniam voluptatibus offendit dolore nescius, singulis fore malis est labore, multos incididunt nam appellat, labore incididunt est fabulas in veniam deserunt distinguantur, te voluptate non eiusmod, occaecat .
                     </p>
                     <ul>
                         <li></li>

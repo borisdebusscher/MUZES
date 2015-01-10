@@ -75,6 +75,37 @@ $("#file").mouseout(function() {
             $("#sideBar span").removeClass("bgScale");
         });
     
+$(".closeMenu").mouseover(function() {
+            $(this).addClass("rotate");
+            $(this).addClass("arrowMenu");
+        });
+      
+$(".closeMenu").mouseout(function() {
+            $(this).removeClass("rotate");
+            $(this).removeClass("arrowMenu");
+        });
+    
+$(".menu").on("click", function(){
+        $("header nav ul").removeClass("translateLeft");
+        $("header nav").addClass("borderNull");
+        $(".menuLayer").removeClass("hide");
+        $("html,body").addClass("overflow");
+    }); 
+    
+$(".closeMenu").on("click", function(){
+        $("header nav ul").addClass("translateLeft");
+        $("header nav").removeClass("borderNull");
+        $(".menuLayer").addClass("hide");
+        $("html,body").removeClass("overflow");
+    }); 
+    
+$(".menuLayer").on("click", function(){
+        $("header nav ul").addClass("translateLeft");
+        $("header nav").removeClass("borderNull");
+        $(".menuLayer").addClass("hide");
+        $("html,body").removeClass("overflow");
+    }); 
+    
     
      $('a[href*=#]:not([href=#])').click(function() {
          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
