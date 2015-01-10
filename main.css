@@ -55,7 +55,7 @@ header nav {
     border-bottom: 1px solid #92CDCF;
 }
 
-header nav > h1 {
+header nav > a {
     float: left;
     width: 90px;
     height: 75px;
