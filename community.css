@@ -434,9 +434,11 @@ input[type='submit'] {
     
     /* nav */
     
-    header nav > h1 {
+    header nav > a {
         display: block;
+        clear: left;
         margin: 0 auto;
+        text-align: center;
     }
     
     header nav {
@@ -539,7 +541,7 @@ input[type='submit'] {
     }
     
     .menu {
-        display: block;
+        display: block !important;
         position: absolute;
         cursor: pointer;
         left: 11px;
