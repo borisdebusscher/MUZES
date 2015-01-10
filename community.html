@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="community.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/app.js"></script>
@@ -42,42 +42,19 @@
                 </li>
                 <li><a>contact</a>
                 </li>
-                <li><a class="login button" id="login" href="#">login</a>
+                <li><a id="login" href="#">login</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <article>
-        <section class="trans" id="changeForm">
-            <span class="closeChange"></span>
-            <img src="" width="100%;">
-            <form>
-                <input class="hide" type="text" id="first" name="firstName">
-                <input class="hide" type="text" id="last" name="lastName">
-            </form>
-        </section>
-        <section id="sideBar">
-            <span></span>
-            <input id="file" type="file" accept="image/*">
-            <img for="#file" id="profileImg" src="img/teacher2.png" width="110px" alt="profile image">
-            <div>
-                <h1>John Doe</h1>
-                <h2>Kleuterleider</h2>
-                <ul>
-                    <li>1850 Grimbergen</li>
-                    <li>Muziek, Beeld, Media</li>
-                    <li>Kleuteronderwijs</li>
-                    <li>http://www.muzes.be</li>
-                </ul>
-                <a id="change" href="#">profiel bewerken</a>
-            </div>
-        </section>
-        <section id="myStream">
-            <article class="marg-top clearfix">
+        <section id="stream">
+            <article class="marg-top bot-resp clearfix">
                 <img class="absolute-post resp-post" src="img/post.png" width="50px">
-                <span class="boxLine"></span>
-                <div>
+                <span class="boxLine right-resp"></span>
+                <span class="clearfix"></span>
+                <div class="right-resp">
                     <textarea class="boxsizingBorder" placeholder="Titel"></textarea>
                     <textarea class="boxsizingBorder" placeholder="Waar denk je aan ?"></textarea>
                     <div class="fullWidth">
@@ -90,12 +67,12 @@
                     </div>
                 </div>
             </article>
-            <article class="clearfix">
-                <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
+            <article class="clearfix bot-resp">
+                <a href="#"><img class="absolute resp border border-red scale" src="img/teacher1.png" width="45px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
                 <div class="auto right">
-                    <a href="#">John Doe</a>
+                    <a href="#">Astrid Vandevoorde</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
                     <h2 class="icon-clock"> 5 min</h2>
                     <p>Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
@@ -106,10 +83,11 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix">
-                <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
-                <span class="boxLine"></span>
-                <div class="auto">
+            <article class="clearfix bot-resp">
+                <a href="#"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
+                <span class="boxLine right-resp"></span>
+                <span class="clearfix"></span>
+                <div class="auto right-resp">
                     <a href="#">John Doe</a>
                     <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
                     <h2 class="icon-clock"> 46 min</h2>
@@ -121,14 +99,14 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix">
-                <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
+            <article class="clearfix bot-resp">
+                <a href="#"><img class="absolute resp border border-green scale" src="img/teacher3.png" width="45px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
                 <div class="auto right">
-                    <a href="#">John Doe</a>
+                    <a href="#">Anissa Akazzab</a>
                     <h1>Gooi die mp3 maar in de vuilnisbak</h1>
-                    <h2 class="icon-clock"> 10u</h2>
+                    <h2 class="icon-clock"> 10 u</h2>
                     <p>Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
@@ -137,11 +115,12 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix">
-                <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
-                <span class="boxLine"></span>
-                <div class="auto">
-                    <a href="#">John Doe</a>
+            <article class="clearfix bot-resp">
+                <a href="#"><img class="absolute resp no-pic scale" src="img/yellow_blank.png" width="53px"></a>
+                <span class="boxLine right-resp"></span>
+                <span class="clearfix"></span>
+                <div class="auto right-resp">
+                    <a href="#">Siemen Gijbels</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
                     <h2 class="icon-clock"> 7 januari, 20:54</h2>
                     <p>Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
@@ -152,14 +131,30 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix marg-bot">
-                <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
+            <article class="clearfix bot-resp">
+                <a href="#"><img class="absolute resp no-pic scale" src="img/red_blank.png" width="53px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
                 <div class="auto right">
-                    <a href="#">John Doe</a>
+                    <a href="#">Dieter Holvoet</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
                     <h2 class="icon-clock"> 4 januari, 14:27</h2>
+                    <p>Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
+                    </p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="clearfix marg-bot">
+                <a href="#"><img class="absolute resp border border-green scale" src="img/teacher3.png" width="45px"></a>
+                <span class="boxLine right-resp"></span>
+                <span class="clearfix"></span>
+                <div class="auto right-resp">
+                    <a href="#">Anissa Akazzab</a>
+                    <h1>Gooi die mp3 maar in de vuilnisbak</h1>
+                    <h2 class="icon-clock"> 10 u</h2>
                     <p>Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
