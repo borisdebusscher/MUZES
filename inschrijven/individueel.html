@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Muzes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="individueel.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--[if lt IE 9]>
+        <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="hide" id="layer"></div>
+    <div class="translate" id="logForm">
+        <span class="close"></span>
+        <form>
+            <h1>login</h1>
+            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+    
+    <header>
+        <nav>
+            <h1 id="logo">MUZES</h1>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="community.html">community</a></li>
+                <li><a href="databank/databank.html">databank</a></li>
+                <li><a href="projecten.html">projecten</a></li>
+                <li><a href="kalender.html">kalender</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a id="login" class="login button" href="#">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="clearfix">
+            <header>
+                <h1>Individuele lidmaatschappen</h1>
+                <h2>Word lid van Muzes in enkele stappen!</h2>
+            </header>
+            <form class="clearfix">
+                <div class="clearfix">
+                    <label for="inschrijven-voornaam">Voornaam:</label>
+                    <input type="text" id="inschrijven-voornaam" placeholder="Voornaam">
+                </div>
+                <div class="clearfix">
+                    <label for="inschrijven-naam">Naam:</label>
+                    <input type="text" id="contact-naam" placeholder="Naam">
+                </div>
+                <div class="clearfix">
+                    <label for="inschrijven-functie">Functie:</label>
+                    <select>
+                        <option value="leerkracht">Leerkracht</option>
+                        <option value="leerling">Leerling</option>
+                        <option value="kunstliefhebber">Kunstliefhebber</option>
+                    </select>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <label for="inschrijven-mail">E-mailadres:</label>
+                        <p>Studenten gebruiken liefst het mailadres van de universiteit of hogeschool.</p>
+                    </div>
+                    <input type="email" id="inschrijven-mail" placeholder="E-mailadres">
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <label for="inschrijven-vakcollegas">Vakcollega's:</label>
+                        <p>Ken je collega's die ook geïnteresseerd zouden zijn in Muzes? Dan kan je hier hun gegevens doorgeven!</p>
+                    </div>
+                    <div id="vakcollega-wrapper">
+                        <div class="clearfix vakcollega">
+                            <p>1</p>
+                            <div>
+                                <input type="text" id="vakcollega-voornaam" placeholder="Voornaam">
+                                <input type="text" id="vakcollega-naam" placeholder="Naam">
+                                <input type="email" id="vakcollega-mail" placeholder="E-mailadres">
+                            </div>
+                        </div>
+                        <div class="clearfix vakcollega">
+                            <p>2</p>
+                            <div>
+                                <input type="text" id="vakcollega-voornaam" placeholder="Voornaam">
+                                <input type="text" id="vakcollega-naam" placeholder="Naam">
+                                <input type="email" id="vakcollega-mail" placeholder="E-mailadres">
+                            </div>
+                        </div>
+                        <div class="clearfix vakcollega">
+                            <p>3</p>
+                            <div>
+                                <input type="text" id="vakcollega-voornaam" placeholder="Voornaam">
+                                <input type="text" id="vakcollega-naam" placeholder="Naam">
+                                <input type="email" id="vakcollega-mail" placeholder="E-mailadres">
+                            </div>
+                        </div>
+                        <a href=# class="button">Meer invoervelden</a>
+                    </div>
+                </div>
+                <div class="clearfix checkbox">
+                        <label><input type="checkbox" value="student" name="student">Ik bevestig in 2014 als student aan een universiteit of hogeschool te zijn ingeschreven</label>
+                        <label><input type="checkbox" value="lidgeld" name="lidgeld">Ik zal het lidgeld (€30) storten op het eerder vermelde bankrekeningnummer.</label>
+                </div>
+                <input type="submit" value="Registreren" class="button">
+            </form>
+            
+            <section class="box">
+                <header>
+                    <h1>Belangrijk</h1>
+                    <p>Schrijf het lidgeld (€30) over op onderstaande gegevens. Vermeld hierbij zeker uw naam in de mededeling, zo vinden we uw gegevens gemakkelijk terug.</p>
+                    <p>Van zodra wij uw betaling ontvangen, krijgt u uw persoonlijke inlogcode toegestuurd per mail.</p>
+                </header>
+                <div class="clearfix">
+                    <div>
+                        <p>BE09 4145 1885 5157</p>
+                        <p>KREDBEBB</p>
+                    </div>
+                    <div>
+                        <p>Muzes vzw</p>
+                        <p>Tervuursesteenweg 84</p>
+                        <p>2800 Mechelen</p>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+    </main>
+    
+    <div id="footer-wrapper">
+        <footer>
+            <div>
+                <h1>Handige links</h1>
+                <ul>
+                    <li><a href="over.html">Wie zijn we?</a></li>
+                    <li><a href="vacatures.html">Vacatures</a></li>
+                    <li><a href="inschrijven.html">Inschrijven</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Contact</h1>
+                <p>Tervuursesteenweg 84, 2800 Mechelen</p>
+                <p>+32 153 466 58</p>
+            </div>
+            <div>
+                <h1>Blijf op de hoogte</h1>
+                <ul class="clearfix">
+                    <li><a href="https://fb.com/158298510974276" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a></li>
+                    <li><a href="http://plus.google.com" target="_blank">Google+</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Met de steun van:</h1>
+                <ul class="clearfix">
+                    <li><a href="http://www.cera.be" target="_blank">Cera</a></li>
+                    <li><a href="http://www.bozar.be" target="_blank">Bozar</a></li>
+                    <li><a href="http://www.maene.be">Piano's Maene</a></li>
+                </ul>
+            </div>
+        </footer>
+        <footer>
+            <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script> Muzes vzw</p>
+            <p>Ontwikkeld door&nbsp;<a href="www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
+            <a href="terms.html">Algemene voorwaarden</a>
+            <a href="privacy.html">Privacyverklaring</a>
+        </footer>
+    </div>
+</body>
+</html>
