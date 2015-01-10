@@ -271,6 +271,7 @@ table a:hover, table a:focus{
 }
 .datacontent li:last-of-type{
     padding-bottom: 2em;
+    min-height: 4.28em;
 }
 .column{
     width: 49.9%;
