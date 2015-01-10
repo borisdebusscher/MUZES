@@ -155,62 +155,151 @@ section p {
 
 /* FOOTER */
 
-footer {
+#footer-wrapper {
+    margin-top: 50px;
+}
+
+footer:first-of-type {
     background-color: #add8dc;
-    position: relative;
-    width: 100%;
-    height: 200px;
+    height: 160px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-#sponsers {
-    position: absolute;
-    margin: -60px 0 0 0;
-    top: 50%;
-    left: 5%;
-    height: 120px;
+footer:nth-of-type(2) {
+    height: 40px;
+    background-color: #7d7e7e;
 }
 
-#adres {
-    position: absolute;
-    margin: -30px 0 0 0;
-    top: 50%;
-    height: 60px;
-    right: 5%;
-    background: url(img/Klankendaal.svg) no-repeat left;
-    padding-left: 80px;
-    font-size: 19px;
+footer div {
+    float: left;
+    width: 17%;
+    margin: 0 calc(32% / 6);
+}
+
+footer div:nth-of-type(1) {
+    margin-left: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+footer div:nth-of-type(4) {
+    margin-right: 0;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+footer h1, footer p, footer a {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    color: #61626f;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+footer a {
+    color: #7d7e7e;
+    font-size: 17px;
+    text-decoration: none;
 }
 
 footer p {
-    font-family: Bariol, Calibri, Arial, sans-serif;
     color: #7d7e7e;
-    padding-bottom: 15px;
-    font-size: 20px;
-    margin: 0;
+    margin: 5px 0;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 3px 0;
 }
 
 footer ul {
     margin: 0;
+    padding: 0;
 }
 
-footer ul li:nth-child(1) {
-    background: url(img/Cera.svg) no-repeat;
+/* BLIJF OP DE HOOGTE */
+
+footer div:nth-of-type(3) h1 {
+    width: 170px;
+    text-align: center;
 }
 
-footer ul li:nth-child(2) {
-    background: url(img/Bozar.svg) no-repeat;
-}
-
-footer ul li:nth-child(3) {
-    background: url("img/Piano's Maene.svg") no-repeat;
-}
-
-footer ul li {
+footer div:nth-of-type(3) a {
     text-indent: -9999px;
-    height: 70px;
-    width: 100px;
-    display: inline-block;
-    background-position: center;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0 6.25px;
+}
+
+footer div:nth-of-type(3) a[href="https://fb.com/158298510974276"] {
+    background: url(img/icons/facebook.svg) no-repeat center;
+}
+
+footer div:nth-of-type(3) a[href="https://twitter.com/muzesvzw"] {
+    background: url(img/icons/twitter.svg) no-repeat center;
+}
+
+footer div:nth-of-type(3) a[href="https://www.linkedin.com/profile/view?id=353470483"] {
+    background: url(img/icons/linkedin.svg) no-repeat center;
+}
+
+footer div:nth-of-type(3) a[href="http://plus.google.com"] {
+    background: url(img/icons/googleplus.svg) no-repeat center;
+}
+
+/* MET DE STEUN VAN */
+
+footer div:nth-of-type(4) a {
+    text-indent: -9999px;
+    height: 47px;
+    float: left;
+}
+
+footer div:nth-of-type(4) a[href="http://www.cera.be"] {
+    background: url(img/sponsor/cera.svg) no-repeat left;
+    width: 47px;
+    margin-right: 20px;
+}
+
+footer div:nth-of-type(4) a[href="http://www.bozar.be"] {
+    background: url(img/sponsor/bozar.svg) no-repeat left;
+    width: 60px;
+}
+
+footer div:nth-of-type(4) a[href="http://www.maene.be"] {
+    background: url(img/sponsor/maene.svg) no-repeat left;
+    width: 50px;
+    margin-left: 15px;
+}
+
+/* SUBFOOTER */
+
+footer:nth-of-type(2) p,
+footer:nth-of-type(2) a {
+    line-height: 40px;
+    margin: 0;
+    font-size: 15px;
+    color: #dddddd;
+}
+
+footer:nth-of-type(2) p:nth-of-type(1) {
+    margin: 0 20px 0 50px;
+}
+
+footer:nth-of-type(2) p:nth-of-type(1),
+footer:nth-of-type(2) p:nth-of-type(2) {
+    float: left;
+}
+
+footer:nth-of-type(2) a:nth-of-type(1),
+footer:nth-of-type(2) a:nth-of-type(2) {
+    float: right;
+    margin: 0 20px 0 0;
 }
 
 /* LOGIN FORM */
