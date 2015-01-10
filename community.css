@@ -434,15 +434,12 @@ input[type='submit'] {
     
     /* nav */
     
-    header nav > a {
+    header > nav > a[href="index.html"] {
         display: block;
-        clear: left;
-        margin: 0 auto;
+        float: none;
+        margin: 0 auto !important;
         text-align: center;
-    }
-    
-    header nav {
-        position: inherit;
+        margin-top: 0 !important;
     }
     
     .borderNull {
