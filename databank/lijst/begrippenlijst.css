@@ -1,7 +1,6 @@
 section {
     width: 50%;
 }
-
 #titel {
     color: #92CDCF;
     font-family: Bariol, Calibri, Arial, sans-serif;
@@ -9,10 +8,9 @@ section {
     background-color: transparent;
     font-size: 2em;
 }
-
-
 /* breadcrumbs */
-.breadcrumb{
+
+.breadcrumb {
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 18px;
     text-align: left;
@@ -20,46 +18,48 @@ section {
     padding: .75em 0;
     background-color: #E7E9EA;
 }
-.breadcrumb ul{
+.breadcrumb ul {
     width: 80%;
     margin: 0 auto;
     padding: 0;
 }
-.breadcrumb ul li{
+.breadcrumb ul li {
     display: inline-block;
     margin: 0;
     padding-right: 0.4em;
 }
-.breadcrumb a{
+.breadcrumb a {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: #000;
     transition: .2s all;
 }
-.breadcrumb a:hover, .breadcrumb a:focus{
+.breadcrumb a:hover,
+.breadcrumb a:focus {
     color: #92CDCF;
 }
-
-
-#navli, #architectuur, #beeld, #dans, #media, #muziek, #woord {
+#navli,
+#architectuur,
+#beeld,
+#dans,
+#media,
+#muziek,
+#woord {
     color: #4F5461;
     list-style-type: none;
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
     text-decoration: none;
     padding-right: 2.5em;
 }
-
 #navli {
     text-align: center;
     padding: 1em;
 }
-
 #navli li {
     display: inline;
 }
-
-#navli li a{
+#navli li a {
     font-family: font-family: Bariol, Calibri, Arial, sans-serif;
     list-style-type: none;
     text-decoration: none;
@@ -69,68 +69,57 @@ section {
     transition: .2s all;
     margin: 0 10px;
 }
-
 #navli li a:hover:not(#login) {
     color: #92CDCF;
 }
-
-#architectuur, #beeld, #dans, #media, #muziek, #woord {
+#architectuur,
+#beeld,
+#dans,
+#media,
+#muziek,
+#woord {
     padding-top: 4.5em;
     padding-bottom: 1em;
 }
-
 #architectuur ul {
     list-style-type: none;
 }
-
 #architectuur ul li {
     padding: .25em 0;
 }
-
 #beeld ul {
     list-style-type: none;
 }
-
 #beeld ul li {
     padding: .25em 0;
 }
-
 #dans ul {
     list-style-type: none;
 }
-
 #dans ul li {
     padding: .25em 0;
 }
-
 #media ul {
     list-style-type: none;
 }
-
 #media ul li {
     padding: .25em 0;
 }
-
 #muziek ul {
     list-style-type: none;
 }
-
 #muziek ul li {
     padding: .25em 0;
 }
-
 #woord ul {
     list-style-type: none;
 }
-
 #woord ul li {
     padding: .25em 0;
 }
-
 h2 {
     text-align: center;
 }
-
 #totop {
     font-size: 1em;
     position: fixed;
@@ -139,7 +128,6 @@ h2 {
     float: right;
     margin-right: 3%;
 }
-
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -147,7 +135,6 @@ h2 {
         width: 60%;
     }
 }
-
 @media (max-width: 1024px) {
     section {
         width: 70%;
@@ -156,7 +143,6 @@ h2 {
         width: 85%;
     }
 }
-
 @media (max-width: 900px) {
     section {
         width: 80%;
@@ -165,172 +151,26 @@ h2 {
         width: 90%;
     }
 }
-
 @media only screen and (max-width: 750px) {
-    
     section {
         width: 90%;
     }
-    
     section p {
         width: 95%;
     }
-    
-    /* nav */
-    
-    header > nav > a[href="index.html"] {
-        display: block;
-        float: none;
-        margin: 0 auto !important;
-        text-align: center;
-        margin-top: 0 !important;
-    }
-    
-    .borderNull {
-        border: 0;
-    }
-    
-    header nav ul {
-        display: block;
-        position: inherit;
-        z-index: 9999 !important;
-        margin: 0;
-        background-color: #FFFFFF;
-        height: 100%;
-        width: 250px;
-        top: 0;
-        left: 0;
-        padding: 0;
-        -webkit-transition: all .3s;
-        transition: all .3s;
-    }
-    
-    .translateLeft {
-        left: -100%;
-    }
-    
-    .menuLayer {
-        position: fixed !important;
-        z-index: 9997 !important;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, .3);
-    }
-    
-    header nav ul li {
-        display: block;
-        margin: 18px 0px;
-    }
-    
-    header nav ul li a {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        width: 80px;
-        border-radius: .3em;
-        border: 2px solid #92CDCF;
-        color: #92CDCF;
-        padding: 10px;
-    }
-    
-    header nav ul li a:hover {
-        color: #92CDCF !important;
-    }
-    
-    #login {
-        display: block;
-    }
-    
-    .top {
-        margin-top: 40px;
-    }
-    
     .closeMenu {
-        width: 30px;
-        cursor: pointer;
-        border-radius: 0;
-        border: 0;
-        background: none;
         background-image: url(../../img/plus.png);
-        background-repeat: no-repeat;
-        background-size: 18px;
-        background-position: center;
-        position: absolute;
-        right: 2%;
-        top: 2%;
-        -webkit-transition: all .2s;
-        transition: all .2s;
-        -webkit-touch-callout:none;
-        -webkit-user-select:none;
-        -khtml-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        user-select:none;
-        -webkit-tap-highlight-color:rgba(0,0,0,0);
     }
-    
     .arrowMenu {
         background-image: url(../../img/arrow-down.png) !important;
-        background-repeat: no-repeat;
-        background-size: 18px;
-        background-position: center;
-        -webkit-touch-callout:none;
-        -webkit-user-select:none;
-        -khtml-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        user-select:none;
-        -webkit-tap-highlight-color:rgba(0,0,0,0);
     }
-    
     .menu {
-        display: block !important;
-        position: absolute;
-        cursor: pointer;
-        left: 11px;
-        top: 10px;
-        width: 50px;
-        height: 50px;
         background-image: url(../../img/menu.png);
-        background-repeat: no-repeat;
-        background-size: 22px;
-        background-position: center;
-        -webkit-touch-callout:none;
-        -webkit-user-select:none;
-        -khtml-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        user-select:none;
-        -webkit-tap-highlight-color:rgba(0,0,0,0);
     }
-    
-    .overflow {
-        overflow: hidden !important;
-        overflow-y: hidden !important;
-        position: fixed;
-    }
-    
-    .trans {
-    top: -150% !important;
-    }
-
     .arrow {
-    background-image: url(../../img/arrow-up-white.png) !important;
-    background-repeat: no-repeat;
-    background-size: 15px !important;
-    background-position: center;
+        background-image: url(../../img/arrow-up-white.png) !important;
     }
-
-    .opacity {
-    opacity: 1 !important;
-    }
-
     .bgScale {
-    background-image: url(../../img/camera.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: 20px !important;
+        background-image: url(../../img/camera.png);
     }
 }
