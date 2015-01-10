@@ -27,22 +27,27 @@
     </div>
 
     <header>
+        <div class="hide menuLayer"></div>
         <nav>
-            <a><h1 id="logo">MUZES</h1></a>
-            <ul>
-                <li><a href="index.html">home</a>
+            <div class="hide menuLayer"></div>
+            <a class="hide menu"></a>
+            <a href="index.html"><h1 id="logo">MUZES</h1></a>
+            <ul class="translateLeft">
+                <li><a class="closeMenu"></a>
                 </li>
-                <li><a>community</a>
+                <li class="top"><a href="index.html">home</a>
                 </li>
-                <li><a>databank</a>
+                <li><a href="community.html">community</a>
                 </li>
-                <li><a>projecten</a>
+                <li><a href="databank/databank.html">databank</a>
                 </li>
-                <li><a>kalender</a>
+                <li><a href="projecten.html">projecten</a>
                 </li>
-                <li><a>contact</a>
+                <li><a href="kalender.html">kalender</a>
                 </li>
-                <li><a class="login button" id="login" href="#">login</a>
+                <li><a href="contact.html">contact</a>
+                </li>
+                <li><a id="login" href="#">login</a>
                 </li>
             </ul>
         </nav>
@@ -69,15 +74,16 @@
                     <li>Muziek, Beeld, Media</li>
                     <li>Kleuteronderwijs</li>
                     <li>http://www.muzes.be</li>
+                    <li class="editBg"><a>Profiel bewerken</a></li>
                 </ul>
-                <a id="change" href="#">profiel bewerken</a>
+                <a class="edit" href="#">profiel bewerken</a>
             </div>
         </section>
         <section id="myStream">
-            <article class="marg-top clearfix">
+            <article class="marg-top top-resp bot-resp clearfix">
                 <img class="absolute-post resp-post" src="img/post.png" width="50px">
-                <span class="boxLine"></span>
-                <div>
+                <span class="boxLine right-resp"></span>
+                <div class="right-resp">
                     <textarea class="boxsizingBorder" placeholder="Titel"></textarea>
                     <textarea class="boxsizingBorder" placeholder="Waar denk je aan ?"></textarea>
                     <div class="fullWidth">
@@ -90,7 +96,7 @@
                     </div>
                 </div>
             </article>
-            <article class="clearfix">
+            <article class="clearfix bot-resp">
                 <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
@@ -106,10 +112,10 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix">
+            <article class="clearfix bot-resp">
                 <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
-                <span class="boxLine"></span>
-                <div class="auto">
+                <span class="boxLine right-resp"></span>
+                <div class="auto right-resp">
                     <a href="#">John Doe</a>
                     <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
                     <h2 class="icon-clock"> 46 min</h2>
@@ -121,7 +127,7 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix">
+            <article class="clearfix bot-resp">
                 <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
@@ -137,10 +143,10 @@
                     </ul>
                 </div>
             </article>
-            <article class="clearfix">
+            <article class="clearfix bot-resp">
                 <a href="profile.html"><img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px"></a>
-                <span class="boxLine"></span>
-                <div class="auto">
+                <span class="boxLine right-resp"></span>
+                <div class="auto right-resp">
                     <a href="#">John Doe</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
                     <h2 class="icon-clock"> 7 januari, 20:54</h2>
