@@ -5,7 +5,6 @@ section {
 #titel {
     color: #92CDCF;
     font-family: Bariol, Calibri, Arial, sans-serif;
-    padding-top: 1em;
     text-align: center;
     background-color: transparent;
     font-size: 2em;
@@ -103,7 +102,7 @@ h2 {
 #totop {
     font-size: 1em;
     position: fixed;
-    top: 50%;
+    top: 25%;
     left: 90%;
     float: right;
     margin-right: 3%;
@@ -135,12 +134,171 @@ h2 {
     }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 750px) {
+    
     section {
         width: 90%;
     }
     
     section p {
         width: 95%;
+    }
+    
+    /* nav */
+    
+    header > nav > a[href="index.html"] {
+        display: block;
+        float: none;
+        margin: 0 auto !important;
+        text-align: center;
+        margin-top: 0 !important;
+    }
+    
+    .borderNull {
+        border: 0;
+    }
+    
+    header nav ul {
+        display: block;
+        position: inherit;
+        z-index: 9999 !important;
+        margin: 0;
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 250px;
+        top: 0;
+        left: 0;
+        padding: 0;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    
+    .translateLeft {
+        left: -100%;
+    }
+    
+    .menuLayer {
+        position: fixed !important;
+        z-index: 9997 !important;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 18px 0px;
+    }
+    
+    header nav ul li a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 80px;
+        border-radius: .3em;
+        border: 2px solid #92CDCF;
+        color: #92CDCF;
+        padding: 10px;
+    }
+    
+    header nav ul li a:hover {
+        color: #92CDCF !important;
+    }
+    
+    #login {
+        display: block;
+    }
+    
+    .top {
+        margin-top: 40px;
+    }
+    
+    .closeMenu {
+        width: 30px;
+        cursor: pointer;
+        border-radius: 0;
+        border: 0;
+        background: none;
+        background-image: url(../../img/plus.png);
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: center;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    
+    .arrowMenu {
+        background-image: url(../../img/arrow-down.png) !important;
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: center;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    
+    .menu {
+        display: block !important;
+        position: absolute;
+        cursor: pointer;
+        left: 11px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../../img/menu.png);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        background-position: center;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    
+    .overflow {
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        position: fixed;
+    }
+    
+    .trans {
+    top: -150% !important;
+    }
+
+    .arrow {
+    background-image: url(../../img/arrow-up-white.png) !important;
+    background-repeat: no-repeat;
+    background-size: 15px !important;
+    background-position: center;
+    }
+
+    .opacity {
+    opacity: 1 !important;
+    }
+
+    .bgScale {
+    background-image: url(../../img/camera.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: 20px !important;
     }
 }
