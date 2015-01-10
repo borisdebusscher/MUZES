@@ -27,7 +27,7 @@ section p:last-of-type {
 .breadcrumb ul li{
     display: inline-block;
     margin: 0;
-    padding-right: 0.75em;
+    padding-right: 0.4em;
 }
 .breadcrumb a{
     margin: 0;
