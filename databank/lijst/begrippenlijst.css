@@ -1,5 +1,5 @@
 section {
-    width: 60%;
+    width: 50%;
 }
 
 #titel {
@@ -16,7 +16,7 @@ section {
     list-style-type: none;
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
     text-decoration: none;
-    padding-right: 2em;
+    padding-right: 2.5em;
 }
 
 #navli {
@@ -96,4 +96,13 @@ section {
 
 h2 {
     text-align: center;
+}
+
+#totop {
+    font-size: 1.5em;
+    position: fixed;
+    top: 50%;
+    left: 89%;
+    float: right;
+    margin-right: 3%;
 }
