@@ -21,6 +21,7 @@ section {
 
 #navli {
     text-align: center;
+    padding: 1em;
 }
 
 #navli li {
@@ -44,6 +45,7 @@ section {
 
 #architectuur, #beeld, #dans, #media, #muziek, #woord {
     padding-top: 4.5em;
+    padding-bottom: 1em;
 }
 
 #architectuur ul {

@@ -16,6 +16,7 @@ section p {
 }
 section {
     width: 50%;
+    padding-bottom: 1em;
 }
 #community {
     width: 7.8em;
