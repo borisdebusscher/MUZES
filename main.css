@@ -192,6 +192,8 @@ section p {
     -moz-transition: .3s all;
     -webkit-transition: .3s all;
     transition: .3s all;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .button:hover {

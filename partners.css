@@ -1,0 +1,75 @@
+article > div {
+    float: left;
+    padding: 30px;
+}
+article {
+    margin: 30px 15px;
+}
+
+/* LINKERDEEL */
+
+article div:first-of-type {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+article a.button {
+    width: 100%;
+}
+
+article div:first-of-type p {
+    margin: 20px 0;
+    width: 100%;
+}
+
+article div:first-of-type img {
+    width: 100%;
+}
+
+/* RECHTERDEEL */
+
+article div:nth-of-type(2) {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+article div:nth-of-type(2) h2 {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #61626f;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+article div:nth-of-type(2) h3 {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #61626f;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+article div:nth-of-type(2) h4 {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #808292;
+    padding: 8px 0 5px 0;
+    margin: 0;
+}
+
+article div:nth-of-type(2) div {
+    width: 100%;
+}
+
+article div:nth-of-type(2) p {
+    margin: 0;
+    padding: 0 0 15px 0;
+    width: 100%;
+}
+
+article div:nth-of-type(2) li {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #4F5461;
+}
+
+article div:nth-of-type(2) a {
+    color: #4F5461;
+}
