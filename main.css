@@ -433,7 +433,7 @@ footer:nth-of-type(2) a:nth-of-type(2) {
     
     /* nav */
     
-    header > nav > a[href="index.html"] {
+    header > nav > a:not(.menu) {
         display: block;
         float: none;
         margin: 0 auto !important;
