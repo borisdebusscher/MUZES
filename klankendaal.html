@@ -6,8 +6,8 @@
     <title>Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="klankendaal.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -25,26 +25,35 @@
     <div class="translate" id="logForm">
         <span class="close"></span>
         <form>
-            <a><h1>login</h1></a>
+            <h1>login</h1>
             <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
             <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" value="inloggen">
         </form>
     </div>
     
-    <header>
+<header>
         <div class="hide menuLayer"></div>
         <nav>
             <div class="hide menuLayer"></div>
             <a class="hide menu"></a>
             <a href="index.html"><h1 id="logo">MUZES</h1></a>
             <ul class="translateLeft">
-                <li><a class="closeMenu"></a></li>
+                <li class="noHover"><a class="closeMenu"></a></li>
                 <li class="top"><a href="index.html">home</a>
                 </li>
                 <li><a href="community.html">community</a>
                 </li>
-                <li><a href="databank/databank.html">databank</a>
+                <li>
+                    <a href="databank/databank.html">databank</a>
+                    <ul>
+                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
+                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
+                        <li><a href="databank/video.html">video's</a></li>
+                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
+                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
+                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
+                    </ul>
                 </li>
                 <li><a href="projecten.html">projecten</a>
                 </li>
@@ -52,12 +61,32 @@
                 </li>
                 <li><a href="contact.html">contact</a>
                 </li>
-                <li><a id="login" class="login button" href="#">login</a></li>
+                <li class="noHover"><a id="login" class="login button" href="#">login</a></li>
             </ul>
         </nav>
+        <div id="banner">
+            <p>Project: Impact</p>
+        </div>
     </header>
-    
     <main>
+        <section class="clearfix">
+            <header>
+                <h1>Klankendaal</h1>
+                <h2>Flemish Centre for Music Education</h2>
+            </header>
+            <img src="img/klankendaal/streetview.png" alt="Gebouw van Klankendaal vzw">
+            <div>
+                <p>Klankendaal, het Flemish Centre for Music Education, opende de deuren in september 2007.
+    Muzes “woont” sinds 2008 in Klankendaal, en bouwt er mee aan een boeiend netwerk aan culturele actoren die
+    zich inzetten voor kunst- en muziekeducatie.</p>
+                <p>Klankendaal is een ontmoetingsplek waar jong en minder jong kunst en muziek maakt of meemaakt, waar jong talent samenwerkt met ervaren docenten, waar een actief en gemotiveerd publiek elkaar ontmoet tijdens voorstellingen, workshops, seminaries, opzoekingen in de mediatheek.</p>
+                <p>Als artistiek laboratorium maakt Klankendaal nieuwe, inspirerende verbindingen mogelijk tussen kunst en muziek, educatie en publiek.</p>
+                <p>Het centrum verzamelde doorheen de jaren duizenden publicaties rond muziek- en kunsteducatie. Deze bibliotheek is steeds toegankelijk voor Muzes-leden om te snuisteren en boeken, lesmateriaal of audiovisueel materiaal te ontlenen.</p>
+                <p>Jaarlijks gaan dan ook verschillende van Muzes’ nascholingen en lessenreeksen door in Klankendaal.</p>
+                <a href="http://klankendaal.be" target="_blank" class="button">Naar de website van Klankendaal vzw</a>
+            </div>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2510.27344301001!2d4.4837180000000005!3d51.011097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3e686e1fee5a9%3A0x7d459931c02b95e8!2sKlankendaal+vzw!5e0!3m2!1snl!2sbe!4v1421005497739" frameborder="0" style="border:0"></iframe></div>
+        </section>
     </main>
     
     <div id="footer-wrapper">
@@ -67,7 +96,7 @@
                 <ul>
                     <li><a href="over.html">Wie zijn we?</a></li>
                     <li><a href="vacatures.html">Vacatures</a></li>
-                    <li><a href="klankendaal.html">Klankendaal</a></li>
+                    <li><a href="inschrijven.html">Inschrijven</a></li>
                 </ul>
             </div>
             <div>
@@ -95,7 +124,7 @@
         </footer>
         <footer>
             <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script> Muzes vzw</p>
-            <p>Ontwikkeld door&nbsp;<a href="www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
+            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
             <a href="terms.html">Algemene voorwaarden</a>
             <a href="privacy.html">Privacyverklaring</a>
         </footer>
