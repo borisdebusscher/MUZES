@@ -106,6 +106,30 @@ $(".menuLayer").on("click", function(){
         $("html,body").removeClass("overflow");
     }); 
     
+$(".menu").on("swipe",function(event){
+        $("header nav ul").removeClass("translateLeft");
+        $("header nav").addClass("borderNull");
+        $(".menuLayer").removeClass("hide");
+        $("html,body").addClass("overflow");
+});
+    
+$(".menu").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+        $("header nav ul").removeClass("translateLeft");
+        $("header nav").addClass("borderNull");
+        $(".menuLayer").removeClass("hide");
+        $("html,body").addClass("overflow");
+  }
+});
+    
+$('.menu').bind('swiperight', function(event) {
+        $("header nav ul").removeClass("translateLeft");
+        $("header nav").addClass("borderNull");
+        $(".menuLayer").removeClass("hide");
+        $("html,body").addClass("overflow");
+        alert("Hello");
+});
+    
     
      $('a[href*=#]:not([href=#])').click(function() {
          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
