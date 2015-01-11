@@ -31,6 +31,10 @@ main {
     overflow: hidden;
 }
 
+.closeMenu {
+    display: none;
+}
+
 /* CLEARFIX */
 
 .clearfix:before,
@@ -55,7 +59,7 @@ header nav {
     border-bottom: 1px solid #92CDCF;
 }
 
-header > nav > a:not(.menu) {
+header > nav > a:not(.menu) { /* Logo */
     float: left;
     width: 90px;
     height: 75px;
@@ -68,32 +72,67 @@ header nav h1 {
     margin: 0;
 }
 
-header nav ul {
+header nav > ul {
     float: right;
     height: 28px;
     margin: 23.5px 20px 0 0;
+    position: relative;
 }
 
 header nav ul li {
-    display: inline;
+    float: left;
+    list-style-type: none;
+}
+
+header nav ul li:not(.login):hover {
+    background-color: #92CDCF;
+}
+
+header nav ul li:hover a {
+    color: #FFFFFF;
 }
 
 header nav ul li a {
-    margin: 0 10px;
     font-family: Bariol, Calibri, Arial, sans-serif;
     text-decoration: none;
     color: #4F5461;
     -moz-transition: .2s all;
     -webkit-transition: .2s all;
     transition: .2s all;
-}
-
-header nav ul li a:hover:not(#login) {
-    color: #92CDCF;
+    display: block;
+    padding: 5px 10px;
 }
 
 .login {
     color: #FFFFFF;
+    margin-left: 5px;
+}
+
+header nav ul ul {
+	display: none;
+	padding: 0;
+	position: absolute;
+    top: 100%;
+}
+
+header nav ul li:hover > ul { /* Submenu weergeven op hover */
+    display: block;
+}
+
+header nav ul ul li {
+    background-color: #92CDCF;
+    float: none;
+    position: relative;
+}
+
+header nav ul ul a {
+    padding: 8px 10px;
+}
+
+header nav ul ul ul {
+	position: absolute;
+    left: 100%;
+    top: 0;
 }
 
 /* MAIN */
@@ -477,6 +516,7 @@ footer:nth-of-type(2) a:nth-of-type(2) {
     header nav ul li {
         display: block;
         margin: 18px 0px;
+        float: none;
     }
     
     header nav ul li a {
@@ -492,6 +532,14 @@ footer:nth-of-type(2) a:nth-of-type(2) {
     
     header nav ul li a:hover {
         color: #92CDCF !important;
+    }
+    
+    header nav ul li:hover {
+        background-color: white;
+    }
+
+    header nav ul li:hover a {
+        color: #92CDCF;
     }
     
     #login {
