@@ -1,11 +1,10 @@
-
-
 /* FORM */
 
 form {
     float: left;
-    width: 62%;
-    margin: 2%;
+    width: 59%;
+    margin: 30px;
+    box-sizing: border-box;
 }
 
 form > div > label, form > div > input, form > div > div, form > div > select, form > div > textarea {
@@ -24,8 +23,9 @@ label {
     font-size: 20px;
     font-family: Bariol, Calibri, Arial, sans-serif;
     display: block;
-    height: 35px;
+    height: auto;
     line-height: 35px;
+    text-align: left;
 }
 
 form > div > label, form > div > div {
@@ -64,12 +64,6 @@ select {
     padding: 0 0 0 5px;
 }
 
-input[type="submit"] {
-    min-width: 120px;
-    width: 10vw;
-    float: left;
-}
-
 textarea {
     height: 140px;
 }
@@ -92,11 +86,17 @@ textarea {
 
 /* BOX */
 
-section.box {
+.box-wrapper {
     float: right;
     width: 30%;
+    box-sizing: border-box;
+}
+
+section.box {
+    clear: right;
+    width: 100%;
     padding: 20px;
-    margin: 2%;
+    margin: 30px 30px 30px -30px;
     background-color: #f4f5f5;
     text-align: justify;
     border-radius: 10px;
@@ -139,6 +139,10 @@ section.box > div > div p {
     width: 100%;
     padding: 0 5%;
     box-sizing: border-box;
+}
+
+section.box > img {
+    width: 100%;
 }
 
 /* GEGEVENS MEERDERE PERSONEN */
@@ -203,15 +207,110 @@ section.box > div > div p {
 .checkbox input[type="checkbox"], .checkbox label {
     float: left;
     width: auto;
-    height: 35px;
-    margin: 0;
+    height: auto;
+    line-height: normal;
 }
 
 .checkbox input[type="checkbox"] {
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 
 .checkbox label {
     width: 100%;
-    margin-bottom: 5px;
+    margin: 0 0 15px 30px;
+}
+
+/* SUBMIT */
+
+input[type="submit"] {
+    min-width: 120px;
+    width: 10vw;
+    float: left;
+    margin: 0 0 30px 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+    section.box > div > div {
+        width: 100%;
+        float: none;
+        padding: 5px 0
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    form {
+        float: none;
+        width: calc(100% - 60px);
+    }
+    
+    .box-wrapper {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section.box {
+        float: left;
+        width: calc(50% - 45px);
+        padding: 20px;
+        box-sizing: border-box;
+        height: 360px;
+    }
+    
+    section.box.fullwidth {
+        float: none;
+        width: calc(100% - 60px);
+        padding: 20px;
+        box-sizing: border-box;
+        height: auto;
+    }
+    
+    section.box.fullwidth > div > div {
+        width: 50%;
+        float: left;
+        padding: 0;
+    }
+    
+    section.box:first-of-type {
+        margin: 30px 30px 30px 30px;
+    }
+    
+    section.box:nth-of-type(2) {
+        margin: 30px 30px 30px 0;
+    }
+    
+    .checkbox label {
+        width: calc(100% - 60px);
+        margin: 0 0 15px 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    section.box {
+        float: none;
+        width: calc(100% - 60px);
+        padding: 20px;
+        box-sizing: border-box;
+        height: auto;
+    }
+    
+    section.box:first-of-type {
+        margin: 30px;
+    }
+    
+    section.box:nth-of-type(2) {
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    form > div > label, form > div > input, form > div > div, form > div > select, form > div > textarea {
+        float: none;
+        width: 100%;
+    }
+    
+    input[type="submit"] {
+        width: calc(100% - 60px);
+        float: none;
+    }
 }

@@ -63,7 +63,35 @@
                 <h1>Schoollidmaatschappen</h1>
                 <h2>Word lid van Muzes in enkele stappen!</h2>
             </header>
-            <form class="clearfix">
+            <div class="box-wrapper">
+            <section class="box">
+                <header>
+                    <h1>Belangrijk</h1>
+                    <p>Schrijf het lidgeld (€ 180) over op onderstaande gegevens. Vermeld hierbij zeker de naam van uw school in de mededeling, zo vinden we uw gegevens gemakkelijk terug.</p>
+                    <p>Van zodra wij uw betaling ontvangen, krijgen desbetreffende leerkrachten hun persoonlijke inlogcodes toegestuurd per mail.</p>
+                </header>
+                <div class="clearfix">
+                    <div>
+                        <p>BE09 4145 1885 5157</p>
+                        <p>KREDBEBB</p>
+                    </div>
+                    <div>
+                        <p>Muzes vzw</p>
+                        <p>Tervuursesteenweg 84</p>
+                        <p>2800 Mechelen</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="box">
+                <header>
+                    <h1>Welkomstpakket</h1>
+                    <p>Elk nieuw schoollidmaatschap wordt beloond met een artistiek welkomstpakket (t.w.v. €60) met daarin een computer-headset, Sennelier Aquarelset, liedbundels en Muzes-sleutelhangers!</p>
+                </header>
+                <img src="../img/welkomstpakket.jpg">
+            </section>
+            </div>
+            <form class="clearfix" id="inschrijving">
                 <div class="clearfix">
                     <label for="inschrijven-schoolnaam">Naam van de school:</label>
                     <input type="text" id="inschrijven-schoolnaam" required>
@@ -115,30 +143,15 @@
                         <a href=# class="button">Meer invoervelden</a>
                     </div>
                 </div>
-                <div class="clearfix checkbox">
-                        <label><input type="checkbox" value="lidgeld" name="lidgeld" required>Ik zal het lidgeld (€180) storten op het eerder vermelde bankrekeningnummer.</label>
-                </div>
-                <input type="submit" value="Registreren" class="button">
             </form>
             
-            <section class="box">
-                <header>
-                    <h1>Belangrijk</h1>
-                    <p>Schrijf het lidgeld (€ 180) over op onderstaande gegevens. Vermeld hierbij zeker de naam van uw school in de mededeling, zo vinden we uw gegevens gemakkelijk terug.</p>
-                    <p>Van zodra wij uw betaling ontvangen, krijgen desbetreffende leerkrachten hun persoonlijke inlogcodes toegestuurd per mail.</p>
-                </header>
-                <div class="clearfix">
-                    <div>
-                        <p>BE09 4145 1885 5157</p>
-                        <p>KREDBEBB</p>
-                    </div>
-                    <div>
-                        <p>Muzes vzw</p>
-                        <p>Tervuursesteenweg 84</p>
-                        <p>2800 Mechelen</p>
-                    </div>
-                </div>
-            </section>
+            <div class="clearfix checkbox" form="inschrijving">
+                        <label><input type="checkbox" value="lidgeld" name="lidgeld" required>Ik zal het lidgeld (€180) storten op het eerder vermelde bankrekeningnummer.</label>
+                    <label><input type="checkbox" value="welkomstpakket" name="lidgeld" required>Ik wens het gratis welkomstpakket te ontvangen.</label>
+            </div>
+            <input type="submit" value="Registreren" class="button">
+            
+            
             
         </section>
     </main>
