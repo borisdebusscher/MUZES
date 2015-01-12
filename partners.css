@@ -120,9 +120,15 @@ section:nth-of-type(5) div.concert a.button {
 }
 
 @media only screen and (max-width: 1100px) {
+    
     section {
         margin: 30px auto;
         width: 85%;
+    }
+    
+    section:not(.header) > div {
+        float: none;
+        padding: 30px;
     }
     
     /* HEADER */
@@ -161,7 +167,11 @@ section:nth-of-type(5) div.concert a.button {
         width: 90%;
         box-sizing: border-box;
         float: none;
-        margin: 0 auto;
+        margin: 20px auto;
+    }
+    
+    section:not(.header) div:first-of-type p {
+        margin: 15px 0;
     }
     
     /* RECHTERDEEL */
@@ -172,5 +182,28 @@ section:nth-of-type(5) div.concert a.button {
         margin: 0 auto;
         float: none;
         padding-top: 0;
+    }
+    
+    section div:nth-of-type(2) p {
+        padding: 0 0 5px 0;
+        width: 100%;
+    }
+    
+    section div:nth-of-type(2) h3 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    section:not(.header) div:nth-of-type(2) p {
+        margin: 5px 0;
+    }
+    
+    /* CONCERT */
+    
+    section:nth-of-type(6) div.concert {
+        width: 100%;
+        float: none;
+        box-sizing: border-box;
+        padding: 0 0 30px 0;
     }
 }
