@@ -32,14 +32,21 @@
             <a class="hide menu"></a>
             <a href="index.html"><h1 id="logo">MUZES</h1></a>
             <ul class="translateLeft">
-                <li>
-                    <a class="closeMenu"></a>
-                </li>
+                <li class="noHover"><a class="closeMenu"></a></li>
                 <li class="top"><a href="index.html">home</a>
                 </li>
                 <li><a href="community.html">community</a>
                 </li>
-                <li><a href="databank/databank.html">databank</a>
+                <li>
+                    <a href="databank/databank.html">databank</a>
+                    <ul>
+                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
+                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
+                        <li><a href="databank/video.html">video's</a></li>
+                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
+                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
+                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
+                    </ul>
                 </li>
                 <li><a href="projecten.html">projecten</a>
                 </li>
@@ -47,18 +54,20 @@
                 </li>
                 <li><a href="contact.html">contact</a>
                 </li>
-                <li><a id="login" class="login button" href="#">login</a>
-                </li>
+                <li class="noHover"><a id="login" class="login button" href="#">login</a></li>
             </ul>
         </nav>
+        <div id="banner">
+            <p>Project: Impact</p>
+        </div>
     </header>
+    
     <main>
         <section id="kalender" class="clearfix">
             <header>
                 <h1>Kalender</h1>
                 <h2>Wees op de hoogte van al onze evenementen!</h2>
             </header>
-
             <h2>Januari</h2>
             <div class="clearfix event">
                 <img src="img/kalender/Kinderen.png" alt="Muziek voor jonge oortjes - zangnammidag afbeelding">
@@ -66,10 +75,11 @@
                     <h2 class="datum"><span class="cijfer">05</span><span class="dag">maandag</span><span class="maand">Januari</span></h2>
                     <p>Muziek voor jonge oortjes - zangnammidag</p>
                     <p>Klankendaal, Mechelen</p>
+                    <a class="button">Meer informatie</a>
                 </div>
             </div>
             <div class="clearfix event">
-                <img src="img/kalender/museum.png" alt="Designmuseum te Gent afbeelding">
+                <img src="img/kalender/designmuseum_gent.jpg" alt="Designmuseum te Gent afbeelding">
                 <div class="info">
                     <h2 class="datum"><span class="cijfer">12</span><span class="dag">maandag</span><span class="maand">Januari</span></h2>
                     <p>Dag van de Designeducatie - studiedag</p>
@@ -79,7 +89,7 @@
 
             <h2>Februari</h2>
             <div class="clearfix event">
-                <img src="img/kalender/impact.png" alt="Impact, zangproject voor secundair onderwijs, Nascholingsreeks afbeelding">
+                <img src="img/kalender/piano.jpg" alt="Impact, zangproject voor secundair onderwijs, Nascholingsreeks afbeelding">
                 <div class="info">
                     <h2 class="datum"><span class="cijfer">12</span><span class="dag">dinsdag</span><span class="maand">Februari</span></h2>
                     <p>Impact, zangproject voor secundair onderwijs, Nascholingsreeks</p>
@@ -89,7 +99,7 @@
                       
          <h2>Maart</h2>
     <div class="clearfix event">
-                <img src="img/kalender/kunsteducatie.png" alt="Hart voor kunsteducatie, Studiedag afbeelding">
+                <img src="img/kalender/hart.jpg" alt="Hart voor kunsteducatie, Studiedag afbeelding">
                 <div class="info">
                     <h2 class="datum"><span class="cijfer">11</span><span class="dag">woensdag</span><span class="maand">Maart</span></h2>
                     <p>Hart voor kunsteducatie, Studiedag</p>
@@ -106,7 +116,7 @@
                 </div>
              <h2>April</h2>
          <div class="clearfix event">
-                <img src="img/kalender/impact.png" alt="Impact, zangproject voor secundair onderwijs, Nascholingsreeks afbeelding">
+                <img src="img/kalender/piano.jpg" alt="Impact, zangproject voor secundair onderwijs, Nascholingsreeks afbeelding">
                 <div class="info">
                     <h2 class="datum"><span class="cijfer">12</span><span class="dag">dinsdag</span><span class="maand">April</span></h2>
                     <p>Impact, zangproject voor secundair onderwijs, Nascholingsreeks</p>
@@ -149,17 +159,15 @@
             </div>
         </section>
     </main>
+    
     <div id="footer-wrapper">
-        <footer>
+        <footer class="clearfix">
             <div>
                 <h1>Handige links</h1>
                 <ul>
-                    <li><a href="over.html">Wie zijn we?</a>
-                    </li>
-                    <li><a href="vacatures.html">Vacatures</a>
-                    </li>
-                    <li><a href="inschrijven.html">Inschrijven</a>
-                    </li>
+                    <li><a href="over.html">Wie zijn we?</a></li>
+                    <li><a href="partnersindialoog.html">Partners in dialoog</a></li>
+                    <li><a href="klankendaal.html">Klankendaal</a></li>
                 </ul>
             </div>
             <div>
@@ -170,35 +178,24 @@
             <div>
                 <h1>Blijf op de hoogte</h1>
                 <ul class="clearfix">
-                    <li><a href="https://fb.com/158298510974276" target="_blank">Facebook</a>
-                    </li>
-                    <li><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a>
-                    </li>
-                    <li><a href="http://plus.google.com" target="_blank">Google+</a>
-                    </li>
+                    <li class="clearfix"><a href="https://fb.com/158298510974276" target="_blank">Facebook</a></li>
+                    <li class="clearfix"><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a></li>
+                    <li class="clearfix"><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a></li>
+                    <li class="clearfix"><a href="http://plus.google.com" target="_blank">Google+</a></li>
                 </ul>
             </div>
             <div>
                 <h1>Met de steun van:</h1>
                 <ul class="clearfix">
-                    <li><a href="http://www.cera.be" target="_blank">Cera</a>
-                    </li>
-                    <li><a href="http://www.bozar.be" target="_blank">Bozar</a>
-                    </li>
-                    <li><a href="http://www.maene.be">Piano's Maene</a>
-                    </li>
+                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a></li>
+                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a></li>
+                    <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a></li>
                 </ul>
             </div>
         </footer>
-        <footer>
-            <p>&copy; 2004-
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>Muzes vzw</p>
-            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
-            </p>
+        <footer class="clearfix">
+            <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script> Muzes vzw</p>
+            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
             <a href="terms.html">Algemene voorwaarden</a>
             <a href="privacy.html">Privacyverklaring</a>
         </footer>

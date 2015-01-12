@@ -7,11 +7,12 @@ section > h2 {
 }
 
 .event {
-    margin: 0 10% 2% 10%;
+    margin: 0 auto 30px auto;
     background-color: #F4F5F5;
-    border-radius: 10px;
-    height: 150px;
+
+
     box-sizing: border-box;
+    width: 80%;
 }
 
 .event img, .info {
@@ -19,14 +20,18 @@ section > h2 {
 }
 
 .info {
-    clear: right;
     height: 100%;
+    width: 66%;
+    width: calc(100% * 2/3);
     box-sizing: border-box;
     padding: 15px 30px;
 }
 
 .event img {
-    height: 150px;
+    height: 100%;
+    width: 33%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* DATUM */
@@ -36,6 +41,7 @@ section > h2 {
     color: #636363;
     font-weight: 500;
     height: 60px;
+    width: 180px;
     margin: 0;
 }
 
@@ -64,62 +70,84 @@ section > h2 {
 /* INFO */
 
 .info p {
-    height: 30px;
-    line-height: 30px;
+    min-height: 30px;
     padding-left: 25px;
     font-size: 19px;
-    width: 100%;
+    width: 80%;
 }
 
 .info p:first-of-type {
     background: url(img/kalender/vraagteken.png) no-repeat left;
     background-size: auto 25px;
+    margin: 0 0 5px 20px;
 }
 
 .info p:nth-of-type(2) {
     background: url(img/kalender/place.png) no-repeat left;
     background-size: auto 25px;
+    margin: 0 0 10px 20px;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 820px){
-    .data{  
-    margin-left:5%; 
-    margin-right:5%;
+@media screen and (max-width: 1000px) {
+    .datum {
+        height: 50px;
+        width: 160px;
     }
-    section > h2 {
-        margin-left:5%; 
+    
+    .cijfer {
+        font-size: 50px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .dag, .maand {
+        height: 20px;
+        line-height: 20px;
+    }
+    
+    .dag {
+        font-size: 20px;
     }
 
+    .maand {
+        font-size: 16px;
+    }
+    
+    .info {
+        padding: 15px 20px;
+    }
+    
+    .info p {
+        min-height: 22px;
+        padding-left: 25px;
+        font-size: 17px;
+        width: 80%;
+    }
+    
+    .info p:first-of-type {
+        background-size: auto 22px;
+    }
+
+    .info p:nth-of-type(2) {
+        background-size: auto 22px;
+    }
 }
-@media screen and (max-width: 710px){
-    #kalender{  
-    margin-left:0; 
-    margin-right:0;
-    }
-    .data{  
-    margin-left:2%; 
-    margin-right:2%;
-    }
 
- section > h2 {
-        margin-left:2%; 
+@media screen and (max-width: 600px) {
+    .event img {
+        float: none;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
     }
-}
-@media screen and (max-width:700px){
-    section{  
-    width:100%
+    
+    .info {
+        width: 100%;
     }
-
-}
-@media screen and (max-width:550px){
-    section{  
-    width:100%
+    
+    .info a {
+        display: block;
     }
-.data{  
-    margin-left:0; 
-    margin-right:0;
-    }
-
 }
