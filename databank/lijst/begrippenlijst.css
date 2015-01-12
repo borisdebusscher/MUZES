@@ -42,10 +42,7 @@ section {
 #navli,
 #architectuur,
 #beeld,
-#dans,
-#media,
-#muziek,
-#woord {
+#dans {
     color: #4F5461;
     list-style-type: none;
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
@@ -74,10 +71,7 @@ section {
 }
 #architectuur,
 #beeld,
-#dans,
-#media,
-#muziek,
-#woord {
+#dans {
     padding-top: 4.5em;
     padding-bottom: 1em;
 }
@@ -97,24 +91,6 @@ section {
     list-style-type: none;
 }
 #dans ul li {
-    padding: .25em 0;
-}
-#media ul {
-    list-style-type: none;
-}
-#media ul li {
-    padding: .25em 0;
-}
-#muziek ul {
-    list-style-type: none;
-}
-#muziek ul li {
-    padding: .25em 0;
-}
-#woord ul {
-    list-style-type: none;
-}
-#woord ul li {
     padding: .25em 0;
 }
 h2 {
