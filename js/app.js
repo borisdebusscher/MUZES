@@ -106,6 +106,19 @@ $(".menuLayer").on("click", function(){
         $("html,body").removeClass("overflow");
     }); 
     
+$("#comment").on("click", function(){
+    console.log("click");
+    if($(".comment").attr("class") == "hide"){
+        $(".comment").removeClass("hide");
+        $(".commentInput").removeClass("hide");
+    }else{
+        $(".comment").addClass("hide");
+        $(".commentInput").addClass("hide");
+    }
+    });
+    
+    
+    
 $(".menu").on("swipe",function(event){
         $("header nav ul").removeClass("translateLeft");
         $("header nav").addClass("borderNull");
@@ -120,14 +133,6 @@ $(".menu").swipe({
         $(".menuLayer").removeClass("hide");
         $("html,body").addClass("overflow");
   }
-});
-    
-$('.menu').bind('swiperight', function(event) {
-        $("header nav ul").removeClass("translateLeft");
-        $("header nav").addClass("borderNull");
-        $(".menuLayer").removeClass("hide");
-        $("html,body").addClass("overflow");
-        alert("Hello");
 });
     
     
