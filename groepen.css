@@ -30,29 +30,10 @@ nav {
     width: 110px;
     margin-top: 115px;
     margin-bottom: 10px;
-    border: 6px solid #F4E7B9;
+    border: 2px solid #A8D7D9;
     border-radius: 50%;
 }
 
-.changePic {
-    display: block;
-    padding: 55px;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: absolute;
-    top: 121.2px;
-    left: 50%;
-    margin-left: -55px;
-    background-color: rgba(0, 0, 0, .2);
-    background-image: url(img/camera.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: 10px;
-    -webkit-transition: all .1s ease-out;
-    transition: all .1s ease-out;
-    opacity: 0;
-    
-}
 
 #file {
     display: block;
@@ -73,14 +54,14 @@ nav {
     font-family: "bariol bold";
     font-size: 1.4em;
     text-align: center;
-    color: #4E4F58;
+    color: #A8D7D9;
 }
 
 #sideBar div h2 {
     display: block;
     padding-bottom: 40px;
     font-family: bariol;
-    font-size: .8em;
+    font-size: .9em;
     text-align: center;
     color: #4E4F58;
     border-bottom: 2px solid #F3F4F4;
@@ -103,37 +84,44 @@ nav {
 }
 
 #sideBar div ul li:nth-child(1) {
-    background-image: url(img/house.png);
+    background-image: url(img/user.png);
     background-repeat: no-repeat;
     background-position:  left;
     background-size: 16px;
 }
 
 #sideBar div ul li:nth-child(2) {
-    background-image: url(img/palette.png);
+    background-image: url(img/lock.png);
     background-repeat: no-repeat;
     background-position:  left;
-    background-size: 16px;
+    background-size: 15px;
 }
 
 #sideBar div ul li:nth-child(3) {
-    background-image: url(img/graduation.png);
+    background-image: url(img/users.png);
     background-repeat: no-repeat;
     background-position:  left;
     background-size: 16px;
 }
 
 #sideBar div ul li:nth-child(4) {
-    background-image: url(img/earth.png);
+    background-image: url(img/add.png);
     background-repeat: no-repeat;
     background-position:  left;
-    background-size: 16px;
+    background-size: 15px;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
     cursor: pointer;
 }
 
-#sideBar div ul li:nth-child(4):hover {
+#sideBar div ul li:nth-child(4) a {
+    text-decoration: none;
+    color: #4E4F58;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+#sideBar div ul li:nth-child(4) a:hover {
     color: #92CDCF;
 }
 
@@ -149,12 +137,12 @@ nav {
     text-decoration: none;
     text-align: center;
     font-family: bariol;
-    font-size: .8em;
+    font-size: .9em;
     color: #91CBCD;
-    background-image: url(img/pencil.png);
+    background-image: url(img/quit.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 16px;
+    background-size: 14px;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -330,6 +318,7 @@ input[type='submit'] {
 #myStream article div ul {
     display: block;
     list-style: none;
+    width: auto; !important;
     margin: 0px;
     margin-left: 10px;
     padding: 15px 0px;
@@ -474,6 +463,18 @@ input[type='submit'] {
     border-color: #FEF1C0;
 }
 
+.border-red {
+    border-color: #F2ABA9;
+}
+
+.border-green {
+    border-color: #98CEB5;
+}
+
+.margin-pic {
+    margin: 0px 15px;
+}
+
 .scale:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -567,12 +568,17 @@ input[type='submit'] {
         margin-top: -20px;
     }
     
+    .no-pic {
+        width: 43px;
+    }
+    
     #myStream article div input {
         padding: 5px 11px;
     }
     
     #myStream article div #ulPost li {
     margin: 0px 2px;
+}
     
 }
 

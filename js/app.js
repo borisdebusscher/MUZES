@@ -66,13 +66,13 @@ $(".closeChange").mouseout(function() {
         });
     
 $("#file").mouseover(function() {
-            $("#sideBar span").addClass("opacity");
-            $("#sideBar span").addClass("bgScale");
+            $(".changePic").addClass("opacity");
+            $(".changePic").addClass("bgScale");
         });
       
 $("#file").mouseout(function() {
-            $("#sideBar span").removeClass("opacity");
-            $("#sideBar span").removeClass("bgScale");
+            $(".changePic").removeClass("opacity");
+            $(".changePic").removeClass("bgScale");
         });
     
 $(".closeMenu").mouseover(function() {
