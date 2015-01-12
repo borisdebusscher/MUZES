@@ -5,6 +5,39 @@ section > div {
     height: 80vh;
 }
 
+
+/* breadcrumbs */
+.breadcrumb{
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 18px;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding: .75em 0;
+    background-color: #E7E9EA;
+}
+.breadcrumb ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.breadcrumb ul li{
+    display: inline-block;
+    margin: 0;
+    padding-right: 0.4em;
+}
+.breadcrumb a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    transition: .2s all;
+}
+.breadcrumb a:hover, .breadcrumb a:focus{
+    color: #92CDCF;
+}
+
+
 /* VIDEOLIJST */
 
 #video-list {
