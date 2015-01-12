@@ -474,7 +474,7 @@ footer:nth-of-type(2) a:nth-of-type(2) {
 /* JQUERY */ 
 
 .translate {
-    top: -150% !important;
+    margin-top: -250px !important;
 }
 
 .rotate {

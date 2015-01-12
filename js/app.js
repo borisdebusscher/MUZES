@@ -107,7 +107,6 @@ $(".menuLayer").on("click", function(){
     }); 
     
 $("#comment").on("click", function(){
-    console.log("click");
     if($(".comment").attr("class") == "hide"){
         $(".comment").removeClass("hide");
         $(".commentInput").removeClass("hide");
