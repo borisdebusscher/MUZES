@@ -13,7 +13,7 @@ main {
     margin-top: 75px;
 }
 
-#banner p {
+#banner a {
     position: absolute;
     color: #FFFFFF;
     font-family: Bariol, Calibri, Arial, sans-serif;
@@ -25,6 +25,7 @@ main {
     right: 0;
     bottom: 0;
     margin: 0;
+    text-decoration: none
 }
 
 /* WAT? */
