@@ -1,0 +1,89 @@
+section {
+}
+
+section > div {
+    height: 80vh;
+}
+
+/* VIDEOLIJST */
+
+#video-list {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 0 20px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+#video-list li {
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #4F5461;
+    list-style-type: none;
+}
+
+#video-list ul {
+   padding: 0;
+}
+
+#video-list h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-weight: 600;
+    color: #7d7e7e;
+}
+
+#video-list a {
+    color: #4F5461;
+}
+
+/* VIDEOSCHERM */
+
+#video-view {
+    width: 70%;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#video-view h1 {
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-weight: 600;
+    color: #7d7e7e;
+}
+
+video {
+    height: calc(100% - 70px);
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    section > div {
+        height: auto;
+    }
+    
+    #video-list {
+        overflow-y: auto;
+    }
+    
+    #video-list, #video-view {
+        float: none;
+        width: 100%;
+    }
+    
+    #video-view h1 {
+        line-height: normal;
+        height: auto;
+        padding-bottom: 20px;
+        font-size: 7vw;
+    }
+}
