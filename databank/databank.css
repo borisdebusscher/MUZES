@@ -121,6 +121,9 @@ h2{
     width: 80%;
     padding: 20px 0 0 0;
 }
+caption h2{
+    padding-top: 4em;
+}
 table{
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #000;
@@ -194,6 +197,10 @@ table a:hover, table a:focus{
     background: #92CDCF;
     opacity: 1;
 }
+div#top{
+    position: absolute;
+    top: -300px;
+}
 
 /* page layout sidenav and datacontent */
 .bgcolor{
@@ -248,6 +255,7 @@ table a:hover, table a:focus{
 .datacontent{
     margin-left: 200px;
     background: #fff;
+    min-height: 34em;
 }
 .datacontent ul{
     margin: 0;
@@ -300,7 +308,7 @@ h2{
     margin: 1em 1em .25em;
     padding: 0;
 }
-section iframe, section embed{
+section iframe{
     width: 90%;
     margin: 0 5%;
     min-height: 40em;
@@ -309,6 +317,11 @@ section iframe, section embed{
     min-width: 10em;
     max-width: 15em;
     margin: 0 1em;
+}
+.tijdschriftbanner{
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0 3em;
 }
 .clearfix:after 
 { 
