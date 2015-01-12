@@ -134,6 +134,20 @@ $(".menu").swipe({
   }
 });
     
+var images = ['home/15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png'];
+$('#banner').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+    
+var bgArray = ['home/15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png'];
+    var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+
+    $('#banner').css('background', bg);
+
+    // If you have defined a path for the images
+    var path = 'img/';
+
+    // then you can put it right before the variable 'bg'
+    $('#banner').css('background', path+bg);
+    
     
      $('a[href*=#]:not([href=#])').click(function() {
          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
