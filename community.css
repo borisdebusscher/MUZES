@@ -378,6 +378,11 @@ input[type='submit'] {
     background-color: none !important;
 }
 
+.margin-pic {
+    margin: 0px 15px;
+}
+
+
 /* jquery */
 
 .trans {
