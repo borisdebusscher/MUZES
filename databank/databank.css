@@ -266,20 +266,18 @@ table a:hover, table a:focus{
     text-decoration: none;
     color: #000;
     text-align: left;
-    min-height: 5.5em;
 }
 .datacontent a:hover, .datacontent a:focus{
     background: #92CDCF;
 }
 .datacontent li:last-of-type{
-    padding-bottom: 2em;
-    min-height: 4.28em;
+    /*padding-bottom: 2em;*/
+    /*min-height: 4.28em;*/
 }
 .datacontent li img{
     float: left;
     width: 15%;
-    max-width: 80px;
-    min-width: 65px;
+    max-width: 60px;
     margin: .75em;
 }
 .datacontent li h3{
@@ -298,7 +296,7 @@ table a:hover, table a:focus{
 .column:last-of-type{
     border-left: 1px dashed #E0E1E2;
 }
-.column h2{
+h2{
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #000;
     width: 100%;
