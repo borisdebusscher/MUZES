@@ -1,100 +1,27 @@
 section {
-    width: 50%;
+    max-width: 900px;
 }
-#titel {
-    color: #92CDCF;
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    text-align: center;
-    background-color: transparent;
-    font-size: 2em;
+section p, ul{
+    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
 }
-/* breadcrumbs */
-
-.breadcrumb {
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    font-size: 18px;
-    text-align: left;
-    margin: 0 auto;
-    padding: .75em 0;
-    background-color: #E7E9EA;
-}
-.breadcrumb ul {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-}
-.breadcrumb ul li {
-    display: inline-block;
-    margin: 0;
-    padding-right: 0.4em;
-}
-.breadcrumb a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: #000;
-    transition: .2s all;
-}
-.breadcrumb a:hover,
-.breadcrumb a:focus {
-    color: #92CDCF;
-}
-#navli,
-#architectuur,
-#beeld,
-#dans {
-    color: #4F5461;
-    list-style-type: none;
-    font-family: Source Sans Pro, Calibri, Arial, sans-serif;
-    text-decoration: none;
-    padding-right: 2.5em;
-}
-#navli {
-    text-align: center;
-    padding: 1em;
-}
-#navli li {
-    display: inline;
-}
-#navli li a {
-    font-family: font-family: Bariol, Calibri, Arial, sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-    color: #4F5461;
-    -moz-transition: .2s all;
-    -webkit-transition: .2s all;
-    transition: .2s all;
-    margin: 0 10px;
-}
-#navli li a:hover:not(#login) {
-    color: #92CDCF;
+#architectuur header,
+#beeld header,
+#dans header{
+    padding: 4.75em 0 1em;
 }
 #architectuur,
 #beeld,
-#dans {
-    padding-top: 4.5em;
-    padding-bottom: 1em;
+#dans{
+    padding-bottom: 4em;
 }
-#architectuur ul {
+#architectuur ul, #beeld ul, #dans ul {
     list-style-type: none;
+    width: 85%;
+    margin: 1.5em 7.5%;
+    padding: 0;
 }
-#architectuur ul li {
-    padding: .25em 0;
-}
-#beeld ul {
-    list-style-type: none;
-}
-#beeld ul li {
-    padding: .25em 0;
-}
-#dans ul {
-    list-style-type: none;
-}
-#dans ul li {
-    padding: .25em 0;
-}
-h2 {
-    text-align: center;
+#architectuur ul li, #beeld ul li, #dans ul li{
+    /*padding: .5em 1em;*/
 }
 #totop {
     font-size: 1em;
