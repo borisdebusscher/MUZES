@@ -6,13 +6,11 @@ section > h2 {
     margin-left: 10%
 }
 img{
-	height:100px;
-	margin:10px;
+	width:166px;
+	margin: 5px;
+	padding: 0px;
 }
-#filharmonie{
-	height:50px;
-	margin:0;
-}
-#decentrale{
+.bannerlogo{
+	width:500px;
 	height:70px;
 }
