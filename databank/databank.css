@@ -41,10 +41,6 @@ section p:last-of-type {
 }
 
 /* MAIN */
-.databankwrapper{
-    max-width: 50%;
-    margin: auto;
-}
 #eindtermenenuitgangspunten{
     width: 80%;
     margin: 50px 10%;
@@ -83,9 +79,39 @@ section p:last-of-type {
 .navlist nav a:last-of-type{
     border-bottom: 0px solid #000;
 }
-.navlist nav a:hover, .navlistklein a:focus{
+.navlist nav a:hover, .navlist nav a:focus{
     background: #add8dc;
     color: #FFF;
+}
+.afbeeldingcontainer{
+    position: relative;
+}
+.navlist a span{
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    top: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.navlist a span img, #spanblok span img{
+    width: 100%;
+    height: 11em;
+}
+.navlist a:hover span, .navlist a:focus span, #spanblok span{
+    visibility: visible;
+    overflow: visible;
+    width: 100%;
+    margin: 0;
+    top: 16em;
+    left: 0;
+    opacity: 1;
+}
+div#spanblok{
+    height: 12.5em;
+    background-size: cover;
 }
 
 /* TABLE */
