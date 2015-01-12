@@ -274,6 +274,12 @@ textarea::-webkit-input-placeholder {
     outline: none;
     font-family: bariol;
     font-size: 1em;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
 }
 
 .boxsizingBorder {
@@ -311,6 +317,14 @@ textarea::-webkit-input-placeholder {
 
 #myStream article div input:hover {
     background-color: #B9CED0;
+}
+
+input[type='submit'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;  
 }
 
 #myStream article div ul {
