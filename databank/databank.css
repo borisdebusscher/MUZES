@@ -17,11 +17,27 @@ section p:last-of-type {
 }
 
 
+#totop {
+    font-size: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    float: right;
+    margin-right: 3%;
+    background-color: rgba(146, 205, 207, .9);
+    width: 150px;
+    margin-left: -75px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+
+
 #login {
     width: 40px;
     height: 40px;
     padding: 0 !important;
-    background: url(img/teacher2.png) center no-repeat;
+    background: url(../../img/teacher2.png) center no-repeat;
     background-size: 40px;
     border-radius: 50%;
     text-indent: -9999px;
@@ -32,6 +48,10 @@ section p:last-of-type {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background-color: none !important;
+}
+
+.noHover:hover {
+    background-color: white;
 }
 
 
