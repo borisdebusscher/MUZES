@@ -108,6 +108,10 @@ main {
     box-sizing: border-box;
 }
 
+#wie nav ul li {
+    cursor: pointer;
+}
+
 #wie nav ul li:first-of-type a {
     border-right: 1px dashed #E0E1E2;
 }
@@ -120,6 +124,7 @@ main {
     background-color: #92CDCF;
     color: #E7E9EA;
 }
+
 
 #wie nav {
     display: block;

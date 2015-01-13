@@ -141,6 +141,18 @@ $("#studenten").on("click", function(){
         $("#wie-leerkrachten").addClass("hide");
         $("#wie-kunstliefhebbers").addClass("hide");
     }); 
+
+$("#kunstliefhebbers").on("click", function(){
+        $("#wie-studenten").addClass("hide");
+        $("#wie-leerkrachten").addClass("hide");
+        $("#wie-kunstliefhebbers").removeClass("hide");
+    }); 
+    
+$("#leerkrachten").on("click", function(){
+        $("#wie-studenten").addClass("hide");
+        $("#wie-leerkrachten").removeClass("hide");
+        $("#wie-kunstliefhebbers").addClass("hide");
+    }); 
     
 $(".menu").on("swipe",function(event){
         $("header nav ul").removeClass("translateLeft");
