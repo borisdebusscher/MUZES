@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Muzes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#A8D7D9">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="main.css">
+	 <link rel="stylesheet" href="over.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--[if lt IE 9]>
+        <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="hide" id="layer"></div>
+    <div class="translate" id="logForm">
+        <span class="close"></span>
+        <form>
+            <a><h1>login</h1></a>
+            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+    
+    <header>
+        <div class="hide menuLayer"></div>
+        <nav>
+            <div class="hide menuLayer"></div>
+            <a class="hide menu"></a>
+            <a href="index.html"><h1 id="logo">MUZES</h1></a>
+            <ul class="translateLeft">
+                <li><a class="closeMenu"></a>
+                </li>
+                <li class="top"><a href="index.html">home</a>
+                </li>
+                <li><a href="community.html">community</a>
+                    <ul>
+                        <li><a href="community.html">community</a></li>
+                        <li><a href="profile.html">profile</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="databank/databank.html">databank</a>
+                    <ul>
+                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
+                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
+                        <li><a href="databank/video.html">video's</a></li>
+                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
+                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
+                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
+                    </ul>
+                </li>
+                <li><a href="projecten.html">projecten</a>
+                </li>
+                <li><a href="kalender.html">kalender</a>
+                </li>
+                <li><a href="contact.html">contact</a>
+                </li>
+                <li><a class="noHover profilePic" id="login" href="profile.html">profile</a>
+                </li>
+                <li><a class="logout hide" href="#">Afmelden</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+		<section>
+		<header>
+		<h1>Wie is Wie?</h1>
+			<h2>Leer ons Muzes-team kennen!</h2>
+		</header>
+			<h2>Dagelijkse werking</h2>
+			<div class="persoon">	
+				<img src="img/over/josmaes.jpg" alt="Jos Maes foto">
+				<div class="info">
+				<h1>John maes - Voorzitter</h1>
+					<p>Algemene coördinatie</p>
+					<a href="mailto:jos.maes@fcme.be" target="_top"><img src="img/over/envelop.png" alt="envelop icon">jos.maes@fcme.be
+					</a>
+				</div>
+			</div>
+			
+			<div class="persoon">	
+				<img src="img/over/reinmeus.jpg" alt="Rein Meus foto">
+				<div class="info">
+				<h1>Rein Meus - Adviseur netwerking</h1>
+					<p>Expert Europese projecten, coach cel communicatie en community</p>
+				</div>
+			</div>
+			<div class="persoon">	
+				<img src="img/over/lisavanhaeren.jpg" alt="Lisa Vanhaeren foto">
+				<div class="info">
+				<h1>Lisa Vanhaeren - Stafmedewerker</h1>
+					<p>Coördinator opleidingen en evenementen</p>
+<p>Coördinatie dagelijkse werking: aanspreekpunt leden + commerciële contacten.</p>
+<p>Begeleiding stagetrajecten en vrijwilligerswerking.</p>
+					<a href="mailto:lisa.vanhaeren@muzes.be" target="_top" id="lisamailto"><img src="img/over/envelop.png" alt="envelop icon">lisa.vanhaeren@muzes.be
+					</a>
+				</div>
+			</div>
+			<div class="persoon">	
+				<img src="img/over/annlingier.jpg" alt="Ann Lingier foto">
+				<div class="info">
+				<h1>Ann Lingier - Administratief medewerker</h1>
+					<p>Coördinatie secretariaat en logistiek.</p>
+					<a href="mailto:ann.lingier@fcme.be" target="_top"><img src="img/over/envelop.png" alt="envelop icon">ann.lingier@fcme.be
+					</a>
+				</div>
+			</div>
+			<div class="persoon">	
+				<img src="img/over/johanghys.jpg" alt="Johan Ghys foto">
+				<div class="info">
+				<h1>Johan Ghys - Webmaster</h1>
+					<p>Ontwikkelt en onderhoudt website/bewaakt performance/adviseur. (www.novinit.be)</p>
+					
+				
+				</div>
+			</div>
+			<div class="persoon">	
+				<img src="img/over/paultimmermans.jpg" alt="Paul Timmermans foto">
+				<div class="info">
+				<h1>Paul Timmermans - Coördinator representatie</h1>
+					<p>Vertegenwoordigt Muzes en haar doelstellingen in diverse klankbordgroepen.</p>
+				</div>
+			</div>
+			<br>
+			</section>
+		<section>
+		<h2>Docenten</h2>
+		<div class="docent">
+			<h1>Carmien Michels</h1>
+			<h2>Taalexpressie</h2>
+			<p>Carmien Michels studeerde Woordkunst aan het Koninklijk Conservatorium van Antwerpen. Ze schrijft, performt, doceert en maakt audioverhalen. In 2011 won ze de Nederlandse NTR Radioprijs en in 2012 werd ze Slam Poetry kampioen van Antwerpen en vice-kampioen van België.</p>
+			</div>
+			<div class="docent">
+			<h1>Sarah Verhulst</h1>
+			<h2>Muziekpedagogie, Muziekmethodiek </h2>
+			<p>Sarah Verhulst is pianiste en zangeres. Al van in haar studietijd heeft ze een fascinatie voor het musiceren met heel jonge kinderen. Dit resulteerde in het ontwikkelen van oa een pianomethode voor kleuters, talloze workshops, muziektheaters en concerten voor de allerkleinsten. Zij heeft 26 jaar ervaring in het werken met jonge kinderen, ontwikkelt nieuwe concepten, concerten en workshops voor deze doelgroep. Ze geeft regelmatig nascholing en training aan jonge muzikanten, in kleuter- en lager onderwijs en kinderdagverblijven alsook aan ouders met hun kinderen.</p>
+			</div>
+<div class="docent">
+			<h1>Martine Van Puyvelde</h1>
+			<h2>Ontwikkelingspsychologie </h2>
+			<p>Martine Van Puyvelde ontving een Master in Muziek aan het Koninklijk Conservatorium te Brussel en in Klinische Psychologie aan de VUB. Ze werd bekroond met de " Janine Seghers award 2010 " voor haar masterproef " Tonale synchroon gebaseerd op harmonische en pentatonische reeks : De tonale moment in de moeder - kind interactie " . Momenteel werkt ze als promovendus in het onderzoeksdomein van Infant Development aan de Vrije Universiteit Brussel ( onderzoeksgroep IDN's ) en aan de Koninklijke Militaire Academie.</p>
+			</div>	
+<div class="docent">
+			<h1>Griet Plettinx</h1>
+	<h2>Liedrepertorium, liedcompositie </h2>
+			<p>Griet Plettinx is muziektherapeute die ook de postgraduaatsopleiding "Muzikale vorming van het jonge kind" in Klankendaal volgde. Ze werkt part-time als muziektherapeute op de afdeling kinder- en jeugdpsychiatrie te Sint-Niklaas. Ook fungeert ze als bestuurslid van de beroepsvereniging van muziektherapeuten.</p>
+			</div>
+<div class="docent">
+			<h1>Karen Haspeslagh</h1>
+	<h2>Praktijk en stage</h2>
+			<p>Karen Haspeslagh is muziekpedagoge van opleiding. Ze geeft Algemene Muziek Cultuur aan het conservatorium te Leuven. Ook verzorgt ze sessies Kinderklanken te Mechelen aan jonge kinderen vanaf 6 maanden tot 4 jaar.</p>
+			</div>	
+<div class="docent">
+			<h1>Kristin Roland</h1>
+	<h2>Stemvorming</h2>
+			<p>Kristin Roland is afgestudeerd als zangeres. Ze maakte deel uit van verschillende ensembles zoals het BRTN koor, het Brussels Kathedraalkoor, 'Voix Celeste' en Ex Tempore en werkte mee aan vele opnames voor radio en televisie. Zij is erg begaan met de zangpedagogie. Zij gaf reeds diverse cursussen in binnen- en buitenland (waaronder Montpellier) en is zangleerkracht aan de muziekacademie van Mortsel. Als koordirigente leidde zij de koren van Rahier, Neidingen en Mackenbach en in 2005 deed zij een productie voor Champ d'Action met kinderen rond hedendaagse muziek van Riley.</p>
+			</div>
+			<div class="docent">
+			<h1>Jozef Sercu</h1>
+	<h2>Muzische Vorming, Beweging</h2>
+			<p>KJozef Sercu studeerde Muziek en Muziektherapie aan het Lemmensinstituut in Leuven. Hij is lector aan de Vives Hogeschool in Torhout.</p>
+			</div>
+			<br>
+		</section>
+		<section>
+			<h2>Stagiares</h2>
+	<div class="stagiare">	
+				<img src="img/over/hanneopdebeeck.jpg" alt="Hanne Op De Beeck foto">
+				<div class="infoS">
+				<h1>Hanne Op de Beeck</h1>
+					<p>Communicatie in de brede zin van het woord, daar houdt Hanne zich mee bezig. Haar bacheloropleidingen in journalistiek en communicatiemanagement bereidden haar voor op deze stage. Ze ondersteunt de online community, verzorgt de sociale media en helpt bij het bedenken van strategische communicatieplannen. Hanne kan haar creativiteit optimaal gebruiken bij het creëren en verzamelen van beeldmateriaal. Samen met Jos en Lisa denkt ze na over de opvolging van de offline projecten van Muzes, IMPACT en Virus.</p>
+				</div>
+			</div>	
+<div class="stagiare">	
+				<img src="img/over/sarahvandemoortele.jpg" alt="Hanne Op De Beeck foto">
+				<div class="infoS">
+				<h1>Sarah Vandemoortele</h1>
+					<p>Na haar conservatoriumopleiding viool en haar studies musicologie legt Sarah zich toe op het lesgeven. Haar stage bij Muzes vormt een mooie aanvulling op de lerarenopleiding die ze momenteel volgt. Sarah ondersteunt de didactische omkadering van het IMPACT-project en de bijbehorende nascholingsreeks bij Piano’s Maene. Daarnaast is ze het aanspreekpunt binnen de IMPACT-communitygroep.</p>
+				</div>
+			</div>
+			<br>
+		</section>
+    </main>
+    
+    <div id="footer-wrapper">
+        <footer>
+            <div>
+                <h1>Handige links</h1>
+                <ul>
+                    <li><a href="over.html">Wie zijn we?</a></li>
+                    <li><a href="vacatures.html">Vacatures</a></li>
+                    <li><a href="klankendaal.html">Klankendaal</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Contact</h1>
+                <p>Tervuursesteenweg 84, 2800 Mechelen</p>
+                <p>+32 153 466 58</p>
+            </div>
+            <div>
+                <h1>Blijf op de hoogte</h1>
+                <ul class="clearfix">
+                    <li><a href="https://fb.com/158298510974276" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a></li>
+                    <li><a href="http://plus.google.com" target="_blank">Google+</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Met de steun van:</h1>
+                <ul class="clearfix">
+                    <li><a href="http://www.cera.be" target="_blank">Cera</a></li>
+                    <li><a href="http://www.bozar.be" target="_blank">Bozar</a></li>
+                    <li><a href="http://www.maene.be">Piano's Maene</a></li>
+                </ul>
+            </div>
+        </footer>
+        <footer>
+            <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script> Muzes vzw</p>
+            <p>Ontwikkeld door&nbsp;<a href="www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
+            <a href="terms.html">Algemene voorwaarden</a>
+            <a href="privacy.html">Privacyverklaring</a>
+        </footer>
+    </div>
+</body>
+</html>

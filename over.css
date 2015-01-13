@@ -1,0 +1,93 @@
+section > h2 {
+    text-transform:capitalize;
+	margin-left:10%;
+	font-size: 30px;
+}
+.persoon{
+	background-color: #D6ECEE;
+	border-radius: 10px;
+	height:150px;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom: 10px;
+}
+.persoon img{
+	height:150px;
+	float:left;
+}
+.info{
+	margin-left:30%;
+}
+main section div h1 {
+	
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #636363;
+    font-weight: 500;
+	margin: 0;
+    padding-top:5px;
+	font-size:27px;
+}
+main section div h2 {
+	
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #636363;
+    font-weight: 500;
+	margin: 0;
+    padding-top:5px;
+	font-size:23px;
+}
+.persoon p{
+	font-size:18px;
+}
+.persoon a{
+	float:right;
+	margin-top:10%;
+	margin-right:5%;
+	  font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #636363;
+    font-weight: 500;
+	
+    padding-top:5px;
+	font-size:15px;
+}
+#lisamailto{
+		margin-top:1%;
+}
+.info a img {
+	height:30px;
+	
+}
+.docent{
+	background-color: #FCFCFC;
+	height:100%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom: 10px;
+}
+.docent h1{
+	margin-left:5%;
+}
+.docent h2{
+	margin-left:5%;
+	margin-bottom:1%;
+}
+.docent p{
+	margin-bottom:2%;
+}
+.stagiare{
+	background-color: #D6ECEE;
+	border-radius: 10px;
+	height:150px;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom: 10px;
+}
+.stagiare img{
+	height:150px;;
+	float:left;
+}
+.infoS{
+	margin-left:15%;
+}
+
+
