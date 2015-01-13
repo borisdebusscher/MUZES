@@ -154,35 +154,25 @@ $("#leerkrachten").on("click", function(){
         $("#wie-kunstliefhebbers").addClass("hide");
     }); 
     
-$(".menu").on("swipe",function(event){
-        $("header nav ul").removeClass("translateLeft");
-        $("header nav").addClass("borderNull");
-        $(".menuLayer").removeClass("hide");
-        $("html,body").addClass("overflow");
-});
+$(window).scroll(function(event){
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        
+        if(scroll>393){
+            $("#totop").removeClass("hide");
+        }else{
+            $("#totop").addClass("hide");
+        }
+        
+    });
     
-$(".menu").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-        $("header nav ul").removeClass("translateLeft");
-        $("header nav").addClass("borderNull");
-        $(".menuLayer").removeClass("hide");
-        $("html,body").addClass("overflow");
-  }
-});
+$('#totop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
     
-     $('a[href*=#]:not([href=#])').click(function() {
-         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-             var target = $(this.hash);
-             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-             if (target.length) {
-                 $('html,body').animate({
-                     scrollTop: target.offset().top
-                 }, 1000);
-                 return false;
-             }
-         }
-     });
-
+    
+     
 
 }); 
 

@@ -8,7 +8,7 @@ section {
 #architectuur header,
 #beeld header,
 #dans header{
-    padding: 4.75em 0 1em;
+    
 }
 #architectuur,
 #beeld,
@@ -35,7 +35,13 @@ section {
     width: 150px;
     margin-left: -75px;
     padding: 1em;
+    cursor: pointer;
 }
+
+:target {
+    padding-top: 75px !important;
+}
+
 #login {
     width: 40px;
     height: 40px;
