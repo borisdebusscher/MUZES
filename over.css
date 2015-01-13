@@ -1,95 +1,78 @@
+/* ALGEMEEN */
+
 section > h2 {
-    text-transform:capitalize;
-	margin-left:10%;
+    text-transform: capitalize;
+	margin-left: 10%;
 	font-size: 30px;
 }
-.persoon{
+
+.persoon {
 	background-color: #D6ECEE;
 	border-radius: 10px;
 	height:150px;
-	margin-left:10%;
-	margin-right:10%;
-	margin-bottom: 10px;
+    margin: 0 10% 10% 10%;
 }
-.persoon img{
-	height:100%;
-	float:left;
+
+.persoon img {
+	height: 100%;
+	float: left;
 }
-.info{
-	margin-left:30%;
-}
-main section div h1 {
-	
+
+section div h1, section div h2, .mail {
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #636363;
     font-weight: 500;
-	margin: 0;
-    padding-top:5px;
-	font-size:27px;
+    margin: 0;
 }
-main section div h2 {
-	
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    color: #636363;
-    font-weight: 500;
-	margin: 0;
-    padding-top:5px;
-	font-size:23px;
+
+section div h1 {
+    padding: 0;
+	font-size: 27px;
 }
-.persoon p{
-	font-size:18px;
+
+section div h2 {
+    padding-top: 5px;
+	font-size: 23px;
 }
-.persoon a{
-	float:right;
-	margin-top:10%;
-	margin-right:5%;
-	  font-family: Bariol, Calibri, Arial, sans-serif;
-    color: #636363;
-    font-weight: 500;
-	
-    padding-top:5px;
+
+.persoon p {
+	font-size: 18px;
+}
+
+.mail {
+	float: right;
+    margin: 10% 5% 0 0;
+    padding: 5px 0 0 40px;
 	font-size:15px;
+    background: url(img/icons/mail.svg) no-repeat left;
 }
-#lisamailto{
-		margin-top:1%;
-}
-.info a img {
-	height:30px;
-	
-}
-.docent{
+
+/* DOCENTEN */
+
+.docent {
 	background-color: #F5F5F5;
 	height:100%;
-	margin-left:10%;
-	margin-right:10%;
-	margin-bottom: 10px;
+    margin: 0 10% 10px 10%;
 }
-.docent h1{
-	margin-left:5%;
+
+.docent h1 {
+	margin-left: 5%;
 }
-.docent h2{
-	margin-left:5%;
-	margin-bottom:1%;
+.docent h2 {
+	margin-left: 5%;
+	margin-bottom: 1%;
 }
-.docent p{
+.docent p {
 	margin-bottom:2%;
 }
-.stagiare{
-	background-color: #D6ECEE;
-	border-radius: 10px;
-	height:150px;
-	margin-left:10%;
-	margin-right:10%;
-	margin-bottom: 10px;
-}
-.stagiare img{
-	height:150px;;
-	float:left;
-}
-.infoS{
+
+/* STAGAIRES */
+
+.infoS {
 	margin-left:15%;
 }
-.infoS h1{
+
+.infoS h1 {
 	margin-left:7%
 }
 
