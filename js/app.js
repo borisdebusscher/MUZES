@@ -116,13 +116,18 @@ $(".menuLayer").on("click", function(){
         $("html,body").removeClass("overflow");
     }); 
     
-$("#comment").on("click", function(){
-    if($(".comment").attr("class") == "hide"){
-        $(".comment").removeClass("hide");
-        $(".commentInput").removeClass("hide");
+    
+
+$("#commentButton").on("click", function(){
+    var commentBlock = $(this).parent().parent().find(".comment");
+    var commentInput = $(this).parent().parent().find(".commentInput");
+    console.log(commentBlock);
+    if($(commentBlock).hasClass('hide')){
+        $(commentBlock).removeClass("hide");
+        $(commentInput).removeClass("hide");
     }else{
-        $(".comment").addClass("hide");
-        $(".commentInput").addClass("hide");
+        $(commentBlock).addClass("hide");
+        $(commentInput).addClass("hide");
     }
     });
     
