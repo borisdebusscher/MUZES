@@ -56,17 +56,19 @@ main {
 }
 
 .article-content h1 {
-    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    font-family: "Bariol", Calibri, Arial, sans-serif;
     font-weight: 600;
     font-size: 19px;
     margin: 0;
+    color: #4F5461;
 }
 
 .article-content h2 {
-    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    font-family: "Bariol", Calibri, Arial, sans-serif;
     font-weight: 100;
     font-size: 17px;
     margin: 2px 0 15px 0;
+    color: #4F5461;
 }
 
 #nieuws img {
@@ -86,38 +88,47 @@ main {
 
 #wie nav ul li {
     list-style-type: none;
+    float: left;
+    width: calc(100% / 3);
 }
 
 #wie nav ul li a {
     display: block;
-    height: 60px;
-    line-height: 60px;
     text-decoration: none;
-    padding: 15px 0px 15px 15px;
+    padding: 15px;
+    margin: 0;
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #61626f;
     font-size: 1.2em;
-    border-bottom: 1px dashed #E0E1E2;
     -o-transition: all .2s;
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#wie nav ul li:first-of-type a {
+    border-right: 1px dashed #E0E1E2;
+}
+    
+#wie nav ul li:last-of-type a {
+    border-left: 1px dashed #E0E1E2;
 }
 
 #wie nav ul li a:hover {
-    color: #92CDCF;
+    background-color: #92CDCF;
+    color: #E7E9EA;
 }
 
 #wie nav {
     display: block;
-    float: left;
-    width: 160px;
     background-color: #F0F0F1;
 }
 
 #wie > div {
-    width: calc(100% - 160px);
-    height: 273px;
+    width: 100%;
+    height: auto;
     float: left;
 }
 
@@ -130,7 +141,7 @@ main {
 }
 
 #wie div div img {
-    height: 50%;
+    width: 80%;
     border-radius: 50%;
     box-sizing: border-box;
     display: block;
@@ -245,10 +256,74 @@ main {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) {
+
+}
+
+@media only screen and (max-width: 750px) {
     #banner {
         background-position: 37% 10%;
     }
     
-    section{width: 95%;)
+    section{width: 95%;}
+    
+    /* WIE? */
+    
+    #wie div div {
+        width: 100%;
+        height: 100%;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    #wie div div img {
+        width: 170px;
+    }
+    
+    #wie div div p {
+        text-align: center;
+        width: 80%;
+    }
+    
+    #wie nav ul li {
+        float: none;
+        width: 100%;
+    }
+    
+    /* INSCHRIJVEN */
+    
+    #inschrijven #school, #inschrijven #ind {
+        display: block;
+        width: 100%;
+    }
+    
+    #inschrijven #school {
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+        
+    /* NIEUWS? */
+    
+    #nieuws img {
+        float: none;
+        height: auto;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    
+    .article-content h1, .article-content h2, .article-content .button {
+        display: block;
+        text-align: center;
+    }
+    
+    .article-content {
+        display: block;
+        padding: 15px;
+        height: auto;
+    }
 }
