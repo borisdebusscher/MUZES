@@ -91,30 +91,30 @@ section p:last-of-type {
 }
 .navlist a span{
     position: absolute;
-    visibility: hidden;
-    overflow: hidden;
-    top: 0;
-    width: 0;
-    height: 0;
     opacity: 0;
     transition: opacity .5s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .navlist a span img, #spanblok span img{
     width: 100%;
     max-width: 900px;
+    margin: 0;
+    padding: 0;
 }
-.navlist a:hover span, .navlist a:focus span, #spanblok span{
+.navlist a:hover span, .navlist a:focus span{
     visibility: visible;
     overflow: visible;
-    width: 100%;
-    margin: 0;
-    top: 16em;
-    left: 0;
     opacity: 1;
 }
 div#spanblok{
-    height: 14.7em;
+    height: 15em;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 /* TABLE */
