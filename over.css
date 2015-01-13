@@ -21,9 +21,10 @@ section > h2 {
 }
 
 .persoon {
+	
     min-height: 150px;
     width: 70%;
-    margin: 30px auto;
+    margin: 5% auto;
 }
 
 .persoon img {
@@ -74,6 +75,30 @@ section div h2 {
     display: block;
 }
 
-@media only screen and (max-width: 700px) {
-    
+@media only screen and (max-width: 750px) {
+   .info{
+	   clear:both;
+	   width:95%;
+	   margin:auto;
+	   
+   }
+	.persoon{
+		width:100%;
+	}
+	.persoon img{
+		clear:both;
+		margin-left: auto;
+		margin-right:auto;
+		margin-bottom:2%;
+		
+	
+		
+	}
+}
+@media only screen and (max-width: 500px) {
+	main section{
+		margin-left:0;
+		margin-right:0;
+		width:100%;
+	}
 }
