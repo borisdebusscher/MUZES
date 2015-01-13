@@ -135,6 +135,10 @@ header nav ul ul ul {
     top: 0;
 }
 
+header nav ul li ul li a:hover {
+    background-color: #81AAAA;
+}
+
 /* MAIN */
 
 section {
