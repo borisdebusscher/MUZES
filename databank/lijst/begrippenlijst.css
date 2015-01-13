@@ -3,6 +3,7 @@ section {
 }
 .lijstthema p, .lijstthema ul{
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+	color:#4F5461;
 }
 #architectuur header,
 #beeld header,
