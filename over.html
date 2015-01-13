@@ -5,17 +5,16 @@
     <meta charset="utf-8">
     <title>Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#A8D7D9">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="main.css">
-	 <link rel="stylesheet" href="over.css">
+    <link rel="stylesheet" href="over.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!--[if lt IE 9]>
         <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     <!--[if lt IE 9]>
         <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
@@ -26,13 +25,13 @@
     <div class="translate" id="logForm">
         <span class="close"></span>
         <form>
-            <a><h1>login</h1></a>
+            <h1>login</h1>
             <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
             <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" value="inloggen">
         </form>
     </div>
-    
+
     <header>
         <div class="hide menuLayer"></div>
         <nav>
@@ -40,25 +39,28 @@
             <a class="hide menu"></a>
             <a href="index.html"><h1 id="logo">MUZES</h1></a>
             <ul class="translateLeft">
-                <li><a class="closeMenu"></a>
+                <li class="noHover">
+                    <a class="closeMenu"></a>
                 </li>
                 <li class="top"><a href="index.html">home</a>
                 </li>
                 <li><a href="community.html">community</a>
-                    <ul>
-                        <li><a href="community.html">community</a></li>
-                        <li><a href="profile.html">profile</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a href="databank/databank.html">databank</a>
                     <ul>
-                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
-                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
-                        <li><a href="databank/video.html">video's</a></li>
-                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
-                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
-                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
+                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a>
+                        </li>
+                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a>
+                        </li>
+                        <li><a href="databank/video.html">video's</a>
+                        </li>
+                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a>
+                        </li>
+                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a>
+                        </li>
+                        <li><a href="databank/sites/architectuur.html">interessante sites</a>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="projecten.html">projecten</a>
@@ -67,9 +69,8 @@
                 </li>
                 <li><a href="contact.html">contact</a>
                 </li>
-                <li><a class="noHover profilePic" id="login" href="profile.html">profile</a>
+                <li class="noHover"><a id="login" class="login button" href="#">login</a>
                 </li>
-                <li><a class="logout hide" href="#">Afmelden</a></li>
             </ul>
         </nav>
     </header>
@@ -196,12 +197,12 @@
     </main>
     
     <div id="footer-wrapper">
-        <footer>
+        <footer class="clearfix">
             <div>
                 <h1>Handige links</h1>
                 <ul>
                     <li><a href="over.html">Wie zijn we?</a></li>
-                    <li><a href="vacatures.html">Vacatures</a></li>
+                    <li><a href="partnersindialoog.html">Partners in dialoog</a></li>
                     <li><a href="klankendaal.html">Klankendaal</a></li>
                 </ul>
             </div>
@@ -213,24 +214,24 @@
             <div>
                 <h1>Blijf op de hoogte</h1>
                 <ul class="clearfix">
-                    <li><a href="https://fb.com/158298510974276" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a></li>
-                    <li><a href="http://plus.google.com" target="_blank">Google+</a></li>
+                    <li class="clearfix"><a href="https://fb.com/158298510974276" target="_blank">Facebook</a></li>
+                    <li class="clearfix"><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a></li>
+                    <li class="clearfix"><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a></li>
+                    <li class="clearfix"><a href="http://plus.google.com" target="_blank">Google+</a></li>
                 </ul>
             </div>
             <div>
                 <h1>Met de steun van:</h1>
                 <ul class="clearfix">
-                    <li><a href="http://www.cera.be" target="_blank">Cera</a></li>
-                    <li><a href="http://www.bozar.be" target="_blank">Bozar</a></li>
-                    <li><a href="http://www.maene.be">Piano's Maene</a></li>
+                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a></li>
+                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a></li>
+                    <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a></li>
                 </ul>
             </div>
         </footer>
-        <footer>
+        <footer class="clearfix">
             <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script> Muzes vzw</p>
-            <p>Ontwikkeld door&nbsp;<a href="www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
+            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
             <a href="terms.html">Algemene voorwaarden</a>
             <a href="privacy.html">Privacyverklaring</a>
         </footer>
