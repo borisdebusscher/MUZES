@@ -169,7 +169,6 @@ section.box a {
     font-size: 24px;
     color: #7d7e7e;
     text-decoration: none;
-    height: 35px;
     line-height: 35px;
     width: 200px;
     padding-left: 50px;
@@ -226,4 +225,24 @@ section.box header p {
     font-size: 14px;
     margin: 0;
     width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    section.box div {
+        width: 70%;
+        -moz-column-count: 2;
+       -webkit-column-count: 2;
+        margin: 11px 0;
+    }
+    section.box a {
+        display: block;
+        font-family: "Source Sans Pro Light", Calibri, Arial, sans-serif;
+        font-size: 24px;
+        color: #7d7e7e;
+        text-decoration: none;
+        height: 35px;
+        line-height: 35px;
+        width: 200px;
+        padding-left: 50px;
+    }
 }
