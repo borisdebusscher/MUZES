@@ -21,8 +21,11 @@ section {
 }
 #community {
     width: 7.8em;
-    display: block;
-    margin: 1.5em auto;
+    display: inline-block;
+    margin: 1em;
+}
+.knoppen{
+    text-align: center;
 }
 section header {
     margin-bottom: 0;
@@ -43,6 +46,10 @@ section header {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background-color: none !important;
+}
+
+.links {
+    color: #4F5461;
 }
 
 /* MEDIA QUERIES */
