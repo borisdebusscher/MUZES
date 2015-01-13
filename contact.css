@@ -246,3 +246,29 @@ section.box header p {
         padding-left: 50px;
     }
 }
+@media screen and (max-width: 770px) {
+	#contact-voornaam{
+		width:100%;
+	}
+	#contact-naam{
+		width:100%;
+		margin:10px 0 0 0;
+	}
+	#contact-mail{
+		width:100%;
+	}
+	
+}
+@media screen and (max-width: 550px) {
+	#contact form > div > div:first-child{
+		padding:0;
+	}
+	#contact form > div > div:nth-child(2) {
+    padding:0 2% 0 0;
+}
+	main section{
+		width:95%
+	}
+
+	
+}
