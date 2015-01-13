@@ -1,7 +1,7 @@
 section {
     max-width: 900px;
 }
-section p, ul{
+.lijstthema p, .lijstthema ul{
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
 }
 #architectuur header,

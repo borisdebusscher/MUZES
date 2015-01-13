@@ -1,6 +1,9 @@
 section{
     max-width: 900px;
 }
+section p{
+    font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+}
 section p:first-of-type {
     padding: 30px 0 10px 0;
 }
