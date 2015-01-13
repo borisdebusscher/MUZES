@@ -77,12 +77,12 @@ section div h2 {
 @media only screen and (max-width: 750px) {
    .info{
 	   clear:both;
-	   width:95%;
+	   width:100%;
 	   margin:auto;
 	   
    }
 	.persoon{
-		width:100%;
+		width:95%;
 	}
 	.persoon img{
 		clear:both;
