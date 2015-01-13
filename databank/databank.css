@@ -1,3 +1,7 @@
+main{
+    min-height: 35em;
+}
+
 section{
     max-width: 900px;
 }
@@ -90,31 +94,27 @@ section p:last-of-type {
 }
 .navlist a span{
     position: absolute;
+    visibility: hidden;
+    overflow: hidden;
     opacity: 0;
-    transition: opacity .5s;
     bottom: 0;
     left: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    transition: opacity .3s
+}
+
+.navlist a span img{
     width: 100%;
     margin: 0;
     padding: 0;
-}
-.navlist a span img, #spanblok span img{
-    width: 100%;
-    max-width: 900px;
-    margin: 0;
-    padding: 0;
-}
-.navlist a:hover span, .navlist a:focus span{
-    visibility: visible;
-    overflow: visible;
-    opacity: 1;
 }
 div#spanblok{
-    height: 15em;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+    height: 0;
+    transition: height .1s;
 }
+
 
 /* TABLE */
 .leerplannav{
@@ -365,6 +365,18 @@ section iframe{
 
 
 @media only screen and (min-width: 750px){
+    
+    /* databankpagina */
+    .navlist a:hover span, .navlist a:focus span{
+        visibility: visible;
+        overflow: visible;
+        opacity: 1;
+        width: 100%;
+        bottom: 0;
+    }
+    .afbeeldingcontainer:hover div#spanblok, .afbeeldingcontainer:focus div#spanblok{
+        height: 15em;
+    }
     
     /*Eindtermen en leerplannen*/
     #eindtermenenuitgangspunten{
