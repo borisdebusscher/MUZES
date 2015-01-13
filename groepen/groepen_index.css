@@ -218,6 +218,15 @@ textarea::-webkit-input-placeholder {
     color: #505562;
 }
 
+.doorWie {
+    background: none !important;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 13px !important;
+    text-decoration: underline !important;
+}
+
 #stream article div h1 {
     display: block;
     width: 90%;
@@ -292,6 +301,10 @@ textarea::-webkit-input-placeholder {
 
 .border-green {
     border-color: #98CEB5;
+}
+
+.border-group {
+    border-color: #A8D7D9;
 }
 
 

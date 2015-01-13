@@ -30,7 +30,7 @@ nav {
     width: 110px;
     margin-top: 115px;
     margin-bottom: 10px;
-    border: 2px solid #A8D7D9;
+    border: 4px solid #A8D7D9;
     border-radius: 50%;
 }
 
@@ -84,10 +84,10 @@ nav {
 }
 
 #sideBar div ul li:nth-child(1) {
-    background-image: url(../img/user.png);
+    background-image: url(../img/crown.png);
     background-repeat: no-repeat;
     background-position:  left;
-    background-size: 16px;
+    background-size: 17px;
 }
 
 #sideBar div ul li:nth-child(2) {
