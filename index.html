@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#A8D7D9">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
@@ -129,11 +130,11 @@
             </header>
             <nav>
                 <ul class="clearfix">
-                    <li><a>Leerkrachten</a>
+                    <li id="leerkrachten"><a>Leerkrachten</a>
                     </li>
-                    <li><a>Studenten</a>
+                    <li id="studenten"><a>Studenten</a>
                     </li>
-                    <li><a>Kunstliefhebbers</a>
+                    <li id="kunstliefhebbers"><a>Kunstliefhebbers</a>
                     </li>
                 </ul>
             </nav>
@@ -153,7 +154,7 @@
                     <h1>Wekelijkse nieuwsflash</h1>
                     <p>Elke week een nieuwsbrief met het laatste nieuws, dossiers rond actuele thema's, aankondigingen en de populairste berichten uit de Muzes-community.</p>
                 </div>
-                <div id="wie-studenten">
+                <div class="hide" id="wie-studenten">
                     <div>
                         <img src="img/home/books.jpg">
                         <h1>Digitale bibliotheek</h1>
@@ -182,7 +183,7 @@
                     </p>
                 </div>
             </div>
-            <div id="wie-kunstliefhebbers">
+            <div class="hide" id="wie-kunstliefhebbers">
                 <div>
                     <img src="img/home/muzeskaart.png">
                     <h1>Muzeskaart</h1>

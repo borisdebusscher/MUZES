@@ -17,6 +17,10 @@ $("#login").on("click", function(){
         $("#logForm").removeClass("translate");
         $("#layer").removeClass("hide");
         $("body").addClass("overflow");
+        $("header nav ul").addClass("translateLeft");
+        $("header nav").removeClass("borderNull");
+        $(".menuLayer").addClass("hide");
+        $("html,body").removeClass("overflow");
     }); 
     
 $("#submit").on("click", function(){
@@ -132,6 +136,11 @@ $("#commentButton").on("click", function(){
     });
     
     
+$("#studenten").on("click", function(){
+        $("#wie-studenten").removeClass("hide");
+        $("#wie-leerkrachten").addClass("hide");
+        $("#wie-kunstliefhebbers").addClass("hide");
+    }); 
     
 $(".menu").on("swipe",function(event){
         $("header nav ul").removeClass("translateLeft");
