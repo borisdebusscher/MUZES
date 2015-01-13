@@ -1,21 +1,36 @@
-/* ALGEMEEN */
+section:not(.noMargin) {
+    padding: 50px 0;
+}
 
 section > h2 {
-    text-transform: capitalize;
-	margin-left: 10%;
+    text-transform: uppercase;
+	text-align: center;
 	font-size: 30px;
+    padding: 0 0 0 20px;
+}
+
+.info {
+	background-color: #F5F5F5;
+	border-radius: 10px;
+	padding: 15px;
+    box-sizing: border-box;
+    margin: 0 0 0 170px;
+    display: block;
+    height: 100%;
+    min-height: 150px;
 }
 
 .persoon {
-	background-color: #D6ECEE;
-	border-radius: 10px;
-	height:150px;
-    margin: 0 10% 10% 10%;
+    min-height: 150px;
+    width: 70%;
+    margin: 30px auto;
 }
 
 .persoon img {
-	height: 100%;
+    height: 150px;
 	float: left;
+    border-radius: 50%;
+    margin: auto;
 }
 
 section div h1, section div h2, .mail {
@@ -27,53 +42,38 @@ section div h1, section div h2, .mail {
 
 section div h1 {
     padding: 0;
-	font-size: 27px;
+	font-size: 28px;
 }
 
 section div h2 {
-    padding-top: 5px;
-	font-size: 23px;
+    padding: 0;
+	font-size: 21px;
 }
 
-.persoon p {
+.info p, .mail {
 	font-size: 18px;
+    margin: 0;
+}
+
+.info p {
+    width: 100%;
+}
+
+.info p:first-of-type {
+    padding-top: 5px;
+}
+
+.info p:last-of-type {
+    padding-bottom: 10px;
 }
 
 .mail {
-	float: right;
-    margin: 10% 5% 0 0;
-    padding: 5px 0 0 40px;
-	font-size:15px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 35px;
     background: url(img/icons/mail.svg) no-repeat left;
+    display: block;
 }
 
-/* DOCENTEN */
-
-.docent {
-	background-color: #F5F5F5;
-	height:100%;
-    margin: 0 10% 10px 10%;
+@media only screen and (max-width: 700px) {
+    
 }
-
-.docent h1 {
-	margin-left: 5%;
-}
-.docent h2 {
-	margin-left: 5%;
-	margin-bottom: 1%;
-}
-.docent p {
-	margin-bottom:2%;
-}
-
-/* STAGAIRES */
-
-.infoS {
-	margin-left:15%;
-}
-
-.infoS h1 {
-	margin-left:7%
-}
-
-
