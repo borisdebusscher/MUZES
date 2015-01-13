@@ -27,12 +27,15 @@ section {
 #totop {
     font-size: 1em;
     position: fixed;
-    top: 25%;
-    left: 90%;
+    bottom: 0;
+    left: 50%;
     float: right;
     margin-right: 3%;
+    background-color: rgba(146, 205, 207, .9);
+    width: 150px;
+    margin-left: -75px;
+    padding: 1em;
 }
-
 #login {
     width: 40px;
     height: 40px;
