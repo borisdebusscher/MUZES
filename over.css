@@ -38,6 +38,7 @@ section div h1, section div h2, .mail {
     color: #636363;
     font-weight: 500;
     margin: 0;
+    text-align: left;
 }
 
 section div h1 {
@@ -75,27 +76,26 @@ section div h2 {
 }
 
 @media only screen and (max-width: 750px) {
-   .info{
-	   clear:both;
-	   width:100%;
-	   margin:auto;
+   .info {
+	   float: none;
+	   width: 100%;
+	   margin: 0 auto;
+       min-height: 0;
 	   
    }
-	.persoon{
-		width:95%;
+	.persoon {
+		width: 95%;
 	}
-	.persoon img{
-		clear:both;
-		display:inline-block;
-		margin-left:auto;
-		margin-right:auto;
-		margin-bottom:2%;
+    
+	.persoon img {
+        float: none;
+		display: block;
+		margin: 30px auto 15px auto;
 	}
 }
+
 @media only screen and (max-width: 500px) {
-	main section{
-		margin-left:0;
-		margin-right:0;
-		width:100%;
+	main section {
+		width: 95%;
 	}
 }
