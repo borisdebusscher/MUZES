@@ -291,7 +291,7 @@ div#top{
     border-bottom: 1px dashed #E0E1E2;
 }
 .datacontent li:last-of-type{
-    border-bottom: 1px dashed rgba(0,0,0,0);
+    border-bottom: 1px solid #92CDCF;
 }
 .datacontent a{
     font-family: Bariol, Calibri, Arial, sans-serif;
