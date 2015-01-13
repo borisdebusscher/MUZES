@@ -29,14 +29,51 @@ main {
     text-decoration: none
 }
 
-/* WAT? */
+/* WRAPPER (WAT + VOORDEELGIDS) */
 
-#wat p:first-of-type {
+#wat p:first-of-type,
+#voordeelgids p:first-of-type{
     padding: 30px 0 10px 0;
 }
 
 #wat p:last-of-type {
     padding: 10px 0 30px 0;
+}
+
+#nieuws, #wrapper2 {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+#wat {
+    margin-top: 0;
+}
+
+#wrapper2 {
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+#wat, #voordeelgids {
+    width: 100%;
+}
+
+#wrapper1 {
+    width: 80%;
+    margin: auto;
+}
+
+#voordeelgids img {
+    width: 180px;
+}
+
+#voordeelgids p {
+    width: calc(100% - 180px);
+}
+
+#voordeelgids img, #voordeelgids p {
+    float: left;
 }
 
 /* NIEUWS */
@@ -237,25 +274,6 @@ main {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background-color: none !important;
-}
-
-@media only screen and (min-width: 1100px) {
-    #wat, #nieuws {
-        width: 48%;
-        float: left;
-    }
-    
-    #wat {float: left;}
-    #nieuws {float: right;}
-    
-    main div:first-of-type {
-        width: 80%;
-        margin: auto;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-
 }
 
 @media only screen and (max-width: 750px) {
