@@ -282,6 +282,7 @@ div#top{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    min-height: 12.5em;
 }
 .datacontent li{
     margin: 0;
@@ -290,7 +291,7 @@ div#top{
     border-bottom: 1px dashed #E0E1E2;
 }
 .datacontent li:last-of-type{
-    border-bottom: 1px solid #92CDCF;
+    /*border-bottom: 1px solid #92CDCF;*/
 }
 .datacontent a{
     font-family: Bariol, Calibri, Arial, sans-serif;
