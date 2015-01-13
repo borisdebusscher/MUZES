@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/dashed_line.png);
+    background-image: url(../img/dashed_line.png);
     background-repeat: repeat-y;
     background-size: 2px;
     background-position: 65%;
@@ -30,8 +30,23 @@ nav {
     width: 110px;
     margin-top: 115px;
     margin-bottom: 10px;
-    border: 6px solid #F4E7B9;
     border-radius: 50%;
+}
+
+.imgJohn {
+    border: 6px solid #F4E7B9;
+}
+
+.imgAstrid {
+    border: 6px solid #F2ABA9;
+}
+
+.imgAnissa {
+    border: 6px solid #98CEB5;
+}
+
+.frame-bot {
+    margin-bottom: 10px;
 }
 
 .changePic {
@@ -44,7 +59,27 @@ nav {
     left: 50%;
     margin-left: -55px;
     background-color: rgba(0, 0, 0, .2);
-    background-image: url(img/camera.png);
+    background-image: url(../img/camera.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: 10px;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    opacity: 0;
+    
+}
+
+.changeNoPic {
+    display: block;
+    padding: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 114.9px;
+    left: 50%;
+    margin-left: -55px;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url(../img/camera.png);
     background-repeat: no-repeat;
     background-position:  center;
     background-size: 10px;
@@ -103,28 +138,28 @@ nav {
 }
 
 #sideBar div ul li:nth-child(1) {
-    background-image: url(img/house.png);
+    background-image: url(../img/house.png);
     background-repeat: no-repeat;
     background-position:  left;
     background-size: 16px;
 }
 
 #sideBar div ul li:nth-child(2) {
-    background-image: url(img/palette.png);
+    background-image: url(../img/palette.png);
     background-repeat: no-repeat;
     background-position:  left;
     background-size: 16px;
 }
 
 #sideBar div ul li:nth-child(3) {
-    background-image: url(img/graduation.png);
+    background-image: url(../img/graduation.png);
     background-repeat: no-repeat;
     background-position:  left;
     background-size: 16px;
 }
 
 #sideBar div ul li:nth-child(4) {
-    background-image: url(img/earth.png);
+    background-image: url(../img/earth.png);
     background-repeat: no-repeat;
     background-position:  left;
     background-size: 16px;
@@ -151,7 +186,7 @@ nav {
     font-family: bariol;
     font-size: .8em;
     color: #91CBCD;
-    background-image: url(img/pencil.png);
+    background-image: url(../img/pencil.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 16px;
@@ -181,7 +216,7 @@ nav {
 #changeForm .closeChange {
     display: block;
     position: absolute;
-    background-image: url(img/closeChange.png);
+    background-image: url(../img/closeChange.png);
     background-repeat: no-repeat;
     background-size: 13px;
     background-position: center;
@@ -361,7 +396,7 @@ input[type='submit'] {
 
 #myStream article div #ulPost li:nth-child(1) {
     display: inline;
-    background-image: url(img/attachment.png);
+    background-image: url(../img/attachment.png);
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
@@ -370,7 +405,7 @@ input[type='submit'] {
 
 #myStream article div #ulPost li:nth-child(2) {
     display: inline;
-    background-image: url(img/camera.png);
+    background-image: url(../img/camera.png);
     background-repeat: no-repeat;
     background-size: 13px;
     background-position: center;
@@ -379,7 +414,7 @@ input[type='submit'] {
 
 #myStream article div #ulPost li:nth-child(3) {
     display: inline;
-    background-image: url(img/play.png);
+    background-image: url(../img/play.png);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center;
@@ -437,14 +472,14 @@ input[type='submit'] {
 }
 
 #myStream article div ul li:nth-child(1) {
-    background-image: url(img/thumbsup.png);
+    background-image: url(../img/thumbsup.png);
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
 }
 
 #myStream article div ul li:nth-child(2) {
-    background-image: url(img/bubble.png);
+    background-image: url(../img/bubble.png);
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center;
@@ -474,6 +509,15 @@ input[type='submit'] {
     border-color: #FEF1C0;
 }
 
+.border-red {
+    border-color: #F2ABA9;
+}
+
+.border-green {
+    border-color: #98CEB5;
+}
+
+
 .scale:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -483,7 +527,7 @@ input[type='submit'] {
     width: 40px;
     height: 40px;
     padding: 0 !important;
-    background: url(img/teacher2.png) center no-repeat;
+    background: url(../img/teacher2.png) center no-repeat;
     background-size: 40px;
     border-radius: 50%;
     text-indent: -9999px;
@@ -507,7 +551,7 @@ input[type='submit'] {
 }
 
 .arrow {
-    background-image: url(img/arrow-up-white.png) !important;
+    background-image: url(../img/arrow-up-white.png) !important;
     background-repeat: no-repeat;
     background-size: 15px !important;
     background-position: center;
@@ -518,7 +562,7 @@ input[type='submit'] {
 }
 
 .bgScale {
-    background-image: url(img/camera.png);
+    background-image: url(../img/camera.png);
     background-repeat: no-repeat;
     background-position:  center;
     background-size: 20px !important;
@@ -528,11 +572,11 @@ input[type='submit'] {
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?1c3t6n');
-	src:url('fonts/icomoon.eot?#iefix1c3t6n') format('embedded-opentype'),
-		url('fonts/icomoon.woff?1c3t6n') format('woff'),
-		url('fonts/icomoon.ttf?1c3t6n') format('truetype'),
-		url('fonts/icomoon.svg?1c3t6n#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?1c3t6n');
+	src:url('../fonts/icomoon.eot?#iefix1c3t6n') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?1c3t6n') format('woff'),
+		url('../fonts/icomoon.ttf?1c3t6n') format('truetype'),
+		url('../fonts/icomoon.svg?1c3t6n#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -577,7 +621,11 @@ input[type='submit'] {
     
     #myStream article div #ulPost li {
     margin: 0px 2px;
+    }
     
+    .no-pic {
+        width: 43px;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -597,7 +645,7 @@ input[type='submit'] {
     
     .editBg {
         display: block !important;
-        background-image: url(img/pencil.png);
+        background-image: url(../img/pencil.png);
         background-repeat: no-repeat;
         background-position:  left;
         background-size: 16px;
@@ -660,7 +708,7 @@ input[type='submit'] {
     
     /* nav */
     
-    header > nav > a[href="index.html"] {
+    header > nav > a[href="../index.html"] {
         display: block;
         float: none;
         margin: 0 auto !important;
@@ -740,7 +788,7 @@ input[type='submit'] {
         top: 10px;
         width: 50px;
         height: 50px;
-        background-image: url(img/menu.png);
+        background-image: url(../img/menu.png);
         background-repeat: no-repeat;
         background-size: 22px;
         background-position: center;

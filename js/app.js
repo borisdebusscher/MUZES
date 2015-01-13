@@ -80,13 +80,13 @@ $(".closeChange").mouseout(function() {
         });
     
 $("#file").mouseover(function() {
-            $(".changePic").addClass("opacity");
-            $(".changePic").addClass("bgScale");
+            $(".changePic, .changeNoPic").addClass("opacity");
+            $(".changePic, .changeNoPic").addClass("bgScale");
         });
       
 $("#file").mouseout(function() {
-            $(".changePic").removeClass("opacity");
-            $(".changePic").removeClass("bgScale");
+            $(".changePic, .changeNoPic").removeClass("opacity");
+            $(".changePic, .changeNoPic").removeClass("bgScale");
         });
     
 $(".closeMenu").mouseover(function() {
