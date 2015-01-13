@@ -172,7 +172,17 @@ $('#totop').click(function(){
 	});
     
     
-     
+     $("#scrollArchi").click(function() {
+        $('body').animate({scrollTop: 394}, 800);
+});
+    
+    $("#scrollBeeld").click(function() {
+        $('body').animate({scrollTop: 3625}, 800);
+});
+    
+    $("#scrollDans").click(function() {
+        $('body').animate({scrollTop: 6984}, 800);
+});
 
 }); 
 

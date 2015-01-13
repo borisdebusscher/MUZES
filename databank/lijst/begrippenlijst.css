@@ -38,9 +38,7 @@ section {
     cursor: pointer;
 }
 
-:target {
-    padding-top: 75px !important;
-}
+
 
 #login {
     width: 40px;
@@ -61,6 +59,10 @@ section {
 
 .noHover:hover {
     background-color: white;
+}
+
+.navlist ul a {
+    cursor: pointer;
 }
 /* MEDIA QUERIES */
 
