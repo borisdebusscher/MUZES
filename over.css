@@ -13,6 +13,7 @@ section > h2 {
 }
 .persoon img{
 	height:100%;
+	float:left;
 }
 .info{
 	margin-left:30%;
