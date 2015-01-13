@@ -1,5 +1,5 @@
 #contact {
-    margin-top: 105px;
+    padding-bottom: 30px;
 }
 
 /* FORM */
@@ -123,8 +123,7 @@
 section.box {
     display: block;
     width: 90%;
-    height: 100px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     background-color: #f4f5f5;
     text-align: justify;
     border-radius: 10px;
@@ -151,7 +150,7 @@ section.box div {
     box-sizing: border-box;
     -moz-column-count: 3;
    -webkit-column-count: 3;
-    margin: 11px 0
+    margin: 11px 0;
 }
 
 section.box ul {
@@ -170,7 +169,6 @@ section.box a {
     color: #7d7e7e;
     text-decoration: none;
     line-height: 35px;
-    width: 200px;
     padding-left: 50px;
 }
 
@@ -227,48 +225,149 @@ section.box header p {
     width: 100%;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1350px) {
     section.box div {
-        width: 70%;
+        width: 60%;
+        height: auto;
         -moz-column-count: 2;
        -webkit-column-count: 2;
-        margin: 11px 0;
     }
-    section.box a {
-        display: block;
-        font-family: "Source Sans Pro Light", Calibri, Arial, sans-serif;
-        font-size: 24px;
-        color: #7d7e7e;
-        text-decoration: none;
-        height: 35px;
-        line-height: 35px;
-        width: 200px;
-        padding-left: 50px;
+    
+    section.box li {
+        margin-bottom: 8px;
     }
 }
-@media screen and (max-width: 770px) {
-	#contact-voornaam{
-		width:100%;
-	}
-	#contact-naam{
-		width:100%;
-		margin:10px 0 0 0;
-	}
-	#contact-mail{
-		width:100%;
-	}
-	
-}
-@media screen and (max-width: 550px) {
-	#contact form > div > div:first-child{
-		padding:0;
-	}
-	#contact form > div > div:nth-child(2) {
-    padding:0 2% 0 0;
-}
-	main section{
-		width:95%
-	}
 
-	
+@media screen and (max-width: 1000px) {
+    section.box header {
+        float: none;
+        height: auto;
+        width: 100%;
+        min-width: inherit;
+        
+    }
+
+    section.box div {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        -moz-column-count: 2;
+       -webkit-column-count: 2;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    
+    /* FORM */
+    
+    #contact form > div > div {
+        float: none;
+        min-height: inherit;
+    }
+    
+    #contact form > div:first-child {
+    padding-top: 0;
+}
+
+    #contact form > div > div:first-child {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #contact form > div > div:nth-child(2) {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #contact label {
+        float: none;
+        margin-left: 0;
+    }
+
+    #contact input, textarea {
+        outline: none;
+        resize: none;
+        overflow: auto;
+        float: left;
+        border: none;
+    }
+    
+    #contact input[type="text"], input[type="email"], textarea {
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    background-color: #f4f5f5;
+    
+    font-family: Bariol, Calibri, Arial, sans-serif;
+    font-size: 17px;
+    text-shadow: none;
+    color: #7e7e7e;
+    }
+
+    #contact textarea {
+        height: 150px;
+    }
+
+    #contact input[type="submit"] {
+        overflow: hidden;
+        min-width: inherit;
+        width: 100%;
+    }
+
+    #contact-voornaam {
+        width: calc(50% - 7.5px);
+        margin-right: 7.5px;
+    }
+
+    #contact-naam {
+        width: calc(50% - 7.5px);
+        margin-left: 7.5px;
+    }
+
+    #contact-mail {
+        width: 100%;
+    }
+
+    #contact-mail, #contact-boodschap, input[type="submit"] {
+        margin-top: 15px;
+    }
+    
+    
+    /* BOX */
+    
+    section.box div {
+        float: none;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        -moz-column-count: 1;
+       -webkit-column-count: 1;
+    }
+    
+    section.box a {
+        width: 130px;
+        margin: auto;
+        background-size: 30px !important;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 40px;
+    }
+    
+    section.box a:hover:not(#icon-telephone) {
+        -webkit-transition: .2s all;
+        transition: .2s all;
+        margin: auto;
+    }
+    
+    section.box header {
+        text-align: center;
+    }
+    
+    section.box h1 {
+        font-size: 23px
+    }
 }
