@@ -14,7 +14,7 @@
     <!--[if lt IE 9]>
         <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     <!--[if lt IE 9]>
         <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
@@ -31,15 +31,17 @@
             <input type="submit" name="submit" value="inloggen">
         </form>
     </div>
-    
-<header>
+
+    <header>
         <div class="hide menuLayer"></div>
         <nav>
             <div class="hide menuLayer"></div>
             <a class="hide menu"></a>
             <a href="index.html"><h1 id="logo">MUZES</h1></a>
             <ul class="translateLeft">
-                <li class="noHover"><a class="closeMenu"></a></li>
+                <li class="noHover">
+                    <a class="closeMenu"></a>
+                </li>
                 <li class="top"><a href="index.html">home</a>
                 </li>
                 <li><a href="community.html">community</a>
@@ -47,12 +49,18 @@
                 <li>
                     <a href="databank/databank.html">databank</a>
                     <ul>
-                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
-                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
-                        <li><a href="databank/video.html">video's</a></li>
-                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
-                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
-                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
+                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a>
+                        </li>
+                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a>
+                        </li>
+                        <li><a href="databank/video.html">video's</a>
+                        </li>
+                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a>
+                        </li>
+                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a>
+                        </li>
+                        <li><a href="databank/sites/architectuur.html">interessante sites</a>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="projecten.html">projecten</a>
@@ -61,65 +69,141 @@
                 </li>
                 <li><a href="contact.html">contact</a>
                 </li>
-                <li class="noHover"><a id="login" class="login button" href="#">login</a></li>
+                <li class="noHover"><a id="login" class="login button" href="#">login</a>
+                </li>
             </ul>
         </nav>
         <div id="banner">
             <a href="projecten.html">Project: Impact</a>
         </div>
     </header>
-    
+
     <main>
         <div class="clearfix">
-        <section id="wat">
-            <header>
-                <h1>Wat?</h1>
-            </header>
-            <p>Muzes is een online community voor leraren, studenten, kunstenaars en kunstliefhebbers, waar ideeën en lesmateriaal gedeeld kunnen worden. Daarnaast is er ook toegang tot een online databank van boeken, video’s, lesmateriaal en leerplannen.</p>
-            <p>Onze missie is degelijke kunsteducatie aan te bieden aan alle kinderen in Vlaanderen, onbepaald het onderwijsniveau.</p>
-        </section>
-        <section id="nieuws" class="clearfix">
-            <header>
-                <h1>Gelezen op Muzes.be</h1>
-            </header>
-            <article>
-                <a href=""><img src="img/home/kersthits.jpg" alt="Kersthits"></a>
-                <div class="article-content">
-                    <h1>Kersthits voor zenuwpezen, rockers en feestkonijnen.</h1>
-                    <h2>Deze songs krijgen <i>iedereen</i> in kerststemming!</h2>
-                    <a class="button" href="">Alle nummers kan je hier beluisteren.</a>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="img/home/thank you.jpg" alt="Thank you!"></a>
-                <div class="article-content">
-                    <h1>8 leraren die levens kunnen veranderen.</h1>
-                    <h2>Hartverwarmend!</h2>
-                    <a class="button" href="">Lees hier het volledige artikel.</a>
-                </div>
-            </article>
-            <article>
-                <a href=""><img src="img/home/degeneres.jpg" alt="Ellen Degeneres"></a>
-                <div class="article-content">
-                    <h1>Stromae was overal dit jaar...</h1>
-                    <h2>Maar waar was hij niet?</h2>
-                    <a class="button" href="">Doe hier de quiz!</a>
-                </div>
-            </article>
-        </section>
+            <section id="wat">
+                <header>
+                    <h1>Wat?</h1>
+                </header>
+                <p>Muzes is een online community voor leraren, studenten, kunstenaars en kunstliefhebbers, waar ideeën en lesmateriaal gedeeld kunnen worden. Daarnaast is er ook toegang tot een online databank van boeken, video’s, lesmateriaal en leerplannen.</p>
+                <p>Onze missie is degelijke kunsteducatie aan te bieden aan alle kinderen in Vlaanderen, onbepaald het onderwijsniveau.</p>
+            </section>
+            <section id="nieuws" class="clearfix">
+                <header>
+                    <h1>Gelezen op Muzes.be</h1>
+                </header>
+                <article>
+                    <a href="">
+                        <img src="img/home/kersthits.jpg" alt="Kersthits">
+                    </a>
+                    <div class="article-content">
+                        <h1>Kersthits voor zenuwpezen, rockers en feestkonijnen.</h1>
+                        <h2>Deze songs krijgen <i>iedereen</i> in kerststemming!</h2>
+                        <a class="button" href="">Alle nummers kan je hier beluisteren.</a>
+                    </div>
+                </article>
+                <article>
+                    <a href="">
+                        <img src="img/home/thank you.jpg" alt="Thank you!">
+                    </a>
+                    <div class="article-content">
+                        <h1>8 leraren die levens kunnen veranderen.</h1>
+                        <h2>Hartverwarmend!</h2>
+                        <a class="button" href="">Lees hier het volledige artikel.</a>
+                    </div>
+                </article>
+                <article>
+                    <a href="">
+                        <img src="img/home/degeneres.jpg" alt="Ellen Degeneres">
+                    </a>
+                    <div class="article-content">
+                        <h1>Stromae was overal dit jaar...</h1>
+                        <h2>Maar waar was hij niet?</h2>
+                        <a class="button" href="">Doe hier de quiz!</a>
+                    </div>
+                </article>
+            </section>
         </div>
-        <section id="wie">
+        <section id="wie" class="clearfix">
             <header>
                 <h1>Voor wie ?</h1>
             </header>
             <nav>
                 <ul>
-                    <li><a>Leerkrachten</a></li>
-                    <li><a>Studenten</a></li>
-                    <li><a>Kunstenaars</a></li>
-                    <li><a>Kunstliefhebbers</a></li>
+                    <li><a>Leerkrachten</a>
+                    </li>
+                    <li><a>Studenten</a>
+                    </li>
+                    <li><a>Kunstliefhebbers</a>
+                    </li>
                 </ul>
             </nav>
+            <div id="wie-leerkrachten">
+                <div>
+                    <img src="img/home/community.jpg">
+                    <h1>Community</h1>
+                    <p>In de community kan uw informatie uitwisselen met collega's over specifieke thema's, tips delen vanuit uw eigen onderwijspraktijk of advies vragen rond een specifiek probleem.</p>
+                </div>
+                <div>
+                    <img src="img/home/books.jpg">
+                    <h1>Lesmateriaal</h1>
+                    <p>In onze databank kunt u de eindtermen en de leerplannen voor de verschillende onderwijssystemen bekijken, of laat uw lessen laten inspireren door de lesvoorbeelden.</p>
+                </div>
+                <div>
+                    <img src="img/home/news.jpg">
+                    <h1>Wekelijkse nieuwsflash</h1>
+                    <p>Elke week een nieuwsbrief met het laatste nieuws, dossiers rond actuele thema's, aankondigingen en de populairste berichten uit de Muzes-community.</p>
+                </div>
+                <div id="wie-studenten">
+                    <div>
+                        <img src="img/home/books.jpg">
+                        <h1>Digitale bibliotheek</h1>
+                        <p>Meer dan 5000 publicaties (boeken, tijdschriften, folders, ...) rond diverse thema's, permanent beschikbaar met mogelijkheid tot downloaden.</p>
+                    </div>
+                    <div>
+                        <img src="img/home/video.jpg">
+                        <h1>Videodatabank</h1>
+                        <p>Meer dan 300 films, documentaires en interviews rond kunst en muziek zijn permanent raadpleegbaar!</p>
+                    </div>
+                    <div>
+                        <img src="img/home/lijst.jpg">
+                        <h1>Begrippenlijsten</h1>
+                        <p>Overzichtelijke lijsten met honderden begrippen uit de kunstwereld, alfabetisch gerangschikt per thema.</p>
+                    </div>
+                    <div>
+                        <img src="img/home/website.jpg">
+                        <h1>Interessante sites</h1>
+                        <p>Lijsten met handige websites ter referentie, opgedeeld per categorie.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/home/welkomstpakket.jpg">
+                    <h1>Welkomstpakket</h1>
+                    <p>Nieuwe schoollidmaatschappen worden beloond met een exclusief welkomstpakket t.w.v. €60. Meer info op de <a href="inschrijven/scholen.html">inschrijvingspagina</a>
+                    </p>
+                </div>
+            </div>
+            <div id="wie-kunstliefhebbers">
+                <div>
+                    <img src="img/home/muzeskaart.png">
+                    <h1>Muzeskaart</h1>
+                    <p>De Muzeskaart biedt je stevige kortingen in musea, theaters en andere bedrijven. In de loop van 2015 komen er talrijke organisaties bij!</p>
+                </div>
+                <div>
+                    <img src="img/home/museum.jpg">
+                    <h1>Cultuur in je buurt</h1>
+                    <p>Maak kennis met ons overzicht van buitenschoolse initiatieven: concerthuizen, kunsteducatieve organisaties, culturele bedrijven, ...</p>
+                </div>
+                <div>
+                    <img src="img/home/Impact.png">
+                    <h1>Projecten</h1>
+                    <p>Maak kennis met de verschillende projecten die we organiseren of waar we aan meewerken.</p>
+                </div>
+                <div>
+                    <img src="img/home/kalender.jpg">
+                    <h1>Kalender</h1>
+                    <p>Ontdek verschillende studiedagen, nascholingen en andere culturele evenementen in een handige kalender.</p>
+                </div>
+            </div>
         </section>
         <section id="inschrijven">
             <header>
@@ -127,27 +211,32 @@
             </header>
             <div id="ind">
                 <h2>Individuen</h2>
-                <h3>€30 / jaar, 1 account</h3><br>
+                <h3>€30 / jaar, 1 account</h3>
+                <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet, tortor vel tempor posuere, leo sapien condimentum lectus, vitae maximus ex libero vulputate sapien. Aenean luctus neque nec augue feugiat consectetur. Nunc urna ligula, blandit sed ultricies vitae, tempus a dolor.</p>
                 <a href="inschrijven/individueel.html" class="button">inschrijven</a>
             </div>
             <div id="school">
                 <h2>Scholen</h2>
-                <h3>€180 / jaar, 20 accounts</h3><br>
+                <h3>€180 / jaar, 20 accounts</h3>
+                <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet, tortor vel tempor posuere, leo sapien condimentum lectus, vitae maximus ex libero vulputate sapien. Aenean luctus neque nec augue feugiat consectetur. Nunc urna ligula, blandit sed ultricies vitae, tempus a dolor.</p>
                 <a href="inschrijven/scholen.html" class="button">inschrijven</a>
             </div>
         </section>
     </main>
-    
+
     <div id="footer-wrapper">
         <footer class="clearfix">
             <div>
                 <h1>Handige links</h1>
                 <ul>
-                    <li><a href="over.html">Wie zijn we?</a></li>
-                    <li><a href="partnersindialoog.html">Partners in dialoog</a></li>
-                    <li><a href="klankendaal.html">Klankendaal</a></li>
+                    <li><a href="over.html">Wie zijn we?</a>
+                    </li>
+                    <li><a href="partnersindialoog.html">Partners in dialoog</a>
+                    </li>
+                    <li><a href="klankendaal.html">Klankendaal</a>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -158,27 +247,39 @@
             <div>
                 <h1>Blijf op de hoogte</h1>
                 <ul class="clearfix">
-                    <li class="clearfix"><a href="https://fb.com/158298510974276" target="_blank">Facebook</a></li>
-                    <li class="clearfix"><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a></li>
-                    <li class="clearfix"><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a></li>
-                    <li class="clearfix"><a href="http://plus.google.com" target="_blank">Google+</a></li>
+                    <li class="clearfix"><a href="https://fb.com/158298510974276" target="_blank">Facebook</a>
+                    </li>
+                    <li class="clearfix"><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a>
+                    </li>
+                    <li class="clearfix"><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a>
+                    </li>
+                    <li class="clearfix"><a href="http://plus.google.com" target="_blank">Google+</a>
+                    </li>
                 </ul>
             </div>
             <div>
                 <h1>Met de steun van:</h1>
                 <ul class="clearfix">
-                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a></li>
-                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a></li>
-                    <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a></li>
+                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
+                    </li>
+                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
+                    </li>
+                    <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a>
+                    </li>
                 </ul>
             </div>
         </footer>
         <footer class="clearfix">
-            <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script> Muzes vzw</p>
-            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a></p>
+            <p>&copy; 2004-
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>Muzes vzw</p>
+            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
+            </p>
             <a href="terms.html">Algemene voorwaarden</a>
             <a href="privacy.html">Privacyverklaring</a>
         </footer>
     </div>
 </body>
+
 </html>
