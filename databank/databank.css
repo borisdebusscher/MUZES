@@ -1,6 +1,4 @@
-main{
-    min-height: 35em;
-}
+
 
 section{
     max-width: 900px;
@@ -340,9 +338,11 @@ div#top{
     text-align: justify;
 }
 .column{
-    width: 49.9%;
+    display: inline-block;
+    width: 49.8%;
     float: left;
     background: #fff;
+    margin: 0 auto;
 }
 .column:last-of-type{
     border-left: 1px dashed #E0E1E2;
@@ -590,6 +590,9 @@ section iframe{
     }
     .datacontent li a{
         padding: 1.5em 2em;
+    }
+    .datacontent ul{
+        min-height: 1em;
     }
     .column{
         width: 100%;
