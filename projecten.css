@@ -52,10 +52,6 @@ section header {
     color: #4F5461;
 }
 
-.navCurrent {
-    color: #92CDCF;
-}
-
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
