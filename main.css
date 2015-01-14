@@ -47,10 +47,6 @@ main {
     clear: both;
 }
 
-.clearfix {
-    *zoom: 1;
-}
-
 /* HEADER */
 
 header nav {
@@ -110,6 +106,14 @@ header nav ul li a {
 .login {
     color: #FFFFFF;
     margin-left: 5px;
+}
+
+#log {
+    display: block;
+    margin: 0 auto;
+    padding-right: 11px;
+    padding-top: 25px;
+    width: 60px;
 }
 
 header nav ul ul {
