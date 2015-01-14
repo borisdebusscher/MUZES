@@ -90,6 +90,7 @@ section p:last-of-type {
     text-decoration: none;
     color: #4F5461;
     transition: .2s all;
+    -webkit-transition: .2s all;
 }
 .breadcrumb a:hover, .breadcrumb a:focus{
     color: #92CDCF;
@@ -240,6 +241,7 @@ table td{
     text-align: left;
     line-height: 1.5em;
     transition: background 2s;
+    -webkit-transition: background 2s;
 }
 table td:hover{
     background: #92CDCF;
@@ -410,6 +412,7 @@ section iframe{
     #totop{
         opacity: .75;
         transition: opacity .2s;
+        -webkit-transition: opacity .2s;
     }
     #totop:hover{
         opacity: 1;
