@@ -7,9 +7,10 @@ form {
     box-sizing: border-box;
 }
 
-form > div > label, form > div > input, form > div > div, form > div > select, form > div > textarea {
+form > fieldset > label, form > fieldset > input, form > fieldset > div, form > fieldset > select, form > fieldset > textarea, form > fieldset > fieldset {
     float: left;
     width: 50%;
+    box-sizing: border-box;
 }
 
 form p {
@@ -28,7 +29,7 @@ label {
     text-align: left;
 }
 
-form > div > label, form > div > div {
+form > fieldset > label, form > fieldset > div {
     margin: 15px 0;
 }
 
@@ -147,6 +148,12 @@ section.box > img {
 
 /* GEGEVENS MEERDERE PERSONEN */
 
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
 .gegevens:not(.nomargin) {
     margin-bottom: 40px;
 }
@@ -162,7 +169,6 @@ section.box > img {
     display: block;
     font-size: 27px;
     text-align: left;
-    padding-left: 5px;
     box-sizing: border-box;
 }
 
@@ -192,13 +198,17 @@ section.box > img {
     width: 48%;
 }
 
-#gegevens-wrapper a.button{
+#gegevens-wrapper a.button {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
 }
 
 /* CHECKBOXES */
+
+fieldset.checkbox {
+    clear: left;
+}
 
 .checkbox {
     margin: 20px 0;
@@ -304,9 +314,14 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 530px) {
-    form > div > label, form > div > input, form > div > div, form > div > select, form > div > textarea {
+    form > fieldset > label, form > fieldset > input, form > fieldset > div, form > fieldset > select, form > fieldset > textarea {
         float: none;
         width: 100%;
+    }
+    
+    form {
+        width: 90%;
+        margin: auto;
     }
     
     input[type="submit"] {
