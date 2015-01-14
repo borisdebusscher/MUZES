@@ -3,15 +3,46 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Community</title>
+    <title>Nieuwsoverzicht - Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
     <meta name="theme-color" content="#A8D7D9">
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta name="author" content="Astrid Vandevoorde, Boris Debusscher, Dieter Holvoet, Siemen Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool Brussel">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+	<link rel="apple-touch-icon" href="/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/favicon-144.png">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+    
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="community.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    
     <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/app.js"></script>
+    
+    <!--[if lt IE 9]>
+        <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -38,8 +69,8 @@
                     <a href="databank/databank.html">databank</a>
                     <ul>
                         <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
-                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
-                        <li><a href="databank/video.html">video's</a></li>
+                        <li><a href="databank/bib/bibliotheek.html">digitale bibliotheek</a></li>
+                        <li><a href="databank/video/video.html">video's</a></li>
                         <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
                         <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
                         <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
@@ -61,7 +92,7 @@
     <article>
         <section id="stream">
             <article class="marg-top bot-resp clearfix">
-                <img class="absolute-post resp-post" src="img/post.png" width="50px">
+                <img class="absolute-post resp-post" src="img/post.png" width="50px" alt="Een nieuw bericht posten">
                 <span class="boxLine right-resp"></span>
                 <span class="clearfix"></span>
                 <div class="right-resp">
@@ -79,7 +110,7 @@
             </article>
             <article class="clearfix bot-resp">
                 <a href="profile/profile_astrid.html">
-                    <img class="absolute resp border border-red scale" src="img/teacher1.png" width="45px">
+                    <img class="absolute resp border border-red scale" src="img/teacher1.png" width="45px" alt="Astrid Vandevoorde">
                 </a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
@@ -87,7 +118,7 @@
                     <a href="profile/profile_astrid.html">Astrid Vandevoorde</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
                     <h2 class="icon-clock"> 5 min</h2>
-                    <img class="left margin-pic" src="img/back-to-school.png" width="90px">
+                    <img class="left margin-pic" src="img/back-to-school.png" width="90px" alt="Schoolbord met stapel boeken en appel">
                     <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
@@ -109,7 +140,7 @@
             </article>
             <article class="clearfix bot-resp">
                 <a href="profile/profile_john.html">
-                    <img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px">
+                    <img class="absolute resp border border-yellow scale" src="img/teacher2.png" width="45px" alt="John Doe">
                 </a>
                 <span class="boxLine right-resp"></span>
                 <span class="clearfix"></span>
@@ -117,7 +148,7 @@
                     <a href="profile/profile_john.html">John Doe</a>
                     <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
                     <h2 class="icon-clock"> 46 min</h2>
-                    <iframe width="100%" height="180px" src="http://www.youtube.com/embed/2W4MBVJfUh4?showinfo=0&theme=light&iv_load_policy=3&autohide=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="100%" height="180px" src="http://www.youtube.com/embed/2W4MBVJfUh4?showinfo=0&theme=light&iv_load_policy=3&autohide=1" frameborder="0" allowfullscreen name="7 iconische verbeteringen van hoe wij naar muziek luisteren - video" title="7 iconische verbeteringen van hoe wij naar muziek luisteren - video"></iframe>
                     <ul>
                         <li></li>
                         <li id="commentButton"></li>
@@ -137,7 +168,7 @@
             </article>
             <article class="clearfix bot-resp">
                 <a href="profile/profile_anissa.html">
-                    <img class="absolute resp border border-green scale" src="img/teacher3.png" width="45px">
+                    <img class="absolute resp border border-green scale" src="img/teacher3.png" width="45px" alt="Anissa Akazzab">
                 </a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
@@ -145,7 +176,7 @@
                     <a href="profile/profile_anissa.html">Anissa Akazzab</a>
                     <h1>Gooi die mp3 maar in de vuilnisbak</h1>
                     <h2 class="icon-clock"> 10 u</h2>
-                    <img class="left margin-pic" src="img/template-three-bg-back-to-school.png" width="90px">
+                    <img class="left margin-pic" src="img/template-three-bg-back-to-school.png" width="90px" alt="Schoolbord met stapel boeken en appel">
                     <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
@@ -156,7 +187,7 @@
             </article>
             <article class="clearfix bot-resp">
                 <a href="profile/profile_siemen.html">
-                    <img class="absolute resp no-pic scale" src="img/yellow_blank.png" width="53px">
+                    <img class="absolute resp no-pic scale" src="img/yellow_blank.png" width="53px" alt="Siemen Gijbels">
                 </a>
                 <span class="boxLine right-resp"></span>
                 <span class="clearfix"></span>
@@ -164,7 +195,7 @@
                     <a href="profile/profile_siemen.html">Siemen Gijbels</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
                     <h2 class="icon-clock"> 7 januari, 20:54</h2>
-                    <img class="left margin-pic" src="img/12201058974_47c895fe32_o.jpg" width="90px">
+                    <img class="left margin-pic" src="img/12201058974_47c895fe32_o.jpg" width="90px" alt="Meisje speelt gitaar">
                     <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
@@ -175,7 +206,7 @@
             </article>
             <article class="clearfix bot-resp">
                 <a href="#">
-                    <img class="absolute resp no-pic scale" src="img/red_blank.png" width="53px">
+                    <img class="absolute resp no-pic scale" src="img/red_blank.png" width="53px" alt="Dieter Holvoet">
                 </a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
@@ -193,7 +224,7 @@
             </article>
             <article class="clearfix bot-resp">
                 <a href="#">
-                    <img class="absolute resp border border-green scale" src="img/teacher5.png" width="45px">
+                    <img class="absolute resp border border-green scale" src="img/teacher5.png" width="45px" alt="Evy De Laet">
                 </a>
                 <span class="boxLine right-resp"></span>
                 <span class="clearfix"></span>
@@ -201,7 +232,7 @@
                     <a href="#">Evy De Laet</a>
                     <h1>Gooi die mp3 maar in de vuilnisbak</h1>
                     <h2 class="icon-clock"> 10 u</h2>
-                    <img class="left margin-pic" src="img/12201058974_47c895fe32_o.jpg" width="90px">
+                    <img class="left margin-pic" src="img/12201058974_47c895fe32_o.jpg" width="90px" alt="Meisje speelt gitaar">
                     <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
@@ -212,7 +243,7 @@
             </article>
             <article class="clearfix marg-bot">
                 <a href="#">
-                    <img class="absolute resp border border-yellow scale" src="img/teacher4.png" width="45px">
+                    <img class="absolute resp border border-yellow scale" src="img/teacher4.png" width="45px" alt="Boris Debusscher">
                 </a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
@@ -220,7 +251,7 @@
                     <a href="#">Boris Debusscher</a>
                     <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
                     <h2 class="icon-clock"> 46 min</h2>
-                    <p>Qui sed enim magna dolor, veniam voluptatibus offendit dolore nescius, singulis fore malis est labore, multos incididunt nam appellat, labore incididunt est fabulas in veniam deserunt distinguantur, te voluptate non eiusmod, occaecat .
+                    <p>Qui sed enim magna dolor, veniam voluptatibus offendit dolore nescius, singulis fore malis est labore, multos incididunt nam appellat, labore incididunt est fabulas in veniam deserunt distinguantur, te voluptate non eiusmod, occaecat.
                     </p>
                     <ul>
                         <li></li>
