@@ -107,58 +107,63 @@ section p:last-of-type {
 .navlist nav a:last-of-type{
     border-bottom: 0 solid #000;
 }
-.navlist nav a:last-of-type:hover{
-    border-bottom: 1px solid #92CDCF;
-}
-#eindtermenenuitgangspunten .navlist nav a:last-of-type:hover{
-    border-bottom: 0 solid #92CDCF;
-}
 .navlist nav a:hover, .navlist nav a:focus{
     background: #92CDCF;
     color: #FFF;
 }
 
 .afbeeldingcontainer{
+    font-size: 18px;
+    height: 28em;
     position: relative;
-    margin-bottom: 12em;
+    margin-bottom: 0;
 }
 .navlist a span{
+    border-top: 1px solid #92CDCF;
+    font-size: 18px;
     z-index: 1;
     margin: 0;
     padding: 0;
     height: 12em;
     width: 100%;
     position: absolute;
-    top: 16em;
+    bottom: 0;
     left: 0;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/databank/databank.jpg);
+    visibility: hidden;
+}
+.navlist a:hover span{
+    z-index: 2;
+    visibility: visible;
 }
 .navlist a:hover span#lesmateriaalimg{
-    z-index: 2;
-    background-color: #fff;
     background-image: url(../img/databank/lesmateriaal.jpg);
 }
 .navlist a:hover span#bibimg{
-    z-index: 2;
     background-image: url(../img/databank/bib.jpg);
 }
 .navlist a:hover span#videoimg{
-    z-index: 2;
     background-image: url(../img/databank/videos.jpg);
 }
 .navlist a:hover span#cultuurimg{
-    z-index: 2;
     background-image: url(../img/databank/cultuur.jpg);
 }
 .navlist a:hover span#lijstimg{
-    z-index: 2;
     background-image: url(../img/databank/begrippenlijst.jpg);
 }
 .navlist a:hover span#sitesimg{
-    z-index: 2;
     background-image: url(../img/databank/sites.jpg);
+}
+.navlist a span#sitesimg:hover{
+    background-image: url(../img/databank/databank.jpg);
+}
+#spanblok{
+    font-size: 18px;
+    height: 12em;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/databank/databank.jpg);
 }
 
 
@@ -479,9 +484,6 @@ section iframe{
     }
     section p {
         width: 95%;
-    }
-    h1 {
-      font-size: 1em;  
     }
     .closeMenu {
         background: url(../../img/close-white.png) no-repeat center;
