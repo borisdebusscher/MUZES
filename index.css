@@ -63,69 +63,68 @@ main {
     margin: auto;
 }
 
-#lidmaatschap img {
-    width: 150px;
-    box-sizing: border-box;
-    float: right;
+#lidmaatschap p {
+    padding-bottom: 10px;
+    width: auto;
 }
 
-#lidmaatschap p {
-    width: 60%;
-    padding-bottom: 10px;
+#lidmaatschap p, #lidmaatschap a.button {
+    margin-left: 180px;
 }
 
 #lidmaatschap a.button:first-of-type {
     margin-bottom: 20px;
 }
 
-#lidmaatschap a, #lidmaatschap p {
-    float: left;
-}
-
 #lidmaatschap div {
-    padding: 30px;
+    margin: 30px;
+    background: url(img/home/ledenvoordeelgids2015-s.jpg) no-repeat left;
 }
 
 /* NIEUWS */
 
+#nieuws article:nth-of-type(1) {
+    background: #f4f5f5 url(img/home/nieuws/kerstmis-s.jpg) no-repeat left;
+}
+
+#nieuws article:nth-of-type(2) {
+    background: #f4f5f5 url(img/home/nieuws/leerkracht-s.jpg) no-repeat left;
+}
+
+#nieuws article:nth-of-type(3) {
+    background: #f4f5f5 url(img/home/nieuws/ellenself-s.jpg) no-repeat left;
+}
+
 #nieuws article {
     margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
     width: 90%;
-    background: #f4f5f5;
     border-radius: 7px;
+    height: 156px;
+    background-size: auto 100% !important;
 }
 
-.article-content {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 15px;
-    height: 140px;
+#nieuws article h1, #nieuws article h2, #nieuws a.button {
+    margin: 0 0 0 230px;
 }
 
-.article-content h1 {
+#nieuws article h1 {
     font-family: "Bariol", Calibri, Arial, sans-serif;
     text-align: left;
     font-weight: 600;
     font-size: 19px;
-    margin: 0;
     color: #4F5461;
+    margin-bottom: 5px;
 }
 
-.article-content h2 {
+#nieuws article h2 {
     font-family: "Bariol", Calibri, Arial, sans-serif;
     text-align: left;
     font-weight: 100;
     font-size: 17px;
-    margin: 2px 0 15px 0;
     color: #4F5461;
-}
-
-#nieuws img {
-    float: left;
-    height: 140px;
-    width: 195px;
-    border-bottom-left-radius: 7px;
-    border-top-left-radius: 7px;
+    margin-bottom: 10px;
 }
 
 /* VOOR WIE? */
@@ -288,47 +287,73 @@ main {
     background-color: none !important;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1230px) {
+    
     /* NIEUWS? */
     
-    #nieuws img {
-        float: none;
-        height: auto;
-        width: 100%;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
-    }
-    
-    .article-content h1, .article-content h2, .article-content .button {
-        display: block;
-        text-align: center;
-    }
-    
-    .article-content {
-        display: block;
-        padding: 15px;
-        height: auto;
-    }
-    
-    article {
+    #nieuws article {
+        background-position: top center !important;
+        background-size: 100% !important;
         width: 80% !important;
+        min-height: 250px;
+        height: auto;
+    }
+
+    #nieuws article h1, #nieuws article h2, #nieuws article a.button {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    #nieuws article a.button {
+        display: block;
+        width: 80%;
+        margin: 0 auto 5px auto;
+    }
+    
+    #nieuws article h1 {
+        margin: 75% 0 0 0;
+    }
+    
+    #nieuws article:nth-of-type(1) {
+        background: #f4f5f5 url(img/home/nieuws/kerstmis-m.jpg) no-repeat left;
+    }
+
+    #nieuws article:nth-of-type(2) {
+        background: #f4f5f5 url(img/home/nieuws/leerkracht-m.jpg) no-repeat left;
+    }
+
+    #nieuws article:nth-of-type(3) {
+        background: #f4f5f5 url(img/home/nieuws/ellenself-m.jpg) no-repeat left;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    #lidmaatschap img {
-        height: 200px;
-        width: auto;
-        box-sizing: border-box;
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
+    #lidmaatschap div {
+        background-image: url(img/home/ledenvoordeelgids2015-m.jpg);
+        background-position: top center;
+        background-size: 50% auto;
+    }
+    
+    #lidmaatschap p {
+        padding-bottom: 10px;
+        width: 100%;
     }
 
-    #lidmaatschap a, #lidmaatschap p {
-        float: none;
-        width: 100%;
+    #lidmaatschap p, #lidmaatschap a.button {
+        margin: 0;
+    }
+    
+    #lidmaatschap p:first-of-type {
+        margin: 75% 0 0 0;
+    }
+    
+    #lidmaatschap a.button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #lidmaatschap a.button:first-of-type {
+        margin-bottom: 20px;
     }
 }
 
@@ -351,11 +376,6 @@ main {
     
     #wrapper2 {
         padding-right: 0;
-    }
-    
-    #lidmaatschap img {
-        height: auto;
-        width: 100%;
     }
     
     /* WIE? */
@@ -416,5 +436,9 @@ main {
         display: block;
         padding: 15px;
         height: auto;
+    }
+    
+    #lidmaatschap div {
+        background-image: url(img/home/ledenvoordeelgids2015-s.jpg);
     }
 }
