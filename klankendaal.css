@@ -7,8 +7,9 @@ section div {
 
 section div:first-of-type {
     width: 100%;
-    height: 400px;
-    background: url(img/klankendaal/klankendaal-o.png) no-repeat center;
+    height: 30vw;
+    background: url(img/klankendaal/klankendaal-o.png) no-repeat top center;
+    background-size: 100%;
 }
 
 section div:nth-of-type(2) {
@@ -37,13 +38,21 @@ section p {
         width: 100% !important;
     }
     
-    section div:nth-of-type(2) {
-        padding-top: 0;
-    }
-    
     section a {
         width: 100%;
         text-align: center;
         box-sizing: border-box;
     }
+}
+
+@media only screen and (max-width: 800px) {
+    section div:first-of-type {
+        background: url(img/klankendaal/klankendaal-m.png) no-repeat top center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section div:first-of-type {
+        background: url(img/klankendaal/klankendaal-s.png) no-repeat top center;
+    }  
 }
