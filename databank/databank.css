@@ -1,18 +1,21 @@
-main{
+main {
     min-height: 62.2vh;
 }
 
 section{
     max-width: 900px;
 }
-section header{
+
+section header {
     padding-left: .75em;
     padding-right: .75em;
 }
-section p{
+
+section p {
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
     color: #4F5461;
 }
+
 section p:first-of-type {
     padding: 30px 0 10px 0;
 }
@@ -20,20 +23,16 @@ section p:first-of-type {
 section p:last-of-type {
     padding: 10px 0 30px 0;
 }
-#footer-wrapper{
-    overflow: hidden;
-}
 
 #totop {
     font-size: 1em;
     position: fixed;
     bottom: 0;
     left: 50%;
-    float: right;
-    margin-right: 3%;
+    margin: 0 3% 0 -75px;
+    background-color: rgb(146, 205, 207);
     background-color: rgba(146, 205, 207, .9);
     width: 150px;
-    margin-left: -75px;
     padding: 1em;
     cursor: pointer;
     border-top-left-radius: .4em;
@@ -42,33 +41,14 @@ section p:last-of-type {
     border-bottom-right-radius: 0;
 }
 
-#login {
-    width: 40px;
-    height: 40px;
-    padding: 0 !important;
-    background: url(../img/teacher2.png) center no-repeat;
-    background-size: 40px;
-    border-radius: 50%;
-    text-indent: -9999px;
-    border: 4px solid #FFF1C0;
-}
-
-#login:hover, #login:focus {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: none !important;
-}
-
 .noHover:hover, .noHover:focus {
     background-color: white;
 }
 
 
 /* breadcrumbs */
-.breadcrumb{
+
+.breadcrumb {
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #4F5461;
     font-size: 18px;
@@ -77,17 +57,20 @@ section p:last-of-type {
     padding: .75em 0;
     background-color: #E7E9EA;
 }
-.breadcrumb ul{
+
+.breadcrumb ul {
     width: 80%;
     margin: 0 auto;
     padding: 0;
 }
-.breadcrumb ul li{
+
+.breadcrumb ul li {
     display: inline-block;
     margin: 0;
     padding-right: 0.4em;
 }
-.breadcrumb a{
+
+.breadcrumb a {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -97,19 +80,22 @@ section p:last-of-type {
     -moz-transition: .2s all;
     -o-transition: .2s all;
 }
+
 .breadcrumb a:hover, .breadcrumb a:focus{
     color: #92CDCF;
 }
 
 /* NAVIGATIE LIJSTEN */
-.navlist nav ul{
+
+.navlist nav ul {
     margin: 0;
     padding: 0;
     width: 100%;
     list-style-type: none;
     text-align: center;
 }
-.navlist nav a{
+
+.navlist nav a {
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 18px;
     display: block;
@@ -118,9 +104,11 @@ section p:last-of-type {
     color: #7d7e7e;
     text-decoration: none;
 }
+
 .navlist nav a:last-of-type{
     border-bottom: 0 solid #000;
 }
+
 .navlist nav a:hover, .navlist nav a:focus{
     background: #92CDCF;
     color: #FFF;
@@ -132,7 +120,8 @@ section p:last-of-type {
     position: relative;
     margin-bottom: 0;
 }
-.navlist a span{
+
+.navlist a span {
     border-top: 1px solid #92CDCF;
     font-size: 18px;
     z-index: 1;
@@ -146,28 +135,36 @@ section p:last-of-type {
     background-size: cover;
     background-position: center;
 }
+
 .navlist a:hover span, .navlist a:focus span{
     z-index: 2;
 }
-.navlist a:hover #lesmateriaalimg, .navlist a:focus #lesmateriaalimg{
+
+.navlist a:hover #lesmateriaalimg, .navlist a:focus #lesmateriaalimg {
     background-image: url(../img/databank/lesmateriaal.jpg);
 }
-.navlist a:hover #bibimg, .navlist a:focus #bibimg{
+
+.navlist a:hover #bibimg, .navlist a:focus #bibimg {
     background-image: url(../img/databank/bib.jpg);
 }
-.navlist a:hover #videoimg, .navlist a:focus #videoimg{
+
+.navlist a:hover #videoimg, .navlist a:focus #videoimg {
     background-image: url(../img/databank/videos.jpg);
 }
-.navlist a:hover #cultuurimg, .navlist a:focus #cultuurimg{
+
+.navlist a:hover #cultuurimg, .navlist a:focus #cultuurimg {
     background-image: url(../img/databank/cultuur.jpg);
 }
-.navlist a:hover #lijstimg, .navlist a:focus #lijstimg{
+
+.navlist a:hover #lijstimg, .navlist a:focus #lijstimg {
     background-image: url(../img/databank/begrippenlijst.jpg);
 }
-.navlist a:hover #sitesimg, .navlist a:focus #sitesimg{
+
+.navlist a:hover #sitesimg, .navlist a:focus #sitesimg {
     background-image: url(../img/databank/sites.jpg);
 }
-#spanblok{
+
+#spanblok {
     border-top: 1px solid #92CDCF;
     font-size: 18px;
     z-index: 1;
@@ -183,45 +180,50 @@ section p:last-of-type {
     background-image: url(../img/databank/databank.jpg);
 }
 
-
 /* TABLE */
-.leerplannav{
+
+.leerplannav {
     width: 100%;
     margin: 0;
     padding: 2em 0 1em;
 }
-.leerplannav ul{
+
+.leerplannav ul {
     list-style-type: none;
     width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.leerplannav a{
+
+.leerplannav a {
     display: inline-block;
     line-height: 2.5em;
     width: 30%;
     max-width: 250px;
     margin: 5px;
     text-align: center;
-    
     text-decoration: none;
     color: #4F5461;
     font-family: Bariol, Calibri, Arial, sans-serif;
     background: #E0E1E2;
 }
-.leerplannav a:hover, .leerplannav a:focus{
+
+.leerplannav a:hover, .leerplannav a:focus {
     background: #92CDCF;
 }
-h2{
+
+h2 {
     width: 80%;
     padding: 20px 0 0 0;
     color: #4F5461;
 }
-caption h2{
+
+caption h2 {
     padding-top: 4em;
 }
-table{
+
+table {
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #4F5461;
     border-collapse: collapse;
@@ -229,10 +231,12 @@ table{
     width: 95%;
     margin: .5em auto 1.5em;
 }
-#tablesection{
+
+#tablesection {
     padding-bottom: 2em;
 }
-table th{
+
+table th {
     width: 5em;
     margin: 0 auto;
     background-color: #92CDCF;
@@ -241,7 +245,7 @@ table th{
     color: #4F5461;
     padding: 1em .5em;
 }
-table td{
+table td {
     border: 1px solid #92CDCF;
     text-align: left;
     line-height: 1.5em;
@@ -250,49 +254,58 @@ table td{
     -moz-transition: background 2s;
     -o-transition: background 2s;
 }
-table td:hover{
+
+table td:hover {
     background: #92CDCF;
 }
-table ul{
+
+table ul {
     width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: 0;
 }
-table ul li{
+
+table ul li {
     width: 100%;
     text-align: left;
     border-bottom: 1px dashed #E0E1E2;
     margin: 0;
 }
-table ul li:last-of-type{
+
+table ul li:last-of-type {
     border-bottom: 1px dashed rgba(0,0,0,0);;
 }
-table a{
+
+table a {
     display: block;
     margin: 0;
     border: 0;
     padding: .5em 1em;
     text-decoration: none;
     color: #4F5461;
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0);
 }
-table a:hover, table a:focus{
+
+table a:hover, table a:focus {
     background: #fff;
     color: #4F5461;
 }
 
 /* page layout sidenav and datacontent */
-.bgcolor{
+
+.bgcolor {
     background: #92CDCF;
 }
 
-.sidenav header{
+.sidenav header {
     margin: 0;
     padding: 0;
 }
-.sidenav header h1{
+
+.sidenav header h1 {
     display: block;
     color: #fff;
     background-color: #6C9899;
@@ -300,12 +313,14 @@ table a:hover, table a:focus{
     font-family: Bariol, Calibri, Arial, sans-serif;
     padding: 15px 0;
 }
-.sidenav ul{
+
+.sidenav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.sidenav a{
+
+.sidenav a {
     background: rgba(0,0,0,0);
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 18px;
@@ -316,37 +331,45 @@ table a:hover, table a:focus{
     color: #fff;
     border-bottom: 1px dashed #E0E1E2;
 }
-.sidenav a:hover, .sidenav a:focus{
+
+.sidenav a:hover, .sidenav a:focus {
     background: #fff;
     color: #4F5461;
 }
-.sidenav a.current{
+
+.sidenav a.current {
     background: #E7E9EA;
     color: #4F5461;
 }
-.sidenav a.current:hover, .sidenav a.current:focus{
+
+.sidenav a.current:hover, .sidenav a.current:focus {
     color: #92CDCF;
 }
-.datacontent{
+
+.datacontent {
     margin-left: 200px;
     background: #fff;
 }
-.datacontent ul{
+
+.datacontent ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     min-height: 12.5em;
 }
-.datacontent li{
+
+.datacontent li {
     margin: 0;
     padding: 0;
     width: 100%;
     border-bottom: 1px dashed #E0E1E2;
 }
-.datacontent li:hover{
+
+.datacontent li:hover {
     border-bottom: 1px solid #92CDCF;
 }
-.datacontent a{
+
+.datacontent a {
     font-family: Bariol, Calibri, Arial, sans-serif;
     display: block;
     padding: 1em 2em;
@@ -354,99 +377,113 @@ table a:hover, table a:focus{
     color: #4F5461;
     text-align: left;
 }
-.datacontent a:hover, .datacontent a:focus{
+
+.datacontent a:hover, .datacontent a:focus {
     background: #A8D7D9;
 }
-.datacontent li img{
+
+.datacontent li img {
     float: left;
     max-width: 64px;
     min-width: 30px;
     margin: .75em;
 }
-.datacontent li h3{
+
+.datacontent li h3 {
     margin: 2em 5em 1em;
     padding: 0;
 }
-.datacontent li p{
+
+.datacontent li p {
     width: 90%;
     margin: 0 5% 0 5%;
     text-align: justify;
 }
-.column{
+
+.column {
     display: inline-block;
     width: 49.8%;
     float: left;
     background: #fff;
     margin: 0 auto;
 }
-.column:last-of-type{
+
+.column:last-of-type {
     border-left: 1px dashed #E0E1E2;
 }
-h2{
+
+h2 {
     font-family: Bariol, Calibri, Arial, sans-serif;
     color: #4F5461;
     font-size: 20px;
     margin: 1em 1em .25em;
     padding: 0;
 }
-section iframe{
+
+section iframe {
     width: 90%;
     margin: 0 5%;
     min-height: 40em;
 }
-.boeken li a img{
+
+.boeken li a img {
     min-width: 10em;
     max-width: 15em;
     margin: 0 1em;
 }
-.tijdschriftbanner{
+
+.tijdschriftbanner {
     min-width: 100px;
     max-width: 200px;
     margin: 0 3em;
 }
+
 .boeken li a:hover, .boeken li a:focus{
     background-color: #A8D7D9;
 }
 
-
-
-
-
 /* Media queries */
 
-@media only screen and (min-width: 750px){
-    
-    #totop{
+@media only screen and (min-width: 750px) {
+    #totop {
         opacity: .75;
         transition: opacity .2s;
+        -o-transition: opacity .2s;
+        -moz-transition: opacity .2s;
         -webkit-transition: opacity .2s;
     }
-    #totop:hover{
+    
+    #totop:hover {
         opacity: 1;
     }
     
     /*Eindtermen en leerplannen*/
-    #eindtermenenuitgangspunten{
+    
+    #eindtermenenuitgangspunten {
         width: 80%;
         max-width: 900px;
         margin: 50px auto;
         padding: 0;
     }
-    #eindtermenenuitgangspunten .kolom{
+    
+    #eindtermenenuitgangspunten .kolom {
         width: 48%;
         margin: 0;
         display: inline-block;
     }
-    #eindtermenenuitgangspunten .kolom:first-of-type{
+    
+    #eindtermenenuitgangspunten .kolom:first-of-type {
         margin-right: 4%;
         float: left;
     }
-    #eindtermenenuitgangspunten .kolom:last-of-type{
+    
+    #eindtermenenuitgangspunten .kolom:last-of-type {
         clear: both;
     }
     
     /* leerplannen tabel */
-    .mobile-title{
+    
+    .mobile-title {
         position: absolute;
         top: 0;
         width: 0;
@@ -457,7 +494,8 @@ section iframe{
     }
     
     /* sidenav */
-    .sidenav{
+    
+    .sidenav {
         margin: 0;
         padding: 0;
         width: 200px;
@@ -471,6 +509,7 @@ section iframe{
         width: 60%;
     }
 }
+
 @media (max-width: 1024px) {
     section, #eindtermenenuitgangspunten {
         width: 70%;
@@ -479,6 +518,7 @@ section iframe{
         width: 85%;
     }
 }
+
 @media (max-width: 900px) {
     section, #eindtermenenuitgangspunten {
         width: 80%;
@@ -488,49 +528,37 @@ section iframe{
     }
 }
 
-
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
     section {
         width: 95%;
         margin: inherit auto;
     }
+    
     section p {
         width: 90%;
     }
-    .closeMenu {
-        background: url(../../img/close-white.png) no-repeat center;
-        background-size: 18px;
-    }
-    .arrowMenu {
-        background: url(../../img/arrow-left-white.png) no-repeat center;
-        background-size: 18px;
-    }
-    .menu {
-        background-image: url(../../img/menu.png);
-    }
-    .arrow {
-        background-image: url(../../img/arrow-up-white.png) !important;
-    }
-    .bgScale {
-        background-image: url(../../img/camera.png);
-    }
-    #eindtermenenuitgangspunten{
+    
+    #eindtermenenuitgangspunten {
         width: 100%;
     }
+    
     footer:nth-of-type(2) {
         padding-bottom: 3em;
     }
     
     /*databankpagina*/
+    
     .afbeeldingcontainer{
         height: auto;
     }
-    .navlist a span{
+    
+    .navlist a span {
         border-top: 0 solid #92CDCF;
         height: 0;
         width: 0;
     }
-    #spanblok{
+    
+    #spanblok {
         border-top: 0 solid #92CDCF;
         height: 0;
         width: 0;
@@ -538,50 +566,57 @@ section iframe{
     }
     
     /*leerplannen navigatie*/
-    .leerplannav{
+    
+    .leerplannav {
         width: 100%;
         margin: 0;
         padding: 1em 0;
     }
-    .leerplannav ul{
+    
+    .leerplannav ul {
         list-style-type: none;
         width: 100%;
         margin: 0;
         padding: 0;
         text-align: center;
     }
-    .leerplannav a{
+    
+    .leerplannav a {
         display: block;
         width: 85%;
         margin: .5em auto;
         background: #92CDCF;
     }
     
-    
     /* leerplannen tabel */
-    table{
+    
+    table {
         border-collapse: collapse;
         border: 2px solid #92CDCF;
         width: 95%;
         margin: .5em 2.5% 1.5em;
     }
-    table tr{
+    
+    table tr {
         display: block;
     }
-    table tr:first-of-type{
+    
+    table tr:first-of-type {
         width: 0;
         height: 0;
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
     }
-    table td{
+    
+    table td {
         width: 100%;
         margin: 0;
         border: 1px solid #92CDCF;
         background: #fff;
     }
-    .mobile-title{
+    
+    .mobile-title {
         display: block;
         width: 100%;
         margin: 1.25em 0 .75em;
@@ -590,97 +625,118 @@ section iframe{
         border: 1px solid #92CDCF;
         background: #E0E1E2;
     }
-    table tr th, table tr td{
+    
+    table tr th, table tr td {
         display: block;
         margin: 0;
         padding: 0;
         border: 0;
     }
-    table tr th{
+    
+    table tr th {
         text-align: center;
+        border: 1px solid rgb(0,0,0);
         border: 1px solid rgba(0,0,0,0);
         font-size: 20px;
         width: 100%;
         padding: .5em 0;
     }
-    table tr th:first-of-type{
+    
+    table tr th:first-of-type {
         margin-top: 0;
     }
-    table td:hover{
+    
+    table td:hover {
         background: #fff;
     }
-    table ul{
+    
+    table ul {
         width: 100%;
         list-style-type: none;
         margin: 0;
         padding: 0;
         border: 0;
     }
-    table ul li{
+    
+    table ul li {
         min-width: 200px;
         width: 50%;
         text-align: center;
         margin: .85em auto;
         background: #E0E1E2;
     }
-    table ul li:last-of-type{
+    
+    table ul li:last-of-type {
         margin-bottom: 3em;
     }
-    table a{
+    
+    table a {
         display: block;
         margin: 0;
         border: 0;
         padding: .5em 1em;
         text-decoration: none;
         color: #4F5461;
+        background-color: rgb(0,0,0);
         background-color: rgba(0,0,0,0);
     }
     
-    
     /* sidenav en datacontent paginas */
-    .bgcolor{
+    
+    .bgcolor {
+        background: rgb(0,0,0);
         background: rgba(0,0,0,0);
     }
-    .mobile-bgcolor{
+    
+    .mobile-bgcolor {
         background: #92CDCF;
     }
-    .sidenav{
+    
+    .sidenav {
         display: block;
         width: 100%;
         background: #92CDCF;
     }
-    .sidenav a{
+    
+    .sidenav a {
         text-align: center;
         color: #4F5461;
     }
-    .datacontent{
+    
+    .datacontent {
         display: block;
         margin: 1.75em 0;
         padding: 0;
         min-height: 8em;
     }
-    .datacontent li a{
+    
+    .datacontent li a {
         padding: 1.5em 2em;
     }
-    .datacontent ul{
+    
+    .datacontent ul {
         min-height: 1em;
     }
-    .column{
+    
+    .column {
         width: 100%;
         float: none;
         background: #fff;
     }
-    section iframe{
+    
+    section iframe {
         width: 90%;
         margin: 0 5%;
         min-height: 40em;
     }
-    .boeken li a img{
+    
+    .boeken li a img {
         min-width: 10em;
         max-width: 15em;
         margin: 0 1em;
     }
-    .tijdschriftbanner{
+    
+    .tijdschriftbanner {
         min-width: 100px;
         max-width: 200px;
         margin: 0 3em;
