@@ -36,8 +36,8 @@ section {
     margin-left: -75px;
     padding: 1em;
     cursor: pointer;
-    border-top-left-radius: .5em;
-    border-top-right-radius: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
