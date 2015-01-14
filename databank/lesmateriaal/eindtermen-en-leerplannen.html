@@ -2,13 +2,13 @@
 <html lang="nl">
 
 <head>
-    <meta charset="utf-8">
-    <title>Eindtermen en Leerplannen - Muzes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#A8D7D9">
-    <meta name="author" content="Astrid Vandevoorde, Boris Debusschere, Dieter Holvoet, Siemen Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool Brussel">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
+	<meta charset="utf-8">
+	<title>Eindtermen en Leerplannen - Muzes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#A8D7D9">
+	<meta name="author" content="Astrid Vandevoorde, Boris Debusschere, Dieter Holvoet, Siemen Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool Brussel">
+
+	<link rel="shortcut icon" href="../../favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="../../favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="../../favicon-192.png">
 	<link rel="icon" type="image/png" sizes="160x160" href="../../favicon-160.png">
@@ -28,693 +28,710 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="../../favicon-144.png">
 	<meta name="msapplication-config" content="../../browserconfig.xml">
-    
-    <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="../databank.css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/app.js"></script>
-    <!--[if lt IE 9]>
+
+	<link rel="stylesheet" href="../../main.css">
+	<link rel="stylesheet" href="../databank.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/app.js"></script>
+	<!--[if lt IE 9]>
             <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
             <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <![endif]-->
 </head>
 
 <body>
 
-    <div class="hide" id="layer"></div>
-    <div class="translate" id="logForm">
-        <span class="close"></span>
-        <form>
-            <a><h1>login</h1></a>
-            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
-            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-            <input type="submit" name="submit">
-        </form>
-    </div>
-    <div id="top"></div>
-    <header>
-        <div class="hide menuLayer"></div>
-        <nav>
-            <div class="hide menuLayer"></div>
-            <a class="hide menu"></a>
-            <a href="../../index.html"><h1 id="logo">MUZES</h1></a>
-            <ul class="translateLeft">
-                <li class="noHover">
-                    <a class="closeMenu"></a>
-                </li>
-                <li class="top"><a href="../../index.html">home</a>
-                </li>
-                <li><a href="../../community.html">community</a>
-                    <ul>
-                        <li><a href="../../community.html">Nieuwsoverzicht</a></li>
-                        <li><a href="../../berichten.html">berichten</a></li>
-                        <li><a href="../../groepen/groepen_index.html">groepen</a></li>
-                        <li><a href="../../profile/profile_john.html">profiel</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../databank.html" class="navCurrent">databank</a>
-                    <ul>
-                        <li><a href="../lesmateriaal/lesmateriaal.html" class="navCurrentUl">lesmateriaal</a>
-                        </li>
-                        <li><a href="../bib/bibliotheek.html">digitale bibliotheek</a>
-                        </li>
-                        <li><a href="../video/video.html">video's</a>
-                        </li>
-                        <li><a href="../cultuur/cultuur.html">cultuur in je buurt</a>
-                        </li>
-                        <li><a href="../lijst/begrippenlijsten.html">begrippenlijsten</a>
-                        </li>
-                        <li><a href="../sites/architectuur.html">interessante sites</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="/projecten.html">projecten</a>
-                </li>
-                <li><a href="/kalender.html">kalender</a>
-                </li>
-                <li><a href="/contact.html">contact</a>
-                </li>
-                <li class="noHover"><a class="profilePic" id="login" href="../../profile/profile_john.html">profile</a>
-                </li>
-                <li><a class="logout hide" href="#">Afmelden</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+	<div class="hide" id="layer"></div>
+	<div class="translate" id="logForm">
+		<span class="close"></span>
+		<form>
+			<a><h1>login</h1></a>
+			<input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+			<input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+			<input type="submit" name="submit">
+		</form>
+	</div>
+	<div id="top"></div>
+	<header>
+		<div class="hide menuLayer"></div>
+		<nav>
+			<div class="hide menuLayer"></div>
+			<a class="hide menu"></a>
+			<a href="../../index.html"><h1 id="logo">MUZES</h1></a>
+			<ul class="translateLeft">
+				<li class="noHover">
+					<a class="closeMenu"></a>
+				</li>
+				<li class="top"><a href="../../index.html">home</a>
+				</li>
+				<li><a href="../../community.html">community</a>
+					<ul>
+						<li><a href="../../community.html">Nieuwsoverzicht</a>
+						</li>
+						<li><a href="../../berichten.html">berichten</a>
+						</li>
+						<li><a href="../../groepen/groepen_index.html">groepen</a>
+						</li>
+						<li><a href="../../profile/profile_john.html">profiel</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="../databank.html" class="navCurrent">databank</a>
+					<ul>
+						<li><a href="../lesmateriaal/lesmateriaal.html" class="navCurrentUl">lesmateriaal</a>
+						</li>
+						<li><a href="../bib/bibliotheek.html">digitale bibliotheek</a>
+						</li>
+						<li><a href="../video/video.html">video's</a>
+						</li>
+						<li><a href="../cultuur/cultuur.html">cultuur in je buurt</a>
+						</li>
+						<li><a href="../lijst/begrippenlijsten.html">begrippenlijsten</a>
+						</li>
+						<li><a href="../sites/architectuur.html">interessante sites</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="/projecten.html">projecten</a>
+				</li>
+				<li><a href="/kalender.html">kalender</a>
+				</li>
+				<li><a href="/contact.html">contact</a>
+				</li>
+				<li class="noHover"><a class="profilePic" id="login" href="../../profile/profile_john.html">profile</a>
+				</li>
+				<li><a class="logout hide" href="#">Afmelden</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-    <main>
-        <a class="button hideTop" id="totop">Back to top</a>
-        <section class="breadcrumb">
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">muzes.be</a>
-                    </li>
-                    <li>&gt;</li>
-                    <li><a href="../databank.html">databank</a>
-                    </li>
-                    <li>&gt;</li>
-                    <li><a href="../lesmateriaal/lesmateriaal.html">lesmateriaal</a>
-                    </li>
-                    <li>&gt;</li>
-                    <li><a href="../lesmateriaal/eindtermen-en-leerplannen.html">eindtermen en leerplannen</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+	<main>
+		<a class="button hideTop" id="totop">Back to top</a>
+		<section class="breadcrumb">
+			<nav>
+				<ul>
+					<li><a href="../../index.html">muzes.be</a>
+					</li>
+					<li>&gt;</li>
+					<li><a href="../databank.html">databank</a>
+					</li>
+					<li>&gt;</li>
+					<li><a href="../lesmateriaal/lesmateriaal.html">lesmateriaal</a>
+					</li>
+					<li>&gt;</li>
+					<li><a href="../lesmateriaal/eindtermen-en-leerplannen.html">eindtermen en leerplannen</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
 
-        <div id="eindtermenenuitgangspunten">
-            <section class="kolom navlist">
-                <header>
-                    <h1>Artistieke Opvoeding A-stroom</h1>
-                </header>
-                <nav>
-                    <ul>
-                        <a href="http://www.scribd.com/doc/154443963/Vakgebonden-Eindtermen-Artistieke-Opvoeding-of-Plastische-Opvoeding-en-Muzikale-Opvoeding-1ste-Graad-A" target="_blank">
-                            <li>Eindtermen</li>
-                        </a>
-                        <a href="http://www.scribd.com/doc/154444796/Visie-Op-de-Vakken-Muzikale-Opvoeding-en-Plastische-Opvoeding" target="_blank">
-                            <li>Uitgangspunten</li>
-                        </a>
-                    </ul>
-                </nav>
-            </section>
+		<div id="eindtermenenuitgangspunten">
+			<section class="kolom navlist">
+				<header>
+					<h1>Artistieke Opvoeding A-stroom</h1>
+				</header>
+				<nav>
+					<ul>
 
-            <section class="kolom navlist">
-                <header>
-                    <h1>Artistieke Opvoeding B-stroom</h1>
-                </header>
-                <nav>
-                    <ul>
-                        <a href="http://www.scribd.com/doc/154443689/Vakgebonden-Eindtermen-Artistieke-Opvoeding-B-Stroom" target="_blank">
-                            <li>Eindtermen</li>
-                        </a>
-                        <a href="http://www.scribd.com/doc/154444662/Visie-Op-de-Vakken-Muzikale-Opvoeding-en-Plastische-Opvoeding-B" target="_blank">
-                            <li>Uitgangspunten</li>
-                        </a>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-
-        <section id="tablesection" class="">
-            <header>
-                <h1>Leerplannen</h1>
-            </header>
-
-            <nav class="leerplannav">
-                <ul>
-                    <a href="eindtermen-en-leerplannen.html#1egraad">
-                        <li>Eerste Graad</li>
-                    </a>
-                    <a href="eindtermen-en-leerplannen.html#2egraad">
-                        <li>Tweede Graad</li>
-                    </a>
-                    <a href="eindtermen-en-leerplannen.html#3egraad">
-                        <li>Derde Graad</li>
-                    </a>
-                </ul>
-            </nav>
-
-            <p>Voor het provinciaal onderwijs gebruikt men in Oost-Vlaanderen de leerplannen van het GO!. In de andere provincies baseert men zich op de leerplannen van OVSG.</p>
-
-            <table>
-                <caption>
-                    <h2 id="1egraad">Leerplannen Eerste Graad</h2>
-                </caption>
-                <tbody>
-                    <tr>
-                        <th></th>
-                        <th>GO!</th>
-                        <th>OVSG</th>
-                        <th>VVKSO</th>
-                    </tr>
-                    <tr>
-                        <th>A-stroom</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154445215/GO-Plastische-Opvoeding-1ste-Graad-ASO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154445598/GO-Beeldende-Vorming-1ste-Graad-ASO" target="_blank">Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154445748/GO-Muzikale-Opvoeding-1ste-Graad-ASO" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154445982/GO-Kunstinitiatie-1ste-Graad-ASO" target="_blank">Kunstinitiatie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154446079/GO-Instrument-1ste-Graad-ASO" target="_blank">Instrument</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154446288/GO-Muzikale-Opvoeding-1ste-Graad-STV" target="_blank">Muzikale Opvoeding STV</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154446568/GO-Plastische-Opvoeding-1-Ste-Graad-STV" target="_blank">Plastische Opvoeding STV</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154447477/OVSG-Leerplan-Muzikale-Opvoeding-1ste-Graad" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154447602/OVSG-Leerplan-Muzikale-Opvoeding-a-1ste-Graad-Ballet" target="_blank">Muzikale Opvoeding/Ballet</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154447699/OVSG-Leerplan-Plastische-Opvoeding-1ste-Graad" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154448217/Muzikale-Opvoeding-1ste-Graad-A" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154448339/Artistieke-Vorming-1ste-Graad-A" target="_blank">Artistieke Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154448556/Plastische-Opvoeding-1ste-Graad-A" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154448697/Grafische-Communicatie-en-Media-1ste-Graad-A" target="_blank">Grafische Communicatie en Media</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154448757/Creatie-en-Vormgeving-1ste-Graad-A" target="_blank">Creatie en Vormgeving</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>B-stroom</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154446845/GO-Muzikale-Opvoeding-1ste-Graad-B-Stroom" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154447040/GO-Mode-1ste-Graad-B-Stroom" target="_blank">Mode</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154447200/GO-Plastische-Opvoeding-1ste-Graad-B-Stroom" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154447346/GO-Plastische-en-Decoratieve-Technieken-1ste-Graad-B-Stroom" target="_blank">Plastische en Decoratieve Technieken</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154447784/OVSG-Leerplan-Decoratie-2de-Jaar-BVL" target="_blank">Decoratie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154447929/OVSG-Leerplan-Muzikale-Opvoeding-B-Stroom-1ste-Graad" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154448102/OVSG-Leerplan-Plastische-Opvoeding-B-Stroom" target="_blank">Plastische Opvoeding </a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154449098/Plastische-Opvoeding-1ste-Graad-B" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154449155/Mode-1ste-Graad-B" target="_blank">Mode</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154449202/Muzikale-Opvoeding-1ste-Graad-B" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+						<li><a href="http://www.scribd.com/doc/154443963/Vakgebonden-Eindtermen-Artistieke-Opvoeding-of-Plastische-Opvoeding-en-Muzikale-Opvoeding-1ste-Graad-A" target="_blank">Eindtermen</a>
+						</li>
 
 
-            <table>
-                <caption>
-                    <h2 id="2egraad">Leerplannen Tweede Graad</h2>
-                </caption>
-                <tbody>
-                    <tr>
-                        <th></th>
-                        <th>GO!</th>
-                        <th>OVSG</th>
-                        <th>VVKSO</th>
-                    </tr>
-                    <tr>
-                        <th>ASO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154449464/GO-Cultuurwetenschappen-2de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154454160/Cultuurwetenschappen-2de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154454417/Plastische-Opvoeding-2de-Graad-ASO-TSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154454543/Muzikale-Opvoeding-2de-Graad-A" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>TSO</th>
-                        <td>
-                            <ul>
-                                <h3 class="mobile-title">GO!</h3>
-                                <li><a href="http://www.scribd.com/doc/154449579/GO-Fotografie-2de-Graad-TSO" target="_blank">Fotografie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154449717/GO-Kunstgeschiedenis-2de-Graad-TSO" target="_blank">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154449845/GO-Plastische-Opvoeding-2de-Graad-TSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450036/GO-Praktijk-Fotografie-2de-Graad-TSO" target="_blank">Praktijk Fotografie</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                        </td>
-                        <td>
-                            <ul>
-                                <h3 class="mobile-title">VVKSO</h3>
-                                <li><a href="http://www.scribd.com/doc/154454741/Grafische-Media-2de-Graad-TSO" target="_blank">Grafische Media</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154454958/Creatie-en-Mode-2de-Graad-TSO" target="_blank">Creatie en Mode</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154455068/Muzikale-Opvoeding-2de-Graad-TSO" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154455287/Fotografie-2de-Graad-TSO" target="_blank">Fotografie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154455453/Grafische-Communicatie-2de-Graad-TSO" target="_blank">Grafische Communicatie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154455574/Kunstgeschiedenis-2de-Graad-TSO" target="_blank">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154454417/Plastische-Opvoeding-2de-Graad-ASO-TSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>KSO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154450223/GO-Beeldende-Vorming-2de-Graad-KSO" target="_blank">Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450316/GO-Samenspel-2de-Graad-KSO" target="_blank">Samenspel</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450494/GO-Creatief-Musiceren-2de-Graad-KSO" target="_blank">Creatief Musiceren</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450543/GO-Koorzang-2de-Graad-KSO" target="_blank">Koorzang</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450590/GO-Algemene-Muziekleer-2de-Graad-KSO" target="_blank">Algemene Muziekleer</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450688/GO-Audiovisuele-Vorming-2de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450849/GO-Muziektheorie-2de-Graad-KSO" target="_blank">Muziektheorie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154450920/GO-Beeldende-en-Architecturale-Vorming-2de-Graad-KSO" target="_blank">Beeldende en Architecturale Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154451292/GO-Instrument-2de-Graad-KSO" target="_blank">Instrument</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154451545/GO-Kunstinitiatie-2de-Graad-KSO" target="_blank">Kunstinitiatie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154451797/GO-Muziekesthetica-2de-Graad-KSO" target="_blank">Muziekesthetica</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154451919/GO-Waarnemingstekenen-2de-Graad-KSO" target="_blank">Waarnemingstekenen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154452720/OVSG-Kunstgeschiedenis-2de-Graad-KSO">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154452915/OVSG-Leerplan-Architecturale-en-Beeldende-Vormgeving-2de-Graad-KSO" target="_blank">Architecturale en Beeldende Vorming</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154463485/Artistieke-Opleiding-2de-Graad-KSO" target="_blank">Artistieke Opleiding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154463776/Beeldende-en-Architecturale-Kunsten-2de-Graad-KSO" target="_blank">Architecturale en Beeldende Kunsten</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154463943/Kunstgeschiedenis-2de-Graad-KSO" target="_blank">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154464041/Audiovisuele-Vorming-2de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154464236/Beeldende-en-Architecturale-Vorming-2de-Graad-KSO" target="_blank">Beeldende en Architecturale Vorming</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>BSO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154452108/GO-Plastische-Opvoeding-2de-Graad-BSO">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154452255/GO-Grafische-Technieken-2de-Graad-BSO" target="_blank">Grafische Technieken</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154452418/GO-Publiciteitstekenen-2de-Graad-BSO" target="_blank">Publiciteitstekenen</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154452554/GO-Schilderen-en-Decoratie-2de-Graad-BSO" target="_blank">Schilderen en Decoratie</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154453137/OVSG-Leerplan-Muzikale-Opvoeding-2de-Graad-B" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154453458/OVSG-Leerplan-Plastische-Opvoeding-2de-Graad-BSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154453606/OVSG-Leerplan-Schilderen-en-Decoratie-2de-Graad-BSO" target="_blank">Schilderen en Decoratie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154453801/OVSG-Waarnemingstekenen-2de-Graad-BSO" target="_blank">Waarnemingstekenen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154464503/Moderealisatie-en-Presentatie-2de-Graad-BSO" target="_blank">Moderealisatie en Presentatie</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+						<li><a href="http://www.scribd.com/doc/154444796/Visie-Op-de-Vakken-Muzikale-Opvoeding-en-Plastische-Opvoeding" target="_blank">Uitgangspunten</a>
+						</li>
+
+					</ul>
+				</nav>
+			</section>
+
+			<section class="kolom navlist">
+				<header>
+					<h1>Artistieke Opvoeding B-stroom</h1>
+				</header>
+				<nav>
+					<ul>
+
+						<li><a href="http://www.scribd.com/doc/154443689/Vakgebonden-Eindtermen-Artistieke-Opvoeding-B-Stroom" target="_blank">Eindtermen</a>
+						</li>
 
 
-            <table>
-                <caption>
-                    <h2 id="3egraad">Leerplannen Derde Graad</h2>
-                </caption>
-                <tbody>
-                    <tr>
-                        <th></th>
-                        <th>GO!</th>
-                        <th>OVSG</th>
-                        <th>VVKSO</th>
-                    </tr>
-                    <tr>
-                        <th>ASO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154465834/GO-Cultuurwetenschappen-3de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/155256939/Cultuurwetenschappen-3de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155257450/Esthetica-3de-Graad-ASO-3de-Graad-TSO" target="_blank">Esthetica</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>TSO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154471870/OVSG-Leerplan-Fotografie-3de-Graad-TSO" target="_blank">Fotografie </a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154472289/OVSG-Leerplan-Multimediatechnieken-3de-Graad-TSO" target="_blank">Multimediatechnieken</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/155257900/Plastische-Opvoeding-3de-Graad-TSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155258091/Fotografie-3de-Graad-TSO" target="_blank">Fotografie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155258368/Grafische-Communicatie-3de-Graad-TSO" target="_blank">Grafische Communicatie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155258516/Podiumtechnieken-3de-Graad-TSO" target="_blank">Podiumtechnieken</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155258756/Creatie-en-Mode-3de-Graad-TSO" target="_blank">Creatie en Mode</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155259078/Multimedia-3de-Graad-TSO" target="_blank">Multimedia</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155257450/Esthetica-3de-Graad-ASO-3de-Graad-TSO" target="_blank">Esthetica</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>KSO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154466190/GO-Algemene-Muziekleer-3de-Graad-KSO" target="_blank">Algemene Muziekleer</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154466432/GO-Architecturale-Vorming-3de-Graad-KSO" target="_blank">Architecturale Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154466669/GO-Samenspel-3de-Graad-KSO" target="_blank">Samenspel</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154466860/GO-Vrije-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Vrije Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154466974/GO-Kunstgeschiedenis-3de-Graad-KSO" target="_blank">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154467219/GO-Audiovisuele-Vorming-3de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154467516/GO-Muziekesthetica-3de-Graad-KSO" target="_blank">Muziekesthetica</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154467673/GO-Waarnemingstekenen-en-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Waarnemingstekenen en Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154467941/GO-Esthetica-3de-Graad-KSO" target="_blank">Esthetica</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154468219/GO-Binnenhuiskunst-Architectuurtekenen-bouwkunst-3de-Graad-KSO" target="_blank">Architectuurtekenen en Bouwkunst</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154468348/GO-Instrument-3de-Graad-KSO" target="_blank">Instrument</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154468828/GO-Koorzang-3de-Graad-KSO" target="_blank">Koorzang</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154468955/GO-Muziektheorie-3de-Graad-KSO" target="_blank">Muziektheorie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154469256/GO-Kunstgeschiedenis-Dans-Muziek-3de-Graad-KSO" target="_blank">Kunstgeschiedenis Dans/Muziek</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154469450/GO-Toegepaste-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Toegepaste Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154469509/GO-Waarnemingstekenen-en-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Waarnemingstekenen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154472520/OVSG-Leerplan-Algemene-Muziekleer-Creatief-Musiceren-Koorzang-3de-Graad-KSO" target="_blank">Algemene Muziekleer</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154472760/OVSG-Leerplan-Audiovisuele-Vorming-3de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154472965/OVSG-Leerplan-Architecturale-en-Binnenhuiskunst-3de-Graad-KSO" target="_blank">Architecturale en Binnenhuiskunst</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154473265/OVSG-Leerplan-Beeldende-Vorming-Fotografie-3de-Graad-KSO" target="_blank">Fotografie en Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154473656/OVSG-Leerplan-Kunstgeschiedenis-3de-Graad-KSO" target="_blank">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154474117/OVSG-Leerplan-Muzikale-Opvoeding-3de-Graad-KSO" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155255398/OVSG-Leerplan-Toegepaste-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Toegepaste Beeldende Vorming</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/155259208/Toegepaste-Beeldende-Kunst-3de-Graad-KSO" target="_blank">Toegepaste Beeldende Kunst</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155259483/Kunstgeschiedenis-3de-graad-KSO" target="_blank">Kunstgeschiedenis</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155259726/Muzikale-Opvoeding-3de-Graad-KSO" target="_blank">Muzikale Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155260048/Beeldende-Vorming-3de-Graad-KSO" target="_blank">Beeldende Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155260251/Architecturale-en-Binnenhuiskunst-KSO-3de-Graad" target="_blank">Architecturale en Binnenhuiskunst</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155260407/Artistieke-Opleiding-3de-Graad-KSO" target="_blank">Artistieke Opleiding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155260751/Architecturale-Vorming-3de-Graad-KSO" target="_blank">Architecturale Vorming</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155260812/Vrije-Beeldende-Kunst-3de-Graad-KSO" target="_blank">Vrije Beeldende Kunst</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>BSO</th>
-                        <td>
-                            <h3 class="mobile-title">GO!</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/154469621/GO-Plastische-Opvoeding-3de-Graad-BSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154469853/GO-Praktijk-Publiciteitstekenen-3de-Graad-BSO" target="_blank">Praktijk Publiciteitstekenen</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154470116/GO-Publiciteitstekenen-3de-Graad-BSO" target="_blank">Publiciteitstekenen</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/154470304/GO-Waarnemingstekenen-3de-Graad-BSO" target="_blank">Waarnemingstekenen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">OVSG</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/155255593/OVSG-Leerplan-Digitaal-Ontwerpen-en-Letterschilderen-3de-Graad-BSO-3de-Jaar" target="_blank">Digitaal Ontwerpen en Letterschilderen</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155255911/OVSG-Leerplan-Esthetica-Kunstinitiatie-3de-Graad-BSO" target="_blank">Esthetica &amp; Kunstinitiatie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155256276/OVSG-Leerplan-Plastische-Opvoeding-3de-Graad-BSO" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155256697/OVSG-Waarnemingstekenen-Publiciteitstekenen-3de-Graad-BSO" target="_blank">Waarnemings-/publiciteitstekenen</a>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h3 class="mobile-title">VVKSO</h3>
-                            <ul>
-                                <li><a href="http://www.scribd.com/doc/155260938/Kunstinitiatie-3de-Graad-BSO" target="_blank">Kunstinitiatie</a>
-                                </li>
-                                <li><a href="http://www.scribd.com/doc/155261108/Plastische-Opvoeding-3de-Graad-Bso" target="_blank">Plastische Opvoeding</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+						<li><a href="http://www.scribd.com/doc/154444662/Visie-Op-de-Vakken-Muzikale-Opvoeding-en-Plastische-Opvoeding-B" target="_blank">Uitgangspunten</a>
+						</li>
 
-            
+					</ul>
+				</nav>
+			</section>
+		</div>
 
-        </section>
-    </main>
+		<section id="tablesection" class="">
+			<header>
+				<h1>Leerplannen</h1>
+			</header>
 
-    <div id="footer-wrapper">
-        <footer class="clearfix">
-            <div>
-                <h1>Handige links</h1>
-                <ul>
-                    <li><a href="../../over.html">Wie zijn we?</a>
-                    </li>
-                    <li><a href="../../partnersindialoog.html">Partners in dialoog</a>
-                    </li>
-                    <li><a href="../../klankendaal.html">Klankendaal</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <p>Tervuursesteenweg 84, 2800 Mechelen</p>
-                <p>+32 153 466 58</p>
-            </div>
-            <div>
-                <h1>Blijf op de hoogte</h1>
-                <ul class="clearfix">
-                    <li class="clearfix">
-                        <a href="https://fb.com/158298510974276" target="_blank">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                                <path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M309.9,173.6h-37.2 	c-4.1,0-10.3,6.2-10.3,14.5v26.9h47.5v39.3h-47.5v115.7h-45.5V254.1h-41.3v-39.3h41.3v-22.7c0-33.1,22.7-59.9,53.7-59.9h39.3V173.6z 	" /></svg>
-                        </a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="https://twitter.com/muzesvzw" target="_blank">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="495.9px" height="495.9px" viewBox="0 0 495.9 495.9" enable-background="new 0 0 495.9 495.9" xml:space="preserve">
-                                <path fill="#7F7F7F" d="M247.9,0C111.6,0,0,111.6,0,247.9s111.6,247.9,247.9,247.9s247.9-111.6,247.9-247.9S386.4,0,247.9,0z 	 M349.2,204.5c0,2.1,0,4.1,0,6.2c0,64-49.6,138.4-138.4,138.4c-26.9,0-53.7-8.3-74.4-22.7c4.1,0,8.3,0,12.4,0 	c22.7,0,43.4-8.3,59.9-20.7c-20.7,0-39.3-14.5-45.5-33.1c2.1,0,6.2,0,8.3,0c4.1,0,8.3,0,12.4-2.1c-22.7-4.1-39.3-24.8-39.3-47.5l0,0 	c6.2,4.1,14.5,6.2,22.7,6.2c-12.4-8.3-22.7-22.7-22.7-41.3c0-8.3,2.1-16.5,6.2-24.8c24.8,28.9,59.9,49.6,101.2,51.7 	c0-4.1-2.1-8.3-2.1-10.3c0-26.9,22.7-49.6,49.6-49.6c14.5,0,26.9,6.2,35.1,14.5c10.3-2.1,20.7-6.2,31-12.4 	c-4.1,12.4-12.4,20.7-20.7,26.9c10.3-2.1,18.6-4.1,28.9-8.3C367.8,188,359.5,196.3,349.2,204.5z" /></svg>
-                        </a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                                <path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250C502.1,111.6,388.4,0,250,0z M190.1,353.3 	h-51.7V190.1h51.7V353.3z M163.2,171.5c-16.5,0-26.9-12.4-26.9-26.9c0-14.5,10.3-24.8,26.9-24.8s26.9,10.3,26.9,24.8 	C190.1,159.1,179.8,171.5,163.2,171.5z M374,353.3h-51.7v-90.9c0-20.7-8.3-35.1-24.8-35.1c-14.5,0-22.7,10.3-26.9,18.6 	c-2.1,4.1-2.1,8.3-2.1,12.4v95h-51.7V241.7c0-20.7,0-37.2-2.1-51.7h43.4l2.1,22.7l0,0c6.2-10.3,22.7-26.9,49.6-26.9 	c33.1,0,57.9,22.7,57.9,70.2v97.1H374z" /></svg>
-                        </a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="http://plus.google.com" target="_blank">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                                <path fill="#7F7F7F" d="M227.3,177.7c-6.2-22.7-16.5-28.9-33.1-28.9c-2.1,0-4.1,0-4.1,0c-8.3,4.1-12.4,10.3-16.5,18.6 	c-2.1,8.3-4.1,16.5,0,26.9c4.1,18.6,16.5,31,31,31c2.1,0,4.1,0,4.1,0C223.1,221.1,231.4,198.3,227.3,177.7z M250,0 	C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M235.5,355.4c-16.5,8.3-33.1,8.3-39.3,8.3 	c-2.1,0-2.1,0-2.1,0s0,0-2.1,0c-10.3,0-62-2.1-62-49.6c0-45.5,55.8-49.6,72.3-49.6l0,0c-10.3-12.4-8.3-26.9-8.3-26.9s-2.1,0-4.1,0 	c-6.2,0-18.6,0-28.9-8.3c-10.3-4.1-16.5-18.6-16.5-39.3c0-55.8,59.9-57.9,62-57.9h59.9v2.1c0,6.2-12.4,8.3-20.7,8.3 	c-2.1,0-8.3,0-10.3,2.1c14.5,8.3,18.6,20.7,18.6,39.3c0,22.7-8.3,33.1-18.6,41.3c-6.2,4.1-10.3,8.3-10.3,14.5 	c0,4.1,6.2,10.3,12.4,16.5c12.4,10.3,26.9,24.8,26.9,47.5C266.5,328.5,256.2,347.1,235.5,355.4z M367.8,247.9h-39.3v39.3h-24.8 	v-39.3h-39.3v-24.8h39.3v-39.3h24.8v39.3h39.3V247.9z M204.5,278.9c-2.1,0-2.1,0-4.1,0c-12.4,0-22.7,6.2-28.9,12.4 	c-8.3,6.2-12.4,16.5-10.3,24.8c2.1,18.6,20.7,28.9,45.5,26.9c22.7-2.1,39.3-14.5,39.3-33.1C241.7,291.3,225.2,278.9,204.5,278.9z" /></svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h1>Met de steun van:</h1>
-                <ul class="clearfix">
-                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
-                    </li>
-                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
-                    </li>
-                    <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <footer class="clearfix">
-            <p>&copy; 2004-
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>Muzes vzw</p>
-            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
-            </p>
-            <a href="../../terms.html">Algemene voorwaarden</a>
-            <a href="../../privacy.html">Privacyverklaring</a>
-        </footer>
-    </div>
+			<nav class="leerplannav">
+				<ul>
+
+					<li><a href="eindtermen-en-leerplannen.html#1egraad">Eerste Graad</a>
+					</li>
+
+
+					<li><a href="eindtermen-en-leerplannen.html#2egraad">Tweede Graad</a>
+					</li>
+
+
+					<li><a href="eindtermen-en-leerplannen.html#3egraad">Derde Graad</a>
+					</li>
+
+				</ul>
+			</nav>
+
+			<p>Voor het provinciaal onderwijs gebruikt men in Oost-Vlaanderen de leerplannen van het GO!. In de andere provincies baseert men zich op de leerplannen van OVSG.</p>
+
+			<table>
+				<caption>
+					<h2 id="1egraad">Leerplannen Eerste Graad</h2>
+				</caption>
+				<tbody>
+					<tr>
+						<th></th>
+						<th>GO!</th>
+						<th>OVSG</th>
+						<th>VVKSO</th>
+					</tr>
+					<tr>
+						<th>A-stroom</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154445215/GO-Plastische-Opvoeding-1ste-Graad-ASO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154445598/GO-Beeldende-Vorming-1ste-Graad-ASO" target="_blank">Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154445748/GO-Muzikale-Opvoeding-1ste-Graad-ASO" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154445982/GO-Kunstinitiatie-1ste-Graad-ASO" target="_blank">Kunstinitiatie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154446079/GO-Instrument-1ste-Graad-ASO" target="_blank">Instrument</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154446288/GO-Muzikale-Opvoeding-1ste-Graad-STV" target="_blank">Muzikale Opvoeding STV</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154446568/GO-Plastische-Opvoeding-1-Ste-Graad-STV" target="_blank">Plastische Opvoeding STV</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154447477/OVSG-Leerplan-Muzikale-Opvoeding-1ste-Graad" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154447602/OVSG-Leerplan-Muzikale-Opvoeding-a-1ste-Graad-Ballet" target="_blank">Muzikale Opvoeding/Ballet</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154447699/OVSG-Leerplan-Plastische-Opvoeding-1ste-Graad" target="_blank">Plastische Opvoeding</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154448217/Muzikale-Opvoeding-1ste-Graad-A" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154448339/Artistieke-Vorming-1ste-Graad-A" target="_blank">Artistieke Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154448556/Plastische-Opvoeding-1ste-Graad-A" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154448697/Grafische-Communicatie-en-Media-1ste-Graad-A" target="_blank">Grafische Communicatie en Media</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154448757/Creatie-en-Vormgeving-1ste-Graad-A" target="_blank">Creatie en Vormgeving</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>B-stroom</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154446845/GO-Muzikale-Opvoeding-1ste-Graad-B-Stroom" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154447040/GO-Mode-1ste-Graad-B-Stroom" target="_blank">Mode</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154447200/GO-Plastische-Opvoeding-1ste-Graad-B-Stroom" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154447346/GO-Plastische-en-Decoratieve-Technieken-1ste-Graad-B-Stroom" target="_blank">Plastische en Decoratieve Technieken</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154447784/OVSG-Leerplan-Decoratie-2de-Jaar-BVL" target="_blank">Decoratie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154447929/OVSG-Leerplan-Muzikale-Opvoeding-B-Stroom-1ste-Graad" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154448102/OVSG-Leerplan-Plastische-Opvoeding-B-Stroom" target="_blank">Plastische Opvoeding </a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154449098/Plastische-Opvoeding-1ste-Graad-B" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154449155/Mode-1ste-Graad-B" target="_blank">Mode</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154449202/Muzikale-Opvoeding-1ste-Graad-B" target="_blank">Muzikale Opvoeding</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<table>
+				<caption>
+					<h2 id="2egraad">Leerplannen Tweede Graad</h2>
+				</caption>
+				<tbody>
+					<tr>
+						<th></th>
+						<th>GO!</th>
+						<th>OVSG</th>
+						<th>VVKSO</th>
+					</tr>
+					<tr>
+						<th>ASO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154449464/GO-Cultuurwetenschappen-2de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154454160/Cultuurwetenschappen-2de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154454417/Plastische-Opvoeding-2de-Graad-ASO-TSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154454543/Muzikale-Opvoeding-2de-Graad-A" target="_blank">Muzikale Opvoeding</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>TSO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								
+								<li><a href="http://www.scribd.com/doc/154449579/GO-Fotografie-2de-Graad-TSO" target="_blank">Fotografie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154449717/GO-Kunstgeschiedenis-2de-Graad-TSO" target="_blank">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154449845/GO-Plastische-Opvoeding-2de-Graad-TSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450036/GO-Praktijk-Fotografie-2de-Graad-TSO" target="_blank">Praktijk Fotografie</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								
+								<li><a href="http://www.scribd.com/doc/154454741/Grafische-Media-2de-Graad-TSO" target="_blank">Grafische Media</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154454958/Creatie-en-Mode-2de-Graad-TSO" target="_blank">Creatie en Mode</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154455068/Muzikale-Opvoeding-2de-Graad-TSO" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154455287/Fotografie-2de-Graad-TSO" target="_blank">Fotografie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154455453/Grafische-Communicatie-2de-Graad-TSO" target="_blank">Grafische Communicatie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154455574/Kunstgeschiedenis-2de-Graad-TSO" target="_blank">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154454417/Plastische-Opvoeding-2de-Graad-ASO-TSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>KSO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154450223/GO-Beeldende-Vorming-2de-Graad-KSO" target="_blank">Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450316/GO-Samenspel-2de-Graad-KSO" target="_blank">Samenspel</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450494/GO-Creatief-Musiceren-2de-Graad-KSO" target="_blank">Creatief Musiceren</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450543/GO-Koorzang-2de-Graad-KSO" target="_blank">Koorzang</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450590/GO-Algemene-Muziekleer-2de-Graad-KSO" target="_blank">Algemene Muziekleer</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450688/GO-Audiovisuele-Vorming-2de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450849/GO-Muziektheorie-2de-Graad-KSO" target="_blank">Muziektheorie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154450920/GO-Beeldende-en-Architecturale-Vorming-2de-Graad-KSO" target="_blank">Beeldende en Architecturale Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154451292/GO-Instrument-2de-Graad-KSO" target="_blank">Instrument</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154451545/GO-Kunstinitiatie-2de-Graad-KSO" target="_blank">Kunstinitiatie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154451797/GO-Muziekesthetica-2de-Graad-KSO" target="_blank">Muziekesthetica</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154451919/GO-Waarnemingstekenen-2de-Graad-KSO" target="_blank">Waarnemingstekenen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154452720/OVSG-Kunstgeschiedenis-2de-Graad-KSO">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154452915/OVSG-Leerplan-Architecturale-en-Beeldende-Vormgeving-2de-Graad-KSO" target="_blank">Architecturale en Beeldende Vorming</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154463485/Artistieke-Opleiding-2de-Graad-KSO" target="_blank">Artistieke Opleiding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154463776/Beeldende-en-Architecturale-Kunsten-2de-Graad-KSO" target="_blank">Architecturale en Beeldende Kunsten</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154463943/Kunstgeschiedenis-2de-Graad-KSO" target="_blank">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154464041/Audiovisuele-Vorming-2de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154464236/Beeldende-en-Architecturale-Vorming-2de-Graad-KSO" target="_blank">Beeldende en Architecturale Vorming</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>BSO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154452108/GO-Plastische-Opvoeding-2de-Graad-BSO">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154452255/GO-Grafische-Technieken-2de-Graad-BSO" target="_blank">Grafische Technieken</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154452418/GO-Publiciteitstekenen-2de-Graad-BSO" target="_blank">Publiciteitstekenen</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154452554/GO-Schilderen-en-Decoratie-2de-Graad-BSO" target="_blank">Schilderen en Decoratie</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154453137/OVSG-Leerplan-Muzikale-Opvoeding-2de-Graad-B" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154453458/OVSG-Leerplan-Plastische-Opvoeding-2de-Graad-BSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154453606/OVSG-Leerplan-Schilderen-en-Decoratie-2de-Graad-BSO" target="_blank">Schilderen en Decoratie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154453801/OVSG-Waarnemingstekenen-2de-Graad-BSO" target="_blank">Waarnemingstekenen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154464503/Moderealisatie-en-Presentatie-2de-Graad-BSO" target="_blank">Moderealisatie en Presentatie</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<table>
+				<caption>
+					<h2 id="3egraad">Leerplannen Derde Graad</h2>
+				</caption>
+				<tbody>
+					<tr>
+						<th></th>
+						<th>GO!</th>
+						<th>OVSG</th>
+						<th>VVKSO</th>
+					</tr>
+					<tr>
+						<th>ASO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154465834/GO-Cultuurwetenschappen-3de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/155256939/Cultuurwetenschappen-3de-Graad-ASO" target="_blank">Cultuurwetenschappen</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155257450/Esthetica-3de-Graad-ASO-3de-Graad-TSO" target="_blank">Esthetica</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>TSO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154471870/OVSG-Leerplan-Fotografie-3de-Graad-TSO" target="_blank">Fotografie </a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154472289/OVSG-Leerplan-Multimediatechnieken-3de-Graad-TSO" target="_blank">Multimediatechnieken</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/155257900/Plastische-Opvoeding-3de-Graad-TSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155258091/Fotografie-3de-Graad-TSO" target="_blank">Fotografie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155258368/Grafische-Communicatie-3de-Graad-TSO" target="_blank">Grafische Communicatie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155258516/Podiumtechnieken-3de-Graad-TSO" target="_blank">Podiumtechnieken</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155258756/Creatie-en-Mode-3de-Graad-TSO" target="_blank">Creatie en Mode</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155259078/Multimedia-3de-Graad-TSO" target="_blank">Multimedia</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155257450/Esthetica-3de-Graad-ASO-3de-Graad-TSO" target="_blank">Esthetica</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>KSO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154466190/GO-Algemene-Muziekleer-3de-Graad-KSO" target="_blank">Algemene Muziekleer</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154466432/GO-Architecturale-Vorming-3de-Graad-KSO" target="_blank">Architecturale Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154466669/GO-Samenspel-3de-Graad-KSO" target="_blank">Samenspel</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154466860/GO-Vrije-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Vrije Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154466974/GO-Kunstgeschiedenis-3de-Graad-KSO" target="_blank">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154467219/GO-Audiovisuele-Vorming-3de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154467516/GO-Muziekesthetica-3de-Graad-KSO" target="_blank">Muziekesthetica</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154467673/GO-Waarnemingstekenen-en-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Waarnemingstekenen en Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154467941/GO-Esthetica-3de-Graad-KSO" target="_blank">Esthetica</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154468219/GO-Binnenhuiskunst-Architectuurtekenen-bouwkunst-3de-Graad-KSO" target="_blank">Architectuurtekenen en Bouwkunst</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154468348/GO-Instrument-3de-Graad-KSO" target="_blank">Instrument</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154468828/GO-Koorzang-3de-Graad-KSO" target="_blank">Koorzang</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154468955/GO-Muziektheorie-3de-Graad-KSO" target="_blank">Muziektheorie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154469256/GO-Kunstgeschiedenis-Dans-Muziek-3de-Graad-KSO" target="_blank">Kunstgeschiedenis Dans/Muziek</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154469450/GO-Toegepaste-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Toegepaste Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154469509/GO-Waarnemingstekenen-en-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Waarnemingstekenen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154472520/OVSG-Leerplan-Algemene-Muziekleer-Creatief-Musiceren-Koorzang-3de-Graad-KSO" target="_blank">Algemene Muziekleer</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154472760/OVSG-Leerplan-Audiovisuele-Vorming-3de-Graad-KSO" target="_blank">Audiovisuele Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154472965/OVSG-Leerplan-Architecturale-en-Binnenhuiskunst-3de-Graad-KSO" target="_blank">Architecturale en Binnenhuiskunst</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154473265/OVSG-Leerplan-Beeldende-Vorming-Fotografie-3de-Graad-KSO" target="_blank">Fotografie en Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154473656/OVSG-Leerplan-Kunstgeschiedenis-3de-Graad-KSO" target="_blank">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154474117/OVSG-Leerplan-Muzikale-Opvoeding-3de-Graad-KSO" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155255398/OVSG-Leerplan-Toegepaste-Beeldende-Vorming-3de-Graad-KSO" target="_blank">Toegepaste Beeldende Vorming</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/155259208/Toegepaste-Beeldende-Kunst-3de-Graad-KSO" target="_blank">Toegepaste Beeldende Kunst</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155259483/Kunstgeschiedenis-3de-graad-KSO" target="_blank">Kunstgeschiedenis</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155259726/Muzikale-Opvoeding-3de-Graad-KSO" target="_blank">Muzikale Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155260048/Beeldende-Vorming-3de-Graad-KSO" target="_blank">Beeldende Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155260251/Architecturale-en-Binnenhuiskunst-KSO-3de-Graad" target="_blank">Architecturale en Binnenhuiskunst</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155260407/Artistieke-Opleiding-3de-Graad-KSO" target="_blank">Artistieke Opleiding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155260751/Architecturale-Vorming-3de-Graad-KSO" target="_blank">Architecturale Vorming</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155260812/Vrije-Beeldende-Kunst-3de-Graad-KSO" target="_blank">Vrije Beeldende Kunst</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>BSO</th>
+						<td>
+							<h3 class="mobile-title">GO!</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/154469621/GO-Plastische-Opvoeding-3de-Graad-BSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154469853/GO-Praktijk-Publiciteitstekenen-3de-Graad-BSO" target="_blank">Praktijk Publiciteitstekenen</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154470116/GO-Publiciteitstekenen-3de-Graad-BSO" target="_blank">Publiciteitstekenen</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/154470304/GO-Waarnemingstekenen-3de-Graad-BSO" target="_blank">Waarnemingstekenen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">OVSG</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/155255593/OVSG-Leerplan-Digitaal-Ontwerpen-en-Letterschilderen-3de-Graad-BSO-3de-Jaar" target="_blank">Digitaal Ontwerpen en Letterschilderen</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155255911/OVSG-Leerplan-Esthetica-Kunstinitiatie-3de-Graad-BSO" target="_blank">Esthetica &amp; Kunstinitiatie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155256276/OVSG-Leerplan-Plastische-Opvoeding-3de-Graad-BSO" target="_blank">Plastische Opvoeding</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155256697/OVSG-Waarnemingstekenen-Publiciteitstekenen-3de-Graad-BSO" target="_blank">Waarnemings-/publiciteitstekenen</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<h3 class="mobile-title">VVKSO</h3>
+							<ul>
+								<li><a href="http://www.scribd.com/doc/155260938/Kunstinitiatie-3de-Graad-BSO" target="_blank">Kunstinitiatie</a>
+								</li>
+								<li><a href="http://www.scribd.com/doc/155261108/Plastische-Opvoeding-3de-Graad-Bso" target="_blank">Plastische Opvoeding</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+		</section>
+	</main>
+
+	<div id="footer-wrapper">
+		<footer class="clearfix">
+			<div>
+				<h1>Handige links</h1>
+				<ul>
+					<li><a href="../../over.html">Wie zijn we?</a>
+					</li>
+					<li><a href="../../partnersindialoog.html">Partners in dialoog</a>
+					</li>
+					<li><a href="../../klankendaal.html">Klankendaal</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h1>Contact</h1>
+				<p>Tervuursesteenweg 84, 2800 Mechelen</p>
+				<p>+32 153 466 58</p>
+			</div>
+			<div>
+				<h1>Blijf op de hoogte</h1>
+				<ul class="clearfix">
+					<li class="clearfix">
+						<a href="https://fb.com/158298510974276" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+								<path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M309.9,173.6h-37.2 	c-4.1,0-10.3,6.2-10.3,14.5v26.9h47.5v39.3h-47.5v115.7h-45.5V254.1h-41.3v-39.3h41.3v-22.7c0-33.1,22.7-59.9,53.7-59.9h39.3V173.6z 	" />
+							</svg>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="https://twitter.com/muzesvzw" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="495.9px" height="495.9px" viewBox="0 0 495.9 495.9" enable-background="new 0 0 495.9 495.9" xml:space="preserve">
+								<path fill="#7F7F7F" d="M247.9,0C111.6,0,0,111.6,0,247.9s111.6,247.9,247.9,247.9s247.9-111.6,247.9-247.9S386.4,0,247.9,0z 	 M349.2,204.5c0,2.1,0,4.1,0,6.2c0,64-49.6,138.4-138.4,138.4c-26.9,0-53.7-8.3-74.4-22.7c4.1,0,8.3,0,12.4,0 	c22.7,0,43.4-8.3,59.9-20.7c-20.7,0-39.3-14.5-45.5-33.1c2.1,0,6.2,0,8.3,0c4.1,0,8.3,0,12.4-2.1c-22.7-4.1-39.3-24.8-39.3-47.5l0,0 	c6.2,4.1,14.5,6.2,22.7,6.2c-12.4-8.3-22.7-22.7-22.7-41.3c0-8.3,2.1-16.5,6.2-24.8c24.8,28.9,59.9,49.6,101.2,51.7 	c0-4.1-2.1-8.3-2.1-10.3c0-26.9,22.7-49.6,49.6-49.6c14.5,0,26.9,6.2,35.1,14.5c10.3-2.1,20.7-6.2,31-12.4 	c-4.1,12.4-12.4,20.7-20.7,26.9c10.3-2.1,18.6-4.1,28.9-8.3C367.8,188,359.5,196.3,349.2,204.5z" />
+							</svg>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+								<path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250C502.1,111.6,388.4,0,250,0z M190.1,353.3 	h-51.7V190.1h51.7V353.3z M163.2,171.5c-16.5,0-26.9-12.4-26.9-26.9c0-14.5,10.3-24.8,26.9-24.8s26.9,10.3,26.9,24.8 	C190.1,159.1,179.8,171.5,163.2,171.5z M374,353.3h-51.7v-90.9c0-20.7-8.3-35.1-24.8-35.1c-14.5,0-22.7,10.3-26.9,18.6 	c-2.1,4.1-2.1,8.3-2.1,12.4v95h-51.7V241.7c0-20.7,0-37.2-2.1-51.7h43.4l2.1,22.7l0,0c6.2-10.3,22.7-26.9,49.6-26.9 	c33.1,0,57.9,22.7,57.9,70.2v97.1H374z" />
+							</svg>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="http://plus.google.com" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+								<path fill="#7F7F7F" d="M227.3,177.7c-6.2-22.7-16.5-28.9-33.1-28.9c-2.1,0-4.1,0-4.1,0c-8.3,4.1-12.4,10.3-16.5,18.6 	c-2.1,8.3-4.1,16.5,0,26.9c4.1,18.6,16.5,31,31,31c2.1,0,4.1,0,4.1,0C223.1,221.1,231.4,198.3,227.3,177.7z M250,0 	C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M235.5,355.4c-16.5,8.3-33.1,8.3-39.3,8.3 	c-2.1,0-2.1,0-2.1,0s0,0-2.1,0c-10.3,0-62-2.1-62-49.6c0-45.5,55.8-49.6,72.3-49.6l0,0c-10.3-12.4-8.3-26.9-8.3-26.9s-2.1,0-4.1,0 	c-6.2,0-18.6,0-28.9-8.3c-10.3-4.1-16.5-18.6-16.5-39.3c0-55.8,59.9-57.9,62-57.9h59.9v2.1c0,6.2-12.4,8.3-20.7,8.3 	c-2.1,0-8.3,0-10.3,2.1c14.5,8.3,18.6,20.7,18.6,39.3c0,22.7-8.3,33.1-18.6,41.3c-6.2,4.1-10.3,8.3-10.3,14.5 	c0,4.1,6.2,10.3,12.4,16.5c12.4,10.3,26.9,24.8,26.9,47.5C266.5,328.5,256.2,347.1,235.5,355.4z M367.8,247.9h-39.3v39.3h-24.8 	v-39.3h-39.3v-24.8h39.3v-39.3h24.8v39.3h39.3V247.9z M204.5,278.9c-2.1,0-2.1,0-4.1,0c-12.4,0-22.7,6.2-28.9,12.4 	c-8.3,6.2-12.4,16.5-10.3,24.8c2.1,18.6,20.7,28.9,45.5,26.9c22.7-2.1,39.3-14.5,39.3-33.1C241.7,291.3,225.2,278.9,204.5,278.9z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h1>Met de steun van:</h1>
+				<ul class="clearfix">
+					<li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
+					</li>
+					<li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
+					</li>
+					<li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<footer class="clearfix">
+			<p>&copy; 2004-
+				<script>
+					document.write(new Date().getFullYear())
+				</script>Muzes vzw</p>
+			<p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
+			</p>
+			<a href="../../terms.html">Algemene voorwaarden</a>
+			<a href="../../privacy.html">Privacyverklaring</a>
+		</footer>
+	</div>
 </body>
 
 </html>
