@@ -1,4 +1,6 @@
-
+main{
+    min-height: 55.5vh;
+}
 
 section{
     max-width: 900px;
@@ -13,7 +15,9 @@ section p:first-of-type {
 section p:last-of-type {
     padding: 10px 0 30px 0;
 }
-
+#footer-wrapper{
+    overflow: hidden;
+}
 
 #totop {
     font-size: 1em;
