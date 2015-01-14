@@ -1,109 +1,133 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset="utf-8">
-        <title>Lesmateriaal - Muzes</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#92CDCF">
-        <link rel="icon" type="image/png" href="../../img/favicon.png"/>
-        <link rel="stylesheet" href="../../main.css">
-        <link rel="stylesheet" href="../databank.css">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="../../js/jquery.min.js"></script>
-        <script type="text/javascript" src="../../js/app.js"></script>
-        
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesmateriaal - Muzes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#A8D7D9">
+    <meta name="author" content="Astrid Vandevoorde, Boris Debusschere, Dieter Holvoet, Siemen Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool Brussel">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../databank.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/app.js"></script>
+
+    <!--[if lt IE 9]>
             <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
             <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <![endif]-->
-    </head>
-    
-    <body>
-        
-        <div class="hide" id="layer"></div>
-        <div class="translate" id="logForm">
-            <span class="close"></span>
-            <form>
-                <a><h1>login</h1></a>
-                <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
-                <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-                <input type="submit" name="submit">
-            </form>
-        </div>
+</head>
 
-        <header>
+<body>
+
+    <div class="hide" id="layer"></div>
+    <div class="translate" id="logForm">
+        <span class="close"></span>
+        <form>
+            <a><h1>login</h1></a>
+            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+
+    <header>
+        <div class="hide menuLayer"></div>
+        <nav>
             <div class="hide menuLayer"></div>
+            <a class="hide menu"></a>
+            <a href="../../index.html"><h1 id="logo">MUZES</h1></a>
+            <ul class="translateLeft">
+                <li class="noHover">
+                    <a class="closeMenu"></a>
+                </li>
+                <li class="top"><a href="../../index.html">home</a>
+                </li>
+                <li><a href="../../community.html">community</a>
+                    <ul>
+                        <li><a href="../../community.html">profiel</a>
+                        </li>
+                        <li><a href="../../berichten.html">berichten</a>
+                        </li>
+                        <li><a href="../../groepen.html">groepen</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../databank.html" class="navCurrent">databank</a>
+                    <ul>
+                        <li><a href="lesmateriaal.html" class="navCurrentUl">lesmateriaal</a>
+                        </li>
+                        <li><a href="../bib/bibliotheek.html">digitale bibliotheek</a>
+                        </li>
+                        <li><a href="../video/video.html">video's</a>
+                        </li>
+                        <li><a href="../cultuur/cultuur.html">cultuur in je buurt</a>
+                        </li>
+                        <li><a href="../lijst/begrippenlijsten.html">begrippenlijsten</a>
+                        </li>
+                        <li><a href="../sites/architectuur.html">interessante sites</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../projecten.html">projecten</a>
+                </li>
+                <li><a href="../../kalender.html">kalender</a>
+                </li>
+                <li><a href="../../contact.html">contact</a>
+                </li>
+                <li class="noHover"><a class="profilePic" id="login" href="../../profile/profile_john.html">profile</a>
+                </li>
+                <li><a class="logout hide" href="#">Afmelden</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="breadcrumb">
             <nav>
-                <div class="hide menuLayer"></div>
-                <a class="hide menu"></a>
-                <a href="../../index.html"><h1 id="logo">MUZES</h1></a>
-                <ul class="translateLeft">
-                    <li class="noHover"><a class="closeMenu"></a></li>
-                    <li class="top"><a href="../../index.html">home</a>
+                <ul>
+                    <li><a href="../../index.html">muzes.be</a>
                     </li>
-                    <li><a href="../../community.html">community</a>
-                        <ul>
-                            <li><a href="../../community.html">profiel</a></li>
-                            <li><a href="../../berichten.html">berichten</a></li>
-                            <li><a href="../../groepen.html">groepen</a></li>
-                        </ul>
+                    <li>&gt;</li>
+                    <li><a href="../databank.html">databank</a>
                     </li>
-                    <li>
-                        <a href="../databank.html" class="navCurrent">databank</a>
-                        <ul>
-                            <li><a href="lesmateriaal.html" class="navCurrentUl">lesmateriaal</a></li>
-                            <li><a href="../bib/bibliotheek.html">digitale bibliotheek</a></li>
-                            <li><a href="../video/video.html">video's</a></li>
-                            <li><a href="../cultuur/cultuur.html">cultuur in je buurt</a></li>
-                            <li><a href="../lijst/begrippenlijsten.html">begrippenlijsten</a></li>
-                            <li><a href="../sites/architectuur.html">interessante sites</a></li>
-                        </ul>
+                    <li>&gt;</li>
+                    <li><a href="lesmateriaal.html">lesmateriaal</a>
                     </li>
-                    <li><a href="../../projecten.html">projecten</a>
-                    </li>
-                    <li><a href="../../kalender.html">kalender</a>
-                    </li>
-                    <li><a href="../../contact.html">contact</a>
-                    </li>
-                    <li class="noHover"><a class="profilePic" id="login" href="../../profile/profile_john.html">profile</a></li>
-                    <li><a class="logout hide" href="#">Afmelden</a></li>
                 </ul>
             </nav>
-        </header>
-        
-        <main>
-            
-            <section class="breadcrumb">
-                <nav>
-                    <ul>
-                        <li><a href="../../index.html">muzes.be</a></li>
-                        <li>&gt;</li>
-                        <li><a href="../databank.html">databank</a></li>
-                        <li>&gt;</li>
-                        <li><a href="lesmateriaal.html">lesmateriaal</a></li>
-                    </ul>
-                </nav>
-            </section>
-            
-            <section class="navlist">
-                <header>
-                    <h1>Lesmateriaal</h1>
-                </header>
-                <p>Bekijk hier de eindtermen en de leerplannen voor de verschillende onderwijssystemen. Of laat je lessen inspireren door de lesvoorbeelden.</p>
-                <nav>
-                    <ul>
-                        <a href="eindtermen-en-leerplannen.html"><li>Eindtermen en Leerplannen</li></a>
-                        <a href="lesvoorbeelden-plastische-opvoeding/driedimensionaal.html"><li>Lesvoorbeelden: Plastische Opvoeding</li></a>
-                        <a href="lesvoorbeelden-esthetica/kunstenaars.html"><li>Lesvoorbeelden: Esthetica</li></a>
-                    </ul>
-                </nav>
-            </section>
-        </main>
-        
-        <div id="footer-wrapper">
+        </section>
+
+        <section class="navlist">
+            <header>
+                <h1>Lesmateriaal</h1>
+            </header>
+            <p>Bekijk hier de eindtermen en de leerplannen voor de verschillende onderwijssystemen. Of laat je lessen inspireren door de lesvoorbeelden.</p>
+            <nav>
+                <ul>
+                    <a href="eindtermen-en-leerplannen.html">
+                        <li>Eindtermen en Leerplannen</li>
+                    </a>
+                    <a href="lesvoorbeelden-plastische-opvoeding/driedimensionaal.html">
+                        <li>Lesvoorbeelden: Plastische Opvoeding</li>
+                    </a>
+                    <a href="lesvoorbeelden-esthetica/kunstenaars.html">
+                        <li>Lesvoorbeelden: Esthetica</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <div id="footer-wrapper">
         <footer class="clearfix">
             <div>
                 <h1>Handige links</h1>
@@ -157,6 +181,7 @@
             <a href="../../privacy.html">Privacyverklaring</a>
         </footer>
     </div>
-        
-    </body>
+
+</body>
+
 </html>

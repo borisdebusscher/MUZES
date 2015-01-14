@@ -1,185 +1,224 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset="utf-8">
-        <title>Lesvoorbeelden: Plastische Opvoeding - Muzes</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#92CDCF">
-        <link rel="icon" type="image/png" href="../../../img/favicon.png" />
-        <link rel="stylesheet" href="../../../main.css">
-        <link rel="stylesheet" href="../../databank.css">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="../../../js/jquery.min.js"></script>
-        <script type="text/javascript" src="../../../js/app.js"></script>
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesvoorbeelden: Plastische Opvoeding - Muzes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#A8D7D9">
+    <meta name="author" content="Astrid Vandevoorde, Boris Debusschere, Dieter Holvoet, Siemen Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool Brussel">
+    <link rel="icon" type="image/png" href="../../../img/favicon.png" />
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="../../databank.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/app.js"></script>
+    <!--[if lt IE 9]>
             <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
             <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <![endif]-->
-    </head>
-    
-    <body>
-        
-        <div class="hide" id="layer"></div>
-        <div class="translate" id="logForm">
-            <span class="close"></span>
-            <form>
-                <a><h1>login</h1></a>
-                <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
-                <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-                <input type="submit" name="submit">
-            </form>
-        </div>
+</head>
 
-        <header>
+<body>
+
+    <div class="hide" id="layer"></div>
+    <div class="translate" id="logForm">
+        <span class="close"></span>
+        <form>
+            <a><h1>login</h1></a>
+            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+
+    <header>
+        <div class="hide menuLayer"></div>
+        <nav>
             <div class="hide menuLayer"></div>
+            <a class="hide menu"></a>
+            <a href="../../../index.html"><h1 id="logo">MUZES</h1></a>
+            <ul class="translateLeft">
+                <li class="noHover">
+                    <a class="closeMenu"></a>
+                </li>
+                <li class="top"><a href="../../../index.html">home</a>
+                </li>
+                <li><a href="../../../community.html">community</a>
+                    <ul>
+                        <li><a href="../../../community.html">profiel</a>
+                        </li>
+                        <li><a href="../../../berichten.html">berichten</a>
+                        </li>
+                        <li><a href="../../../groepen.html">groepen</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../databank.html" class="navCurrent">databank</a>
+                    <ul>
+                        <li><a href="../../lesmateriaal/lesmateriaal.html" class="navCurrentUl">lesmateriaal</a>
+                        </li>
+                        <li><a href="../../bib/bibliotheek.html">digitale bibliotheek</a>
+                        </li>
+                        <li><a href="../../video/video.html">video's</a>
+                        </li>
+                        <li><a href="../../cultuur/cultuur.html">cultuur in je buurt</a>
+                        </li>
+                        <li><a href="../../lijst/begrippenlijsten.html">begrippenlijsten</a>
+                        </li>
+                        <li><a href="../../sites/architectuur.html">interessante sites</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../../projecten.html">projecten</a>
+                </li>
+                <li><a href="../../../kalender.html">kalender</a>
+                </li>
+                <li><a href="../../../contact.html">contact</a>
+                </li>
+                <li class="noHover"><a class="profilePic" id="login" href="../../../profile/profile_john.html">profile</a>
+                </li>
+                <li><a class="logout hide" href="#">Afmelden</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="breadcrumb">
             <nav>
-                <div class="hide menuLayer"></div>
-                <a class="hide menu"></a>
-                <a href="../../../index.html"><h1 id="logo">MUZES</h1></a>
-                <ul class="translateLeft">
-                    <li class="noHover"><a class="closeMenu"></a></li>
-                    <li class="top"><a href="../../../index.html">home</a>
+                <ul>
+                    <li><a href="../../../index.html">muzes.be</a>
                     </li>
-                    <li><a href="../../../community.html">community</a>
-                        <ul>
-                            <li><a href="../../../community.html">profiel</a></li>
-                            <li><a href="../../../berichten.html">berichten</a></li>
-                            <li><a href="../../../groepen.html">groepen</a></li>
-                        </ul>
+                    <li>&gt;</li>
+                    <li><a href="../../databank.html">databank</a>
                     </li>
-                    <li>
-                        <a href="../../databank.html" class="navCurrent">databank</a>
-                        <ul>
-                            <li><a href="../../lesmateriaal/lesmateriaal.html" class="navCurrentUl">lesmateriaal</a></li>
-                            <li><a href="../../bib/bibliotheek.html">digitale bibliotheek</a></li>
-                            <li><a href="../../video/video.html">video's</a></li>
-                            <li><a href="../../cultuur/cultuur.html">cultuur in je buurt</a></li>
-                            <li><a href="../../lijst/begrippenlijsten.html">begrippenlijsten</a></li>
-                            <li><a href="../../sites/architectuur.html">interessante sites</a></li>
-                        </ul>
+                    <li>&gt;</li>
+                    <li><a href="../lesmateriaal.html">lesmateriaal</a>
                     </li>
-                    <li><a href="../../../projecten.html">projecten</a>
+                    <li>&gt;</li>
+                    <li><a href="driedimensionaal.html">Lesvoorbeelden: Plastische Opvoeding</a>
                     </li>
-                    <li><a href="../../../kalender.html">kalender</a>
-                    </li>
-                    <li><a href="../../../contact.html">contact</a>
-                    </li>
-                    <li class="noHover"><a class="profilePic" id="login" href="../../../profile/profile_john.html">profile</a></li>
-                    <li><a class="logout hide" href="#">Afmelden</a></li>
                 </ul>
             </nav>
-        </header>
-        
-        <main>
-            
-            <section class="breadcrumb">
-                <nav>
-                    <ul>
-                        <li><a href="../../../index.html">muzes.be</a></li>
-                        <li>&gt;</li>
-                        <li><a href="../../databank.html">databank</a></li>
-                        <li>&gt;</li>
-                        <li><a href="../lesmateriaal.html">lesmateriaal</a></li>
-                        <li>&gt;</li>
-                        <li><a href="driedimensionaal.html">Lesvoorbeelden: Plastische Opvoeding</a></li>
-                    </ul>
-                </nav>
-            </section>
-            
-            <section class="clearfix bgcolor">
-                <nav class="sidenav">
-                    <header><h1>THEMA</h1></header>
-                    <ul>
-                        <li><a href="driedimensionaal.html" class="current">Driedimensionaal</a></li>
-                        <li><a href="grafische-kunst.html">Grafische Kunst</a></li>
-                        <li><a href="kunstenaars.html">Kunstenaars</a></li>
-                        <li><a href="kunststijlen.html">Kunststijlen</a></li>
-                        <li><a href="multidisciplinair.html">Multidisciplinair</a></li>
-                        <li><a href="materialen-en-technieken.html">Materialen en Technieken</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="datacontent">
-                    <header>
-                        <h1>Driedimensionaal</h1>
-                    </header>
-                    <ul class="clearfix">
-                        <li><a href="http://www.scribd.com/doc/157198274/Afrikaans-Masker" target="_blank">Afrikaanse Maskers</a></li>
-                        <li><a href="http://www.scribd.com/doc/157198592/Afrikaans-Masker-2" target="_blank">Afrikaanse Maskers(2)</a></li>
-                        <li><a href="http://www.scribd.com/doc/157199340/Anima-Tie-Poppet-Jes" target="_blank">Animatiepoppetjes naar Tim Burton</a></li>
-                        <li><a href="http://www.scribd.com/doc/157199914/Auto-Design" target="_blank">Autodesign met Zeep</a></li>
-                        <li><a href="http://www.scribd.com/doc/157204899/dromen-lampion" target="_blank">Droomlampions</a></li>
-                        <li><a href="http://www.scribd.com/doc/157205025/Ecolineveren" target="_blank">Ecolineveren</a></li>
-                        <li><a href="http://www.scribd.com/doc/157205502/emotiebeeld" target="_blank">Emotiebeelden</a></li>
-                        <li><a href="http://www.scribd.com/doc/157207170/Fastfood-Kleien" target="_blank">Fastfood in Klei</a></li>
-                        <li><a href="http://www.scribd.com/doc/157400039/mexiaans-beeld" target="_blank">Mexicaanse Beelden</a></li>
-                        <li><a href="http://www.scribd.com/doc/157400168/stenen-kubussen" target="_blank">Stenen Kubussen</a></li>
-                        <li><a href="http://www.scribd.com/doc/157400238/z-and-Masker" target="_blank">Zandmaskers</a></li>
-                        <li><a href="http://www.scribd.com/doc/157400241/zeepdier" target="_blank">Zeepdieren</a></li>
-                    </ul>
-                </div>
-                
-            </section>
-            
-        </main>
-        
-        <div id="footer-wrapper">
-            <footer class="clearfix">
-                <div>
-                    <h1>Handige links</h1>
-                    <ul>
-                        <li><a href="../../../over.html">Wie zijn we?</a>
-                        </li>
-                        <li><a href="../../../partnersindialoog.html">Partners in dialoog</a>
-                        </li>
-                        <li><a href="../../../klankendaal.html">Klankendaal</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>Contact</h1>
-                    <p>Tervuursesteenweg 84, 2800 Mechelen</p>
-                    <p>+32 153 466 58</p>
-                </div>
-                <div>
-                    <h1>Blijf op de hoogte</h1>
-                    <ul class="clearfix">
-                        <li class="clearfix"><a href="https://fb.com/158298510974276" target="_blank">Facebook</a>
-                        </li>
-                        <li class="clearfix"><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a>
-                        </li>
-                        <li class="clearfix"><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a>
-                        </li>
-                        <li class="clearfix"><a href="http://plus.google.com" target="_blank">Google+</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>Met de steun van:</h1>
-                    <ul class="clearfix">
-                        <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
-                        </li>
-                        <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
-                        </li>
-                        <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-            <footer class="clearfix">
-                <p>&copy; 2004-
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>Muzes vzw</p>
-                <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
-                </p>
-                <a href="../../../terms.html">Algemene voorwaarden</a>
-                <a href="../../../privacy.html">Privacyverklaring</a>
-            </footer>
-        </div>
-    </body>
+        </section>
+
+        <section class="clearfix bgcolor">
+            <nav class="sidenav">
+                <header>
+                    <h1>THEMA</h1>
+                </header>
+                <ul>
+                    <li><a href="driedimensionaal.html" class="current">Driedimensionaal</a>
+                    </li>
+                    <li><a href="grafische-kunst.html">Grafische Kunst</a>
+                    </li>
+                    <li><a href="kunstenaars.html">Kunstenaars</a>
+                    </li>
+                    <li><a href="kunststijlen.html">Kunststijlen</a>
+                    </li>
+                    <li><a href="multidisciplinair.html">Multidisciplinair</a>
+                    </li>
+                    <li><a href="materialen-en-technieken.html">Materialen en Technieken</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="datacontent">
+                <header>
+                    <h1>Driedimensionaal</h1>
+                </header>
+                <ul class="clearfix">
+                    <li><a href="http://www.scribd.com/doc/157198274/Afrikaans-Masker" target="_blank">Afrikaanse Maskers</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157198592/Afrikaans-Masker-2" target="_blank">Afrikaanse Maskers(2)</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157199340/Anima-Tie-Poppet-Jes" target="_blank">Animatiepoppetjes naar Tim Burton</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157199914/Auto-Design" target="_blank">Autodesign met Zeep</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157204899/dromen-lampion" target="_blank">Droomlampions</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157205025/Ecolineveren" target="_blank">Ecolineveren</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157205502/emotiebeeld" target="_blank">Emotiebeelden</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157207170/Fastfood-Kleien" target="_blank">Fastfood in Klei</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157400039/mexiaans-beeld" target="_blank">Mexicaanse Beelden</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157400168/stenen-kubussen" target="_blank">Stenen Kubussen</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157400238/z-and-Masker" target="_blank">Zandmaskers</a>
+                    </li>
+                    <li><a href="http://www.scribd.com/doc/157400241/zeepdier" target="_blank">Zeepdieren</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="footer-wrapper">
+        <footer class="clearfix">
+            <div>
+                <h1>Handige links</h1>
+                <ul>
+                    <li><a href="../../../over.html">Wie zijn we?</a>
+                    </li>
+                    <li><a href="../../../partnersindialoog.html">Partners in dialoog</a>
+                    </li>
+                    <li><a href="../../../klankendaal.html">Klankendaal</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>Contact</h1>
+                <p>Tervuursesteenweg 84, 2800 Mechelen</p>
+                <p>+32 153 466 58</p>
+            </div>
+            <div>
+                <h1>Blijf op de hoogte</h1>
+                <ul class="clearfix">
+                    <li class="clearfix"><a href="https://fb.com/158298510974276" target="_blank">Facebook</a>
+                    </li>
+                    <li class="clearfix"><a href="https://twitter.com/muzesvzw" target="_blank">Twitter</a>
+                    </li>
+                    <li class="clearfix"><a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">LinkedIn</a>
+                    </li>
+                    <li class="clearfix"><a href="http://plus.google.com" target="_blank">Google+</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>Met de steun van:</h1>
+                <ul class="clearfix">
+                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
+                    </li>
+                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
+                    </li>
+                    <li class="clearfix"><a href="http://www.maene.be">Piano's Maene</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <footer class="clearfix">
+            <p>&copy; 2004-
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>Muzes vzw</p>
+            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
+            </p>
+            <a href="../../../terms.html">Algemene voorwaarden</a>
+            <a href="../../../privacy.html">Privacyverklaring</a>
+        </footer>
+    </div>
+</body>
 
 </html>
