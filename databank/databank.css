@@ -119,9 +119,6 @@ section p:last-of-type {
     position: relative;
     margin-bottom: 12em;
 }
-.navlist:hover span{
-    background-image: url(../img/databank/notebook.jpg);
-}
 .navlist a span{
     z-index: 1;
     margin: 0;
@@ -133,7 +130,7 @@ section p:last-of-type {
     left: 0;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/databank/notebook.jpg);
+    background-image: url(../img/databank/databank.jpg);
     opacity: 1;
     visibility: visible;
 }
