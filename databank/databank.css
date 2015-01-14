@@ -110,6 +110,9 @@ section p:last-of-type {
 .navlist nav a:last-of-type:hover{
     border-bottom: 1px solid #92CDCF;
 }
+#eindtermenenuitgangspunten .navlist nav a:last-of-type:hover{
+    border-bottom: 0 solid #92CDCF;
+}
 .navlist nav a:hover, .navlist nav a:focus{
     background: #92CDCF;
     color: #FFF;
@@ -446,14 +449,56 @@ section iframe{
     }
 }
 
-
+@media (max-width: 1280px) {
+    section, #eindtermenenuitgangspunten {
+        width: 60%;
+    }
+}
+@media (max-width: 1024px) {
+    section, #eindtermenenuitgangspunten {
+        width: 70%;
+    }
+    section p {
+        width: 85%;
+    }
+}
+@media (max-width: 900px) {
+    section, #eindtermenenuitgangspunten {
+        width: 80%;
+    }
+    section p {
+        width: 90%;
+    }
+}
 
 
 @media only screen and (max-width: 750px){
-    
-    section{
+    section, #eindtermenenuitgangspunten {
         width: 95%;
         margin: inherit auto;
+    }
+    section p {
+        width: 95%;
+    }
+    h1 {
+      font-size: 1em;  
+    }
+    .closeMenu {
+        background: url(../../img/close-white.png) no-repeat center;
+        background-size: 18px;
+    }
+    .arrowMenu {
+        background: url(../../img/arrow-left-white.png) no-repeat center;
+        background-size: 18px;
+    }
+    .menu {
+        background-image: url(../../img/menu.png);
+    }
+    .arrow {
+        background-image: url(../../img/arrow-up-white.png) !important;
+    }
+    .bgScale {
+        background-image: url(../../img/camera.png);
     }
     
     /*databankpagina*/
@@ -623,58 +668,5 @@ section iframe{
         min-width: 100px;
         max-width: 200px;
         margin: 0 3em;
-    }
-}
-
-
-
-
-@media (max-width: 1280px) {
-    section {
-        width: 60%;
-    }
-}
-@media (max-width: 1024px) {
-    section {
-        width: 70%;
-    }
-    section p {
-        width: 85%;
-    }
-}
-@media (max-width: 900px) {
-    section {
-        width: 80%;
-    }
-    section p {
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 750px) {
-    section {
-        width: 95%;
-    }
-    section p {
-        width: 95%;
-    }
-    h1 {
-      font-size: 1em;  
-    }
-    .closeMenu {
-        background: url(../../img/close-white.png) no-repeat center;
-        background-size: 18px;
-    }
-    .arrowMenu {
-        background: url(../../img/arrow-left-white.png) no-repeat center;
-        background-size: 18px;
-    }
-    .menu {
-        background-image: url(../../img/menu.png);
-    }
-    .arrow {
-        background-image: url(../../img/arrow-up-white.png) !important;
-    }
-    .bgScale {
-        background-image: url(../../img/camera.png);
     }
 }
