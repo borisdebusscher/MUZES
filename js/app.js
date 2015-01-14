@@ -173,15 +173,15 @@ $('#totop').click(function(){
     
     
      $("#scrollArchi").click(function() {
-        $('body').animate({scrollTop: 394}, 800);
+        $('body').animate({scrollTop: 414}, 800);
 });
     
     $("#scrollBeeld").click(function() {
-        $('body').animate({scrollTop: 3625}, 800);
+        $('body').animate({scrollTop: 3805}, 800);
 });
     
     $("#scrollDans").click(function() {
-        $('body').animate({scrollTop: 6984}, 800);
+        $('body').animate({scrollTop: 7484}, 800);
 });
 
 }); 
