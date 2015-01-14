@@ -75,8 +75,9 @@ input[type="submit"] {
     padding: 0 10px;
     min-width: 120px;
     width: 10vw;
-	clear:left;
-	margin-top:50px;
+	clear: left;
+	margin-top: 50px;
+    line-height: normal !important;
 }
 
 /* PROFIELFOTO */
@@ -101,21 +102,6 @@ input[type="submit"] {
     border-radius: 50%;
     border: 6px solid #F4E7B9;
 }
-
-#file {
-    display: block;
-    width: 110px;
-    height: 110px;
-    border-radius: 50% !important;
-    background-color: black;
-    position: absolute;
-    top: 121px;
-    left: 50%;
-    margin-left: -360px;
-    opacity: 0 !important;
-}
-
-
 
 .opacity {
     opacity: 1 !important;
