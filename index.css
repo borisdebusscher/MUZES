@@ -233,8 +233,9 @@ main {
 /* GEINTERESSEERD? */
 
 #inschrijven #school, #inschrijven #ind {
-    display: inline-block;
+    float: left;
     width: calc(50% - 2px);
+    
 }
 
 #inschrijven h2, #inschrijven h3 {
