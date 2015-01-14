@@ -1,15 +1,21 @@
-section div  {
+section div {
     float: left;
     padding: 40px;
     box-sizing: border-box;
     height: 100%;
 }
 
-section div:first-of-type{
-    width: 60%;
+section div:first-of-type {
+    width: 100%;
+    height: 400px;
+    background: url(img/klankendaal/klankendaal-o.png) no-repeat center;
 }
 
 section div:nth-of-type(2) {
+    width: 60%;
+}
+
+section div:nth-of-type(3) {
     width: 40%;
     height: 100%;
 }
@@ -22,10 +28,6 @@ section iframe {
 
 section p {
     padding-bottom: 20px;
-    width: 100%;
-}
-
-section img {
     width: 100%;
 }
 
