@@ -158,10 +158,10 @@ $(window).scroll(function(event){
         var scroll = $(window).scrollTop();
         console.log(scroll);
         
-        if(scroll>393){
-            $("#totop").removeClass("hide");
+        if(scroll>0){
+            $("#totop").removeClass("hideTop");
         }else{
-            $("#totop").addClass("hide");
+            $("#totop").addClass("hideTop");
         }
         
     });
