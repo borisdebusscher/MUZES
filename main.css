@@ -47,6 +47,10 @@ main {
     clear: both;
 }
 
+.clearfix {
+    *zoom: 1;
+}
+
 /* HEADER */
 
 header nav {
