@@ -5,41 +5,41 @@ $(document).ready(function() {
     
     
     
-var high = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+var large = ['guitar_teaching-l.jpg', 'guitar-females-l.png', 'music_teacher-l.jpg','piano-l.jpg'];
     
-var medium = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+var medium = ['guitar_teaching-m.jpg', 'guitar-females-m.png', 'music_teacher-m.jpg','piano-m.jpg'];
     
-var small = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+var small = ['guitar_teaching-s.jpg', 'guitar-females-s.png', 'music_teacher-s.jpg','piano-s.jpg'];
     
-var choseImageH = high[Math.floor(Math.random() * images.length)]; 
-    console.log(choseImage);
+var choseImageL = large[Math.floor(Math.random() * large.length)]; 
+    console.log(choseImageL);
     
-var choseImageM = medium[Math.floor(Math.random() * images.length)]; 
-    console.log(choseImage);
+var choseImageM = medium[Math.floor(Math.random() * medium.length)]; 
+    console.log(choseImageM);
 
-var choseImageS = small[Math.floor(Math.random() * images.length)]; 
-    console.log(choseImage);
+var choseImageS = small[Math.floor(Math.random() * small.length)]; 
+    console.log(choseImageS);
     
-    if ($(window).width() >= 400){
-        console.log("> 400");
+    if ($(window).width() <= 400){
+        console.log("S");
 $('#banner').css({'background-image': 'url(img/home/banner/' + choseImageS  + ')'});
     }
     
-    if ($(window).width() >= 800){
-        console.log("> 800");
+    else if($(window).width() <= 800 && $(window).width() >= 400){
+        console.log("M");
 $('#banner').css({'background-image': 'url(img/home/banner/' + choseImageM  + ')'});
     }
     
-    if ($(window).width() >= 1600){
-        console.log("> 1600");
-$('#banner').css({'background-image': 'url(img/home/banner/' + choseImageH  + ')'});
+    else if($(window).width() >= 800){
+        console.log("L");
+$('#banner').css({'background-image': 'url(img/home/banner/' + choseImageL  + ')'});
     }
     
     
 
     
 
-$("#login").on("click", function(){
+$("#log").on("click", function(){
         $("#logForm").removeClass("translate");
         $("#layer").removeClass("hide");
         $("body").addClass("overflow");
