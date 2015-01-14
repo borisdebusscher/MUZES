@@ -2,300 +2,310 @@
 <html lang="nl">
 
 <head>
-    <meta charset="utf-8">
-    <title>Muzes</title>
+	<meta charset="utf-8">
+	<title>Muzes</title>
 	<meta name="author" content="Astrid Vandevoorde, Boris Debusschere, Dieter Holvoet, Siemen 
 
 Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool 
 
 Brussel">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="over.css">
-    <meta name="theme-color" content="#A8D7D9">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <!--[if lt IE 9]>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="over.css">
+	<meta name="theme-color" content="#A8D7D9">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!--[if lt IE 9]>
         <script src=“http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
         <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
 </head>
 
 <body>
-    <div class="hide" id="layer"></div>
-    <div class="translate" id="logForm">
-        <span class="close"></span>
-        <form>
-            <h1>login</h1>
-            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
-            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-            <input type="submit" name="submit" value="inloggen">
-        </form>
-    </div>
+	<div class="hide" id="layer"></div>
+	<div class="translate" id="logForm">
+		<span class="close"></span>
+		<form>
+			<h1>login</h1>
+			<input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+			<input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+			<input type="submit" name="submit" value="inloggen">
+		</form>
+	</div>
 
-    <header>
-        <div class="hide menuLayer"></div>
-        <nav>
-            <div class="hide menuLayer"></div>
-            <a class="hide menu"></a>
-            <a href="index.html"><h1 id="logo">MUZES</h1></a>
-            <ul class="translateLeft">
-                <li class="noHover"><a class="closeMenu"></a></li>
-                <li class="top"><a href="index.html">home</a>
-                </li>
-                <li><a href="community.html">community</a>
-                    <ul>
-                        <li><a href="community.html">Nieuwsoverzicht</a></li>
-                        <li><a href="berichten.html">berichten</a></li>
-                        <li><a href="groepen/groepen_index.html">groepen</a></li>
-                        <li><a href="profile/profile_john.html">profiel</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="databank/databank.html">databank</a>
-                    <ul>
-                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
-                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
-                        <li><a href="databank/video.html">video's</a></li>
-                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
-                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
-                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
-                    </ul>
-                </li>
-                <li><a href="projecten.html">projecten</a>
-                </li>
-                <li><a href="kalender.html">kalender</a>
-                </li>
-                <li><a href="contact.html">contact</a>
-                </li>
-                <li class="noHover"><a class="profilePic" id="login" href="profile/profile_john.html">profile</a>
-                </li>
-                <li><a class="logout hide" href="#">Afmelden</a></li>
-            </ul>
-        </nav>
-        <div id="banner">
-            <p>Project: Impact</p>
-        </div>
-    </header>
-    
+	<header>
+		<div class="hide menuLayer"></div>
+		<nav>
+			<div class="hide menuLayer"></div>
+			<a class="hide menu"></a>
+			<a href="index.html"><h1 id="logo">MUZES</h1></a>
+			<ul class="translateLeft">
+				<li class="noHover">
+					<a class="closeMenu"></a>
+				</li>
+				<li class="top"><a href="index.html">home</a>
+				</li>
+				<li><a href="community.html">community</a>
+					<ul>
+						<li><a href="community.html">Nieuwsoverzicht</a>
+						</li>
+						<li><a href="berichten.html">berichten</a>
+						</li>
+						<li><a href="groepen/groepen_index.html">groepen</a>
+						</li>
+						<li><a href="profile/profile_john.html">profiel</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="databank/databank.html">databank</a>
+					<ul>
+						<li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a>
+						</li>
+						<li><a href="databank/bibliotheek.html">digitale bibliotheek</a>
+						</li>
+						<li><a href="databank/video.html">video's</a>
+						</li>
+						<li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a>
+						</li>
+						<li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a>
+						</li>
+						<li><a href="databank/sites/architectuur.html">interessante sites</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="projecten.html">projecten</a>
+				</li>
+				<li><a href="kalender.html">kalender</a>
+				</li>
+				<li><a href="contact.html">contact</a>
+				</li>
+				<li class="noHover"><a class="profilePic" id="login" href="profile/profile_john.html">profile</a>
+				</li>
+				<li><a class="logout hide" href="#">Afmelden</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="banner">
+			<p>Project: Impact</p>
+		</div>
+	</header>
 
-    <main>
-        <section class="noMargin">
-            <header>
-                <h1>Wie is Wie?</h1>
-                <h2>Leer ons Muzes-team kennen!</h2>
-            </header>
-        </section>
-        <section>
-            <h2>Dagelijkse werking</h2>
-            <div class="persoon clearfix">
-                <img src="img/over/josmaes.jpg" alt="Jos Maes foto">
-                <div class="info">
-                    <h1>John Maes - Voorzitter</h1>
-                    <p>Algemene co&ouml;rdinatie</p>
-                    <a href="mailto:jos.maes@fcme.be" target="_top" class="mail">jos&period;maes&commat;fcme&period;be</a>
-                </div>
-            </div>
 
-            <div class="persoon clearfix">
-                <img src="img/over/reinmeus.jpg" alt="Rein Meus foto">
-                <div class="info">
-                    <h1>Rein Meus - Adviseur netwerking</h1>
-                    <p>Expert Europese projecten, coach cel communicatie en community</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/over/lisavanhaeren.jpg" alt="Lisa Vanhaeren foto">
-                <div class="info">
-                    <h1>Lisa Vanhaeren - Stafmedewerker</h1>
-                    <p>Co&ouml;rdinator opleidingen en evenementen</p>
-                    <p>Co&ouml;rdinatie dagelijkse werking: aanspreekpunt leden + commerciële contacten.</p>
-                    <p>Begeleiding stagetrajecten en vrijwilligerswerking.</p>
-                    <a href="mailto:lisa.vanhaeren@muzes.be" target="_top" class="mail" id="lisamailto">lisa&period;vanhaeren&commat;muzes&period;be</a>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/over/annlingier.jpg" alt="Ann Lingier foto">
-                <div class="info">
-                    <h1>Ann Lingier - Administratief medewerker</h1>
-                    <p>Co&ouml;rdinatie secretariaat en logistiek.</p>
-                    <a href="mailto:ann.lingier@fcme.be" target="_top" class="mail">ann.lingier@fcme.be</a>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/over/johanghys.jpg" alt="Johan Ghys">
-                <div class="info">
-                    <h1>Johan Ghys - Webmaster</h1>
-                    <p>Ontwikkelt en onderhoudt website/bewaakt performance/adviseur. (www.novinit.be)</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/over/paultimmermans.jpg" alt="Paul Timmermans">
-                <div class="info">
-                    <h1>Paul Timmermans - Co&ouml;rdinator representatie</h1>
-                    <p>Vertegenwoordigt Muzes en haar doelstellingen in diverse klankbordgroepen.</p>
-                </div>
-            </div>
-            <br>
-        </section>
-        
-        <section>
-            <h2>Docenten</h2>
-            
-            <div class="persoon clearfix">
-                <img src="img/green_blank.png" alt="foto carmien michels">
-                <div class="info">
-                    <h1>Carmien Michels</h1>
-                    <h2>Taalexpressie</h2>
-                    <p>Carmien Michels studeerde Woordkunst aan het Koninklijk Conservatorium van Antwerpen. Ze schrijft, performt, doceert en maakt audioverhalen. In 2011 won ze de Nederlandse NTR Radioprijs en in 2012 werd ze Slam Poetry kampioen van Antwerpen en vice-kampioen van Belgi&euml;.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/green_blank.png" alt="foto srah verhulst">
-                <div class="info">
-                    <h1>Sarah Verhulst</h1>
-                    <h2>Muziekpedagogie, Muziekmethodiek </h2>
-                    <p>Sarah Verhulst is pianiste en zangeres. Al van in haar studietijd heeft ze een fascinatie voor het musiceren met heel jonge kinderen. Dit resulteerde in het ontwikkelen van o.a. een pianomethode voor kleuters, talloze workshops, muziektheaters en concerten voor de allerkleinsten. Zij heeft 26 jaar ervaring in het werken met jonge kinderen, ontwikkelt nieuwe concepten, concerten en workshops voor deze doelgroep. Ze geeft regelmatig nascholing en training aan jonge muzikanten, in kleuter- en lager onderwijs en kinderdagverblijven alsook aan ouders met hun kinderen.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/green_blank.png"  alt="foto martine van puyvelde">
-                <div class="info">
-                    <h1>Martine Van Puyvelde</h1>
-                    <h2>Ontwikkelingspsychologie </h2>
-                    <p>Martine Van Puyvelde ontving een Master in Muziek aan het Koninklijk Conservatorium te Brussel en in Klinische Psychologie aan de VUB. Ze werd bekroond met de "Janine Seghers Award 2010" voor haar masterproef <i>"Tonale synchroon gebaseerd op harmonische en pentatonische reeks: De tonale moment in de moeder - kind interactie"</i>. Momenteel werkt ze als promovendus in het onderzoeksdomein van Infant Development aan de Vrije Universiteit Brussel (onderzoeksgroep IDN's) en aan de Koninklijke Militaire Academie.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/green_blank.png" alt="foto griet plettinx">
-                <div class="info">
-                    <h1>Griet Plettinx</h1>
-                    <h2>Liedrepertorium, liedcompositie</h2>
-                    <p>Griet Plettinx is muziektherapeute die ook de postgraduaatsopleiding "Muzikale vorming van het jonge kind" in Klankendaal volgde. Ze werkt part-time als muziektherapeute op de afdeling kinder- en jeugdpsychiatrie te Sint-Niklaas. Ook fungeert ze als bestuurslid van de beroepsvereniging van muziektherapeuten.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix" >
-                <img src="img/green_blank.png" alt="karen haspeslagh">
-                <div class="info">
-                    <h1>Karen Haspeslagh</h1>
-                    <h2>Praktijk en stage</h2>
-                    <p>Karen Haspeslagh is muziekpedagoge van opleiding. Ze geeft Algemene Muziekcultuur aan het conservatorium te Leuven. Ook verzorgt ze sessies Kinderklanken te Mechelen aan jonge kinderen vanaf 6 maanden tot 4 jaar.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/green_blank.png" alt="kristin roland">
-                <div class="info">
-                    <h1>Kristin Roland</h1>
-                    <h2>Stemvorming</h2>
-                    <p>Kristin Roland is afgestudeerd als zangeres. Ze maakte deel uit van verschillende ensembles zoals het BRTN koor, het Brussels Kathedraalkoor, 'Voix Celeste' en Ex Tempore en werkte mee aan vele opnames voor radio en televisie. Zij is erg begaan met de zangpedagogie. Zij gaf reeds diverse cursussen in binnen- en buitenland (waaronder Montpellier) en is zangleerkracht aan de muziekacademie van Mortsel. Als koordirigente leidde zij de koren van Rahier, Neidingen en Mackenbach en in 2005 deed zij een productie voor Champ d'Action met kinderen rond hedendaagse muziek van Riley.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/green_blank.png" alt="jozef sercu">
-                <div class="info">
-                    <h1>Jozef Sercu</h1>
-                    <h2>Muzische Vorming, Beweging</h2>
-                    <p>Jozef Sercu studeerde Muziek en Muziektherapie aan het Lemmensinstituut in Leuven. Hij is lector aan de Vives Hogeschool in Torhout.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Stagiaires</h2>
-            
-            <div class="persoon clearfix">
-                <img src="img/over/hanneopdebeeck.jpg" alt="Hanne Op De Beeck">
-                <div class="info">
-                    <h1>Hanne Op de Beeck</h1>
-                    <p>Communicatie in de brede zin van het woord, daar houdt Hanne zich mee bezig. Haar bacheloropleidingen in journalistiek en communicatiemanagement bereidden haar voor op deze stage. Ze ondersteunt de online community, verzorgt de sociale media en helpt bij het bedenken van strategische communicatieplannen. Hanne kan haar creativiteit optimaal gebruiken bij het creëren en verzamelen van beeldmateriaal. Samen met Jos en Lisa denkt ze na over de opvolging van de offline projecten van Muzes, IMPACT en Virus.</p>
-                </div>
-            </div>
-            
-            <div class="persoon clearfix">
-                <img src="img/over/sarahvandemoortele.jpg" alt="Sarah Vandemoortele">
-                <div class="info">
-                        <h1>Sarah Vandemoortele</h1>
-                        <p>Na haar conservatoriumopleiding viool en haar studies musicologie legt Sarah zich toe op het lesgeven. Haar stage bij Muzes vormt een mooie aanvulling op de lerarenopleiding die ze momenteel volgt. Sarah ondersteunt de didactische omkadering van het IMPACT-project en de bijbehorende nascholingsreeks bij Piano’s Maene. Daarnaast is ze het aanspreekpunt binnen de IMPACT-communitygroep.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+	<main>
+		<section class="noMargin">
+			<header>
+				<h1>Wie is Wie?</h1>
+				<h2>Leer ons Muzes-team kennen!</h2>
+			</header>
+		</section>
+		<section>
+			<h2>Dagelijkse werking</h2>
+			<div class="persoon clearfix">
+				<img src="img/over/josmaes.jpg" alt="Jos Maes foto">
+				<div class="info">
+					<h1>John Maes - Voorzitter</h1>
+					<p>Algemene co&ouml;rdinatie</p>
+					<a href="mailto:jos.maes@fcme.be" target="_top" class="mail">jos&period;maes&commat;fcme&period;be</a>
+				</div>
+			</div>
 
-    <div id="footer-wrapper">
-        <footer class="clearfix">
-            <div>
-                <h1>Handige links</h1>
-                <ul>
-                    <li><a href="over.html">Wie zijn we?</a>
-                    </li>
-                    <li><a href="partnersindialoog.html">Partners in dialoog</a>
-                    </li>
-                    <li><a href="klankendaal.html">Klankendaal</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <p>Tervuursesteenweg 84, 2800 Mechelen</p>
-                <p>+32 153 466 58</p>
-            </div>
-            <div>
-                <h1>Blijf op de hoogte</h1>
-                <ul class="clearfix">
-                    <li class="clearfix">
-                        <a href="https://fb.com/158298510974276" target="_blank">
-                            <svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M309.9,173.6h-37.2
+			<div class="persoon clearfix">
+				<img src="img/over/reinmeus.jpg" alt="Rein Meus foto">
+				<div class="info">
+					<h1>Rein Meus - Adviseur netwerking</h1>
+					<p>Expert Europese projecten, coach cel communicatie en community</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/over/lisavanhaeren.jpg" alt="Lisa Vanhaeren foto">
+				<div class="info">
+					<h1>Lisa Vanhaeren - Stafmedewerker</h1>
+					<p>Co&ouml;rdinator opleidingen en evenementen</p>
+					<p>Co&ouml;rdinatie dagelijkse werking: aanspreekpunt leden + commerciële contacten.</p>
+					<p>Begeleiding stagetrajecten en vrijwilligerswerking.</p>
+					<a href="mailto:lisa.vanhaeren@muzes.be" target="_top" class="mail" id="lisamailto">lisa&period;vanhaeren&commat;muzes&period;be</a>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/over/annlingier.jpg" alt="Ann Lingier foto">
+				<div class="info">
+					<h1>Ann Lingier - Administratief medewerker</h1>
+					<p>Co&ouml;rdinatie secretariaat en logistiek.</p>
+					<a href="mailto:ann.lingier@fcme.be" target="_top" class="mail">ann.lingier@fcme.be</a>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/over/johanghys.jpg" alt="Johan Ghys">
+				<div class="info">
+					<h1>Johan Ghys - Webmaster</h1>
+					<p>Ontwikkelt en onderhoudt website/bewaakt performance/adviseur. (www.novinit.be)</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/over/paultimmermans.jpg" alt="Paul Timmermans">
+				<div class="info">
+					<h1>Paul Timmermans - Co&ouml;rdinator representatie</h1>
+					<p>Vertegenwoordigt Muzes en haar doelstellingen in diverse klankbordgroepen.</p>
+				</div>
+			</div>
+			<br>
+		</section>
+
+		<section>
+			<h2>Docenten</h2>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="foto carmien michels">
+				<div class="info">
+					<h1>Carmien Michels</h1>
+					<h2>Taalexpressie</h2>
+					<p>Carmien Michels studeerde Woordkunst aan het Koninklijk Conservatorium van Antwerpen. Ze schrijft, performt, doceert en maakt audioverhalen. In 2011 won ze de Nederlandse NTR Radioprijs en in 2012 werd ze Slam Poetry kampioen van Antwerpen en vice-kampioen van Belgi&euml;.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="foto srah verhulst">
+				<div class="info">
+					<h1>Sarah Verhulst</h1>
+					<h2>Muziekpedagogie, Muziekmethodiek </h2>
+					<p>Sarah Verhulst is pianiste en zangeres. Al van in haar studietijd heeft ze een fascinatie voor het musiceren met heel jonge kinderen. Dit resulteerde in het ontwikkelen van o.a. een pianomethode voor kleuters, talloze workshops, muziektheaters en concerten voor de allerkleinsten. Zij heeft 26 jaar ervaring in het werken met jonge kinderen, ontwikkelt nieuwe concepten, concerten en workshops voor deze doelgroep. Ze geeft regelmatig nascholing en training aan jonge muzikanten, in kleuter- en lager onderwijs en kinderdagverblijven alsook aan ouders met hun kinderen.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="foto martine van puyvelde">
+				<div class="info">
+					<h1>Martine Van Puyvelde</h1>
+					<h2>Ontwikkelingspsychologie </h2>
+					<p>Martine Van Puyvelde ontving een Master in Muziek aan het Koninklijk Conservatorium te Brussel en in Klinische Psychologie aan de VUB. Ze werd bekroond met de "Janine Seghers Award 2010" voor haar masterproef <i>"Tonale synchroon gebaseerd op harmonische en pentatonische reeks: De tonale moment in de moeder - kind interactie"</i>. Momenteel werkt ze als promovendus in het onderzoeksdomein van Infant Development aan de Vrije Universiteit Brussel (onderzoeksgroep IDN's) en aan de Koninklijke Militaire Academie.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="foto griet plettinx">
+				<div class="info">
+					<h1>Griet Plettinx</h1>
+					<h2>Liedrepertorium, liedcompositie</h2>
+					<p>Griet Plettinx is muziektherapeute die ook de postgraduaatsopleiding "Muzikale vorming van het jonge kind" in Klankendaal volgde. Ze werkt part-time als muziektherapeute op de afdeling kinder- en jeugdpsychiatrie te Sint-Niklaas. Ook fungeert ze als bestuurslid van de beroepsvereniging van muziektherapeuten.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="karen haspeslagh">
+				<div class="info">
+					<h1>Karen Haspeslagh</h1>
+					<h2>Praktijk en stage</h2>
+					<p>Karen Haspeslagh is muziekpedagoge van opleiding. Ze geeft Algemene Muziekcultuur aan het conservatorium te Leuven. Ook verzorgt ze sessies Kinderklanken te Mechelen aan jonge kinderen vanaf 6 maanden tot 4 jaar.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="kristin roland">
+				<div class="info">
+					<h1>Kristin Roland</h1>
+					<h2>Stemvorming</h2>
+					<p>Kristin Roland is afgestudeerd als zangeres. Ze maakte deel uit van verschillende ensembles zoals het BRTN koor, het Brussels Kathedraalkoor, 'Voix Celeste' en Ex Tempore en werkte mee aan vele opnames voor radio en televisie. Zij is erg begaan met de zangpedagogie. Zij gaf reeds diverse cursussen in binnen- en buitenland (waaronder Montpellier) en is zangleerkracht aan de muziekacademie van Mortsel. Als koordirigente leidde zij de koren van Rahier, Neidingen en Mackenbach en in 2005 deed zij een productie voor Champ d'Action met kinderen rond hedendaagse muziek van Riley.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/green_blank.png" alt="jozef sercu">
+				<div class="info">
+					<h1>Jozef Sercu</h1>
+					<h2>Muzische Vorming, Beweging</h2>
+					<p>Jozef Sercu studeerde Muziek en Muziektherapie aan het Lemmensinstituut in Leuven. Hij is lector aan de Vives Hogeschool in Torhout.</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Stagiaires</h2>
+
+			<div class="persoon clearfix">
+				<img src="img/over/hanneopdebeeck.jpg" alt="Hanne Op De Beeck">
+				<div class="info">
+					<h1>Hanne Op de Beeck</h1>
+					<p>Communicatie in de brede zin van het woord, daar houdt Hanne zich mee bezig. Haar bacheloropleidingen in journalistiek en communicatiemanagement bereidden haar voor op deze stage. Ze ondersteunt de online community, verzorgt de sociale media en helpt bij het bedenken van strategische communicatieplannen. Hanne kan haar creativiteit optimaal gebruiken bij het creëren en verzamelen van beeldmateriaal. Samen met Jos en Lisa denkt ze na over de opvolging van de offline projecten van Muzes, IMPACT en Virus.</p>
+				</div>
+			</div>
+
+			<div class="persoon clearfix">
+				<img src="img/over/sarahvandemoortele.jpg" alt="Sarah Vandemoortele">
+				<div class="info">
+					<h1>Sarah Vandemoortele</h1>
+					<p>Na haar conservatoriumopleiding viool en haar studies musicologie legt Sarah zich toe op het lesgeven. Haar stage bij Muzes vormt een mooie aanvulling op de lerarenopleiding die ze momenteel volgt. Sarah ondersteunt de didactische omkadering van het IMPACT-project en de bijbehorende nascholingsreeks bij Piano’s Maene. Daarnaast is ze het aanspreekpunt binnen de IMPACT-communitygroep.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<div id="footer-wrapper">
+		<footer class="clearfix">
+			<div>
+				<h1>Handige links</h1>
+				<ul>
+					<li><a href="over.html">Wie zijn we?</a>
+					</li>
+					<li><a href="partnersindialoog.html">Partners in dialoog</a>
+					</li>
+					<li><a href="klankendaal.html">Klankendaal</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h1>Contact</h1>
+				<p>Tervuursesteenweg 84, 2800 Mechelen</p>
+				<p>+32 153 466 58</p>
+			</div>
+			<div>
+				<h1>Blijf op de hoogte</h1>
+				<ul class="clearfix">
+					<li class="clearfix">
+						<a href="https://fb.com/158298510974276" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+								<path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M309.9,173.6h-37.2
 	c-4.1,0-10.3,6.2-10.3,14.5v26.9h47.5v39.3h-47.5v115.7h-45.5V254.1h-41.3v-39.3h41.3v-22.7c0-33.1,22.7-59.9,53.7-59.9h39.3V173.6z
-	"/></svg>
-                        </a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="https://twitter.com/muzesvzw" target="_blank">
-                            <svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="495.9px" height="495.9px" viewBox="0 0 495.9 495.9" enable-background="new 0 0 495.9 495.9"
-	 xml:space="preserve"><path fill="#7F7F7F" d="M247.9,0C111.6,0,0,111.6,0,247.9s111.6,247.9,247.9,247.9s247.9-111.6,247.9-247.9S386.4,0,247.9,0z
+	" />
+							</svg>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="https://twitter.com/muzesvzw" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="495.9px" height="495.9px" viewBox="0 0 495.9 495.9" enable-background="new 0 0 495.9 495.9" xml:space="preserve">
+								<path fill="#7F7F7F" d="M247.9,0C111.6,0,0,111.6,0,247.9s111.6,247.9,247.9,247.9s247.9-111.6,247.9-247.9S386.4,0,247.9,0z
 	 M349.2,204.5c0,2.1,0,4.1,0,6.2c0,64-49.6,138.4-138.4,138.4c-26.9,0-53.7-8.3-74.4-22.7c4.1,0,8.3,0,12.4,0
 	c22.7,0,43.4-8.3,59.9-20.7c-20.7,0-39.3-14.5-45.5-33.1c2.1,0,6.2,0,8.3,0c4.1,0,8.3,0,12.4-2.1c-22.7-4.1-39.3-24.8-39.3-47.5l0,0
 	c6.2,4.1,14.5,6.2,22.7,6.2c-12.4-8.3-22.7-22.7-22.7-41.3c0-8.3,2.1-16.5,6.2-24.8c24.8,28.9,59.9,49.6,101.2,51.7
 	c0-4.1-2.1-8.3-2.1-10.3c0-26.9,22.7-49.6,49.6-49.6c14.5,0,26.9,6.2,35.1,14.5c10.3-2.1,20.7-6.2,31-12.4
-	c-4.1,12.4-12.4,20.7-20.7,26.9c10.3-2.1,18.6-4.1,28.9-8.3C367.8,188,359.5,196.3,349.2,204.5z"/></svg>
-                            </a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">
-                            <svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                                <path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250C502.1,111.6,388.4,0,250,0z M190.1,353.3
+	c-4.1,12.4-12.4,20.7-20.7,26.9c10.3-2.1,18.6-4.1,28.9-8.3C367.8,188,359.5,196.3,349.2,204.5z" />
+							</svg>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="https://www.linkedin.com/profile/view?id=353470483" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+								<path fill="#7F7F7F" d="M250,0C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250C502.1,111.6,388.4,0,250,0z M190.1,353.3
 	h-51.7V190.1h51.7V353.3z M163.2,171.5c-16.5,0-26.9-12.4-26.9-26.9c0-14.5,10.3-24.8,26.9-24.8s26.9,10.3,26.9,24.8
 	C190.1,159.1,179.8,171.5,163.2,171.5z M374,353.3h-51.7v-90.9c0-20.7-8.3-35.1-24.8-35.1c-14.5,0-22.7,10.3-26.9,18.6
 	c-2.1,4.1-2.1,8.3-2.1,12.4v95h-51.7V241.7c0-20.7,0-37.2-2.1-51.7h43.4l2.1,22.7l0,0c6.2-10.3,22.7-26.9,49.6-26.9
-	c33.1,0,57.9,22.7,57.9,70.2v97.1H374z"/></svg>
-                        </a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="http://plus.google.com" target="_blank">
-                            <svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-                                <path fill="#7F7F7F" d="M227.3,177.7c-6.2-22.7-16.5-28.9-33.1-28.9c-2.1,0-4.1,0-4.1,0c-8.3,4.1-12.4,10.3-16.5,18.6
+	c33.1,0,57.9,22.7,57.9,70.2v97.1H374z" />
+							</svg>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="http://plus.google.com" target="_blank">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+								<path fill="#7F7F7F" d="M227.3,177.7c-6.2-22.7-16.5-28.9-33.1-28.9c-2.1,0-4.1,0-4.1,0c-8.3,4.1-12.4,10.3-16.5,18.6
 	c-2.1,8.3-4.1,16.5,0,26.9c4.1,18.6,16.5,31,31,31c2.1,0,4.1,0,4.1,0C223.1,221.1,231.4,198.3,227.3,177.7z M250,0
 	C111.6,0,0,111.6,0,250s111.6,250,250,250s250-111.6,250-250S388.4,0,250,0z M235.5,355.4c-16.5,8.3-33.1,8.3-39.3,8.3
 	c-2.1,0-2.1,0-2.1,0s0,0-2.1,0c-10.3,0-62-2.1-62-49.6c0-45.5,55.8-49.6,72.3-49.6l0,0c-10.3-12.4-8.3-26.9-8.3-26.9s-2.1,0-4.1,0
@@ -303,32 +313,35 @@ Brussel">
 	c-2.1,0-8.3,0-10.3,2.1c14.5,8.3,18.6,20.7,18.6,39.3c0,22.7-8.3,33.1-18.6,41.3c-6.2,4.1-10.3,8.3-10.3,14.5
 	c0,4.1,6.2,10.3,12.4,16.5c12.4,10.3,26.9,24.8,26.9,47.5C266.5,328.5,256.2,347.1,235.5,355.4z M367.8,247.9h-39.3v39.3h-24.8
 	v-39.3h-39.3v-24.8h39.3v-39.3h24.8v39.3h39.3V247.9z M204.5,278.9c-2.1,0-2.1,0-4.1,0c-12.4,0-22.7,6.2-28.9,12.4
-	c-8.3,6.2-12.4,16.5-10.3,24.8c2.1,18.6,20.7,28.9,45.5,26.9c22.7-2.1,39.3-14.5,39.3-33.1C241.7,291.3,225.2,278.9,204.5,278.9z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h1>Met de steun van:</h1>
-                <ul class="clearfix">
-                    <li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
-                    </li>
-                    <li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
-                    </li>
-                    <li class="clearfix"><a href="http://www.maene.be" target="_blank">Piano's Maene</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <footer class="clearfix">
-            <p>&copy; 2004-<script>document.write(new Date().getFullYear())</script>&nbsp;Muzes vzw</p>
-            <p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
-            </p>
-            <a href="terms.html">Algemene voorwaarden</a>
-            <a href="privacy.html">Privacyverklaring</a>
-        </footer>
-    </div>
+	c-8.3,6.2-12.4,16.5-10.3,24.8c2.1,18.6,20.7,28.9,45.5,26.9c22.7-2.1,39.3-14.5,39.3-33.1C241.7,291.3,225.2,278.9,204.5,278.9z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h1>Met de steun van:</h1>
+				<ul class="clearfix">
+					<li class="clearfix"><a href="http://www.cera.be" target="_blank">Cera</a>
+					</li>
+					<li class="clearfix"><a href="http://www.bozar.be" target="_blank">Bozar</a>
+					</li>
+					<li class="clearfix"><a href="http://www.maene.be" target="_blank">Piano's Maene</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<footer class="clearfix">
+			<p>&copy; 2004-
+				<script>
+					document.write(new Date().getFullYear())
+				</script>&nbsp;Muzes vzw</p>
+			<p>Ontwikkeld door&nbsp;<a href="http://www.ehb.be/design-en-technologie" target="_blank">Departement Design &amp; Technologie van de Erasmushogeschool Brussel.</a>
+			</p>
+			<a href="terms.html">Algemene voorwaarden</a>
+			<a href="privacy.html">Privacyverklaring</a>
+		</footer>
+	</div>
 </body>
 
 </html>

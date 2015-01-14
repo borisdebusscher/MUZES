@@ -1,99 +1,86 @@
 section:not(.noMargin) {
-    padding: 50px 0;
+	padding: 50px 0;
 }
-
 section > h2 {
-    text-transform: uppercase;
+	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
-    padding: 0 0 0 20px;
+	padding: 0 0 0 20px;
 }
-
 .info {
 	background-color: #F5F5F5;
 	border-radius: 10px;
 	padding: 15px;
-    box-sizing: border-box;
-    margin: 0 0 0 170px;
-    display: block;
-    height: 100%;
-    min-height: 150px;
+	box-sizing: border-box;
+	margin: 0 0 0 170px;
+	display: block;
+	height: 100%;
+	min-height: 150px;
 }
-
 .persoon {
-    min-height: 150px;
-    width: 70%;
-    margin: 5% auto;
+	min-height: 150px;
+	width: 70%;
+	margin: 5% auto;
 }
-
 .persoon img {
-    height: 150px;
+	height: 150px;
 	float: left;
-    border-radius: 50%;
-    margin: auto;
+	border-radius: 50%;
+	margin: auto;
 }
-
-section div h1, section div h2, .mail {
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    color: #636363;
-    font-weight: 500;
-    margin: 0;
-    text-align: left;
+section div h1,
+section div h2,
+.mail {
+	font-family: Bariol, Calibri, Arial, sans-serif;
+	color: #636363;
+	font-weight: 500;
+	margin: 0;
+	text-align: left;
 }
-
 section div h1 {
-    padding: 0;
+	padding: 0;
 	font-size: 28px;
 }
-
 section div h2 {
-    padding: 0;
+	padding: 0;
 	font-size: 21px;
 }
-
-.info p, .mail {
-	font-size: 18px;
-    margin: 0;
-}
-
-.info p {
-    width: 100%;
-}
-
-.info p:first-of-type {
-    padding-top: 5px;
-}
-
-.info p:last-of-type {
-    padding-bottom: 10px;
-}
-
+.info p,
 .mail {
-    margin: 0 0 0 0;
-    padding: 0 0 0 35px;
-    background: url(img/icons/mail.svg) no-repeat left;
-    display: block;
+	font-size: 18px;
+	margin: 0;
 }
-
+.info p {
+	width: 100%;
+}
+.info p:first-of-type {
+	padding-top: 5px;
+}
+.info p:last-of-type {
+	padding-bottom: 10px;
+}
+.mail {
+	margin: 0 0 0 0;
+	padding: 0 0 0 35px;
+	background: url(img/icons/mail.svg) no-repeat left;
+	display: block;
+}
 @media only screen and (max-width: 750px) {
-   .info {
-	   float: none;
-	   width: 100%;
-	   margin: 0 auto;
-       min-height: 0;
-	   
-   }
+	.info {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		min-height: 0;
+	}
 	.persoon {
 		width: 95%;
 	}
-    
 	.persoon img {
-        float: none;
+		float: none;
 		display: block;
 		margin: 30px auto 15px auto;
 	}
 }
-
 @media only screen and (max-width: 500px) {
 	main section {
 		width: 95%;

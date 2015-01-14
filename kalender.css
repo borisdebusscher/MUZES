@@ -1,158 +1,134 @@
 main header {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
-
 section > h2 {
-    margin-left: 10%
+	margin-left: 10%
 }
-
 .event {
-    margin: 0 auto 30px auto;
-    background-color: #F4F5F5;
-
-
-    box-sizing: border-box;
-    width: 80%;
+	margin: 0 auto 30px auto;
+	background-color: #F4F5F5;
+	box-sizing: border-box;
+	width: 80%;
 }
-
-.event img, .info {
-    float: left;
-}
-
+.event img,
 .info {
-    height: 100%;
-    width: 66%;
-    width: calc(100% * 2/3);
-    box-sizing: border-box;
-    padding: 15px 30px;
+	float: left;
 }
-
+.info {
+	height: 100%;
+	width: 66%;
+	width: calc(100% * 2/3);
+	box-sizing: border-box;
+	padding: 15px 30px;
+}
 .event img {
-    height: 100%;
-    width: 33%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+	height: 100%;
+	width: 33%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
-
 /* DATUM */
 
 .datum {
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    color: #636363;
-    font-weight: 500;
-    height: 60px;
-    width: 180px;
-    margin: 0;
+	font-family: Bariol, Calibri, Arial, sans-serif;
+	color: #636363;
+	font-weight: 500;
+	height: 60px;
+	width: 180px;
+	margin: 0;
 }
-
 .cijfer {
-    font-size: 60px;
-    float: left;
-    height: 60px;
-    line-height: 50px;
-    padding-right: 5px;
+	font-size: 60px;
+	float: left;
+	height: 60px;
+	line-height: 50px;
+	padding-right: 5px;
 }
-
-.dag, .maand {
-    display: block;
-    height: 25px;
-    line-height: 25px;
-}
-
-.dag {
-    font-size: 23px;
-}
-
+.dag,
 .maand {
-    font-size: 20px;
+	display: block;
+	height: 25px;
+	line-height: 25px;
 }
-
+.dag {
+	font-size: 23px;
+}
+.maand {
+	font-size: 20px;
+}
 /* INFO */
 
 .info p {
-    min-height: 30px;
-    padding-left: 25px;
-    font-size: 19px;
-    width: 80%;
+	min-height: 30px;
+	padding-left: 25px;
+	font-size: 19px;
+	width: 80%;
 }
-
 .info p:first-of-type {
-    background: url(img/kalender/vraagteken.png) no-repeat left;
-    background-size: auto 25px;
-    margin: 0 0 5px 20px;
+	background: url(img/kalender/vraagteken.png) no-repeat left;
+	background-size: auto 25px;
+	margin: 0 0 5px 20px;
 }
-
 .info p:nth-of-type(2) {
-    background: url(img/kalender/place.png) no-repeat left;
-    background-size: auto 25px;
-    margin: 0 0 10px 20px;
+	background: url(img/kalender/place.png) no-repeat left;
+	background-size: auto 25px;
+	margin: 0 0 10px 20px;
 }
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {
-    .datum {
-        height: 50px;
-        width: 160px;
-    }
-    
-    .cijfer {
-        font-size: 50px;
-        height: 40px;
-        line-height: 40px;
-    }
-    
-    .dag, .maand {
-        height: 20px;
-        line-height: 20px;
-    }
-    
-    .dag {
-        font-size: 20px;
-    }
-
-    .maand {
-        font-size: 16px;
-    }
-    
-    .info {
-        padding: 15px 20px;
-    }
-    
-    .info p {
-        min-height: 22px;
-        padding-left: 25px;
-        font-size: 17px;
-        width: 80%;
-    }
-    
-    .info p:first-of-type {
-        background-size: auto 22px;
-    }
-
-    .info p:nth-of-type(2) {
-        background-size: auto 22px;
-    }
+	.datum {
+		height: 50px;
+		width: 160px;
+	}
+	.cijfer {
+		font-size: 50px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.dag,
+	.maand {
+		height: 20px;
+		line-height: 20px;
+	}
+	.dag {
+		font-size: 20px;
+	}
+	.maand {
+		font-size: 16px;
+	}
+	.info {
+		padding: 15px 20px;
+	}
+	.info p {
+		min-height: 22px;
+		padding-left: 25px;
+		font-size: 17px;
+		width: 80%;
+	}
+	.info p:first-of-type {
+		background-size: auto 22px;
+	}
+	.info p:nth-of-type(2) {
+		background-size: auto 22px;
+	}
 }
-
 @media screen and (max-width: 600px) {
-    .event img {
-        float: none;
-        width: 100%;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 10px;
-    }
-    
-    .info {
-        width: 100%;
-    }
-    
-    .info a {
-        display: block;
-    }
+	.event img {
+		float: none;
+		width: 100%;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 10px;
+	}
+	.info {
+		width: 100%;
+	}
+	.info a {
+		display: block;
+	}
 }
 @media screen and (max-width: 800px) {
-	main section{
-		width:95%;
+	main section {
+		width: 95%;
 	}
 }
