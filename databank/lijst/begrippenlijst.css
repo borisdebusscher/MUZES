@@ -1,27 +1,29 @@
 section {
     max-width: 900px;
 }
-.lijstthema p, .lijstthema ul{
+.lijstthema p,
+.lijstthema ul {
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
-	color:#4F5461;
+    color: #4F5461;
 }
 #architectuur header,
 #beeld header,
-#dans header{
-    
-}
-#architectuur,
+#dans header {} #architectuur,
 #beeld,
-#dans{
+#dans {
     padding-bottom: 4em;
 }
-#architectuur ul, #beeld ul, #dans ul {
+#architectuur ul,
+#beeld ul,
+#dans ul {
     list-style-type: none;
     width: 85%;
     margin: 1.5em 7.5%;
     padding: 0;
 }
-#architectuur ul li, #beeld ul li, #dans ul li{
+#architectuur ul li,
+#beeld ul li,
+#dans ul li {
     /*padding: .5em 1em;*/
 }
 #totop {
@@ -41,9 +43,6 @@ section {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-
-
-
 #login {
     width: 40px;
     height: 40px;
@@ -54,17 +53,14 @@ section {
     text-indent: -9999px;
     border: 4px solid #FFF1C0;
 }
-
 #login:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background-color: none !important;
 }
-
 .noHover:hover {
     background-color: white;
 }
-
 .navlist ul a {
     cursor: pointer;
 }
@@ -99,7 +95,7 @@ section {
         width: 95%;
     }
     h1 {
-      font-size: 1em;  
+        font-size: 1em;
     }
     .closeMenu {
         background: url(../../img/close-white.png) no-repeat center;
