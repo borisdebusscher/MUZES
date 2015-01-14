@@ -32,12 +32,19 @@ label {
     float: left;
 }
 
-form input {
+input {
     outline: none;
     resize: none;
     overflow: auto;
     float: left;
     border: none;
+    padding: 10px !important;
+}
+
+#opslaan {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
 }
 
 #blok-links {
