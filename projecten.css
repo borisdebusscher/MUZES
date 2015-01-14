@@ -7,47 +7,36 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 section p {
     font-family: Source Sans Pro, Calibri, Arial, sans-serif;
     margin: 1em auto;
     width: 80%;
 }
-#projectpics {
+
+.projectpics {
     width: 100%;
 }
+
 section {
     width: 50%;
-    padding-bottom: 1em;
+    padding-bottom: 10px;
 }
-#community {
+
+.community {
     width: 7.8em;
     display: inline-block;
     margin: 1em;
 }
+
 .knoppen {
     text-align: center;
 }
-section header {
-    margin-bottom: 0;
-}
-#login {
-    width: 40px;
-    height: 40px;
-    padding: 0 !important;
-    background: url(img/teacher2.png) center no-repeat;
-    background-size: 40px;
-    border-radius: 50%;
-    text-indent: -9999px;
-    border: 4px solid #FFF1C0;
-}
-#login:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: none !important;
-}
+
 .links {
     color: #4F5461;
 }
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -55,6 +44,7 @@ section header {
         width: 60%;
     }
 }
+
 @media (max-width: 1024px) {
     section {
         width: 70%;
@@ -63,6 +53,7 @@ section header {
         width: 85%;
     }
 }
+
 @media (max-width: 900px) {
     section {
         width: 80%;
@@ -71,6 +62,7 @@ section header {
         width: 90%;
     }
 }
+
 @media only screen and (max-width: 750px) {
     section {
         width: 95%;
