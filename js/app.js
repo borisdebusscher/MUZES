@@ -210,6 +210,12 @@ $('#totop').click(function(){
         $('body').animate({scrollTop: 7484}, 800);
 });
 
+  
+   $("#sideBarMsg ul li").on("click", function(){
+        $("#sideBarMsg").addClass("marg-left");
+        $("#conversation").removeClass("hide-resp");
+    });  
+    
 }); 
 
 

@@ -1,8 +1,10 @@
+/* message sidebar */
+
 #sideBarMsg {
     display: block;
+    position: absolute;
     margin-top: 0px;
     margin: 0 !important;
-    height: 100%;
     width: 30%;
     z-index: 9996;
     background-color: #EDEEEE;
@@ -20,18 +22,19 @@
 
 #sideBarMsg ul li {
     display: block;
-    width: 100%;
-    border-top: 3px solid #F3F4F4;
-    padding: 10px;
+    padding: 13px 20px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    cursor: pointer;
 }
 
-.li-bot {
-    border-bottom: 3px solid #F3F4F4;
+#sideBarMsg ul li:hover {
+    background-color: #F3F4F4;
 }
 
 #sideBarMsg ul li a {
     display: block;
-    margin-left: 40px;
+    margin-left: 45px;
     text-decoration: none;
     color: #505562;
     font-family: bariol;
@@ -41,7 +44,7 @@
 
 #sideBarMsg ul li p {
     display: block;
-    margin-left: 40px;
+    margin-left: 45px;
     color: ;
     font-family: bariol;
     font-size: .8em;
@@ -49,7 +52,15 @@
 
 #sideBarMsg ul li img {
     border-radius: 50%;
+    cursor: pointer;
     position: absolute;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+#sideBarMsg ul li img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .border {
@@ -66,4 +77,178 @@
 
 .border-green {
     border-color: #98CEB5;
+}
+
+/* conversation */
+
+#conversation {
+    display: block;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    left: 30%;
+    margin-top: 70px; 
+    background: none;
+}
+
+#conversation div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#conversation div ul {
+    display: block;
+    list-style: none;
+    width: 95%;
+    max-width: 1000px;
+    
+    overflow-y: scroll;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    margin-top: 20px !important;
+}
+
+#conversation div ul li {
+    display: block;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 5px 0px;
+    
+    border-radius: .5em;
+    border-top-left-radius: 0;
+    font-family: bariol;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+#conversation div ul li p {
+    display: inline-block;
+    width: auto;
+    max-width: 300px;
+    background-color: #C2D8DA;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin: 0px 0px;
+    border-radius: .5em;
+    border-top-left-radius: 0;
+    font-family: bariol;
+}
+
+.right {
+    float: right;
+    background-color: #A8D7D9 !important;
+    border-top-left-radius: .5em !important;
+    border-top-right-radius: 0 !important;
+}
+
+#sendMsg {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    border: 0;
+    resize: none;
+    padding: 10px;
+    font-family: bariol;
+    font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+    
+}
+
+#divCon {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    background-color: #E7E8E9;
+    border-top: 3px solid #EDEEEE;
+    padding: 0px 0px;
+}
+
+#divCon ul li {
+    display: inline-block;
+    float: left;
+    margin: 10px 10px !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    text-indent: -9999px;
+    cursor: pointer;
+    padding: 10px !important;
+    background-color: #C2D8DA;
+}
+
+#divCon ul {
+    margin-left: 20px;
+}
+
+.attachment {
+    background: url(img/attachment.png) no-repeat center;
+    background-size: 12px;
+}
+
+.attachment:hover {
+    background-color: #B9CED0 !important;
+}
+
+
+.image {
+    background: url(img/camera.png) no-repeat center;
+    background-size: 13px;
+}
+
+.image:hover {
+    background-color: #B9CED0 !important;
+}
+
+.movie {
+    background: url(img/play.png) no-repeat center;
+    background-size: 12px;
+}
+
+.movie:hover {
+    background-color: #B9CED0 !important;
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .hide-resp {
+        display: none !important;
+    }
+
+    
+    #sideBarMsg {
+        width: 100%;
+    }
+    
+    #conversation div ul {
+        margin-top: 20px !important;
+    }
+    
+    #sideBarMsg ul li {
+        padding: 20px 20px;
+    }
+    
+    
+    .marg-left {
+        right: 100% !important;
+    }
+
+    #conversation {
+        width: 100% !important;
+        left: 0;
+        margin-top: 70px;
+    }
+    
+    #divCon {
+        width: 100%;
+    }
+
+    #divCon ul li {
+        margin: 10px 10px !important;
+    }
+    
 }
