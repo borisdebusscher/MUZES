@@ -370,14 +370,8 @@ section iframe{
     max-width: 200px;
     margin: 0 3em;
 }
-.clearfix:after 
-{ 
- content: "."; 
- display: block; 
- clear: both; 
- visibility: hidden; 
- line-height: 0; height: 0; 
-}
+
+
 
 
 
@@ -573,10 +567,13 @@ section iframe{
     .bgcolor{
         background: rgba(0,0,0,0);
     }
+    .mobile-bgcolor{
+        background: #92CDCF;
+    }
     .sidenav{
         display: block;
         width: 100%;
-        background: #92CDCF;;
+        background: #92CDCF;
     }
     .sidenav a{
         text-align: center;
