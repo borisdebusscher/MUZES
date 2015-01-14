@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Profiel Astrid Vandevoorde</title>
+    <title>Groepen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#A8D7D9">
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="groep.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <script language="javascript" type="text/javascript" src="../js/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="../js/app.js"></script>
@@ -16,24 +16,34 @@
 
 <body>
 
+    <div class="hide" id="layer"></div>
+    <div class="translate" id="logForm">
+        <span class="close"></span>
+        <form>
+            <h1>login</h1>
+            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
+            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
+            <input type="submit" id="submit" value="inloggen" name="submit">
+        </form>
+    </div>
 
     <header>
         <div class="hide menuLayer"></div>
         <nav>
             <div class="hide menuLayer"></div>
             <a class="hide menu"></a>
-            <a href="../index.html"><h1 id="logo">MUZES</h1></a>
+            <a href="index.html"><h1 id="logo">MUZES</h1></a>
             <ul class="translateLeft">
                 <li><a class="closeMenu"></a>
                 </li>
-                <li class="top"><a href="../index.html">home</a>
+                <li class="top"><a href="index.html">home</a>
                 </li>
                 <li><a class="navCurrent" href="../community.html">community</a>
                     <ul>
                         <li><a href="../community.html">Nieuwsoverzicht</a></li>
-                        <li><a href="berichten.html">berichten</a></li>
-                        <li><a class="navCurrentUl" href="../groepen/groepen_index.html">groepen</a></li>
-                        <li><a href="profile_john.html">profiel</a></li>
+                        <li><a href="../berichten.html">berichten</a></li>
+                        <li><a class="navCurrentUl" href="groepen_index.html">groepen</a></li>
+                        <li><a href="../profile/profile_john.html">profiel</a></li>
                     </ul>
                 </li>
                 <li>
@@ -53,7 +63,7 @@
                 </li>
                 <li><a href="../contact.html">contact</a>
                 </li>
-                <li class="noHover"><a class="profilePic" id="login" href="profile_john.html">profile</a>
+                <li class="noHover"><a class="profilePic" id="login" href="../profile/profile_john.html">profile</a>
                 </li>
                 <li><a class="logout hide" href="#">Afmelden</a></li>
             </ul>
@@ -62,20 +72,18 @@
 
     <article>
         <section id="sideBar">
-            <span class="changeNoPic"></span>
-            <input id="file" type="file" accept="image/*">
-            <img for="#file" id="profileImg" src="../img/yellow_blank.png" width="122px" alt="profile image">
+            <img class="borderIm" for="#file" id="profileImg" src="../img/group.png" width="110px" alt="profile image">
             <div>
-                <h1>Siemen Gijbels</h1>
-                <h2>Secundair onderwijs</h2>
+                <h1>Groep</h1>
+                <h2>Impact</h2>
                 <ul>
-                    <li>1000 Brussel</li>
-                    <li>Media, Media, Beweging</li>
-                    <li>Secundair Onderwijs Uccle</li>
-                    <li>http://www.muzes.be</li>
+                    <li><a href="../profile/profile_siemen.html">Siemen Gijbels</a></li>
+                    <li>Privé groep</li>
+                    <li>29 leden</li>
+                    <li>Voeg gebruiker toe</li>
                     <li class="hide editBg"><a>Profiel bewerken</a></li>
                 </ul>
-                <a class="edit" href="#">profiel bewerken</a>
+                <a class="edit" href="#">Verlaat groep</a>
             </div>
         </section>
         <section id="myStream">
@@ -96,31 +104,14 @@
                 </div>
             </article>
             <article class="clearfix bot-resp">
-                <a href="profile_siemen.html"><img class="absolute resp no-pic scale" src="../img/yellow_blank.png" width="53px"></a>
+                <a href="../profile/profile_siemen.html"><img class="absolute resp no-pic scale" src="../img/red_blank.png" width="53px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
                 <div class="auto right">
-                    <a href="profile_siemen.html">Siemen Gijbels</a>
-                    <h1>Crevits wil praten over time-out voor leerkrachten</h1>
-                    <h2 class="icon-clock"> 5 min</h2>
-                    <img class="left margin-pic" src="../img/back-to-school.png" width="90px">
-                    <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
-                    </p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </article>
-            <article class="clearfix bot-resp">
-                <a href="profile_siemen.html"><img class="absolute resp no-pic scale" src="../img/yellow_blank.png" width="53px"></a>
-                <span class="boxLine right-resp"></span>
-                <div class="auto right-resp">
-                    <a href="profile_siemen.html">Siemen Gijbels</a>
+                    <a href="../profile/profile_siemen.html">Siemen Gijbels</a>
                     <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
                     <h2 class="icon-clock"> 46 min</h2>
-                    <p>Qui sed enim magna dolor, veniam voluptatibus offendit dolore nescius, singulis fore malis est labore, multos incididunt nam appellat, labore incididunt est fabulas in veniam deserunt distinguantur, te voluptate non eiusmod, occaecat .
-                    </p>
+                    <iframe width="100%" height="80%" src="//www.youtube.com/embed/2W4MBVJfUh4?showinfo=0&theme=light&iv_load_policy=3&autohide=1" frameborder="0" allowfullscreen></iframe>
                     <ul>
                         <li></li>
                         <li></li>
@@ -128,14 +119,12 @@
                 </div>
             </article>
             <article class="clearfix bot-resp">
-                <a href="profile_siemen.html"><img class="absolute resp no-pic scale" src="../img/yellow_blank.png" width="53px"></a>
-                <span class="boxLine right"></span>
-                <span class="clearfix"></span>
-                <div class="auto right">
-                    <a href="profile_siemen.html">Siemen Gijbels</a>
-                    <h1>Gooi die mp3 maar in de vuilnisbak</h1>
-                    <h2 class="icon-clock"> 10u</h2>
-                    <img class="left margin-pic" src="../img/template-three-bg-back-to-school.png" width="90px">
+                <a href="../profile/profile_astrid.html"><img class="absolute resp border border-red scale" src="../img/teacher1.png" width="45px"></a>
+                <span class="boxLine right-resp"></span>
+                <div class="auto right-resp">
+                    <a href="../profile/profile_astrid.html">Astrid Vandevoorde</a>
+                    <h1>7 iconische verbeteringen van hoe wij naar muziek luisteren</h1>
+                    <h2 class="icon-clock"> 55 min</h2>
                     <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
                     <ul>
@@ -145,12 +134,13 @@
                 </div>
             </article>
             <article class="clearfix bot-resp">
-                <a href="profile_siemen.html"><img class="absolute resp no-pic scale" src="../img/yellow_blank.png" width="53px"></a>
-                <span class="boxLine right-resp"></span>
-                <div class="auto right-resp">
-                    <a href="profile_siemen.html">Siemen Gijbels</a>
-                    <h1>Crevits wil praten over time-out voor leerkrachten</h1>
-                    <h2 class="icon-clock"> 7 januari, 20:54</h2>
+                <a href="profile.html"><img class="absolute resp no-pic scale" src="../img/red_blank.png" width="53px"></a>
+                <span class="boxLine right"></span>
+                <span class="clearfix"></span>
+                <div class="auto right">
+                    <a href="#">Boris Debusscher</a>
+                    <h1>Gooi die mp3 maar in de vuilnisbak</h1>
+                    <h2 class="icon-clock"> 10u</h2>
                     <img class="left margin-pic" src="../img/12201058974_47c895fe32_o.jpg" width="90px">
                     <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
                     </p>
@@ -160,15 +150,32 @@
                     </ul>
                 </div>
             </article>
+            <article class="clearfix bot-resp">
+                <a href="profile.html"><img class="absolute resp border border-red scale" src="../img/teacher2.png" width="45px"></a>
+                <span class="boxLine right-resp"></span>
+                <div class="auto right-resp">
+                    <a href="#">John Doe</a>
+                    <h1>Crevits wil praten over time-out voor leerkrachten</h1>
+                    <h2 class="icon-clock"> 4 januari, 20:54</h2>
+                    <img class="left margin-pic" src="../img/back-to-school.png" width="90px">
+                    <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
+                    </p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </article>
             <article class="clearfix marg-bot">
-                <a href="profile_siemen.html"><img class="absolute resp no-pic scale" src="../img/yellow_blank.png" width="53px"></a>
+                <a href="profile.html"><img class="absolute resp border border-red scale" src="../img/teacher4.png" width="45px"></a>
                 <span class="boxLine right"></span>
                 <span class="clearfix"></span>
                 <div class="auto right">
-                    <a href="profile_siemen.html">Siemen Gijbels</a>
+                    <a href="#">John Doe</a>
                     <h1>Crevits wil praten over time-out voor leerkrachten</h1>
-                    <h2 class="icon-clock"> 4 januari, 14:27</h2>
-                    <iframe width="100%" height="180px" src="//www.youtube.com/embed/2W4MBVJfUh4?showinfo=0&theme=light&iv_load_policy=3&autohide=1" frameborder="0" allowfullscreen></iframe>
+                    <h2 class="icon-clock"> 7 januari, 14:27</h2>
+                    <p class="clearfix">Expetendis ea duis commodo. Se arbitror transferrem. Officia comprehenderit qui incididunt ab quem est.
+                    </p>
                     <ul>
                         <li></li>
                         <li></li>

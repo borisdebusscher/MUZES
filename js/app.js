@@ -5,11 +5,11 @@ $(document).ready(function() {
     
     
     
-var images = ['home/15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+var images = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
 var choseImage = images[Math.floor(Math.random() * images.length)]; 
     console.log(choseImage);
     
-$('#banner').css({'background-image': 'url(img/' + choseImage  + ')'});
+$('#banner').css({'background-image': 'url(img/home/banner' + choseImage  + ')'});
 
     
 
