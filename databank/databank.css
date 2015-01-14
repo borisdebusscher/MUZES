@@ -55,6 +55,9 @@ section p:last-of-type {
 
 #login:hover, #login:focus {
     -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
     transform: scale(1.1);
     background-color: none !important;
 }
@@ -91,6 +94,8 @@ section p:last-of-type {
     color: #4F5461;
     transition: .2s all;
     -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    -o-transition: .2s all;
 }
 .breadcrumb a:hover, .breadcrumb a:focus{
     color: #92CDCF;
@@ -144,22 +149,22 @@ section p:last-of-type {
 .navlist a:hover span, .navlist a:focus span{
     z-index: 2;
 }
-.navlist a:hover span#lesmateriaalimg, .navlist a:focus span#lesmateriaalimg{
+.navlist a:hover #lesmateriaalimg, .navlist a:focus #lesmateriaalimg{
     background-image: url(../img/databank/lesmateriaal.jpg);
 }
-.navlist a:hover span#bibimg, .navlist a:focus span#bibimg{
+.navlist a:hover #bibimg, .navlist a:focus #bibimg{
     background-image: url(../img/databank/bib.jpg);
 }
-.navlist a:hover span#videoimg, .navlist a:focus span#videoimg{
+.navlist a:hover #videoimg, .navlist a:focus #videoimg{
     background-image: url(../img/databank/videos.jpg);
 }
-.navlist a:hover span#cultuurimg, .navlist a:focus span#cultuurimg{
+.navlist a:hover #cultuurimg, .navlist a:focus #cultuurimg{
     background-image: url(../img/databank/cultuur.jpg);
 }
-.navlist a:hover span#lijstimg, .navlist a:focus span#lijstimg{
+.navlist a:hover #lijstimg, .navlist a:focus #lijstimg{
     background-image: url(../img/databank/begrippenlijst.jpg);
 }
-.navlist a:hover span#sitesimg, .navlist a:focus span#sitesimg{
+.navlist a:hover #sitesimg, .navlist a:focus #sitesimg{
     background-image: url(../img/databank/sites.jpg);
 }
 #spanblok{
@@ -242,6 +247,8 @@ table td{
     line-height: 1.5em;
     transition: background 2s;
     -webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -o-transition: background 2s;
 }
 table td:hover{
     background: #92CDCF;
@@ -291,7 +298,7 @@ table a:hover, table a:focus{
     background-color: #6C9899;
     text-align: center;
     font-family: Bariol, Calibri, Arial, sans-serif;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 .sidenav ul{
     margin: 0;
