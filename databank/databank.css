@@ -114,7 +114,7 @@ section p:last-of-type {
 
 .afbeeldingcontainer{
     font-size: 18px;
-    height: 28em;
+    height: 30em;
     position: relative;
     margin-bottom: 0;
 }
@@ -156,11 +156,19 @@ section p:last-of-type {
     background-image: url(../img/databank/sites.jpg);
 }
 .navlist a span#sitesimg:hover{
-    background-image: url(../img/databank/databank.jpg);
+    visibility: hidden;
 }
 #spanblok{
+    border-top: 1px solid #92CDCF;
     font-size: 18px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
     height: 12em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-size: cover;
     background-position: center;
     background-image: url(../img/databank/databank.jpg);
