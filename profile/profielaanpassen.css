@@ -115,32 +115,6 @@ input[type="submit"] {
     opacity: 0 !important;
 }
 
-.changePic {
-    display: block;
-    padding: 55px;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: absolute;
-    top: 121.2px;
-    left: 50%;
-    margin-left: -360px;
-    background-color: rgba(0, 0, 0, .2);
-    background-image: url(../img/camera.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: 10px;
-    -webkit-transition: all .1s ease-out;
-    transition: all .1s ease-out;
-    opacity: 0;
-    
-}
-
-.bgScale {
-    background-image: url(../img/camera.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: 20px !important;
-}
 
 
 .opacity {
@@ -232,6 +206,10 @@ input[type="submit"] {
 
 @media screen and (max-width: 800px) {
     /* FORM */
+    #aanpassen {
+        width: 100%;
+    }
+    
 	#aanpassen form > div {
 		width:90%;
 		padding:0 5% 0 5%;
