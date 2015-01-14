@@ -5,8 +5,13 @@ main{
 section{
     max-width: 900px;
 }
+section header{
+    padding-left: .75em;
+    padding-right: .75em;
+}
 section p{
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    color: #4F5461;
 }
 section p:first-of-type {
     padding: 30px 0 10px 0;
@@ -60,6 +65,7 @@ section p:last-of-type {
 /* breadcrumbs */
 .breadcrumb{
     font-family: Bariol, Calibri, Arial, sans-serif;
+    color: #4F5461;
     font-size: 18px;
     text-align: left;
     margin: 0 auto 1em;
@@ -80,7 +86,7 @@ section p:last-of-type {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #000;
+    color: #4F5461;
     transition: .2s all;
 }
 .breadcrumb a:hover, .breadcrumb a:focus{
@@ -197,7 +203,7 @@ section p:last-of-type {
     text-align: center;
     
     text-decoration: none;
-    color: #000;
+    color: #4F5461;
     font-family: Bariol, Calibri, Arial, sans-serif;
     background: #E0E1E2;
 }
@@ -207,13 +213,14 @@ section p:last-of-type {
 h2{
     width: 80%;
     padding: 20px 0 0 0;
+    color: #4F5461;
 }
 caption h2{
     padding-top: 4em;
 }
 table{
     font-family: Bariol, Calibri, Arial, sans-serif;
-    color: #000;
+    color: #4F5461;
     border-collapse: collapse;
     border: 2px solid #92CDCF;
     width: 95%;
@@ -221,11 +228,12 @@ table{
 }
 table th{
     width: 5em;
+    margin: 0 auto;
     background-color: #92CDCF;
     text-align: center;
     border: 1px solid #fff;
-    color: #000;
-    padding: 1em 0;
+    color: #4F5461;
+    padding: 1em .5em;
 }
 table td{
     border: 1px solid #92CDCF;
@@ -258,18 +266,18 @@ table a{
     border: 0;
     padding: .5em 1em;
     text-decoration: none;
-    color: #000;
+    color: #4F5461;
     background-color: rgba(0,0,0,0);
 }
 table a:hover, table a:focus{
     background: #fff;
-    color: #000;
+    color: #4F5461;
 }
 .terugtop a{
     opacity: .4;
     display: block;
     background: #E0E1E2;
-    color: #000;
+    color: #4F5461;
     text-decoration: none;
     font-family: Bariol, Calibri, Arial, sans-serif;
     font-size: 1.2em;
@@ -324,11 +332,11 @@ div#top{
 }
 .sidenav a:hover, .sidenav a:focus{
     background: #fff;
-    color: #000;
+    color: #4F5461;
 }
 .sidenav a.current{
     background: #E7E9EA;
-    color: #000;
+    color: #4F5461;
 }
 .sidenav a.current:hover, .sidenav a.current:focus{
     color: #92CDCF;
@@ -357,7 +365,7 @@ div#top{
     display: block;
     padding: 1em 2em;
     text-decoration: none;
-    color: #000;
+    color: #4F5461;
     text-align: left;
 }
 .datacontent a:hover, .datacontent a:focus{
@@ -390,7 +398,7 @@ div#top{
 }
 h2{
     font-family: Bariol, Calibri, Arial, sans-serif;
-    color: #000;
+    color: #4F5461;
     font-size: 20px;
     margin: 1em 1em .25em;
     padding: 0;
@@ -409,6 +417,9 @@ section iframe{
     min-width: 100px;
     max-width: 200px;
     margin: 0 3em;
+}
+.boeken li a:hover{
+    background-color: #A8D7D9;
 }
 
 
@@ -486,7 +497,7 @@ section iframe{
 
 
 @media only screen and (max-width: 750px){
-    section, #eindtermenenuitgangspunten {
+    section {
         width: 95%;
         margin: inherit auto;
     }
@@ -509,6 +520,9 @@ section iframe{
     }
     .bgScale {
         background-image: url(../../img/camera.png);
+    }
+    #eindtermenenuitgangspunten{
+        width: 100%;
     }
     
     /*databankpagina*/
