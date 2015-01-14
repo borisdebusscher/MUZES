@@ -65,9 +65,9 @@ nav {
 
 #sideBar div h1 {
     display: block;
-    margin-bottom: 3px;
+    margin: auto 0;
     font-family: "bariol bold";
-    font-size: 1.4em;
+    font-size: 1.6em;
     text-align: center;
     color: #A8D7D9;
 }
@@ -76,7 +76,7 @@ nav {
     display: block;
     padding-bottom: 40px;
     font-family: bariol;
-    font-size: .9em;
+    font-size: 1em;
     text-align: center;
     color: #4E4F58;
     border-bottom: 2px solid #F3F4F4;
@@ -137,6 +137,8 @@ nav {
 #sideBar div ul li:nth-child(4) a {
     text-decoration: none;
     color: #4E4F58;
+    -o-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
 }
@@ -182,6 +184,8 @@ nav {
     right: 0;
     background-color: #E6E7E7;
     z-index: 9995;
+    -o-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
@@ -198,6 +202,8 @@ nav {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -209,6 +215,8 @@ nav {
     margin: 0;
     background: none;
     z-index: 9994;
+    -o-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
@@ -278,11 +286,12 @@ textarea::-webkit-input-placeholder {
     display: block;
     width: 100%;
     resize: none;
-    border: 0px;
+    border: 0;
     outline: none;
     font-family: bariol;
     font-size: 1em;
     -webkit-border-radius: 0;
+    border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -512,6 +521,8 @@ input[type='submit'] {
 }
 
 #login:hover {
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background-color: none !important;
@@ -710,7 +721,7 @@ input[type='submit'] {
     
     header nav ul li {
         display: block;
-        margin: 0px;
+        margin: 0;
     }
     
     header nav ul li a:hover {
@@ -718,7 +729,7 @@ input[type='submit'] {
     }
     
     .top {
-        margin: 0px;
+        margin: 0;
     }
     
     .closeMenu {
