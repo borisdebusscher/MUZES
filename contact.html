@@ -27,17 +27,6 @@
 </head>
 
 <body>
-    <div class="hide" id="layer"></div>
-    <div class="translate" id="logForm">
-        <span class="close"></span>
-        <form>
-            <h1>login</h1>
-            <input type="text" placeholder="Gebruikersnaam" id="user" name="user">
-            <input type="password" placeholder="Wachtwoord" id="pass" name="pass">
-            <input type="submit" name="submit" value="inloggen">
-        </form>
-    </div>
-    
     <header>
         <div class="hide menuLayer"></div>
         <nav>
@@ -45,21 +34,11 @@
             <a class="hide menu"></a>
             <a href="index.html"><h1 id="logo">MUZES</h1></a>
             <ul class="translateLeft">
-                <li class="noHover">
-                    <a class="closeMenu"></a>
+                <li><a class="closeMenu"></a>
                 </li>
                 <li class="top"><a href="index.html">home</a>
                 </li>
                 <li><a href="community.html">community</a>
-                </li>
-                <li>
-                    <a href="databank/databank.html">databank</a>
-                    <ul>
-                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a>
-                        </li>
-                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a>
-                        </li>
-						<li><a href="community.html">community</a>
                     <ul>
                         <li><a href="community.html">Nieuwsoverzicht</a></li>
                         <li><a href="berichten.html">berichten</a></li>
@@ -68,30 +47,29 @@
                     </ul>
                 </li>
                 <li>
-                        <li><a href="databank/video.html">video's</a>
-                        </li>
-                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a>
-                        </li>
-                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a>
-                        </li>
-                        <li><a href="databank/sites/architectuur.html">interessante sites</a>
-                        </li>
+                    <a href="databank/databank.html">databank</a>
+                    <ul>
+                        <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
+                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
+                        <li><a href="databank/video.html">video's</a></li>
+                        <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
+                        <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
+                        <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
                     </ul>
                 </li>
                 <li><a href="projecten.html">projecten</a>
                 </li>
                 <li><a href="kalender.html">kalender</a>
                 </li>
-                <li><a class="navCurrent" href="contact.html">contact</a>
+                <li><a href="contact.html" class="navCurrent">contact</a>
                 </li>
-                <li class="noHover"><a id="login" class="login profilePic" href="#">login</a>
+                <li class="noHover"><a class="profilePic" id="login" href="profile/profile_john.html">profile</a>
                 </li>
+                <li><a class="logout hide" href="#">Afmelden</a></li>
             </ul>
         </nav>
-        <div id="banner">
-            <a href="projecten.html">Project: Impact</a>
-        </div>
     </header>
+
     
     <main>
         <section id="contact">
