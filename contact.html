@@ -3,18 +3,36 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Muzes</title>
-			<meta name="author" content="Astrid Vandevoorde, Boris Debusschere, Dieter Holvoet, Siemen 
-
-	Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool 
-
-	Brussel">
+    <title>Contact - Muzes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta name="theme-color" content="#A8D7D9">
+    <meta name="author" content="Astrid Vandevoorde, Boris Debusscher, Dieter Holvoet, Siemen Gijbels, Steven De Roey en het Departement Design en Technologie van de Erasmushogeschool Brussel">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+	<link rel="apple-touch-icon" href="/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/favicon-144.png">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+    
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="contact.css">
-    <meta name="theme-color" content="#A8D7D9">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!--[if lt IE 9]>
@@ -49,8 +67,8 @@
                     <a href="databank/databank.html">databank</a>
                     <ul>
                         <li><a href="databank/lesmateriaal/lesmateriaal.html">lesmateriaal</a></li>
-                        <li><a href="databank/bibliotheek.html">digitale bibliotheek</a></li>
-                        <li><a href="databank/video.html">video's</a></li>
+                        <li><a href="databank/bib/bibliotheek.html">digitale bibliotheek</a></li>
+                        <li><a href="databank/video/video.html">video's</a></li>
                         <li><a href="databank/cultuur/cultuur.html">cultuur in je buurt</a></li>
                         <li><a href="databank/lijst/begrippenlijsten.html">begrippenlijsten</a></li>
                         <li><a href="databank/sites/architectuur.html">interessante sites</a></li>
@@ -58,18 +76,15 @@
                 </li>
                 <li><a href="projecten.html">projecten</a>
                 </li>
-                <li><a class="navCurrent" href="kalender.html">kalender</a>
+                <li><a href="kalender.html">kalender</a>
                 </li>
-                <li><a href="contact.html">contact</a>
+                <li><a href="contact.html" class="navCurrent">contact</a>
                 </li>
                 <li class="noHover"><a class="profilePic" id="login" href="profile/profile_john.html">profile</a>
                 </li>
                 <li><a class="logout hide" href="#">Afmelden</a></li>
             </ul>
         </nav>
-        <div id="banner">
-            <p>Project: Impact</p>
-        </div>
     </header>
 
     
@@ -81,26 +96,26 @@
             </header>
             
             <form>
-                <div id="form-gegevens" class="clearfix">
+                <fieldset id="form-gegevens" class="clearfix">
                     <div class="clearfix">
-                        <label for="gegevens">Uw gegevens:</label>
+                        <label>Uw gegevens:</label>
                     </div>
                     <div class="clearfix">
                         <input type="text" id="contact-voornaam" placeholder="Voornaam">
                         <input type="text" id="contact-naam" placeholder="Naam">
                         <input type="email" id="contact-mail" placeholder="E-mailadres">
                     </div>
-                </div>
-                <div id="form-boodschap" class="clearfix">
+                </fieldset>
+                <fieldset id="form-boodschap" class="clearfix">
                     <div class="clearfix">
-                        <label for="gegevens">Boodschap:</label>
+                        <label for="contact-boodschap">Boodschap:</label>
                     </div>
                     <div class="clearfix">
                         <input type="text" id="contact-onderwerp" placeholder="Onderwerp">
                         <textarea id="contact-boodschap"></textarea>
                         <input type="submit" class="button" value="Verzenden">
                     </div>
-                </div>
+                </fieldset>
             </form>
             <section id="vragen" class="box clearfix">
                 <header>

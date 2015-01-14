@@ -2,29 +2,35 @@
     padding-bottom: 30px;
 }
 
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* FORM */
 
-#contact form > div {
+#contact form > fieldset {
     clear: both;
     margin: 15px 0;
 }
 
-#contact form > div:first-child {
+#contact form > fieldset:first-child {
     padding-top: 30px;
 }
 
-#contact form > div > div {
+#contact form > fieldset > div {
     float: left;
     min-height: 100px;
     box-sizing: border-box;
 }
 
-#contact form > div > div:first-child {
+#contact form > fieldset > div:first-child {
     width: 30%;
     padding: 0 0 0 7%;
 }
 
-#contact form > div > div:nth-child(2) {
+#contact form > fieldset > div:nth-child(2) {
     width: 70%;
     padding: 0 7% 0 0;
     box-sizing: border-box;
@@ -148,6 +154,8 @@ section.box div {
     width: 70%;
     height: 78px;
     box-sizing: border-box;
+    column-count: 3;
+    -ms-column-count: 3;
     -moz-column-count: 3;
    -webkit-column-count: 3;
     margin: 11px 0;
@@ -173,6 +181,8 @@ section.box a {
 }
 
 section.box a:hover:not(#icon-telephone) {
+    -o-transition: .2s all;
+    -moz-transition: .2s all;
     -webkit-transition: .2s all;
     transition: .2s all;
     margin-left: 4px;
@@ -229,8 +239,10 @@ section.box header p {
     section.box div {
         width: 60%;
         height: auto;
+        column-count: 2;
+        -ms-column-count: 2;
         -moz-column-count: 2;
-       -webkit-column-count: 2;
+        -webkit-column-count: 2;
     }
     
     section.box li {
@@ -252,6 +264,8 @@ section.box header p {
         margin: 0 auto;
         width: 90%;
         height: auto;
+        column-count: 2;
+        -ms-column-count: 2;
         -moz-column-count: 2;
        -webkit-column-count: 2;
     }
@@ -261,22 +275,22 @@ section.box header p {
     
     /* FORM */
     
-    #contact form > div > div {
+    #contact form > fieldset > div {
         float: none;
         min-height: inherit;
     }
     
-    #contact form > div:first-child {
+    #contact form > fieldset:first-child {
     padding-top: 0;
 }
 
-    #contact form > div > div:first-child {
+    #contact form > fieldset > div:first-child {
         width: 90%;
         padding: 0;
         margin: 0 auto;
     }
 
-    #contact form > div > div:nth-child(2) {
+    #contact form > fieldset > div:nth-child(2) {
         width: 90%;
         padding: 0;
         margin: 0 auto;
@@ -296,16 +310,16 @@ section.box header p {
     }
     
     #contact input[type="text"], input[type="email"], textarea {
-    border-radius: 5px;
-    padding: 0 0 0 10px;
-    box-sizing: border-box;
-    box-shadow: none;
-    background-color: #f4f5f5;
-    
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    font-size: 17px;
-    text-shadow: none;
-    color: #7e7e7e;
+        border-radius: 5px;
+        padding: 0 0 0 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+        background-color: #f4f5f5;
+
+        font-family: Bariol, Calibri, Arial, sans-serif;
+        font-size: 17px;
+        text-shadow: none;
+        color: #7e7e7e;
     }
 
     #contact textarea {
@@ -344,8 +358,10 @@ section.box header p {
         margin: 0 auto;
         width: auto;
         height: auto;
+        column-count: 1;
+        -ms-column-count: 1;
         -moz-column-count: 1;
-       -webkit-column-count: 1;
+        -webkit-column-count: 1;
     }
     
     section.box a {
@@ -358,6 +374,8 @@ section.box header p {
     }
     
     section.box a:hover:not(#icon-telephone) {
+        -o-transition: .2s all;
+        -moz-transition: .2s all;
         -webkit-transition: .2s all;
         transition: .2s all;
         margin: auto;
@@ -368,11 +386,12 @@ section.box header p {
     }
     
     section.box h1 {
-        font-size: 23px
+        font-size: 23px;
     }
 }
+
 @media screen and (max-width: 800px) {
-	main section{
-		width:95%;
+	main section {
+		width: 95%;
 	}
 }
