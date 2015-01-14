@@ -115,7 +115,6 @@ header nav ul li a {
     width: 50px;
 }
 
-
 #log:hover {
     background-color: 
 }
@@ -256,7 +255,7 @@ footer div:nth-of-type(1) {
 
 footer div:nth-of-type(4) {
     margin-right: 0;
-    padding-right: 20px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -530,6 +529,20 @@ footer:nth-of-type(2) a:nth-of-type(2) {
 
 /* MEDIA QUERIES */
 
+
+
+@media only screen and (max-width: 1100px) {
+    footer div {
+        float: left;
+        width: 22%;
+        margin: 0 2%;
+    }
+    
+    footer div:nth-of-type(1) {
+        padding-left: 0;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     
     /* nav */
@@ -557,6 +570,8 @@ footer:nth-of-type(2) a:nth-of-type(2) {
         top: 0;
         left: 0 !important;
         padding: 0;
+        -o-transition: all .2s;
+        -moz-transition: all .2s;
         -webkit-transition: all .2s;
         transition: all .2s;
     }
@@ -577,7 +592,7 @@ footer:nth-of-type(2) a:nth-of-type(2) {
     
     header nav ul li {
         display: block;
-        margin: 0px;
+        margin: 0;
         float: none;
     }
     
@@ -590,7 +605,9 @@ footer:nth-of-type(2) a:nth-of-type(2) {
         font-size: 1.2em;
         border: 0;
         color: #4F5461;
-        padding: 18px 0px;
+        padding: 18px 0;
+        -o-transition: .2s all ease-out;
+        -moz-transition: .2s all ease-out;
         -webkit-transition: .2s all ease-out;
         transition: .2s all ease-out;
     }
@@ -637,6 +654,8 @@ footer:nth-of-type(2) a:nth-of-type(2) {
         position: absolute;
         right: -15%;
         top: -1%;
+        -o-transition: all .2s;
+        -moz-transition: all .2s;
         -webkit-transition: all .2s;
         transition: all .2s;
         -webkit-touch-callout: none;
@@ -750,9 +769,10 @@ footer:nth-of-type(2) a:nth-of-type(2) {
         text-align: center;
         margin: 0 !important;
     }
-    
-    footer:nth-of-type(2) p a {
-        display: inline;
+
+    footer:nth-of-type(2) p:nth-of-type(2), footer:nth-of-type(2) p > a {
+        padding: 3px 0;
+        line-height: normal;
     }
     
     .marg-log {
