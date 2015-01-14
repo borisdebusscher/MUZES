@@ -512,23 +512,19 @@ section iframe{
     }
     
     /*databankpagina*/
-    .navlist a span{
-        position: absolute;
-        visibility: hidden;
-        overflow: hidden;
-        opacity: 0;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        margin: 0;
-        padding: 0;
+    .afbeeldingcontainer{
+        height: auto;
     }
-    div#spanblok{
+    .navlist a span{
+        border-top: 0 solid #92CDCF;
         height: 0;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
+        width: 0;
+    }
+    #spanblok{
+        border-top: 0 solid #92CDCF;
+        height: 0;
+        width: 0;
+        visibility: hidden;
     }
     
     /*leerplannen navigatie*/
