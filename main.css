@@ -683,7 +683,7 @@ footer:nth-of-type(2) a:nth-of-type(2) {
     }
     
     .hideTop {
-        display: none;
+        display: none !important;
     }
     
         /* FOOTER */
