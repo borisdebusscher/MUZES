@@ -6,7 +6,7 @@
 
 #aanpassen form > div {
     margin: 15px 0;
-	width: 70%;
+	width: 100%;
 }
 
 #aanpassen form > div:first-child {
@@ -46,6 +46,10 @@
     float: left;
     border: none;
 }
+#blok-links{
+	width:70%;
+	float:left;
+}
 
 #aanpassen input[type="text"], input[type="email"], textarea {
     border-radius: 5px;
@@ -73,47 +77,94 @@
 	clear:left;
 	margin-top:50px;
 }
-
-#profiel-voornaam, #profiel-mail, #profiel-stad, #profiel-postcode, #profiel-website, #profiel-taak, #profiel-domein, input[type="submit"] {
+.imgJohn {
+    border: 6px solid #F4E7B9;
+}
+#profiel-foto img {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+#profiel-foto{
+	width:35%;
+	float:left;
+	margin-right:-5%;
+	margin-top:45px;
+}
+#profiel-foto h1 {
+    display: block;
+    margin-bottom: 3px;
+    font-family: "bariol bold";
+    font-size: 1.4em;
+    text-align: center;
+    color: #4E4F58;
+}
+.changePic {
+    display: block;
+    padding: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 121.2px;
+    left: 50%;
+    margin-left: -55px;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url(./img/camera.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: 10px;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    opacity: 0;
+    
+}
+#file {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50% !important;
+    background-color: black;
+    position: absolute;
+    top: 121px;
+    left: 50%;
+    margin-left: -55px;
+    opacity: 0 !important;
+}
+#profiel-voornaam, #profiel-naam, #profiel-mail, #profiel-stad, #profiel-postcode, #profiel-website, input[type="submit"] {
     clear: right;
 }
 
 #profiel-voornaam {
-    width: 45%;
+    width: 47%;
     margin-right: 7.5px;
 }
 
 #profiel-naam {
-    width: 45%;
+    width: 47%;
     margin-left: 7.5px;
-}
-#profiel-taak {
-    width: 45%;
-    margin-right: 7.5px;
 }
 
-#profiel-domein {
-    width: 45%;
-    margin-left: 7.5px;
-}
+
 #profiel-stad {
-    width: 60%;
+    width: 62%;
 	clear:both;
 	margin-top:2%;
 }
 
 #profiel-postcode {
-     width:30%;
+     width:32%;
     margin-left: 15px;
 	margin-top:2%;
 }
 
 #profiel-mail {
-    width: calc(90% + 15px);
+    width: calc(94% + 15px);
 	margin-top:2%;	
 }
 #profiel-website{
-    width: calc(90% + 15px);
+    width: calc(94% + 15px);
 	margin-top:2%;	
 }
 
@@ -137,6 +188,46 @@
     font-size: 17px;
 }
 
+.domeinen{
+	width:45%;
+	float:left;
+	text-align:center;
+}
+.onderwijsniveau{
+	width:45%;
+	float:right;
+	text-align:center;
+	
+}
+#aanpassen #sublabel{
+		font-size:16px;
+		font-weight:900;
+		align-content:left;
+		margin-bottom:30px;
+	}
+.domein .tekst{
+	float:left;
+	font-size:15px;
+	width:50%;
+}
+ .domein{
+	 display:block;
+	 color: #636363;
+    font-size: 16px;
+	 width:50%;
+	 height:16px;
+    font-family: Bariol, Calibri, Arial, sans-serif;
+	 clear:both;
+	 margin-left:5%;
+ }
+.domeinen .check{
+	float:left;
+	margin-top:-8px;
+}	
+.onderwijsniveau .check{
+	float:left;
+	margin-top:-8px;
+}
 /* BOX SECTION */
 
 section.box {
@@ -249,6 +340,14 @@ section.box header p {
 		width:90%;
 		padding:0 5% 0 5%;
 	}
+	#blok-links{
+	width:100%;
+	clear:both;
+}
+	#profiel-foto{
+		float:none;
+		margin: 1% auto;
+	}
     
     #aanpassen form > div > div {
         float: none;
@@ -276,7 +375,7 @@ section.box header p {
         margin-left: 0;
     }
 
-    #contact input, textarea {
+    #aanpassen input, textarea {
         outline: none;
         resize: none;
         overflow: auto;
@@ -296,12 +395,14 @@ section.box header p {
     text-shadow: none;
     color: #7e7e7e;
     }
-
+.profiel-foto{
+	float:right;
+}
     #aanpassen textarea {
         height: 150px;
     }
 
-    #contact input[type="submit"] {
+    #aanpassen input[type="submit"] {
         overflow: hidden;
         min-width: inherit;
         width: 100%;
@@ -339,14 +440,13 @@ section.box header p {
 	#profiel-website, input[type="submit"] {
         margin-top: 15px;
     }
-      #profiel-domein {
-        width: calc(50% - 7.5px);
-        margin-left: 7.5px;
-    }
-	     #profiel-tak {
-        width: calc(50% - 7.5px);
-        margin-left: 7.5px;
-    }
+	#profiel-foto{
+		margin-top:10%;
+		width:100%
+		
+	}
+	
+
     
     /* BOX */
     
@@ -380,5 +480,9 @@ section.box header p {
 @media screen and (max-width: 500px) {
 	main section{
 		width: 95%;
+	}
+	#profiel-foto{
+		width:100%;
+		
 	}
 }
