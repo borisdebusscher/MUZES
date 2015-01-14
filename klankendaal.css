@@ -56,3 +56,8 @@ section p {
         background: url(img/klankendaal/klankendaal-s.png) no-repeat top center;
     }  
 }
+@media screen and (max-width: 500px) {
+	main section{
+		width:95%;
+	}
+}
