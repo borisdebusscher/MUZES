@@ -1,69 +1,51 @@
 section {
     max-width: 900px;
 }
-.lijstthema p,
+
 .lijstthema ul {
     font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
     color: #4F5461;
 }
-#architectuur header,
-#beeld header,
-#dans header {} #architectuur,
-#beeld,
-#dans {
-    padding-bottom: 4em;
+
+#architectuur, #beeld, #dans {
+    padding-bottom: 30px;
 }
-#architectuur ul,
-#beeld ul,
-#dans ul {
+
+#architectuur ul, #beeld ul, #dans ul {
     list-style-type: none;
     width: 85%;
     margin: 1.5em 7.5%;
     padding: 0;
 }
-#architectuur ul li,
-#beeld ul li,
-#dans ul li {
-    /*padding: .5em 1em;*/
+
+#architectuur ul li, #beeld ul li, #dans ul li {
+    padding-bottom: 5px
 }
+
 #totop {
     font-size: 1em;
     position: fixed;
     bottom: 0;
     left: 50%;
-    float: right;
-    margin-right: 3%;
+    margin: 0 3% 0 -75px;
+    background-color: rgb(146, 205, 207);
     background-color: rgba(146, 205, 207, .9);
     width: 150px;
-    margin-left: -75px;
     padding: 1em;
-    cursor: pointer;
     border-top-left-radius: .4em;
     border-top-right-radius: .4em;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-#login {
-    width: 40px;
-    height: 40px;
-    padding: 0 !important;
-    background: url(../../img/teacher2.png) center no-repeat;
-    background-size: 40px;
-    border-radius: 50%;
-    text-indent: -9999px;
-    border: 4px solid #FFF1C0;
-}
-#login:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: none !important;
-}
+
 .noHover:hover {
     background-color: white;
 }
+
 .navlist ul a {
     cursor: pointer;
 }
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -71,47 +53,37 @@ section {
         width: 60%;
     }
 }
+
 @media (max-width: 1024px) {
     section {
         width: 70%;
     }
+    
     section p {
         width: 85%;
     }
 }
+
 @media (max-width: 900px) {
     section {
         width: 80%;
     }
+    
     section p {
         width: 90%;
     }
 }
+
 @media only screen and (max-width: 750px) {
     section {
         width: 95%;
     }
+    
     section p {
         width: 95%;
     }
+    
     h1 {
         font-size: 1em;
-    }
-    .closeMenu {
-        background: url(../../img/close-white.png) no-repeat center;
-        background-size: 18px;
-    }
-    .arrowMenu {
-        background: url(../../img/arrow-left-white.png) no-repeat center;
-        background-size: 18px;
-    }
-    .menu {
-        background-image: url(../../img/menu.png);
-    }
-    .arrow {
-        background-image: url(../../img/arrow-up-white.png) !important;
-    }
-    .bgScale {
-        background-image: url(../../img/camera.png);
     }
 }
