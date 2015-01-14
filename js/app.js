@@ -5,11 +5,37 @@ $(document).ready(function() {
     
     
     
-var images = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
-var choseImage = images[Math.floor(Math.random() * images.length)]; 
+var high = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+    
+var medium = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+    
+var small = ['15782742899_c95fb12ae9_o.jpg', 'music_teacher.jpg', 'Impact.png','guitar-females.png','guitar_teaching.jpg' ];
+    
+var choseImageH = high[Math.floor(Math.random() * images.length)]; 
     console.log(choseImage);
     
-$('#banner').css({'background-image': 'url(img/home/banner' + choseImage  + ')'});
+var choseImageM = medium[Math.floor(Math.random() * images.length)]; 
+    console.log(choseImage);
+
+var choseImageS = small[Math.floor(Math.random() * images.length)]; 
+    console.log(choseImage);
+    
+    if ($(window).width() >= 400){
+        console.log("> 400");
+$('#banner').css({'background-image': 'url(img/home/banner/' + choseImageS  + ')'});
+    }
+    
+    if ($(window).width() >= 800){
+        console.log("> 800");
+$('#banner').css({'background-image': 'url(img/home/banner/' + choseImageM  + ')'});
+    }
+    
+    if ($(window).width() >= 1600){
+        console.log("> 1600");
+$('#banner').css({'background-image': 'url(img/home/banner/' + choseImageH  + ')'});
+    }
+    
+    
 
     
 
