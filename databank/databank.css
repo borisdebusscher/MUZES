@@ -36,9 +36,11 @@ section p:last-of-type {
     margin-left: -75px;
     padding: 1em;
     cursor: pointer;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
-
-
 
 #login {
     width: 40px;
@@ -226,6 +228,9 @@ table{
     width: 95%;
     margin: .5em auto 1.5em;
 }
+#tablesection{
+    padding-bottom: 2em;
+}
 table th{
     width: 5em;
     margin: 0 auto;
@@ -272,29 +277,6 @@ table a{
 table a:hover, table a:focus{
     background: #fff;
     color: #4F5461;
-}
-.terugtop a{
-    opacity: .4;
-    display: block;
-    background: #E0E1E2;
-    color: #4F5461;
-    text-decoration: none;
-    font-family: Bariol, Calibri, Arial, sans-serif;
-    font-size: 1.2em;
-    margin: 0 auto 1em;
-    width: 20%;
-    padding: .5em 1em;
-    border-radius: .5em;
-    text-align: center;
-    transition: background .2s, opacity .2s;
-}
-.terugtop a:hover, .terugtop a:focus{
-    background: #92CDCF;
-    opacity: 1;
-}
-div#top{
-    position: absolute;
-    top: -300px;
 }
 
 /* page layout sidenav and datacontent */
@@ -502,7 +484,7 @@ section iframe{
         margin: inherit auto;
     }
     section p {
-        width: 95%;
+        width: 90%;
     }
     .closeMenu {
         background: url(../../img/close-white.png) no-repeat center;
@@ -523,6 +505,9 @@ section iframe{
     }
     #eindtermenenuitgangspunten{
         width: 100%;
+    }
+    footer:nth-of-type(2) {
+        padding-bottom: 3em;
     }
     
     /*databankpagina*/
