@@ -107,33 +107,60 @@ section p:last-of-type {
 .navlist nav a:last-of-type{
     border-bottom: 0 solid #000;
 }
+.navlist nav a:last-of-type:hover{
+    border-bottom: 1px solid #92CDCF;
+}
 .navlist nav a:hover, .navlist nav a:focus{
-    background: #add8dc;
+    background: #92CDCF;
     color: #FFF;
 }
+
 .afbeeldingcontainer{
     position: relative;
+    margin-bottom: 12em;
+}
+.navlist:hover span{
+    background-image: url(../img/databank/notebook.jpg);
 }
 .navlist a span{
-    position: absolute;
-    visibility: hidden;
-    overflow: hidden;
-    opacity: 0;
-    bottom: 0;
-    left: 0;
-    width: 0;
+    z-index: 1;
     margin: 0;
     padding: 0;
-    transition: opacity .2s;
-}
-
-.navlist a span img{
+    height: 12em;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 16em;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/databank/notebook.jpg);
+    opacity: 1;
+    visibility: visible;
 }
-div#spanblok{
-    height: 15em;
+.navlist a:hover span#lesmateriaalimg{
+    z-index: 2;
+    background-color: #fff;
+    background-image: url(../img/databank/lesmateriaal.jpg);
+}
+.navlist a:hover span#bibimg{
+    z-index: 2;
+    background-image: url(../img/databank/bib.jpg);
+}
+.navlist a:hover span#videoimg{
+    z-index: 2;
+    background-image: url(../img/databank/videos.jpg);
+}
+.navlist a:hover span#cultuurimg{
+    z-index: 2;
+    background-image: url(../img/databank/cultuur.jpg);
+}
+.navlist a:hover span#lijstimg{
+    z-index: 2;
+    background-image: url(../img/databank/begrippenlijst.jpg);
+}
+.navlist a:hover span#sitesimg{
+    z-index: 2;
+    background-image: url(../img/databank/sites.jpg);
 }
 
 
@@ -381,17 +408,7 @@ section iframe{
 
 @media only screen and (min-width: 750px){
     
-    /* databankpagina */
-    .navlist a:hover span, .navlist a:focus span{
-        visibility: visible;
-        overflow: visible;
-        opacity: 1;
-        width: 100%;
-        bottom: 0;
-    }
-    .afbeeldingcontainer:hover div#spanblok, .afbeeldingcontainer:focus div#spanblok{
-        height: 15em;
-    }
+    
     
     /*Eindtermen en leerplannen*/
     #eindtermenenuitgangspunten{
