@@ -120,12 +120,18 @@ section > h2 {
 		border-bottom-left-radius: 0;
 		border-top-right-radius: 10px;
 	}
+    
 	.info {
 		width: 100%;
 	}
+    
 	.info a {
 		display: block;
 	}
+    
+    .info p {
+        text-align: left;
+    }
 }
 @media screen and (max-width: 800px) {
 	main section {
