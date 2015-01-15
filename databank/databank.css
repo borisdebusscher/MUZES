@@ -57,13 +57,14 @@ section p:last-of-type {
     padding: .75em 0;
     background-color: #F3F4F4;
     opacity: .5;
-    transition: opacity .2s;
+    transition: opacity .2s, background-color .2s;
 }
-.breadcrumb:hover{
+.breadcrumb:hover, .breadcrumb:focus{
     opacity: .8;
+    background-color: #e7e8e8;
 }
 .breadcrumb ul {
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     padding: 0;
 }
