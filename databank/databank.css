@@ -110,7 +110,7 @@ section p:last-of-type {
     text-decoration: none;
 }
 
-.navlist nav a:last-of-type{
+.navlist nav li:last-of-type{
     border-bottom: 0 solid #000;
 }
 
